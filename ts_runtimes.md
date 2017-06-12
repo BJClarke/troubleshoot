@@ -92,7 +92,7 @@ pid @{HOME}/nginx/logs/nginx.pid;
 For more information about how to change the default logging configuration, see [error_log ![External link icon](../icons/launch-glyph.svg "External link icon")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
 	
 
-## Can't import a third-party Python library into Bluemix
+## Can't import a third-party Python library into {{site.data.keyword.Bluemix_notm}}
 {: #ts_importpylib}
 
 You might not be able to import a third-party Python library into {{site.data.keyword.Bluemix_notm}}. To resolve the problem, add configuration files to the root directory of your python app.
@@ -228,38 +228,3 @@ Use one of the following methods:
 	disk_quota: 2048
 	```
 	
-<!-- begin STAGING ONLY -->
-
-## Log4js logger objects aren't displayed in the Node.js Trace pop-up window
-{: #ts_logger}
-
-The log4js logger objects aren't displayed in the Node.js Trace pop-up window when both the log4js and ibmbluemix modules are used in your app. 	
- 
-The log4js logger objects aren't displayed in the Node.js Trace pop-up window when both the log4js, winston, and ibmbluemix modules are used in your app.
-{: tsSymptoms}
-
-Because the ibmbluemix module provides a unified API for log operations that use the log4js and winston modules, only the ibmbluemix logger objects are displayed in the Node.js Trace pop-up window. This is to stop the log level settings for the ibmbluemix, log4js, and winston logger objects from overwriting each other.
-{: tsCauses}
-
-No action is required. This behavior is expected.
-{: tsResolve}
-
-<!-- end STAGING ONLY -->
-
-<!-- begin STAGING ONLY -->
-
-## Apply trace setting to all instances of the application check box is disabled
-{: #ts_bunyan}
-
-The **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window when the Bunyan logger levels are modified.
-
-When you change the levels of the Bunyan logger objects, the **Apply trace setting to all instances of the application** check box is unchecked and disabled in the Node.js Trace pop-up window.
-{: tsSymptoms} 
-
-When Bunyan log levels are modified, the trace setting can't be applied to all instances of an app. This is because the Bunyan library doesn't require the names or identifiers of Bunyan logger objects to be unique. More than one of the Bunyan logger objects that are used to specify levels in the log messages for your app can have the same name or identifier. Therefore, if the trace setting is enabled for an app, the log levels that are specified in the log messages of your app might be inaccurate.
-{: tsCauses}
-
-No action is required.This behavior is expected.
-{: tsResolve} 
-
-<!-- end STAGING ONLY -->

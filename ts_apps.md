@@ -436,7 +436,6 @@ The variables that you specified are saved only if you save them to the manifest
 When you push an app to {{site.data.keyword.Bluemix_notm}} from IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, select the **Save to the manifest file** check box in the Application details page of the Application wizard. Then, the variables that you specified in the wizard are saved to the manifest file for your application. The next time you open the wizard, the variables are displayed automatically.
 {: tsResolve}
 
-
 <!-- begin STAGING ONLY -->
 
 ## Bluemix Live Sync Debug doesn't start from the command line
