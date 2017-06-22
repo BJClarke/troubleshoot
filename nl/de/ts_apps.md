@@ -667,13 +667,13 @@ Mit dem Befehl [git update ![Symbol für externen Link](../icons/launch-glyph.sv
 ## Implementieren einer App über die Delivery Pipeline in IBM Bluemix Continuous Delivery nicht möglich
  {: #ts_devops_to_bm}
 
- Es kann vorkommen, dass eine App nicht unter Verwendung der {{site.data.keyword.deliverypipeline}} in {{site.data.keyword.contdelivery_short}} implementiert werden kann, wenn die Datei `manifest.yml` nicht in der App vorhanden ist. 
+ Es kann vorkommen, dass eine App nicht unter Verwendung der {{site.data.keyword.deliverypipeline}} in {{site.data.keyword.contdelivery_short}} implementiert werden kann, wenn die Datei `manifest.yml` nicht in der App vorhanden ist.
 
  Wenn Sie eine App unter Verwendung der {{site.data.keyword.deliverypipeline}} in {{site.data.keyword.contdelivery_short}} implementieren, kann die Fehlernachricht `Unable to detect a supported application type` (Ermittlung eines unterstützten Anwendungstyps fehlgeschlagen) angezeigt werden.
-{: tsSymptoms}
+ {: tsSymptoms}
 
  Dieses Problem kann auftreten, weil für die Pipeline die Datei `manifest.yml` zum Implementieren einer App in {{site.data.keyword.Bluemix_notm}} erforderlich ist.
-{: tsCauses}
+ {: tsCauses}
 
  Zum Beheben dieses Problems müssen Sie die Datei `manifest.yml` erstellen. Weitere Informationen zum Erstellen der Datei `manifest.yml` finden Sie im
 [Abschnitt zum Anwendungsmanifest](/docs/manageapps/depapps.html#appmanifest).

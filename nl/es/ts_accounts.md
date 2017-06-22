@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-01-10"
+lastupdated: "2017-06-01"
 
 ---
 
@@ -23,6 +23,59 @@ apps compartan el mismo nombre de dominio o que los administradores no puedan ve
 todas las organizaciones. En muchos de los casos, puede solucionar estos problemas siguiendo unos sencillos pasos.
 {:shortdesc}
 
+## No es posible acceder a otra región diferente de {{site.data.keyword.Bluemix_notm}}
+{: #nosecondreg}
+
+Se recibe un mensaje de error al intentar crear una nueva región de {{site.data.keyword.Bluemix_notm}}.
+{: tsSymptoms}
+
+Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una región pública. La región pública de {{site.data.keyword.Bluemix_notm}} en la que desea trabajar se elige cuando se configura la cuenta por primera vez.
+{: tsCauses}
+
+Si tiene una cuenta Estándar, puede actualizarla a una cuenta facturable para acceder a más regiones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Estándar.
+{: tsResolve}
+
+## No es posible crear una nueva organización
+{: #nosecondorg}
+ 
+Recibe un mensaje de error al intentar crear una nueva organización.
+{: tsSymptoms}
+
+Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una organización. La organización la crea cuando configura la cuenta por primera vez.
+{: tsCauses}
+
+Si tiene una cuenta Estándar, puede actualizarla a una cuenta facturable para acceder a más organizaciones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Estándar.
+{: tsResolve}
+
+## No es posible crear una nueva instancia de plan Lite
+{: #nosecondlite}
+
+El siguiente mensaje de error se visualiza cuando intenta crear una nueva instancia de plan Lite:
+{: tsSymptoms}
+
+`No es posible aprovisionar una nueva instancia de Lite`
+
+Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos.
+{: tsCauses}
+
+Es posible crear instancias adicionales del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y utilización > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
+{: tsResolve}
+
+Si no desea actualizar la cuenta Estándar y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control Servicios y, a continuación, crear una nueva instancia.  
+
+## Se ha excedido la concesión de memoria de tiempo de ejecución
+{: #noruntimemem}
+
+No puede desplegar apps y aparece un error que indica que ha superado el límite de memoria de su organización.
+{: tsSymptoms}
+
+En una cuenta Estándar, sus apps de Cloud Foundry pueden utilizar hasta 256 MB de memoria de tiempo de ejecución instantánea. En las cuentas facturables, hay un límite de 2 GB de memoria.
+{: tsCauses}
+
+Si está utilizando una cuenta estándar, puede obtener memoria adicional actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
+{: tsResolve}
+
+Si no desea actualizar la cuenta Estándar y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución.  
 
 ## La cuenta está inactiva
 {: #ts_accnt_inactive}
@@ -75,18 +128,16 @@ Este problema puede producirse cuando se asigna la misma ruta de URL a distintas
 
 Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en "mynewapp.stage1.mybluemix.net". Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en "mynewapp.stage1.mybluemix.net". Ahora la ruta está correlacionada a ambas apps.
 
-Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue Blue-Green para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue azul-verde para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
   
 
-## Los administradores no pueden ver todas las organizaciones utilizando la interfaz de usuario de
-{{site.data.keyword.Bluemix_notm}}
+## Los administradores no pueden ver todas las organizaciones utilizando la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}
 {: #ts_ui_org}
 
 Como administrador, al utilizar la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}, no puede visualizar todas las organizaciones para administrarlas. Puede visualizar y administrar únicamente aquellas organizaciones a las que pertenezca.
 
-Como administrador, no puede ver todas las organizaciones utilizando la interfaz de usuario de
-{{site.data.keyword.Bluemix_notm}}.
+Como administrador, no puede ver todas las organizaciones utilizando la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 Se trata de una limitación de la interfaz de usuario de {{site.data.keyword.Bluemix_notm}}.

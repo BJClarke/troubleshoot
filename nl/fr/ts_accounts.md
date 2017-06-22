@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-01-10"
+lastupdated: "2017-06-01"
 
 ---
 
@@ -21,6 +21,59 @@ lastupdated: "2017-01-10"
 Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votre compte, par exemple, différentes applications partagent le même nom de domaine ou les administrateurs ne peuvent pas afficher toutes les organisations. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
 {:shortdesc}
 
+## Impossible d'accéder à une région {{site.data.keyword.Bluemix_notm}} différente
+{: #nosecondreg}
+
+Vous recevez un message d'erreur lorsque vous tentez de créer une nouvelle région {{site.data.keyword.Bluemix_notm}}.
+{: tsSymptoms}
+
+Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule région publique. La région {{site.data.keyword.Bluemix_notm}} publique dans laquelle vous désirez travailler est sélectionnée lors de la configuration initiale du compte.
+{: tsCauses}
+
+Si vous utilisez un compte Standard, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres régions. Accédez à la page **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Standard.
+{: tsResolve}
+
+## Impossible de créer une nouvelle organisation
+{: #nosecondorg}
+ 
+Un message d'erreur est renvoyé lorsque vous tentez de créer une nouvelle organisation.
+{: tsSymptoms}
+
+Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule organisation. Votre organisation est créée lors de la configuration initiale de votre compte.
+{: tsCauses}
+
+Si vous utilisez un compte Standard, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres organisations. Accédez à la page **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Standard.
+{: tsResolve}
+
+## Impossible de créer une nouvelle instance du plan Lite
+{: #nosecondlite}
+
+Le message d'erreur suivant s'affiche lorsque vous tentez de créer une nouvelle instance de plan Lite :
+{: tsSymptoms}
+
+`Impossible de mettre à disposition une nouvelle instance Lite`
+
+Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite.
+{: tsCauses}
+
+Vous pouvez créer des instances supplémentaires du service en sélectionnant l'un des plans de service facturables, lesquels sont disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à la page **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Ajouter une carte de crédit**.
+{: tsResolve}
+
+Si vous ne désirez pas effectuer une mise à niveau depuis un compte Standard et n'utilisez plus votre instance de service Lite existante, vous pouvez supprimer cette instance de plan de service depuis le tableau de bord Services, puis en créer une nouvelle. 
+
+## Allocation de mémoire d'exécution dépassée
+{: #noruntimemem}
+
+Vous ne parvenez pas à déployer des applications et un message d'erreur vous avise que vous avez dépassé la limite de mémoire allouée à votre organisation.
+{: tsSymptoms}
+
+Dans un compte Standard, vos applications Cloud Foundry peuvent utiliser jusqu'à 256 Mo de mémoire d'exécution simultanée. Dans les comptes facturables, cette limite est portée à 2 Go.
+{: tsCauses}
+
+Si vous utilisez un compte Standard, vous pouvez bénéficier d'une mémoire supplémentaire en effectuant une mise à niveau vers un compte facturable. Accédez à la page **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**.
+{: tsResolve}
+
+Si vous ne désirez pas effectuer une mise à niveau depuis un compte Standard, mais disposez de diverses applications inactives, vous pouvez les supprimer pour libérer de la mémoire d'exécution. 
 
 ## Le compte est inactif
 {: #ts_accnt_inactive}

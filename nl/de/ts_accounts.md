@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-01-10"
+lastupdated: "2017-06-01"
 
 ---
 
@@ -21,6 +21,57 @@ lastupdated: "2017-01-10"
 Allgemeine Probleme bei der Verwaltung Ihres Kontos können sein, dass verschiedene Apps denselben Domänennamen verwenden oder Administratoren nicht alle Organisationen anzeigen können. In vielen Fällen können Sie diese Probleme durch Ausführen weniger einfacher Schritte beheben.
 {:shortdesc}
 
+## Fehler beim Zugriff auf eine andere {{site.data.keyword.Bluemix_notm}}-Region
+{: #nosecondreg}
+
+Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue {{site.data.keyword.Bluemix_notm}}-Region zu erstellen.
+{: tsSymptoms}
+
+Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer öffentlichen Region unterstützt. Sie wählen die öffentliche {{site.data.keyword.Bluemix_notm}}-Region, in der Sie arbeiten möchten, bei der Ersteinrichtung des Kontos aus.
+{: tsCauses}
+
+Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein belastbares Konto durchführen, um auf zusätzliche Regionen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.{: tsResolve}
+
+## Fehler beim Erstellen einer neuen Organisation
+{: #nosecondorg}
+ 
+Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue Organisation zu erstellen.
+{: tsSymptoms}
+
+Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer Organisation unterstützt. Die Organisation wird bei der Ersteinrichtung des Kontos erstellt.
+{: tsCauses}
+
+Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein belastbares Konto durchführen, um auf zusätzliche Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.{: tsResolve}
+
+## Fehler beim Erstellen einer neuen Lite-Planinstanz
+{: #nosecondlite}
+
+Die folgende Fehlernachricht wird angezeigt, wenn Sie versuchen, eine neue Lite-Planinstanz zu erstellen.
+{: tsSymptoms}
+
+`Fehler beim Erstellen einer neuen Lite-Instanz`
+
+Es gibt eine Begrenzung auf ein Instanz pro Lite-Planinstanz, damit wir diese Pläne kostenlos anbieten können.
+{: tsCauses}
+
+Sie können zusätzliche Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Um über die Konsole ein Upgrade auf ein belastbares Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+{: tsResolve}
+
+Wenn Sie kein Upgrade von einem Standardkonto durchführen möchten und Ihre vorhandene Lite-Serviceinstanz nicht mehr verwenden, können Sie die vorhandene Lite-Planinstanz über das Services-Dashboard löschen und dann eine neue Instanz erstellen. 
+
+## Laufzeit-Speicherkontingent überschritten
+{: #noruntimemem}
+
+Sie können keine Apps bereitstellen und erhalten eine Fehlermeldung, dass Sie die Speicherbegrenzung Ihrer Organisation überschritten haben.
+{: tsSymptoms}
+
+Bei einem Standardkonto können Ihre Cloud Foundry-Apps bis zu 256 MB des sofort verfügbaren Laufzeitspeichers verwenden. Bei belastbaren Konten gibt es eine Speicherbegrenzung von 2 GB.
+{: tsCauses}
+
+Wenn Sie mit einem Standardkonto arbeiten, können Sie zusätzlichen Speicher durch ein Upgrade auf ein belastbares Konto erhalten. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+{: tsResolve}
+
+Wenn Sie kein Upgrade von einem Standardkonto durchführen möchten, aber über inaktive Apps verfügen, können Sie die vorhandenen inaktiven Apps löschen, um etwas Laufzeitspeicher freizugeben. 
 
 ## Konto ist inaktiv
 {: #ts_accnt_inactive}

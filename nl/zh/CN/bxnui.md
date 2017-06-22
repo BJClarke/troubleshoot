@@ -1203,7 +1203,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2071E
-**消息**：只有管理者才能修改证书。
+**消息**：只有管理员才能修改证书。
 
 请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
@@ -1364,11 +1364,11 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2109E
-**消息**：未创建或更新服务代理程序，因为没有在组织中为您的用户标识（“{0}”）分配组织管理者角色。 
+**消息**：未创建或更新服务代理程序，因为没有在组织中为您的用户标识（“{0}”）分配组织管理员角色。 
 
-您必须是组织“{1}”中的组织管理者（如 JSON 输入文件中为 owningOrganization 所指定），才能创建或更新此服务代理程序。  
+您必须是组织“{1}”中的组织管理员（如 JSON 输入文件中为 owningOrganization 所指定），才能创建或更新此服务代理程序。  
 
-请验证输入的所属组织是否正确，或者向帐户所有者或组织管理者请求该角色。 
+请验证输入的所属组织是否正确，或者向帐户所有者或组织管理员请求该角色。 
 
 ## BXNUI2111E
 

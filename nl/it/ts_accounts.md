@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-01-10"
+lastupdated: "2017-06-01"
 
 ---
 
@@ -21,6 +21,59 @@ lastupdated: "2017-01-10"
 I problemi generali con la gestione del tuo account potrebbero riguardare applicazioni diverse che condividono lo stesso nome dominio o amministratori che non riescono a visualizzare tutte le organizzazioni. In molti casi, puoi risolvere questi problemi seguendo pochi semplici passi.
 {:shortdesc}
 
+## Impossibile accedere a una regione {{site.data.keyword.Bluemix_notm}} differente
+{: #nosecondreg}
+
+Ricevi un messaggio di errore quando provi a creare una nuova regione {{site.data.keyword.Bluemix_notm}}.
+{: tsSymptoms}
+
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una regione pubblica. Selezioni la regione pubblica di {{site.data.keyword.Bluemix_notm}} in cui vuoi lavorare durante la configurazione iniziale dell'account.
+{: tsCauses}
+
+Se hai un account Standard, puoi eseguire l'upgrade a un account fatturabile per accedere a ulteriori regioni. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**. Nella pagina **Fatturazione**, puoi anche controllare se hai un account Standard.
+{: tsResolve}
+
+## Impossibile creare la nuova organizzazione
+{: #nosecondorg}
+ 
+Ricevi un messaggio di errore quando provi a creare una nuova organizzazione.
+{: tsSymptoms}
+
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una singola organizzazione. Crei l'organizzazione durante la configurazione iniziale del tuo account.
+{: tsCauses}
+
+Se hai un account Standard, puoi eseguire l'upgrade a un account fatturabile per accedere a ulteriori organizzazioni. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**. Nella pagina **Fatturazione**, puoi anche controllare se hai un account Standard.
+{: tsResolve}
+
+## Impossibile creare la nuova istanza del piano Lite
+{: #nosecondlite}
+
+Viene visualizzato il seguente messaggio di errore quando provi a creare una nuova istanza del piano Lite:
+{: tsSymptoms}
+
+`Unable to provision new Lite instance`
+
+Esiste un limite di una singola istanza per istanza del piano Lite per consentirci di continuare a offrire tali piani gratuitamente.
+{: tsCauses}
+
+Puoi creare delle istanze aggiuntive del servizio selezionando uno dei piani del servizio fatturabili, disponibili negli account fatturabili. Per eseguire l'upgrade a un account fatturabile dalla console, vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Aggiungi carta di credito**.
+{: tsResolve}
+
+Se non vuoi eseguire l'upgrade da un account Standard e non stai più utilizzando la tua istanza del servizio Lite esistente, puoi eliminare l'istanza del piano Lite esistente dal dashboard Servizi e creare quindi una nuova istanza. 
+
+## È stata superata la franchigia di memoria di runtime
+{: #noruntimemem}
+
+Non riesci a distribuire applicazioni e ottieni un errore che indica che hai superato il limite di memoria della tua organizzazione.
+{: tsSymptoms}
+
+In un account Standard, le tue applicazioni Cloud Foundry possono utilizzare fino a 256 MB di memoria di runtime istantanea. Negli account fatturabili, esiste un limite di memoria di 2GB.
+{: tsCauses}
+
+Se stai utilizzando un account Standard, puoi ottenere della memoria aggiuntiva eseguendo l'upgrade a un account fatturabile. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**.
+{: tsResolve}
+
+Se non vuoi eseguire l'upgrade da un account Standard ma hai delle applicazioni inattive, le puoi eliminare per liberare della memoria di runtime. 
 
 ## Account non attivo
 {: #ts_accnt_inactive}

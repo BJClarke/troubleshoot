@@ -542,7 +542,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 Para obtener más información sobre el mandato `cf push`, escriba `cf push -h`. 	
 
 
-## Los caracteres de doble byte no se visualizan correctamente cuando se envían por push apps Liberty a Bluemix 
+## Los caracteres de doble byte no se visualizan correctamente cuando se envían por push apps Liberty a Bluemix
 {: #ts_doublebytes}
 
 Es posible que los caracteres de doble byte no se visualicen correctamente si el soporte de Unicode no está configurado correctamente para el servlet o los archivos JSP.
@@ -667,7 +667,7 @@ Puede utilizar el mandato [git update ![icono de enlace externo](../icons/launch
 ## No puede desplegar una app desde Delivery Pipeline en IBM Bluemix Continuous Delivery
  {: #ts_devops_to_bm}
 
- Podría no poder desplegar su app utilizando {{site.data.keyword.deliverypipeline}} en {{site.data.keyword.contdelivery_short}} si el archivo `manifest.yml` no está presente en su app. 
+ Podría no poder desplegar su app utilizando {{site.data.keyword.deliverypipeline}} en {{site.data.keyword.contdelivery_short}} si el archivo `manifest.yml` no está presente en su app.
 
  Cuando se despliega una app utilizando {{site.data.keyword.deliverypipeline}} en {{site.data.keyword.contdelivery_short}}, podría visualizarse el mensaje de error `No es posible detectar un tipo de aplicación soportada`.
  {: tsSymptoms}

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-01-10"
+Lastupdated: "2017-06-01"
 
 ---
 
@@ -21,6 +21,58 @@ lastupdated: "2017-01-10"
 Os problemas gerais ao gerenciar sua conta podem incluir apps diferentes que compartilham o mesmo nome de domínio ou administradores que não podem visualizar todas as organizações. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples.
 {:shortdesc}
 
+## Impossível acessar um {{site.data.keyword.Bluemix_notm}} de região diferente
+{: #nosecondreg}
+
+Uma mensagem de erro é recebida quando você tenta criar uma nova região do {{site.data.keyword.Bluemix_notm}}.
+{: tsSymptoms}
+
+Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma região pública. Você seleciona a região pública do {{site.data.keyword.Bluemix_notm}} na qual deseja trabalhar quando a conta é configurada pela primeira vez.{: tsCauses}
+
+Se você tiver uma conta Padrão, será possível fazer upgrade para uma conta faturável para acessar regiões adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Padrão.
+{: tsResolve}
+
+## Impossível criar nova organização
+{: #nosecondorg}
+ 
+Uma mensagem de erro é recebida quando você tenta criar uma nova organização.
+{: tsSymptoms}
+
+Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma organização. Você cria a organização quando sua conta é configurada pela primeira vez.
+{: tsCauses}
+
+Se você tiver uma conta Padrão, será possível fazer upgrade para uma conta faturável para acessar organizações adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Padrão.
+{: tsResolve}
+
+## Não é possível criar uma nova instância do plano Lite
+{: #nosecondlite}
+
+A mensagem de erro a seguir é exibida quando você tenta criar uma nova instância do plano Lite:
+{: tsSymptoms}
+
+`Não é possível provisionar uma nova instância Lite`
+
+Há um limite de uma instância por instância do plano Lite para nos permitir manter esses planos grátis.
+{: tsCauses}
+
+É possível criar instâncias adicionais do serviço selecionando um dos planos de serviço faturáveis, que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável do console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
+{: tsResolve}
+
+Se você não desejar fazer upgrade de uma conta Padrão e não estiver mais usando sua instância de serviço Lite existente, será possível excluir a instância do plano Lite existente do painel Serviços e, em seguida, criar uma nova instância. 
+
+## Excedido o abono de memória de tempo de execução
+{: #noruntimemem}
+
+Você não consegue implementar apps e obtém um erro informando que excedeu o limite de memória de sua organização.
+{: tsSymptoms}
+
+Em uma conta Padrão, seus apps Cloud Foundry podem usar até 256 MB de memória instantânea de tempo de execução. Em contas faturáveis, há um limite de memória de 2 GB.
+{: tsCauses}
+
+Se você estiver usando uma conta Padrão, será possível obter memória adicional fazendo upgrade para uma conta faturável. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**.
+{: tsResolve}
+
+Se você não desejar fazer upgrade de uma conta Padrão, mas tiver alguns apps inativos, será possível excluir os apps inativos para liberar memória de tempo de execução. 
 
 ## A conta está inativa
 {: #ts_accnt_inactive}

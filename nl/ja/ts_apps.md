@@ -673,7 +673,7 @@ Java』](/docs/runtimes/liberty/index.html)を参照してください。
  アプリに `manifest.yml` ファイルが存在しない場合、{{site.data.keyword.contdelivery_short}} の {{site.data.keyword.deliverypipeline}} を使用してアプリをデプロイできないことがあります。
 
  {{site.data.keyword.contdelivery_short}} の {{site.data.keyword.deliverypipeline}} を使用してアプリをデプロイすると、エラー・メッセージ`「サポートされるアプリケーション・タイプを検出できません (Unable to detect a supported application type)」`が表示されることがあります。
- {: tsSymptoms}
+{: tsSymptoms}
 
  この問題は、{{site.data.keyword.Bluemix_notm}} にアプリをデプロイするために、パイプラインが `manifest.yml` ファイルを必要とすることが原因で発生する可能性があります。{: tsCauses}
 

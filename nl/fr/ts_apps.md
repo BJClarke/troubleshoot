@@ -686,7 +686,7 @@ Vous pouvez utiliser la commande [git update ![](../icons/launch-glyph.svg " ")]
 ## Impossible de déployer une application depuis Delivery Pipeline dans IBM Bluemix Continuous Delivery
  {: #ts_devops_to_bm}
 
- Il se peut que vous ne puissiez pas déployer votre application à l'aide de {{site.data.keyword.deliverypipeline}} dans {{site.data.keyword.contdelivery_short}} si le fichier `manifest.yml` n'est pas présent dans votre application. 
+ Il se peut que vous ne puissiez pas déployer votre application à l'aide de {{site.data.keyword.deliverypipeline}} dans {{site.data.keyword.contdelivery_short}} si le fichier `manifest.yml` n'est pas présent dans votre application.
 
  Lorsque vous déployez une application à l'aide de {{site.data.keyword.deliverypipeline}} dans {{site.data.keyword.contdelivery_short}}, il se peut que le message d'erreur `Unable to detect a supported application type` s'affiche.
  {: tsSymptoms}

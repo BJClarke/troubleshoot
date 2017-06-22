@@ -1387,7 +1387,7 @@ Por ejemplo, supongamos que envía por push la aplicación myApp1 a {{site.data.
 
  
 
-Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte Despliegues Blue-Green.
+Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte Despliegues azul-verde.
 {: tsResolve}
   
 	
