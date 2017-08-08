@@ -129,7 +129,7 @@ Java 仮想マシン (JVM) のバージョンが IBM JVM 7、IBM JVM 8、また�
 
 ワークベンチの JVM が、IBM JVM 7 または 8、あるいは Oracle JVM 8 より前のバージョンである場合は、以下の手順を実行して、Oracle JVM 8 に切り替えます。
 
-  1. Oracle JVM 8 をダウンロードし、インストールします。詳しくは、[Java SE Downloads ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} を参照してください。
+  1. Oracle JVM 8 をダウンロードし、インストールします。詳しくは、[Java SE Downloads ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "「外部リンク」アイコン"){: new_window} を参照してください。
   2. Eclipse を再始動します。
   3. `eclipse.vm` プロパティーが、Oracle JVM 8 の新しいインストール先を指しているかどうかを確認します。
 
@@ -167,59 +167,57 @@ Java 仮想マシン (JVM) のバージョンが IBM JVM 7、IBM JVM 8、また�
 	 cf delete-route mybluemix.net -n app001
 	 ```
 
-## 組織のスペースを取得できない
+## 組織内でスペースを取得できない
 {: #ts_retrieve_space}
 
-現行組織に関連付けられたスペースがない場合、アプリまたはサービスを作成できません。
+現在の組織に、関連付けられているスペースがない場合は、アプリまたはサービスを作成できません。
 
 Bluemix でアプリを作成しようとすると、以下のエラー・メッセージが表示されます。
 {: tsSymptoms}
 
-`BXNUI0515E: 組織のスペースは取得されませんでした。 ネットワーク接続問題が発生したか、現在の組織に関連付けられているスペースがないかのいずれかです。`
+BXNUI0515E: 組織のスペースは取得されませんでした。 ネットワーク接続問題が発生したか、現在の組織に関連付けられているスペースがないかのいずれかです。`
 
 このエラーは、多くの場合、カタログからアプリまたはサービスを初めて作成しようとしたときに、スペースがまだ作成されていない場合に発生します。
 {: tsCauses}
 
-現行組織にスペースを作成したことを確認してください。スペースを作成するには、次のいずれかの方法を使用します。
+現在の組織内にスペースが作成されていることを確認してください。スペースを作成するには、以下のいずれかの方法を使用します。
 {: tsResolve}
 
-  * メニュー・バーで**「管理」>「アカウント」>「組織」**をクリックします。スペースを作成する組織を選択して、**「スペースの作成」**をクリックします。
-  * cf コマンド・ライン・インターフェースに `cf create-space <space_name>
--o <organization_name>` と入力します。
+  * メニュー・バーから、**「管理」>「アカウント」>「組織」**をクリックします。スペースを作成する組織を選択し、**「スペースの作成」**をクリックします。
+  * cf コマンド・ライン・インターフェースに `cf create-space <space_name> -o <organization_name>` と入力します。
 
 やり直してください。
-このメッセージが再び表示される場合は、[Bluemix 状況![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixstatus){: new_window}ページにアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。
+このメッセージが再び表示される場合は、[Bluemix 状況 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixstatus){: new_window} ページにアクセスし、サービスまたはコンポーネントに問題があるかどうか確認してください。
 
-
-## 要求したアクションを実行できない
+## 要求されたアクションを実行できない
 {: #ts_authority}
 
-適切なアクセス権限がない場合、アクションを実行できないことがあります。
+適切なアクセス権限がないとアクションを実行できない場合があります。
 
-サービス・インスタンスまたはアプリ・インスタンスに対してアクションを実行しようとしたとき、要求したアクションを実行できず、以下のいずれかのエラー・メッセージが表示されます。
+サービス・インスタンスまたはアプリ・インスタンスに対してアクションを実行しようとした時、要求したアクションを実行できず、以下のいずれかのエラー・メッセージが表示されます。
 {: tsSymptoms}
 
-`BXNUI0514E: <orgName> 組織内のいずれのスペースの開発者でもありません。(You are not a developer for any of the spaces in the <orgName> organization.)`
+`BXNUI0514E: <orgName> 組織内のいずれのスペースの開発者でもありません。`
 
-`サーバー・エラー、状況コード: 403、エラー・コード: 10003、メッセージ: 要求されたアクションの実行を許可されていません`
+`サーバー・エラー、状況コード: 403、エラー・コード: 10003、メッセージ: 要求されたアクションの実行を許可されていません。`
 
 アクションを実行するための適切なレベルの権限を備えていません。
 {: tsCauses}
 
 適切な権限レベルを取得するには、以下のいずれかの方法を使用します。
 {: tsResolve}
- * 開発者役割を備えている別の組織およびスペースを選択します。
- * 自分の役割を開発者に変更するように、またはスペースを作成して自分に開発者役割を割り当てるように組織マネージャーに依頼します。詳しくは、『[組織とスペースの管理](/docs/admin/orgs_spaces.html)』を参照してください。
+ * 開発者役割を持っている、別の組織およびスペースを選択します。
+ * 自分の役割を開発者に変更するように、またはスペースを作成して自分に開発者役割を割り当てるように組織マネージャーに依頼します。 詳細については、[組織およびスペースの管理](/docs/admin/orgs_spaces.html) を参照してください。
 
-## 許可エラーにより Bluemix サービスにアクセスできない
+## 許可エラーのため、Bluemix サービスにアクセスできない
 {: #ts_vcap}
 
-許可エラーは、アプリでサービス資格情報がハードコーディングされている場合に、アプリが {{site.data.keyword.Bluemix_notm}} サービスにアクセスすると生じることがあります。
+サービス資格情報がアプリ内でハードコーディングされている場合、アプリが {{site.data.keyword.Bluemix_notm}} にアクセスした時に許可エラーが発生することがあります。
 
 {{site.data.keyword.Bluemix_notm}} サービスと通信するようにアプリを構成した後に、そのアプリを {{site.data.keyword.Bluemix_notm}} にデプロイします。しかし、アプリを使用して {{site.data.keyword.Bluemix_notm}} サービスにアクセスできず、許可エラーを受け取ります。
 {: tsSymptoms}
 
-アプリ内にハードコーディングされた資格情報が正しくない可能性があります。サービスが再作成されるごとに、そのサービスにアクセスするための資格情報が変更されます。
+アプリ内にハードコーディングされている資格情報が正しくない可能性があります。サービスが再作成されるごとに、そのサービスにアクセスするための資格情報が変更されます。
 {: tsCauses}
 
 アプリ内に資格情報をハードコーディングするのではなく、VCAP_SERVICES 環境変数からの接続パラメーターを使用してください。VCAP_SERVICES 環境変数からの接続パラメーターを使用する方法は、プログラミング言語によって異なります。例えば、Node.js アプリの場合、以下のコマンドを使用できます。
@@ -228,15 +226,17 @@ Bluemix でアプリを作成しようとすると、以下のエラー・メッ
 ```
 process.env.VCAP_SERVICES
 ```
-他のプログラミング言語で使用できるコマンドについて詳しくは、[Java![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} および [Ruby![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window} を参照してください。
+他のプログラム言語で使用できるコマンドについて詳しくは、[Java ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} および [Ruby![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window} を参照してください。
+
+
 ## IBM Eclipse Tools for Bluemix を使用してアプリをデプロイできない
 {: #ts_bm_tools_facet}
 
-サポートされないファセットが Eclipse プロジェクトに適用された場合、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用してアプリを {{site.data.keyword.Bluemix_notm}} にデプロイできない可能性があります。
+サポートされないファセットが Eclipse プロジェクトに適用されると、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用してアプリを {{site.data.keyword.Bluemix_notm}} にデプロイできないことがあります。
 
-Cloud Foundry CLI を使用すると、正常にアプリを {{site.data.keyword.Bluemix_notm}} にデプロイすることができます。ただし、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用すると {{site.data.keyword.Bluemix_notm}} にアプリをデプロイできず、`「Project facet <facet_name> is not supported.」`というエラー・メッセージが表示されます。以下に例を示します。
+Cloud Foundry CLI を使用すると、正常にアプリを {{site.data.keyword.Bluemix_notm}} にデプロイすることができます。ただし、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用すると {{site.data.keyword.Bluemix_notm}} にアプリをデプロイできず、`プロジェクト・ファセット <facet_name> はサポートされません。` というエラー・メッセージが表示されます。例:
 {: tsSymptoms}
-`Project facet Cloud Foundry Standalone Application version 1.0 is not supported.`
+`プロジェクト・ファセット Cloud Foundry Standalone Application バージョン 1.0 はサポートされません。`
 
 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} は、プロジェクト・ファセットによって {{site.data.keyword.Bluemix_notm}} ランタイムにプロジェクトをマップします。ファセットは、Eclipse 内の Java EE プロジェクトの要件を定義し、異なるランタイムが異なるプロジェクトに関連付けられるようにランタイム構成の一部として使用されます。 プロジェクトに適用されるファセットが IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} によってサポートされていない場合、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用してアプリをデプロイできない可能性があります。
 {: tsCauses}
@@ -244,53 +244,45 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} は、プロジェク�
 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} を使用してアプリをデプロイできるように、Eclipse プロジェクトからファセットを削除する必要があります。
 {: tsResolve}
 
-ファセットを削除するには、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} で、プロジェクトについて**「プロジェクト」>「プロパティー」>「プロジェクト・ファセット」**をクリックします。次に、サポートされないファセットのチェック・ボックスをクリアします。
-
-
-## 502 Bad Gateway エラーを受信した
+ファセットを削除するには、IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} で、プロジェクトに対して**「プロジェクト」>「プロパティー」>「プロジェクト・ファセット」**をクリックします。次に、サポートされないファセットのチェック・ボックスをクリアします。## 502 Bad Gateway エラーを受け取る
 {: #ts_502_error}
 
-{{site.data.keyword.Bluemix_notm}} でアプリと対話していて 502 Bad Gateway エラーを受信した場合は、{{site.data.keyword.Bluemix_notm}} 状況ページを確認して、対応したアクションを実行してください。
+{{site.data.keyword.Bluemix_notm}} でアプリと対話している時に 502 Bad Gateway エラーを受け取る場合は、{{site.data.keyword.Bluemix_notm}} の状況ページを確認し、対応するアクションを実行してください。
 
-502 Bad Gateway で始まるエラー・メッセージを受信します。例えば、`「502 Bad Gateway: 登録済みエンドポイントが要求の処理に失敗しました。(Registered endpoint failed to handle the request.)」`と表示されます。
-{: tsSymptoms}
+502 Bad Gateway で始まるエラー・メッセージを受信します。例えば、「502 Bad Gateway:
+登録済みエンドポイントが要求の処理に失敗しました。(Registered endpoint failed to handle the request.)」と表示されることがあります。{: tsSymptoms}
 
-Bad Gateway エラーは通常、Web サイトをホストするメイン・サーバーのデータの保管と中継を行うためにプロキシー・サーバーを使用している Web サイトにアクセスしたときに発生します。メイン・サーバーとプロキシー・サーバーが正しく接続されていない可能性があるため、ブラウザー・ウィンドウに HTTP 状況コード 502 が表示されます。この状況コードは、サイトのメイン・サーバーが、予期した HTTP 実装をプロキシー・サーバーから受信しなかったことを示します。
+Bad Gateway エラーは通常、サイトをホストするメイン・サーバーからのデータを保管および中継するためにプロキシー・サーバーを使用している Web サイトにアクセスした時に発生します。メイン・サーバーとプロキシー・サーバーが正しく接続されていない可能性があるため、ブラウザー・ウィンドウに HTTP 状況コード 502 が表示されます。この状況コードは、サイトのメイン・サーバーが、予期した HTTP 実装をプロキシー・サーバーから受信しなかったことを示します。
 {: tsCauses}
 
-それほど頻繁ではありませんが、Bad Gateway エラーの原因として他に、インターネット・サービス・プロバイダー (ISP) のドロップアウト、ファイアウォール構成の誤り、ブラウザー・キャッシュのエラーがあります。
+あまり一般的ではありませんが、Bad Gateway エラーの原因として他に、インターネット・サービス・プロバイダー (ISP) のドロップアウト、ファイアウォール構成の誤り、およびブラウザー・キャッシュのエラーがあります。
 
-{{site.data.keyword.Bluemix_notm}} サービスがダウンしていると疑われる場合は、まず [{{site.data.keyword.Bluemix_notm}} 状況![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixstatus){: new_window}ページを確認してください。回避策として、別の {{site.data.keyword.Bluemix_notm}} 地域でそのサービスを使用することができます。『[サービスを別の地域で使用![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](/docs/services/reqnsi.html#cross_region_service){: new_window}』に詳しい説明があります。サービスの状況が正常の場合には、以下のステップで問題を解決してください。
+{{site.data.keyword.Bluemix_notm}} サービスがダウンしていることが疑われる場合は、まず {{site.data.keyword.Bluemix_notm}} 状況 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixstatus){: new_window} ページを確認してください。回避策として、別の {{site.data.keyword.Bluemix_notm}} 地域でそのサービスを使用することができます。[別の地域でのサービスの使用 ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/services/reqnsi.html#cross_region_service){: new_window} に詳細情報があります。サービス状況が正常の場合は、問題を解決するために以下のステップを試行してください。
 {: tsResolve}
 
-  * アクションを再試行します。
-    * キーボードで F5 を押すか、最新表示ボタンをクリックして、ページを再ロードします。このステップでうまくいかない場合は、ブラウザーのキャッシュと Cookie を消去してから、もう一度再ロードしてください。
-    * 異なるブラウザーを使用します。
-    * ルーター、モデム、およびコンピューターをリブートします。これらのデバイスをリブートすると、エラー 502 につながる各種エラーが解消する可能性があります。
-  * 時間をおいて、後で再試行します。場合によっては、インターネット・サービス・プロバイダーまたは {{site.data.keyword.Bluemix_notm}} サービスで一時的な問題が発生していることがあります。一時的な問題が解決されるまで待ちます。
-  * 問題が解決しない場合は、{{site.data.keyword.Bluemix_notm}} サポートに連絡してください。詳しくは、[{{site.data.keyword.Bluemix_notm}} サポートへのお問い合わせ ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](/docs/support/index.html#contacting-bluemix-support){: new_window} を参照してください。
+  * 以下のようにしてアクションを再試行します。
+    * キーボードで F5 を押すか、最新表示ボタンをクリックして、ページを再ロードします。このステップでうまくいかない場合は、ブラウザーのキャッシュと Cookie を消去してから、もう一度再ロードしてください。* 異なるブラウザーを使用します。
+    * ルーター、モデム、およびコンピューターをリブートします。 これらのデバイスをリブートすると、エラー 502 につながる各種エラーが解消する可能性があります。* 時間をおいて、後で再試行します。 場合によっては、インターネット・サービス・プロバイダーまたは {{site.data.keyword.Bluemix_notm}} サービスで一時的な問題が発生していることがあります。一時的な問題が解決されるまで待ちます。* 問題が解決しない場合は、{{site.data.keyword.Bluemix_notm}} サポートに連絡してください。 詳しくは、[{{site.data.keyword.Bluemix_notm}} サポートへのお問い合わせ ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/support/index.html#contacting-bluemix-support){: new_window} を参照してください。
 
 ## ディスク割り当て量を超えた
 {: #ts_disk_quota}
 
-ディスク・スペースを使い尽くした場合には、手動でディスク割り当て量を変更して、ディスク・スペースを追加することができます。
+ディスク・スペースを使い尽くした場合は、手動でディスク割り当て量を変更してディスク・スペースを追加することができます。
 
 ディスク・スペースを使い尽くしたときに、ディスク割り当て量を超えたというメッセージが表示される場合があります。この問題を解決するために、アプリ・インスタンスをスケールアップしてディスク・スペースを追加しようとした可能性があります。例えば、アプリ詳細ページでメモリー割り当て量を変更して 256 MB から 1256 MB に拡大した、などです。しかし、ディスク割り当て量は同じままであったために、ディスク・スペースは追加されませんでした。
 {: tsSymptoms}
 
-アプリに割り当てられるデフォルトのディスク割り当て量は 1 GB です。追加のディスク・スペースが必要な場合は、ディスク割り当て量を手動で指定する必要があります。
+1 つのアプリに割り当てられるデフォルトのディスク割り当て量は 1 GB です。追加のディスク・スペースが必要な場合は、ディスク割り当て量を手動で指定する必要があります。
 {: tsCauses}
 
-以下のいずれかの方法でディスク割り当て量を指定します。指定できる最大ディスク割り当て量は 2 GB です。2 GB でも不十分な場合は、[オブジェクト・ストア](/docs/services/ObjectStorage/index.html)などの外部サービスを試してください。
+以下のいずれかの方法を使用してディスク割り当て量を指定します。指定できる最大ディスク割り当て量は 2 GB です。2 GB でも不十分な場合は、[オブジェクト・ストア](/docs/services/ObjectStorage/index.html) などの外部サービスを試してください。
 {: tsResolve}
 
   * manifest.yml ファイルに以下の項目を追加します。
-
     ```
 	disk_quota: <disk_quota>
 	```
-  * アプリを {{site.data.keyword.Bluemix_notm}} にプッシュするときに、`cf push` コマンドで **-k** オプションを使用します。
-
+  * アプリを {{site.data.keyword.Bluemix_notm}} にプッシュする時に、以下のように `cf push` コマンドに **-k** オプションを使用します。
     ```
 	cf push appname -p app_path -k <disk_quota>
 	```
@@ -299,22 +291,20 @@ Bad Gateway エラーは通常、Web サイトをホストするメイン・サ�
 ## Android アプリが {{site.data.keyword.mobilepushshort}} を受信できない
 {: #ts_push}
 
-Google にアクセス不能な特定地域の Android アプリは、IBM {{site.data.keyword.mobilepushshort}} サービスで送信した通知を受信できません。この場合、回避策はサード・パーティーのサービスを使用することです。
-
-Bluemix アプリに {{site.data.keyword.mobilepushshort}} サービスをバインドして、登録デバイスにメッセージを送信します。ただし、Android プラットフォームで開発されたアプリは、特定の地域で通知を受信できません。
+Google にアクセスできない特定地域の Android アプリは、IBM {{site.data.keyword.mobilepushshort}} サービスから送信された通知を受信できません。この場合、回避策はサード・パーティーのサービスを使用することです。Bluemix アプリに {{site.data.keyword.mobilepushshort}} サービスをバインドして、登録デバイスにメッセージを送信します。ただし、Android プラットフォームで開発されたアプリは、特定の地域で通知を受信できません。
 {: tsSymptoms}
 
 IBM {{site.data.keyword.mobilepushshort}} サービスは、Google Cloud Messaging (GCM) サービスを使用して、Android プラットフォームで開発されたモバイル・アプリに通知を送ります。Android アプリが通知を受信できるようにするには、Google Cloud Messaging (GCM) サービスがモバイル・アプリからアクセス可能でなければなりません。Android アプリが GCM サービスに到達できない地域では、Android アプリは {{site.data.keyword.mobilepushshort}} を受信できません。
 {: tsCauses}
 
-回避策として、GCM サービスに依存しないサード・パーティーのサービス (例えば、 [Pushy ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://pushy.me){: new_window}、[igetui ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.getui.com/){: new_window}、および [jpush ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.jpush.cn/){: new_window}) を使用してください。
+回避策として、GCM サービスに依存しないサード・パーティー・サービス (例えば、[Pushy ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://pushy.me){: new_window}, [igetui ![外部リンク・アイコン ](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.getui.com/){: new_window}、および [jpush ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.jpush.cn/){: new_window}) を使用します。
 {: tsResolve}
 
 
-## 組織のサービス上限の超過
+## 組織のサービス限度を超えた
 {: #ts_servicelimit}
 
-トライアル・アカウントのユーザーの場合、組織のサービス上限を超過すると、{{site.data.keyword.Bluemix_notm}} でアプリを作成できなくなることがあります。
+トライアル・アカウント・ユーザーの場合、組織のサービス限度を超過すると、{{site.data.keyword.Bluemix_notm}} でアプリを作成できなくなることがあります。
 
 {{site.data.keyword.Bluemix_notm}} でアプリを作成しようとすると、以下のエラー・メッセージが表示されます。
 {: tsSymptoms}
@@ -324,34 +314,32 @@ IBM {{site.data.keyword.mobilepushshort}} サービスは、Google Cloud Messagi
 このエラーは、そのアカウントで持つことのできるサービス・インスタンス数の上限を超過した時に発生します。トライアル・アカウントでは、サービス・インスタンスの最大数は 10 です。
 {: tsCauses}
 
-不要なサービス・インスタンスはすべて削除するか、あるいは持つことのできるサービス・インスタンスの数に対する上限を撤廃してください。
+不要なサービス・インスタンスをすべて削除するか、持つことができるサービス・インスタンス数の上限を撤廃します。
 {: tsResolve}
 
   * サービス・インスタンスを削除するには、{{site.data.keyword.Bluemix_notm}} コンソールか、またはコマンド・ライン・インターフェースが使用できます。
 
-    {{site.data.keyword.Bluemix_notm}} コンソールを使用してサービス・インスタンスを削除するには、以下の手順を実行します。
+    {{site.data.keyword.Bluemix_notm}} コンソールを使用してサービス・インスタンスを削除するには、以下のステップを実行します。
 	  1. 「サービス」ダッシュボードで、削除するサービスの**「アクション」**メニューをクリックします。
-	  2. **「サービスの削除 (Delete Service)」**をクリックします。その後、そのサービス・インスタンスがバインドされていたアプリを再ステージするようにプロンプトが出されます。
+	  2. **「サービスの削除」**をクリックします。その後、そのサービス・インスタンスがバインドされていたアプリを再ステージするようにプロンプトが出されます。コマンド・ライン・インターフェースを使用してサービス・インスタンスを削除するには、以下のステップを実行します。
+	  1. `cf unbind-service <appname> <service_instance_name>` と入力して、サービス・インスタンスをアプリからアンバインドします。
+	  2. `cf delete-service <service_instance_name>` と入力して、サービス・インスタンスを削除します。
+	  3. サービス・インスタンスを削除した後、`cf restage <appname>` と入力して、サービス・インスタンスがバインドされていたアプリを再ステージすることができます。
 
-    コマンド・ライン・インターフェースを使用してサービス・インスタンスを削除するには、以下の手順を実行します。
-	  1. `cf unbind-service <appname> <service_instance_name>` と入力して、アプリからサービス・インスタンスをアンバインドします。
-	  2. 次を入力して、サービス・インスタンスを削除します: `cf delete-service <service_instance_name>`。
-	  3. サービス・インスタンスを削除した後で、`cf restage <appname>` と入力して、そのサービス・インスタンスがバインドされていたアプリを再ステージングすることをお勧めします。
-
-  * 持つことのできるサービス・インスタンスの数に対する上限を撤廃するには、トライアル・アカウントを支払アカウントに変更します。トライアル・アカウントを支払アカウントに変更する方法については、『[プラン変更方法](/docs/pricing/index.html#changing)』を参照してください。
+  * 持つことのできるサービス・インスタンスの数の上限を撤廃するには、トライアル・アカウントを有料アカウントに切り替えます。 トライアル・アカウントから有料アカウントへの切り替えについて詳しくは、[プランの変更方法](/docs/pricing/index.html#changing) を参照してください。
 
 ## 実行可能ファイルを Bluemix で実行できない
 {: #ts_executable}
 
-実行可能ファイルは、別の環境で開発とビルドを行った時は、 {{site.data.keyword.Bluemix_notm}} で実行できない場合があります。
+実行可能ファイルが別の環境で開発およびビルドされた場合、{{site.data.keyword.Bluemix_notm}} でそれらを実行できないことがあります。
 
 実行可能ファイルは、別の環境で開発とビルドを行った時は、{{site.data.keyword.Bluemix_notm}} で実行することができません。
 {: tsSymptoms}
 
- {{site.data.keyword.Bluemix_notm}} にプッシュしたいコンテンツが既に実行可能ファイルであれば、そのコンテンツは前にビルドされており、{{site.data.keyword.Bluemix_notm}} でビルドする必要はありません。その場合、{{site.data.keyword.Bluemix_notm}} でその実行可能ファイルを実行するためにビルドパックは必要ありません。しかし、{{site.data.keyword.Bluemix_notm}} には、ビルドパックが不要であることを明示的に示さなければなりません。
+{{site.data.keyword.Bluemix_notm}} にプッシュしたいコンテンツが既に実行可能ファイルの場合、そのコンテンツは以前にビルドされているため、{{site.data.keyword.Bluemix_notm}} でビルドする必要はありません。その場合、{{site.data.keyword.Bluemix_notm}} でその実行可能ファイルを実行するためにビルドパックは必要ありません。しかし、{{site.data.keyword.Bluemix_notm}} には、ビルドパックが不要であることを明示的に示さなければなりません。
 {: tsCauses}
 
-その実行可能ファイルを {{site.data.keyword.Bluemix_notm}} にプッシュする際に、ヌルのビルドパックを指定する必要があります。ヌルのビルドパックによって、ビルドパックが不要であることを示します。ヌルのビルドパックは、**-b** オプションを指定した `cf push` コマンドを使用することで指定します。
+実行可能ファイルを {{site.data.keyword.Bluemix_notm}} にプッシュする際、null-buildpack を指定する必要があります。これは、ビルドパックが必要ないことを示すものです。以下のように、`cf push` コマンドに **-b** オプションを使用して null-buildpack を指定します。
 {: tsResolve}
 
 ```
@@ -362,12 +350,10 @@ cf push appname -p app_path -c <start_command> -b <null-buildpack>
 cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
-## 組織のメモリー上限を超過
+## 組織のメモリー限度を超えた
 {: #ts_outofmemory}
 
-トライアル・アカウントのユーザーの場合、組織のメモリー上限を超過すると、アプリを {{site.data.keyword.Bluemix_notm}} にデプロイできない場合があります。ユーザーにできるのは、自分のアプリが使用するメモリーを削減すること、あるいは自分のアカウントのメモリー割り当て量を増やすことです。トライアル・アカウントの最大メモリー割り当て量は 2 GB で、支払アカウントに移行することでのみ増やすことができます。
-
-アプリを {{site.data.keyword.Bluemix_notm}} にデプロイする際、次のエラー・メッセージが表示されます。
+トライアル・アカウント・ユーザーの場合、組織のメモリー限度を超過すると、{{site.data.keyword.Bluemix_notm}} にアプリをデプロイできなくなることがあります。ユーザーにできるのは、自分のアプリが使用するメモリーを削減すること、あるいは自分のアカウントのメモリー割り当て量を増やすことです。トライアル・アカウントの最大メモリー割り当て量は 2 GB で、支払アカウントに移行することでのみ増やすことができます。{{site.data.keyword.Bluemix_notm}} にアプリをデプロイしようとすると、以下のエラー・メッセージが表示されます。
 {: tsSymptoms}
 
 `失敗 サーバー・エラー、状況コード: 400、エラー・コード: 100005、メッセージ: 組織のメモリー上限を超過しました。`
@@ -375,27 +361,25 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 このエラーは、組織の残りメモリー量が、デプロイしたいアプリに必要なメモリー量を下回っている時に発生します。トライアル・アカウントの最大メモリー割り当て量は 2 GB です。
 {: tsCauses}
 
-自分のアカウントのメモリー割り当て量を増やすか、自分のアプリが使用するメモリーを減らすか、そのいずれかを行うことができます。
+アカウントのメモリー割り当て量を増加するか、アプリが使用するメモリーを削減できます。
 {: tsResolve}
 
-  * アカウントのメモリー割り当て量を増やすには、トライアル・アカウントを支払アカウントに変更してください。トライアル・アカウントを支払アカウントに変更する方法については、『[支払アカウント](/docs/pricing/index.html#pay-accounts)』を参照してください。
+  * アカウントのメモリー割り当て量を増やすには、トライアル・アカウントを支払アカウントに変更してください。 トライアル・アカウントから有料アカウントへの切り替えについて詳しくは、[有料アカウント](/docs/pricing/index.html#pay-accounts) を参照してください。
   * アプリが使用するメモリーを削減するには、{{site.data.keyword.Bluemix_notm}} コンソールまたは cf コマンド・ライン・インターフェースのいずれかを使用します。
 
-     {{site.data.keyword.Bluemix_notm}} コンソールを使用する場合は、以下の手順を実行します。
+    {{site.data.keyword.Bluemix_notm}} コンソールを使用する場合は、以下のステップを実行します。
 
-    1. 「アプリ」ダッシュボードでアプリを選択します。アプリ詳細ページが開きます。
-    2. 「ランタイム」ペインで、そのアプリの最大メモリー上限またはアプリ・インスタンス数のいずれか、あるいはその両方を減らすことができます。
+    1. 「アプリ」ダッシュボードでアプリを選択します。アプリ詳細ページが開きます。2. 「ランタイム」ペインで、そのアプリの最大メモリー上限またはアプリ・インスタンス数のいずれか、あるいはその両方を減らすことができます。
 
-    cf コマンド・ライン・インターフェースを使用する場合は、以下の手順を実行します。
+    cf コマンド・ライン・インターフェースを使用する場合は、以下のステップを実行します。
 
-    1. アプリで使用しているメモリー量を調べます。
+    1. 以下を実行して、アプリに使用されているメモリー量を確認します。
 
 	  ```
 	  cf apps
 	  ```
 
 	  cf apps コマンドで、自分が現行スペースにデプロイしたアプリがすべてリストされます。各アプリの状況も表示されます。
-
     2. アプリが使用するメモリー量を削減するには、アプリ・インスタンス数または最大メモリー上限のいずれか、あるいはその両方を減らします。
 
 	  ```
@@ -511,7 +495,7 @@ Eclipse ツールを使用してアプリケーションを {{site.data.keyword.
     ```
     host: host_name	
 	```
-  * コマンド・プロンプトからアプリケーションをデプロイする場合は、`cf push` コマンドを **-n** オプションで使用します。
+  * コマンド・プロンプトからアプリケーションをデプロイする場合は、**-n** オプションを指定して `cf push` コマンドを使用します。
     ```
     cf push appname -p app_path -n host_name
     ```
@@ -572,9 +556,9 @@ Liberty アプリケーションが {{site.data.keyword.Bluemix_notm}} にプッ
 ## Node.js アプリをデプロイできない
 {: #ts_nodejs_deploy}
 
-Node.js アプリを更新する際、または Node.js アプリを {{site.data.keyword.Bluemix_notm}} にデプロイする際に、問題が発生する可能性があります。
+Node.js アプリを更新する時、または Node.js アプリを {{site.data.keyword.Bluemix_notm}} にデプロイする時に問題が発生することがあります。
 
-Node.js アプリを更新する際、または Node.js アプリを {{site.data.keyword.Bluemix_notm}} にデプロイする際に、以下のいずれかのエラー・メッセージが表示される場合があります。
+Node.js アプリを更新する時、または Node.js アプリを {{site.data.keyword.Bluemix_notm}} にデプロイする時に、以下のいずれかのエラー・メッセージが表示されることがあります。
 {: tsSymptoms}
 
 `使用可能なビルドパックによってアプリが正常に検出されませんでした。`
@@ -583,21 +567,21 @@ Node.js アプリを更新する際、または Node.js アプリを {{site.data
 
 `ステージングに失敗したため、インスタンスを取得できません。`
 
-考えられる原因は次のとおりです。
+考えられる原因は以下のとおりです。
 {: tsCauses}
 
   * 開始コマンドが指定されていません。
-  * Node.js アプリのデプロイに必要なファイルが、アプリから欠落しているか、ルート・ディレクトリー以外のフォルダーにあります。
+  *Node.js アプリのデプロイに必要なファイルが、アプリから欠落しているか、ルート・ディレクトリー以外のフォルダーにあります。
 
-問題の原因に応じて、以下のいずれかの方法を使用してください。
+問題の原因に応じて、以下のいずれかの方法を使用します。
 {: tsResolve}
 
   * 以下のいずれかの方法で開始コマンドを指定します。
-     * cf コマンド・ライン・インターフェースを使用します。例えば次のようにします。
-        ```
+     * cfコマンド・ライン・インターフェースを使用します。以下に例を示します。
+```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * [package.json ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://docs.npmjs.com/json){: new_window} ファイルを使用します。例えば次のようにします。
+    * [package.json ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.npmjs.com/json){:new_window} ファイルを使用します。例:
 	    ```
 		{
       ...
@@ -606,7 +590,7 @@ Node.js アプリを更新する際、または Node.js アプリを {{site.data
  	   }
 	}
 	    ```
-    * `manifest.yml` ファイルを使用します。例えば次のようにします。
+    * `manifest.yml` ファイルを使用します。例:
 	    ```
 		applications:
   name: MyUniqueNodejs01
@@ -664,7 +648,7 @@ Java』](/docs/runtimes/liberty/index.html)を参照してください。
 この問題は、検出スクリプト、コンパイル・スクリプト、リリース・スクリプトなどのスクリプトが実行可能でない場合は発生する可能性があります。
 {: tsCauses}
 
-[git update![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://git-scm.com/docs/git-update-index){: new_window} コマンドを使用して、各スクリプトのアクセス権を実行可能に変更できます。例えば、`git update --chmod=+x script.sh` と入力できます。
+[git update![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://git-scm.com/docs/git-update-index "「外部リンク」アイコン"){: new_window} コマンドを使用して、各スクリプトのアクセス権を実行可能に変更できます。例えば、`git update --chmod=+x script.sh` と入力できます。
 {: tsResolve}
 
 ## IBM Bluemix Continuous Delivery の Delivery Pipeline からアプリをデプロイできない

@@ -24,10 +24,10 @@ I problemi generali con la gestione del tuo account potrebbero riguardare applic
 ## Impossibile accedere a una regione {{site.data.keyword.Bluemix_notm}} differente
 {: #nosecondreg}
 
-Ricevi un messaggio di errore quando provi a creare una nuova regione {{site.data.keyword.Bluemix_notm}}.
+Ricevi un messaggio di errore quando provi a creare una nuova regione {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una regione pubblica. Selezioni la regione pubblica di {{site.data.keyword.Bluemix_notm}} in cui vuoi lavorare durante la configurazione iniziale dell'account.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una regione pubblica. Selezioni la regione pubblica di {{site.data.keyword.Bluemix_notm}} in cui vuoi lavorare durante la configurazione iniziale dell'account. 
 {: tsCauses}
 
 Se hai un account Standard, puoi eseguire l'upgrade a un account fatturabile per accedere a ulteriori regioni. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**. Nella pagina **Fatturazione**, puoi anche controllare se hai un account Standard.
@@ -36,10 +36,10 @@ Se hai un account Standard, puoi eseguire l'upgrade a un account fatturabile per
 ## Impossibile creare la nuova organizzazione
 {: #nosecondorg}
  
-Ricevi un messaggio di errore quando provi a creare una nuova organizzazione.
+Ricevi un messaggio di errore quando provi a creare una nuova organizzazione. 
 {: tsSymptoms}
 
-Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una singola organizzazione. Crei l'organizzazione durante la configurazione iniziale del tuo account.
+Ciò è probabilmente dovuto al fatto che stai utilizzando un account Standard, che supporta lo sviluppo solo in una singola organizzazione. Crei l'organizzazione durante la configurazione iniziale del tuo account. 
 {: tsCauses}
 
 Se hai un account Standard, puoi eseguire l'upgrade a un account fatturabile per accedere a ulteriori organizzazioni. Vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** nella console e fai clic su **Aggiungi carta di credito**. Nella pagina **Fatturazione**, puoi anche controllare se hai un account Standard.
@@ -53,7 +53,7 @@ Viene visualizzato il seguente messaggio di errore quando provi a creare una nuo
 
 `Unable to provision new Lite instance`
 
-Esiste un limite di una singola istanza per istanza del piano Lite per consentirci di continuare a offrire tali piani gratuitamente.
+Esiste un limite di una singola istanza per istanza del piano Lite per consentirci di continuare a offrire tali piani gratuitamente. 
 {: tsCauses}
 
 Puoi creare delle istanze aggiuntive del servizio selezionando uno dei piani del servizio fatturabili, disponibili negli account fatturabili. Per eseguire l'upgrade a un account fatturabile dalla console, vai alla pagina **Gestisci > Fatturazione e utilizzo > Fatturazione** e fai clic su **Aggiungi carta di credito**.
@@ -89,7 +89,7 @@ Lo stato del tuo account {{site.data.keyword.Bluemix_notm}} diventa inattivo qua
 {: tsCauses}
 
 
-Per riattivare il tuo account, contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixsupport.com){: new_window}. Includi le seguenti informazioni nell'e-mail:
+Per riattivare il tuo account, contatta il [Supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixsupport.com "Icona link esterno"){: new_window}. Includi le seguenti informazioni nell'e-mail:
 {: tsResolve}
 
   * L'ID IBM utilizzato per accedere a {{site.data.keyword.Bluemix_notm}}.
@@ -114,8 +114,7 @@ Per creare uno spazio, utilizza uno dei seguenti metodi:
 {: tsResolve}
  
   * Sul Dashboard {{site.data.keyword.Bluemix_notm}}, seleziona l'organizzazione in cui vuoi creare lo spazio e fai quindi clic su **Crea uno spazio**.
-  * Nell'interfaccia riga di comando cf, immetti `cf create-space <nome_spazio>
--o <nome_organizzazione>`.
+  * Nell'interfaccia riga di comando cf, immetti `cf create-space <space_name> -o <organization_name>`.
 
   
 ## Le applicazioni condividono lo stesso nome di dominio
@@ -128,7 +127,7 @@ Questo problema potrebbe verificarsi se assegni la stessa rotta URL per le diver
 
 Ad esempio, esegui il push dell'applicazione myApp1 a {{site.data.keyword.Bluemix_notm}} e imposta il dominio su "mynewapp.stage1.mybluemix.net". Esegui quindi il push di un'altra applicazione myApp2 allo stesso spazio e imposta una delle sue rotte URL su "mynewapp.stage1.mybluemix.net". La rotta è ora associata a entrambe le applicazioni.
 
-Questo è il funzionamento supportato da {{site.data.keyword.Bluemix_notm}} e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'aggiornamento della tua applicazione. Per ulteriori informazioni, vedi [Using Blue-Green Deployment to Reduce Downtime and Risk ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Questo è il funzionamento supportato da {{site.data.keyword.Bluemix_notm}} e puoi utilizzare questa procedura affinché non si verifichino tempi di inattività per l'aggiornamento della tua applicazione. Per ulteriori informazioni, vedi [Using Blue-Green Deployment to Reduce Downtime and Risk ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "Icona link esterno"){: new_window}.
 {: tsResolve}
   
 

@@ -39,17 +39,20 @@ Alguns buildpacks não são configurados para fazer download automaticamente de 
 É possível usar buildpacks que tenham mecanismos integrados para evitar o carregamento de componentes obsoletos, por exemplo, os buildpacks a seguir: 
 {: tsResolve}
 
-  * [Buildpack Java do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack){: new_window}. Esse buildpack tem um mecanismo integrado para assegurar que a versão mais recente do buildpack seja usada. Para obter mais informações sobre como esse mecanismo funciona, veja [extending-caches.md ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}. 
-  * [Buildpack Node.js do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}. Esse buildpack fornece funcionalidade semelhante ao usar variáveis de ambiente. Para que o buildpack Node.js sempre possa fazer download de módulos do nó a partir da Internet, digite o comando a seguir na interface de linha de comandos cf: 	
+  * [Buildpack Java do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack "Ícone de link externo"){: new_window}. Esse buildpack tem um mecanismo integrado
+para assegurar que a versão mais recente do buildpack seja usada. Para obter mais informações sobre como esse mecanismo funciona, veja [extending-caches.md ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "Ícone de link externo"){: new_window}. 
+  * [Buildpack Node.js do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/nodejs-buildpack "Ícone de link externo"){: new_window}. Esse buildpack fornece funcionalidade semelhante ao usar variáveis de ambiente. Para que o buildpack Node.js sempre possa
+fazer download de módulos do nó a partir da Internet, digite o comando
+a seguir na interface de linha de comandos cf: 	
   ```
   set NODE_MODULES_CACHE=false
   ```
 
 Se o buildpack que você estiver usando não fornecer um mecanismo para carregar os componentes mais recentes automaticamente, será possível excluir manualmente o conteúdo no diretório de cache e enviar por push seu app novamente. Use as seguintes etapas:
 
- 1. Efetue o check-out de uma ramificação de um buildpack nulo, por exemplo, https://github.com/ryandotsmith/null-buildpack. Para obter informações sobre como verificar uma ramificação, veja [Conceitos básicos do Git - Obtendo um repositório Git ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository){: new_window}.  
+ 1. Efetue o check-out de uma ramificação de um buildpack nulo, por exemplo, https://github.com/ryandotsmith/null-buildpack. Para obter informações sobre como efetuar check-out de uma ramificação, veja [Git básico - Obtendo um repositório Git ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "Ícone de link externo"){: new_window}.  
  2. Inclua a linha a seguir no arquivo `null-buildpack/bin/compile`
-e confirme as mudanças. Para obter informações sobre como confirmar mudanças, veja [Conceitos básicos do Git - Registrando mudanças no repositório ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){: new_window}.
+e confirme as mudanças. Para obter informações sobre como confirmar as mudanças, veja [Git básico - Gravando mudanças no repositório ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository "Ícone de link externo"){: new_window}.
   ```
   rm -rfv $2/*
   ```
@@ -81,7 +84,7 @@ Ao enviar um app por push para o {{site.data.keyword.Bluemix_notm}} usando um bu
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
 No buildpack PHP, o parâmetro error_log define o nível de criação de log. Por padrão, o valor do parâmetro `error_log`
-é **stderr notice**. O exemplo a seguir mostra a configuração do nível de criação de log padrão no arquivo `nginx-defaults.conf` do buildpack PHP que é fornecido pelo Cloud Foundry. Para obter mais informações, veja [cloudfoundry/php-buildpack ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}.
+é **stderr notice**. O exemplo a seguir mostra a configuração do nível de criação de log padrão no arquivo `nginx-defaults.conf` do buildpack PHP que é fornecido pelo Cloud Foundry. Para obter mais informações, veja [cloudfoundry/php-buildpack ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf "Ícone de link externo"){: new_window}.
 {: tsCauses} 
 
 ```
@@ -99,7 +102,7 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-Para obter mais informações sobre como mudar a configuração de criação de log padrão, veja [error_log ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
+Para obter mais informações sobre como mudar a configuração de criação de log padrão, veja [error_log ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://nginx.org/en/docs/ngx_core_module.html#error_log "Ícone de link externo"){: new_window}.
 	
 
 ## Não é possível importar uma biblioteca Python de terceiros para o {{site.data.keyword.Bluemix_notm}}
@@ -208,7 +211,7 @@ Para instâncias diferentes de um app, é possível ver configurações traceSpe
 Esse comportamento ocorre por causa dos motivos a seguir:
 {: tsCauses}
 
-  * Você mudou a configuração de uma ou mais instâncias anteriormente. Se você mudar a configuração traceSpecification de uma instância, a mudança não se aplicará a outras instâncias do mesmo app. Por exemplo, seu app usa log4j e você tem 2 instâncias para esse app. É possível mudar o nível de log da instância 0 de informações para depuração, mas o nível de log da instância 1 permanecerá como informações.
+  * Você mudou a configuração de uma ou mais instâncias anteriormente. Se você mudar a configuração de traceSpecification de uma instância, a mudança não se aplicará a outras instâncias do mesmo app. Por exemplo, seu app usa log4j e você tem 2 instâncias para esse app. É possível mudar o nível de log da instância 0 de informações para depuração, mas o nível de log da instância 1 permanecerá como informações.
   
   * O app é ampliado e possui novas instâncias. O RMU não se aplica à configuração traceSpecification da instância existente para a nova instância ampliada. A nova instância usa a configuração padrão. Por exemplo, seu app usa log4j e tem uma instância. É possível mudar o nível de log dessa instância de informações para depuração. Depois de fazer essa mudança, se você ampliar seu app para duas instâncias, o nível de log da nova instância será informações, em vez de depuração.
 

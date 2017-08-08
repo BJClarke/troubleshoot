@@ -26,10 +26,10 @@ todas las organizaciones. En muchos de los casos, puede solucionar estos problem
 ## No es posible acceder a otra región diferente de {{site.data.keyword.Bluemix_notm}}
 {: #nosecondreg}
 
-Se recibe un mensaje de error al intentar crear una nueva región de {{site.data.keyword.Bluemix_notm}}.
+Se recibe un mensaje de error al intentar crear una nueva región de {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una región pública. La región pública de {{site.data.keyword.Bluemix_notm}} en la que desea trabajar se elige cuando se configura la cuenta por primera vez.
+Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una región pública. La región pública de {{site.data.keyword.Bluemix_notm}} en la que desea trabajar se elige cuando se configura la cuenta por primera vez. 
 {: tsCauses}
 
 Si tiene una cuenta Estándar, puede actualizarla a una cuenta facturable para acceder a más regiones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Estándar.
@@ -38,10 +38,10 @@ Si tiene una cuenta Estándar, puede actualizarla a una cuenta facturable para a
 ## No es posible crear una nueva organización
 {: #nosecondorg}
  
-Recibe un mensaje de error al intentar crear una nueva organización.
+Recibe un mensaje de error al intentar crear una nueva organización. 
 {: tsSymptoms}
 
-Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una organización. La organización la crea cuando configura la cuenta por primera vez.
+Es probable que esto ocurra por estar utilizando una cuenta Estándar, que únicamente da soporte al desarrollo en una organización. La organización la crea cuando configura la cuenta por primera vez. 
 {: tsCauses}
 
 Si tiene una cuenta Estándar, puede actualizarla a una cuenta facturable para acceder a más organizaciones. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**. En la página **Facturación**, también puede comprobar si tiene una cuenta Estándar.
@@ -55,13 +55,13 @@ El siguiente mensaje de error se visualiza cuando intenta crear una nueva instan
 
 `No es posible aprovisionar una nueva instancia de Lite`
 
-Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos.
+Hay un límite de una instancia de plan Lite para mantener estos planes gratuitos. 
 {: tsCauses}
 
 Es posible crear instancias adicionales del servicio seleccionando uno de los planes de servicios facturables, que también están disponibles en las cuentas facturables. Para actualizar a una cuenta facturable desde la consola, vaya a la página **Gestionar > Facturación y utilización > Facturación ** y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
-Si no desea actualizar la cuenta Estándar y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control Servicios y, a continuación, crear una nueva instancia.  
+Si no desea actualizar la cuenta Estándar y ya no está utilizando la instancia de servicio Lite existente, puede suprimir dicha instancia de plan Lite desde el panel de control Servicios y, a continuación, crear una nueva instancia. 
 
 ## Se ha excedido la concesión de memoria de tiempo de ejecución
 {: #noruntimemem}
@@ -75,7 +75,7 @@ En una cuenta Estándar, sus apps de Cloud Foundry pueden utilizar hasta 256 MB 
 Si está utilizando una cuenta estándar, puede obtener memoria adicional actualizando a una cuenta facturable. Vaya a la página **Gestionar > Facturación y utilización > Facturación** en la consola y, a continuación, pulse **Añadir tarjeta de crédito**.
 {: tsResolve}
 
-Si no desea actualizar la cuenta Estándar y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución.  
+Si no desea actualizar la cuenta Estándar y tiene apps desocupadas, puede suprimirlas para liberar memoria de tiempo de ejecución. 
 
 ## La cuenta está inactiva
 {: #ts_accnt_inactive}
@@ -91,7 +91,7 @@ El estado de la cuenta de {{site.data.keyword.Bluemix_notm}} pasa a ser inactivo
 {: tsCauses}
 
 
-Para volver a activar la cuenta, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}}![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}. Incluya la siguiente información en el correo electrónico:
+Para volver a activar la cuenta, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com "Icono de enlace externo"){: new_window}. Incluya la siguiente información en el correo electrónico:
 {: tsResolve}
 
   * El ID de IBM que utiliza para iniciar la sesión en {{site.data.keyword.Bluemix_notm}}.
@@ -115,7 +115,7 @@ Para crear un espacio, utilice uno de estos métodos:
 {: tsResolve}
  
   * En el Panel de control de {{site.data.keyword.Bluemix_notm}}, seleccione la organización en la que desea crear el espacio y pulse **Crear un espacio**.
-  * En la interfaz de línea de mandatos cf, escriba `cf create-space <nombre_espacio> -o <nombre_organización>`.
+  * En la interfaz de línea de mandatos cf, escriba `cf create-space <space_name> -o <organization_name>`.
 
   
 ## Las apps comparten el mismo nombre de dominio
@@ -128,7 +128,7 @@ Este problema puede producirse cuando se asigna la misma ruta de URL a distintas
 
 Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en "mynewapp.stage1.mybluemix.net". Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en "mynewapp.stage1.mybluemix.net". Ahora la ruta está correlacionada a ambas apps.
 
-Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue azul-verde para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue azul-verde para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "icono de enlace externo"){: new_window}.
 {: tsResolve}
   
 

@@ -89,7 +89,7 @@ lastupdated: "2017-06-01"
 {: tsCauses}
 
 
-계정을 다시 활성화하려면 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오. 이메일에 다음 정보를 포함하십시오.
+계정을 다시 활성화하려면 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com "외부 링크 아이콘"){: new_window}에 문의하십시오. 이메일에 다음 정보를 포함하십시오.
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}}에 로그인하는 데 사용하는 IBM ID입니다.
@@ -113,7 +113,7 @@ lastupdated: "2017-06-01"
 {: tsResolve}
  
   * {{site.data.keyword.Bluemix_notm}} 대시보드에서 영역을 작성할 조직을 선택한 다음 **영역 작성**을 클릭하십시오.
-  * cf 명령행 인터페이스에서 `cf create-space <space_name> -o <organization_name>`을 입력하십시오.
+  * cf 명령행 인터페이스에서 `cf create-space <space_name> -o <organization_name>`를 입력하십시오.
 
   
 ## 앱이 동일한 도메인 이름을 공유함
@@ -126,7 +126,7 @@ lastupdated: "2017-06-01"
 
 예를 들어, myApp1 앱을 {{site.data.keyword.Bluemix_notm}}로 푸시하고 도메인을 "mynewapp.stage1.mybluemix.net"으로 설정하십시오. 그런 다음 다른 myApp2 앱을 동일한 영역으로 푸시하고 URL 라우트 중 하나를 "mynewapp.stage1.mybluemix.net"으로 설정하십시오. 이제 라우트가 두 앱 모두에 맵핑됩니다.
 
-이는 {{site.data.keyword.Bluemix_notm}}의 지원되는 동작이므로 이 동작을 사용하여 앱 업그레이드 시 무중단을 실현할 수 있습니다. 자세한 정보는 [Using Blue-Green Deployment to Reduce Downtime and Risk ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}를 참조하십시오.
+이는 {{site.data.keyword.Bluemix_notm}}의 지원되는 동작이므로 이 동작을 사용하여 앱 업그레이드 시 무중단을 실현할 수 있습니다. 자세한 정보는 [Using Blue-Green Deployment to Reduce Downtime and Risk ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "외부 링크 아이콘"){: new_window}를 참조하십시오.
 {: tsResolve}
   
 

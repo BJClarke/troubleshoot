@@ -6,7 +6,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2016-11-21" 
+lastupdated: "2016-11-21"
 
 ---
 
@@ -606,7 +606,7 @@ Bluemix에서 로그아웃됩니다.
 이 문제점을 해결하려면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오. 
 
 ## BXNUI0132E
-**메시지**: Cloud Foundry 접속 중에 문제점이 발생하여 **name** 정보가 검색되지 않았습니다. 
+**메시지**: Cloud Foundry 접속 중에 문제점이 발생하여 __name__ 정보가 검색되지 않았습니다. 
 
 나중에 다시 시도하십시오. 이 메시지가 다시 표시되면 [Bluemix 상태 페이지](https://developer.ibm.com/bluemix/support/#status){: new_window}로 이동하여 서비스 또는 컴포넌트에 문제가 있는지 확인하십시오. 문제점이 지속되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
@@ -748,7 +748,7 @@ Bluemix에서 로그아웃됩니다.
 
 ## BXNUI0514E 
 
-**메시지**: '**orgName**' 조직의 영역에 대한 개발자가 아닙니다.
+**메시지**: '__orgName__' 조직의 영역에 대한 개발자가 아닙니다.
 
 다른 조직을 선택하거나 조직 관리자에게 개발자 역할을 요청하십시오. 
 
@@ -766,31 +766,31 @@ Bluemix에서 로그아웃됩니다.
 
 ## BXNUI0517E
 
-**메시지**: 인시던트 ID **incidentID**에 대한 내부 오류로 인해 조직의 컨테이너 네임스페이스가 검색되지 않았습니다. 
+**메시지**: 인시던트 ID __incidentID__에 대한 내부 오류로 인해 조직의 컨테이너 네임스페이스가 검색되지 않았습니다. 
 
 나중에 다시 시도하십시오. 문제점이 지속되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
 ## BXNUI0518E
 
-**메시지**: 인시던트 ID **incidentID**에 대한 내부 오류로 인해 컨테이너가 작성되지 않았습니다.
+**메시지**: 인시던트 ID __incidentID__에 대한 내부 오류로 인해 컨테이너가 작성되지 않았습니다.
 
 나중에 다시 시도하십시오. 문제점이 지속되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
 ## BXNUI0519E
 
-**메시지**: 인시던트 ID **incidentID**에 대한 내부 오류로 인해 컨테이너 그룹이 작성되지 않았습니다.
+**메시지**: 인시던트 ID __incidentID__에 대한 내부 오류로 인해 컨테이너 그룹이 작성되지 않았습니다.
 
 나중에 다시 시도하십시오. 문제점이 지속되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
 ## BXNUI0521E
 
-**메시지**: 이미지에서 컨테이너를 작성하려는 중에 인시던트 ID **incidentID**에 대한 내부 오류가 발생했습니다. 네임스페이스를 검색할 때 IP 주소 또는 메모리 같은 일부 리소스를 사용할 수 없습니다.
+**메시지**: 이미지에서 컨테이너를 작성하려는 중에 인시던트 ID __incidentID__에 대한 내부 오류가 발생했습니다. 네임스페이스를 검색할 때 IP 주소 또는 메모리 같은 일부 리소스를 사용할 수 없습니다.
 
 할당량을 조정하려면 **조직 관리**로 이동하여 조직의 **할당량** 탭을 클릭하고 **컨테이너**를 클릭하십시오. 그런 다음 이미지를 다시 선택하십시오. 
 
 ## BXNUI0522E
 
-**메시지**: **orgName** 조직의 **spaceName**에 대한 개발자가 아니므로 리소스를 작성할 수 없습니다.
+**메시지**: __orgName__ 조직의 __spaceName__에 대한 개발자가 아니므로 리소스를 작성할 수 없습니다.
 
 다른 조직 또는 영역을 선택하거나 조직 관리자에게 개발자 역할을 요청하십시오. 
 
@@ -808,7 +808,7 @@ Bluemix에서 로그아웃됩니다.
 
 ## BXNUI0525E
 
-**메시지**: 조직 **orgName**의 레지스트리 네임스페이스에 대한 권한이 없으므로 레지스트리를 작성하려는 시도에 실패했습니다. 레지스트리를 작성하려면 개발자 사용자 역할이 필요합니다.
+**메시지**: 조직 __orgName__의 레지스트리 네임스페이스에 대한 권한이 없으므로 레지스트리를 작성하려는 시도에 실패했습니다. 레지스트리를 작성하려면 개발자 사용자 역할이 필요합니다.
 
 조직 관리자에게 다른 역할을 요청하십시오.
 
@@ -838,13 +838,13 @@ Bluemix에서 로그아웃됩니다.
 
 ## BXNUI0701E
 
-**메시지**: 사용자를 초대하는 데 실패했습니다. 오류 코드: **errorCode**
+**메시지**: 사용자를 초대하는 데 실패했습니다. 오류 코드: __errorCode__
 
 나중에 다시 시도하십시오. 이 메시지가 다시 표시되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
 ## BXNUI0702E
 
-**메시지**: **emailAddress**를 초대하는 데 실패했습니다. 오류 코드: **errorCode**
+**메시지**: __emailAddress__를 초대하는 데 실패했습니다. 오류 코드: __errorCode__
 
 나중에 다시 시도하십시오. 이 메시지가 다시 표시되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
@@ -856,7 +856,7 @@ Bluemix에서 로그아웃됩니다.
 
 ## BXNUI0704E
 
-**메시지**: 초대된 이 사용자의 세부사항을 다음 지역에서 로드할 수 없습니다: <strong>**regions**</strong>
+**메시지**: 초대된 이 사용자의 세부사항을 다음 지역에서 로드할 수 없습니다: <strong>__regions__</strong>
 
 나중에 다시 시도하십시오.
 

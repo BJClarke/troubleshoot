@@ -24,10 +24,11 @@ Os problemas gerais ao gerenciar sua conta podem incluir apps diferentes que com
 ## Impossível acessar um {{site.data.keyword.Bluemix_notm}} de região diferente
 {: #nosecondreg}
 
-Uma mensagem de erro é recebida quando você tenta criar uma nova região do {{site.data.keyword.Bluemix_notm}}.
+Uma mensagem de erro é recebida quando você tenta criar uma nova região do {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma região pública. Você seleciona a região pública do {{site.data.keyword.Bluemix_notm}} na qual deseja trabalhar quando a conta é configurada pela primeira vez.{: tsCauses}
+Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma região pública. Você seleciona a região pública do {{site.data.keyword.Bluemix_notm}} na qual deseja trabalhar quando a conta é configurada pela primeira vez. 
+{: tsCauses}
 
 Se você tiver uma conta Padrão, será possível fazer upgrade para uma conta faturável para acessar regiões adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Padrão.
 {: tsResolve}
@@ -35,10 +36,10 @@ Se você tiver uma conta Padrão, será possível fazer upgrade para uma conta f
 ## Impossível criar nova organização
 {: #nosecondorg}
  
-Uma mensagem de erro é recebida quando você tenta criar uma nova organização.
+Uma mensagem de erro é recebida quando você tenta criar uma nova organização. 
 {: tsSymptoms}
 
-Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma organização. Você cria a organização quando sua conta é configurada pela primeira vez.
+Isso é provavelmente porque você está usando uma conta Padrão, que suporta desenvolvimento em somente uma organização. Você cria a organização quando sua conta é configurada pela primeira vez. 
 {: tsCauses}
 
 Se você tiver uma conta Padrão, será possível fazer upgrade para uma conta faturável para acessar organizações adicionais. Acesse a página **Gerenciar > Faturamento e uso > Faturamento** no console e clique em **Incluir cartão de crédito**. Na página **Faturamento**, também é possível verificar se você tem uma conta Padrão.
@@ -52,7 +53,7 @@ A mensagem de erro a seguir é exibida quando você tenta criar uma nova instân
 
 `Não é possível provisionar uma nova instância Lite`
 
-Há um limite de uma instância por instância do plano Lite para nos permitir manter esses planos grátis.
+Há um limite de uma instância por instância do plano Lite para nos permitir manter esses planos grátis. 
 {: tsCauses}
 
 É possível criar instâncias adicionais do serviço selecionando um dos planos de serviço faturáveis, que estão disponíveis nas contas faturáveis. Para fazer upgrade para uma conta faturável do console, acesse a página **Gerenciar > Faturamento e uso > Faturamento** e clique em **Incluir cartão de crédito**.
@@ -89,7 +90,7 @@ O status de sua conta do {{site.data.keyword.Bluemix_notm}} torna-se inativo qua
 {: tsCauses}
 
 
-Para reativar sua conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}. Inclua as informações a seguir no e-mail:
+Para reativar sua conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com "Ícone de link externo"){: new_window}. Inclua as informações a seguir no e-mail:
 {: tsResolve}
 
   * O ID IBM que você usa para efetuar login no {{site.data.keyword.Bluemix_notm}}.
@@ -113,7 +114,7 @@ Para criar um espaço, use um dos métodos a seguir:
 {: tsResolve}
  
   * No Painel do {{site.data.keyword.Bluemix_notm}}, selecione a organização em que você deseja criar o espaço, em seguida, clique em **Criar um espaço**.
-  * Na interface de linha de comandos cf, digite `cf create-space <space_name> -o <organization_name>`.
+  * Na interface da linha de comandos cf, digite `cf create-space <space_name> -o <organization_name>`.
 
   
 ## Os apps compartilham o mesmo nome de domínio
@@ -126,7 +127,7 @@ Esse problema pode ocorrer quando você designa a mesma rota de URL a diferentes
 
 Por exemplo, você envia por push o app myApp1 para o {{site.data.keyword.Bluemix_notm}} e configura o domínio como "mynewapp.stage1.mybluemix.net". Em seguida, você envia por push outro app myApp2 para o mesmo espaço e configura uma de suas rotas de URL como "mynewapp.stage1.mybluemix.net". A rota agora é mapeada para ambos os apps.
 
-Esse é o comportamento suportado do {{site.data.keyword.Bluemix_notm}} e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade de seu app. Para obter mais informações, veja [Usando a implementação blue-green para reduzir o tempo de inatividade e o risco ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Esse é o comportamento suportado do {{site.data.keyword.Bluemix_notm}} e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade de seu app. Para obter mais informações, veja [Usando a implementação blue-green para reduzir o tempo de inatividade e o risco ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "Ícone de link externo"){: new_window}.
 {: tsResolve}
   
 

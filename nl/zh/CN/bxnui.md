@@ -6,7 +6,7 @@ copyright:
 
   years: 2015, 2016
 
-lastupdated: "2016-11-21" 
+lastupdated: "2016-11-21"
 
 ---
 
@@ -603,7 +603,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 要解决此问题，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0132E
-**消息**：未检索到 **name** 信息，因为联系 Cloud Foundry 时发生问题。 
+**消息**：未检索到 __name__ 信息，因为联系 Cloud Foundry 时发生问题。 
 
 请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
@@ -745,7 +745,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0514E 
 
-**消息**：您不是“**orgName**”组织中任何空间的开发者。
+**消息**：您不是“__orgName__”组织中任何空间的开发者。
 
 请尝试选择其他组织或创建空间，或向组织管理员请求开发者角色。
 
@@ -763,31 +763,31 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0517E
 
-**消息**：未检索到组织的容器名称空间，因为发生了事件标识为 **incidentID** 的内部错误。 
+**消息**：未检索到组织的容器名称空间，因为发生了事件标识为 __incidentID__ 的内部错误。 
 
 请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0518E
 
-**消息**：未创建容器，因为发生了事件标识为 **incidentID** 的内部错误。
+**消息**：未创建容器，因为发生了事件标识为 __incidentID__ 的内部错误。
 
 请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0519E
 
-**消息**：未创建容器组，因为发生了事件标识为 **incidentID** 的内部错误。
+**消息**：未创建容器组，因为发生了事件标识为 __incidentID__ 的内部错误。
 
 请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0521E
 
-**消息**：尝试基于映像创建容器时，发生了事件标识为 **incidentID** 的内部错误。在检索名称空间期间，某些资源（例如 IP 地址或内存）不可用。
+**消息**：尝试基于映像创建容器时，发生了事件标识为 __incidentID__ 的内部错误。在检索名称空间期间，某些资源（例如 IP 地址或内存）不可用。
 
 要调整配额，请转到**管理组织**，并依次单击组织的**配额**选项卡和**容器**。然后，重新尝试选择映像。
 
 ## BXNUI0522E
 
-**消息**：您无法创建该资源，因为您不是 **orgName** 组织中 **spaceName** 空间的开发者。
+**消息**：您无法创建该资源，因为您不是 __orgName__ 组织中 __spaceName__ 空间的开发者。
 
 请尝试选择其他空间或组织，或者创建空间，或向组织管理员请求开发者角色。
 
@@ -805,7 +805,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0525E
 
-**消息**：尝试创建注册表失败，因为您无权访问组织 **orgName** 的注册表名称空间。必须有开发者用户角色才能创建注册表。
+**消息**：尝试创建注册表失败，因为您无权访问组织 __orgName__ 的注册表名称空间。必须有开发者用户角色才能创建注册表。
 
 请向组织管理员请求其他角色。
 
@@ -835,13 +835,13 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0701E
 
-**消息**：未能邀请用户。错误代码：**errorCode**。
+**消息**：未能邀请用户。错误代码：__errorCode__。
 
 请稍后重试。如果再次看到此消息，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0702E
 
-**消息**：未能邀请 **emailAddress**。错误代码：**errorCode**。
+**消息**：未能邀请 __emailAddress__。错误代码：__errorCode__。
 
 请稍后重试。如果再次看到此消息，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
@@ -853,7 +853,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0704E
 
-**消息**：此被邀用户的详细信息无法从以下区域装入：<strong>**regions**</strong>
+**消息**：此被邀用户的详细信息无法从以下区域装入：<strong>__regions__</strong>
 
 请稍后重试。
 
@@ -1368,7 +1368,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 您必须是组织“{1}”中的组织管理员（如 JSON 输入文件中为 owningOrganization 所指定），才能创建或更新此服务代理程序。  
 
-请验证输入的所属组织是否正确，或者向帐户所有者或组织管理员请求该角色。 
+验证输入的所属组织是否正确，或者向帐户所有者或组织管理员请求该角色。 
 
 ## BXNUI2111E
 

@@ -129,7 +129,7 @@ Führen Sie die folgenden Schritte aus, um zu überprüfen, welche Java-Version 
 
 Wenn Ihre Workbench IBM JVM 7 oder 8 verwendet bzw. eine frühere Version als Oracle JVM 8, führen Sie die folgenden Schritte aus, um zu Oracle JVM 8 zu wechseln:
 
-  1. Laden Sie Oracle JVM 8 herunter und installieren Sie es (Details hierzu finden Sie unter [Java SE Downloads ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
+  1. Laden Sie Oracle JVM 8 herunter und installieren Sie es (Details hierzu finden Sie unter [Java SE Downloads ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "Symbol für externen Link"){: new_window}.
   2. Starten Sie Eclipse erneut.
   3. Überprüfen Sie, ob die Eigenschaft `eclipse.vm` auf Ihre neue Oracle JVM 8-Installation verweist.
 
@@ -155,7 +155,7 @@ Führen Sie die folgenden Schritte aus, um die nicht verwendete Route zu lösche
 	 cf routes
 	 ```
   2. Wenn die Route nicht zum aktuellen Bereich gehört, wechseln Sie in den betreffenden Bereich oder in die betreffende Organisation. Geben Sie dazu den folgenden Befehl ein:
-     ```
+  ```
 	 cf target -o org_name -s space_name
 	 ```
   3. Löschen Sie die App-Route, indem Sie den folgenden Befehl eingeben:
@@ -175,7 +175,7 @@ Sie können eine App oder einen Service nicht erstellen, wenn der derzeitigen Or
 Bei dem Versuch, in Bluemix eine App zu erstellen, wird die folgende Fehlernachricht angezeigt:
 {: tsSymptoms}
 
-`BXNUI0515E: Die Bereiche in der Organisation wurden nicht abgerufen. Es ist entweder ein Netzverbindungsproblem aufgetreten oder Ihrer aktuellen Organisation ist kein Bereich zugeordnet.`
+`BXNUI0515E: Die Bereiche in der Organisation wurden nicht abgerufen. Es ist entweder ein Netzverbindungsproblem aufgetreten oder Ihrer aktuellen Organisation ist kein Bereich zugeordnet. `
 
 Dieser Fehler tritt oft auf, wenn Sie zum ersten Mal versuchen, im Katalog eine App oder einen Service zu erstellen, wenn noch kein Bereich erstellt wurde.
 {: tsCauses}
@@ -184,7 +184,7 @@ Stellen Sie sicher, dass Sie in der derzeitigen Organisation einen Bereich erste
 {: tsResolve}
 
   * Klicken Sie in der Menüleiste auf **Verwalten > Konto > Organisationen**. Wählen Sie die Organisation aus, in der der Bereich erstellt werden soll, und klicken Sie auf **Bereich erstellen**.
-  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <Name des Bereichs> -o <Name der Organisation>`.
+  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <Name_des_Bereichs> -o <Name_der_Organisation>`.
 
 Wiederholen Sie den Vorgang. Tritt diese Nachricht erneut auf, rufen Sie die Seite [Bluemix-Status ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixstatus){: new_window} auf und prüfen Sie, ob für einen Service oder eine Komponente ein Problem vorliegt.
 
@@ -220,13 +220,13 @@ Nachdem Sie Ihre App für die Kommunikation mit einem {{site.data.keyword.Bluemi
 Die fest codierten Berechtigungsnachweise in der App sind möglicherweise nicht korrekt. Jedes Mal, wenn der Service erneut erstellt wird, ändern sich die Berechtigungsnachweise für den Zugriff darauf.
 {: tsCauses}
 
-Statt die Berechtigungsnachweise in Ihrer App fest zu codieren, verwenden Sie Verbindungsparameter aus der Umgebungsvariablen VCAP_SERVICES. Die Methoden für die Verwendung von Verbindungsparametern aus der Umgebungsvariablen VCAP_SERVICES variieren abhängig von den Programmsprachen. Für Node.js-Apps können Sie beispielsweise den folgenden Befehl verwenden:
+Statt die Berechtigungsnachweise in Ihrer App fest zu codieren, verwenden Sie Verbindungsparameter aus der Umgebungsvariablen VCAP_SERVICES. Die Methoden für die Verwendung von Verbindungsparametern aus der Umgebungsvariablen VCAP_SERVICES variieren abhängig von den Programmsprachen. Beispiel: Für: Node.js Apps, können Sie den folgenden Befehl verwenden:
 {: tsResolve}
 
 ```
 process.env.VCAP_SERVICES
 ```
-Weitere Informationen zu den Befehlen, die Sie in anderen Programmsprachen verwenden können, finden Sie unter [Java ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} und [Ruby ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
+Weitere Informationen zu den Befehlen, die Sie in anderen Programmsprachen verwenden können, finden Sie unter [Java ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} and [Ruby ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
 
 
 ## Bereitstellung von Apps mit IBM Eclipse Tools for Bluemix nicht möglich
@@ -252,15 +252,15 @@ Um die Facette zu entfernen, klicken Sie für das Projekt in IBM Eclipse Tools f
 
 Wenn Sie bei der Interaktion mit Apps unter {{site.data.keyword.Bluemix_notm}} Fehler vom Typ '502 Bad Gateway' erhalten, überprüfen Sie die {{site.data.keyword.Bluemix_notm}}-Seite 'Status' und führen Sie anschließend die entsprechenden Aktionen durch.
 
-Sie erhalten Fehlernachrichten, die mit '502 Bad Gateway' beginnen. So wird beispielsweise die Fehlernachricht `502 Bad Gateway: Registered endpoint failed to handle the request (502 Bad Gateway: Verarbeitung der Anfrage durch registrierten Endpunkt fehlgeschlagen)` angezeigt.
+Sie erhalten Fehlernachrichten, die mit '502 Bad Gateway' beginnen. So wird beispielsweise die Fehlernachricht `502 Bad Gateway: Registered endpoint failed to handle the request` (502 Bad Gateway: Verarbeitung der Anfrage durch registrierten Endpunkt fehlgeschlagen) angezeigt.
 {: tsSymptoms}
 
-Zu einem Fehler des Typs 'Bad Gateway' kommt es in der Regel, wenn Sie eine Website besuchen, bei der zum Speichern und Vermitteln der Daten aus dem Hauptserver, der die Site hostet, einen Proxy-Server verwendet wird. Der Hauptserver und der Proxy-Server stellen möglicherweise keine ordnungsgemäße Verbindung her; aus diesem Grund wird der HTTP-Statuscode 502 in Ihrem Browserfenster angezeigt. Dieser Statuscode weist darauf hin, dass der Hauptserver der Site die HTTP-Implementierung, die vom Proxy-Server erwartet wird, nicht erhalten hat.
+Zu einem Fehler des Typs 'Bad Gateway' kommt es in der Regel, wenn Sie eine Website besuchen, bei der zum Speichern und Vermitteln der Daten aus dem Hauptserver, der die Site hostet, ein Proxy-Server verwendet wird. Der Hauptserver und der Proxy-Server stellen möglicherweise keine ordnungsgemäße Verbindung her; aus diesem Grund wird der HTTP-Statuscode 502 in Ihrem Browserfenster angezeigt. Dieser Statuscode weist darauf hin, dass der Hauptserver der Site die HTTP-Implementierung, die vom Proxy-Server erwartet wird, nicht erhalten hat.
 {: tsCauses}
 
 Andere, weniger häufige Ursachen eines Fehlers vom Typ 'Bad Gateway' sind Ausfälle des Internet-Service-Providers, falsche Firewallkonfigurationen und Fehler des Browser-Cache.
 
-Wenn Sie vermuten, dass ein {{site.data.keyword.Bluemix_notm}}-Service inaktiv ist, überprüfen Sie zunächst die [{{site.data.keyword.Bluemix_notm}}-Statusseite ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixstatus){: new_window}. Als Ausweichlösung können Sie den Service in einer anderen {{site.data.keyword.Bluemix_notm}}-Region verwenden. Ausführliche Informationen finden Sie unter [Services in einer anderen Region verwenden ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Wenn der Status des Service normal ist, führen Sie die folgenden Schritte aus, um das Problem zu lösen:
+Wenn Sie vermuten, dass ein {{site.data.keyword.Bluemix_notm}}-Service inaktiv ist, überprüfen Sie zunächst die [{{site.data.keyword.Bluemix_notm}} Statusseite ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixstatus){: new_window}. Als Ausweichlösung können Sie den Service in einer anderen {{site.data.keyword.Bluemix_notm}}-Region verwenden. Ausführliche Informationen finden Sie in [Services in einer anderen Region verwenden ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Wenn der Status des Service normal ist, führen Sie die folgenden Schritte aus, um das Problem zu lösen:
 {: tsResolve}
 
   * Wiederholen Sie die Aktion.
@@ -288,7 +288,7 @@ Verwenden Sie eine der folgenden Methoden, um Ihr Plattenkontingent anzugeben. S
     ```
 	disk_quota: <disk_quota>
 	```
-  * Verwenden Sie die Option **-k** in Kombination mit dem Befehl `cf push`, wenn Sie Ihre App mit Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen:
+  * Verwenden Sie die Option **-k** in Kombination mit dem Befehl `cf push`, wenn Sie Ihre App mit einer Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen:
     ```
 	cf push appname -p app_path -k <disk_quota>
 	```
@@ -309,7 +309,7 @@ Verwenden Sie Services von Drittanbietern, die nicht vom GCM-Service als Ausweic
 {: tsResolve}
 
 
-## Für Organisation geltender Grenzwert für Services wurde überschritten
+## Für die Organisation geltender Grenzwert für Services wurde überschritten
 {: #ts_servicelimit}
 
 Wenn Sie Benutzer eines Testkontos sind, können Sie möglicherweise eine App in {{site.data.keyword.Bluemix_notm}} nicht erstellen, wenn Sie den für Ihre Organisation geltenden Grenzwert für Services überschritten haben.
@@ -328,15 +328,16 @@ Löschen Sie alle nicht benötigten Serviceinstanzen oder entfernen Sie den Gren
   * Zum Löschen einer Serviceinstanz können Sie die {{site.data.keyword.Bluemix_notm}}-Konsole oder die Befehlszeilenschnittstelle verwenden.
 
     Führen Sie die folgenden Schritte aus, um die {{site.data.keyword.Bluemix_notm}}-Konsole zum Löschen einer Serviceinstanz zu verwenden:
-	  1. Klicken Sie im Dashboard 'Services' auf das Menü **Aktionen** für den Service, den Sie löschen wollen.
+   1. Klicken Sie im Dashboard 'Services' auf das Menü **Aktionen** für den Service, den Sie löschen wollen.
 	  2. Klicken Sie auf **Service löschen**. Sie werden dann aufgefordert, für die App, an die die Serviceinstanz gebunden war, ein erneutes Staging durchzuführen.
 
     Führen Sie folgende Schritte aus, wenn Sie die Befehlszeilenschnittstelle zum Löschen einer Serviceinstanz verwenden:
-	  1. Heben Sie die Bindung zwischen der Serviceinstanz und der App mit dem folgenden Befehl auf: `cf unbind-service <App-Name> <Serviceinstanzname>`.
+   1. Heben Sie die Bindung zwischen der Serviceinstanz und der App mit dem folgenden Befehl auf: `cf unbind-service <App-Name> <Serviceinstanzname>`.
 	  2. Löschen Sie die Serviceinstanz durch Eingeben von `cf delete-service <Serviceinstanzname>`.
 	  3. Nach dem Löschen der Serviceinstanz möchten Sie möglicherweise ein erneutes Staging für Ihre App, an die die Serviceinstanz gebunden war, mit dem Befehl `cf restage <App-Name>` durchführen.
 
-  * Zum Löschen des Grenzwerts für die Anzahl Serviceinstanzen, die für Sie bestehen können, wandeln Sie Ihr Testkonto in ein Zahlungskonto um. Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie unter [Vorgehensweise zum Ändern des Plans](/docs/pricing/index.html#changing).
+  * Zum Löschen des Grenzwerts für die Anzahl Serviceinstanzen, die für Sie bestehen können, wandeln Sie Ihr Testkonto in ein Zahlungskonto um. 
+Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie unter [Vorgehensweise zum Ändern des Plans](/docs/pricing/index.html#changing).
 
 ## Ausführbare Dateien können in Bluemix nicht ausgeführt werden
 {: #ts_executable}
@@ -346,10 +347,11 @@ Möglicherweise können Sie ausführbare Dateien in {{site.data.keyword.Bluemix_
 Sie können ausführbare Dateien nicht in {{site.data.keyword.Bluemix_notm}} ausführen, wenn diese ausführbaren Dateien in einer anderen Umgebung entwickelt und der Build für sie dort erstellt wurde.
 {: tsSymptoms}
 
-Wenn es sich bei dem Inhalt, den Sie per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen wollen, bereits um eine ausführbare Datei handelt, wurde der Build für den Inhalt zuvor erstellt und ein erneuter Build in {{site.data.keyword.Bluemix_notm}} ist nicht erforderlich. In diesem Fall ist kein Buildpack erforderlich, damit die ausführbare Datei in {{site.data.keyword.Bluemix_notm}} ausgeführt werden kann. Sie müssen jedoch für {{site.data.keyword.Bluemix_notm}} explizit angeben, dass ein Buildpack nicht erforderlich ist.
+Wenn es sich bei dem Inhalt, den Sie per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen wollen, bereits um eine ausführbare Datei handelt, wurde der Build für den Inhalt zuvor erstellt und ein erneuter Build in {{site.data.keyword.Bluemix_notm}} ist nicht erforderlich.
+In diesem Fall ist kein Buildpack erforderlich, damit die ausführbare Datei in {{site.data.keyword.Bluemix_notm}} ausgeführt werden kann. Sie müssen jedoch für {{site.data.keyword.Bluemix_notm}} explizit angeben, dass ein Buildpack nicht erforderlich ist.
 {: tsCauses}
 
-Wenn Sie die ausführbare Datei per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, müssen Sie durch einen 'Null-Buildpack' angeben, dass kein Buildpack erforderlich ist. Geben Sie einen Null-Buildpack an, indem Sie die Option **-b** mit dem Befehl `cf push` verwenden:
+Wenn Sie die ausführbare Datei per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, müssen Sie durch einen 'Null-Buildpack' angeben, dass kein Buildpack erforderlich ist. Geben Sie ein Null-Buildpack an, indem Sie die Option **-b** mit dem Befehl `cf push` verwenden:
 {: tsResolve}
 
 ```
@@ -360,7 +362,7 @@ Beispiel:
 cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
-## Für Organisation geltende Speicherbegrenzung wurde überschritten
+## Für die Organisation geltende Speicherbegrenzung wurde überschritten
 {: #ts_outofmemory}
 
 Wenn Sie Benutzer eines Testkontos sind, können Sie möglicherweise eine App nicht in {{site.data.keyword.Bluemix_notm}} bereitstellen, wenn Sie die für Ihre Organisation geltende Speicherbegrenzung überschritten haben. Sie können entweder den von Ihren Apps verwendeten Speicherplatz verringern oder das Speicherkontingent Ihres Konto erhöhen. Das Kontingent der maximalen Hauptspeicherkapazität für ein Testkonto beträgt 2 Gigabyte und kann nur durch den Wechsel zu einem gebührenpflichtigen Konto erhöht werden.
@@ -368,7 +370,7 @@ Wenn Sie Benutzer eines Testkontos sind, können Sie möglicherweise eine App ni
 Wenn Sie eine App unter {{site.data.keyword.Bluemix_notm}} bereitstellen, wird die folgende Fehlernachricht angezeigt:
 {: tsSymptoms}
 
-`FAILED Server error, status code: 400, error code: 100005, message: You have exceeded your organization's memory limit.` (FEHLGESCHLAGEN Serverfehler, Statuscode: 400, Fehlercode: 100005, Nachricht: Sie haben die für Ihre Organisation geltende Speicherbegrenzung überschritten.)
+`FAILED Server error, status code: 400, error code: 100005, message: You have exceeded your organization's memory limit. (FEHLGESCHLAGEN Serverfehler, Statuscode: 400, Fehlercode: 100005, Nachricht: Sie haben die für Ihre Organisation geltende Speicherbegrenzung überschritten.)`
 
 Dieser Fehler tritt auf, wenn die für Ihre Organisation verbleibende Speichermenge niedriger ist, als die Speichermenge, die für die bereitzustellende App erforderlich ist. Das Kontingent der maximalen Hauptspeicherkapazität für ein Testkonto beträgt 2 Gigabyte.
 {: tsCauses}
@@ -376,7 +378,7 @@ Dieser Fehler tritt auf, wenn die für Ihre Organisation verbleibende Speicherme
 Sie können entweder das Speicherkontingent für Ihr Konto erhöhen oder den von Ihren Apps verwendeten Speicherplatz verringern.
 {: tsResolve}
 
-  * Zum Erhöhen des Speicherkontingents für Ihr Konto wandeln Sie Ihr Testkonto in ein Zahlungskonto um. Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie in [Zahlungskonten](/docs/pricing/index.html#pay-accounts).
+  * Zum Erhöhen des Speicherkontingents für Ihr Konto wandeln Sie Ihr Testkonto in ein Zahlungskonto um. Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie unter [Zahlungskonten](/docs/pricing/index.html#pay-accounts).
   * Zum Verringern des Speicherplatzes, den Ihre Apps belegen, verwenden Sie entweder die {{site.data.keyword.Bluemix_notm}}-Konsole oder die Befehlszeilenschnittstelle 'cf'.
 
     Wenn Sie die {{site.data.keyword.Bluemix_notm}}-Konsole verwenden, führen Sie die folgenden Schritte durch:
@@ -384,7 +386,7 @@ Sie können entweder das Speicherkontingent für Ihr Konto erhöhen oder den von
     1. Wählen Sie im Dashboard 'Apps' Ihre App aus. Die Seite mit den Anwendungsdetails wird geöffnet.
     2. Im Teilfenster für die Laufzeit können Sie die maximale Hauptspeicherkapazität für Ihre App, die Anzahl der App-Instanzen oder beides reduzieren.
 
-    Führen Sie bei Verwendung der cf-Befehlszeilenschnittstelle folgende Schritte aus:
+    Führen Sie bei Verwendung der Befehlszeilenschnittstelle 'cf' folgende Schritte aus:
 
     1. Überprüfen Sie, wie viel Speicherplatz für Ihre Apps verwendet wird:
 
@@ -574,11 +576,11 @@ Bei der Aktualisierung einer Node.js-App oder bei der Bereitstellung einer Node.
 Bei der Aktualisierung einer Node.js-App oder bei der Bereitstellung einer Node.js-App in {{site.data.keyword.Bluemix_notm}} wird möglicherweise eine der folgenden Fehlernachrichten angezeigt:
 {: tsSymptoms}
 
-`An app was not successfully detected by any available buildpack.` (Eine App wurde von keinem verfügbaren Buildpack erfolgreich erkannt.)
+`An app was not successfully detected by any available buildpack. (Eine App wurde von keinem verfügbaren Buildpack erfolgreich erkannt.)`
 
-`Instance (index 0) failed to start accepting connections.` (Bestätigen der Verbindungen durch Instanz (Index 0) fehlgeschlagen.)
+`Instance (index 0) failed to start accepting connections. (Bestätigen der Verbindungen durch Instanz (Index 0) fehlgeschlagen.)`
 
-`Cannot get instances since staging failed.` (Abrufen der Instanzen seit fehlgeschlagenem Staging nicht möglich.)
+`Cannot get instances since staging failed. (Abrufen der Instanzen seit fehlgeschlagenem Staging nicht möglich.)`
 
 Mögliche Ursachen:
 {: tsCauses}
@@ -590,7 +592,7 @@ Verwenden Sie abhängig von der Ursache des Problems eine der folgenden Methoden
 {: tsResolve}
 
   * Geben Sie unter Verwendung einer der folgenden Methoden den Startbefehl an:
-     * Verwenden Sie die Befehlszeilenschnittstelle 'cf'. Beispiel:
+   * Verwenden Sie die Befehlszeilenschnittstelle 'cf'. Beispiel:
         ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
@@ -603,7 +605,7 @@ Verwenden Sie abhängig von der Ursache des Problems eine der folgenden Methoden
  	   }
 	}
 	    ```
-    * Mithilfe der Datei `manifest.yml`. Beispiel:
+    * Verwenden Sie die Datei `manifest.yml`. Beispiel:
 	    ```
 		applications:
   name: MyUniqueNodejs01
@@ -661,7 +663,7 @@ Wenn Sie eine App unter {{site.data.keyword.Bluemix_notm}} unter Verwendung eine
 Dieses Problem kann auftreten, wenn Scripts, wie zum Beispiel die Scripts zum Identifizieren, Kompilieren und Freigeben, nicht ausgeführt werden können.
 {: tsCauses}
 
-Mit dem Befehl [git update ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://git-scm.com/docs/git-update-index){: new_window} können Sie die Berechtigung für jedes einzelne Script in 'ausführbar' ändern. Sie können zum Beispiel `git update --chmod=+x script.sh` eingeben.
+Mit dem Befehl [git update ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://git-scm.com/docs/git-update-index "Symbol für externen Link"){: new_window} können Sie die Berechtigung für jedes einzelne Script in 'ausführbar' ändern. Sie können zum Beispiel `git update --chmod=+x script.sh` eingeben.
 {: tsResolve}
 
 ## Implementieren einer App über die Delivery Pipeline in IBM Bluemix Continuous Delivery nicht möglich

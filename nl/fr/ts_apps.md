@@ -1,4 +1,4 @@
----
+﻿---
 
 copyright:
   years: 2015, 2017
@@ -130,7 +130,7 @@ Pour vérifier la version Java utilisée par {{site.data.keyword.eclipsetoolsful
 
 Si la machine virtuelle Java de votre plan de travail utilise IBM JVM 7 ou IBM JVM 8, ou une version précédente d'Oracle JVM 8, procédez comme suit pour passer à Oracle JVM 8 :
 
-  1. Téléchargez et installez Oracle JVM 8. Pour plus d'informations, voir [Java SE Downloads ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
+  1. Téléchargez et installez Oracle JVM 8. Pour plus d'informations, voir [Java SE Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
   2. Redémarrez Eclipse.
   3. Vérifiez que la propriété `eclipse.vm` pointe sur votre nouvelle installation d'Oracle JVM 8.
 
@@ -155,7 +155,7 @@ Procédez comme suit pour supprimer la route inutilisée :
      ```
 	 cf routes
 	 ```
-  2. Si la route n'appartient pas à l'espace en cours, accédez à l'espace ou à l'organisation auxquels elle appartient en entrant la commande suivante :
+  2. Si la route n'appartient pas à l'espace en cours, basculez vers l'espace ou l'organisation à laquelle elle est rattachée en entrant la commande suivante :
      ```
 	 cf target -o nom_org -s nom_espace
 	 ```
@@ -168,57 +168,59 @@ Procédez comme suit pour supprimer la route inutilisée :
 	 cf delete-route mybluemix.net -n app001
 	 ```
 
-## Impossible d'extraire les espaces dans l'organisation
+## Impossible d'extraire les espaces de l'organisation
 {: #ts_retrieve_space}
 
-Vous ne pouvez pas créer une application ou un service si aucun espace n'est associé à votre organisation en cours.
+Vous ne pouvez pas créer une application ou un service si un espace n'est pas associé à votre organisation actuelle.
 
 Lorsque vous tentez de créer une application dans Bluemix, le message d'erreur suivant s'affiche :
 {: tsSymptoms}
 
-`BXNUI0515E: Les espaces dans l'organisation n'ont pas été extraits. Un problème de connexion réseau est survenu ou aucun espace n'est associé à l'organisation en cours.`
+`BXNUI0515E: Les espaces n'ont pas été extraits. Un problème de connexion réseau est survenu ou votre organisation actuelle n'est pas associée à un espace.`
 
 Cette erreur se produit souvent la première fois que vous tentez de créer une application ou un service à partir du catalogue lorsqu'un espace n'a pas encore été créé.
 {: tsCauses}
 
-Vérifiez que vous avez créé un espace dans votre organisation. Pour créer un espace, appliquez l'une des méthodes suivantes :
+Vérifiez que vous avez créé un espace dans votre organisation actuelle. Pour créer un espace, utilisez l'une des méthodes suivantes :
 {: tsResolve}
 
-  * Dans la barre de menu, cliquez sur **Gérer > Compte > Organisations**. Sélectionnez l'organisation dans laquelle vous souhaitez créer l'espace, puis cliquez sur **Créer un espace**.
-  * Dans l'interface de ligne de commande cf, tapez `cf create-space <nom_espace> -o <nom_organisation>`.
+  * Dans la barre de menu, cliquez sur **Gérer > Compte > Organisations**. Sélectionnez l'organisation dans laquelle vous désirez créer le compte et cliquez sur **Créer un espace**.
+  * Dans l'interface de ligne de commande cf, entrez `cf create-space <nom_espace> -o <nom_organisation>`.
 
-Essayez à nouveau. Si ce message réapparaît, ouvrez la page de [statut Bluemix ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window} pour déterminer si un service ou un composant présente un problème.
+Essayez à nouveau. Si ce message se reproduit, accédez à la page de [statut Bluemix ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window} pour vérifier si un service ou un composant présente un problème.
 
 
 ## Impossible d'effectuer les actions demandées
 {: #ts_authority}
 
-Il se peut que vous ne puissiez pas effectuer des actions si vous ne disposez pas des droits d'accès appropriés.
+Sans les autorisations d'accès appropriées, il se peut que vous ne puissiez pas effectuer certaines actions.
 
-Lorsque vous essayez d'effectuer des actions pour une instance de service ou une instance d'application, vous ne pouvez pas effectuer les actions demandées et l'un des messages d'erreur suivants s'affiche :
+Lorsque vous tentez d'effectuer des actions pour une instance de service ou d'application,  vous ne pouvez pas réaliser les actions demandées et rencontrez l'un des messages d'erreur suivants :
 {: tsSymptoms}
 
-`BXNUI0514E: Vous n'êtes développeur dans aucun des espaces de l'organisation <nom_organisation>.`
+`BXNUI0514E: Vous n'êtes pas un développeur dans l'un des espaces de l'organisation <orgName>.`
 
-`Erreur de serveur, code de statut : 403, code d'erreur 10003, message : vous n'êtes pas autorisé à effectuer l'action demandée.`
+`Erreur de serveur, code statut : 403, code d'erreur : 10003, message : Vous n'êtes pas autorisé à effectuer l'action demandée.`
 
 Vous ne disposez pas du niveau de droits approprié requis pour effectuer les actions.
 {: tsCauses}
 
-Pour obtenir le niveau de droits approprié, appliquez l'une des méthodes suivantes :
+Pour obtenir le niveau d'autorisation approprié, utilisez l'une des méthodes suivantes :
 {: tsResolve}
- * Sélectionnez une autre organisation et un autre espace pour laquelle ou lequel vous disposez du rôle Développeur.
- * Demandez au responsable de l'organisation de vous attribuer le rôle Développeur ou de créer un espace, puis de vous attribuer le rôle Développeur. Pour plus d'informations, voir [Gestion des organisations et des espaces](/docs/admin/orgs_spaces.html).
+ * Sélectionnez une autre organisation et un espace où le rôle développeur vous a été attribué.
+ * Demandez au responsable de l'organisation de vous attribuer le rôle développeur ou de créer un espace, puis de vous y affecter le rôle développeur. Voir [Gestion des organisations et des espaces](/docs/admin/orgs_spaces.html) pour plus d'informations.
 
-## Impossible d'accéder à des services Bluemix en raison d'erreurs d'autorisation
+## Impossible d'accéder aux services Bluemix en raison d'erreurs d'autorisation
 {: #ts_vcap}
 
-Des erreurs d'autorisation peuvent survenir lorsque votre application accède à un service {{site.data.keyword.Bluemix_notm}} si les données d'identification du service sont codées en dur dans votre application.
+Des erreurs d'autorisation peuvent se produite lorsque votre application accède à un service {{site.data.keyword.Bluemix_notm}} si les données d'identification du service sont codées en dur dans votre application.
 
-Une fois que vous avez configuré votre application pour qu'elle communique avec un service {{site.data.keyword.Bluemix_notm}}, vous la déployez dans {{site.data.keyword.Bluemix_notm}}. Toutefois, vous ne pouvez pas utiliser l'application pour accéder au service {{site.data.keyword.Bluemix_notm}} et recevez une erreur d'autorisation.
+Une fois que vous avez configuré votre application pour qu'elle communique avec un service {{site.data.keyword.Bluemix_notm}}, vous la
+déployez dans {{site.data.keyword.Bluemix_notm}}. Toutefois, vous ne pouvez pas utiliser l'application pour accéder au service
+{{site.data.keyword.Bluemix_notm}} et recevez une erreur d'autorisation.
 {: tsSymptoms}
 
-Il se peut que les données d'identification codées en dur dans l'application ne soient pas correctes. A chaque fois que le service est recréé, les données d'identification permettant d'y accéder changent.
+Il se peut que les données d'identification codées en dur dans l'application soient incorrectes. A chaque fois que le service est recréé, les données d'identification permettant d'y accéder changent.
 {: tsCauses}
 
 Au lieu de coder en dur les données d'identification dans votre application, utilisez les paramètres de connexion de la variable d'environnement VCAP_SERVICES. Les méthodes d'utilisation des paramètres de connexion de la variable d'environnement VCAP_SERVICES varient selon les langages de programmation. Par exemple, pour les applications Node.js, vous pouvez utiliser la commande suivante :
@@ -227,143 +229,135 @@ Au lieu de coder en dur les données d'identification dans votre application, ut
 ```
 process.env.VCAP_SERVICES
 ```
-Pour plus d'informations sur les commandes que vous pouvez utiliser dans d'autres langages de programmation, voir [Java ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} et [Ruby ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
+Pour plus d'informations sur les commandes que vous pouvez utiliser dans d'autres langages de programmation, voir [Java ![External link icon](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} et [Ruby ![External link icon](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
 
 
-## Impossibilité de déployer des applications à l'aide des outils IBM Eclipse pour Bluemix
+## Impossible de déployer des applications à l'aide d'IBM Eclipse Tools for Bluemix
 {: #ts_bm_tools_facet}
 
 Lorsqu'une facette non prise en charge est appliquée à votre projet Eclipse, il se peut que vous ne puissiez pas déployer vos applications dans {{site.data.keyword.Bluemix_notm}} à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 
-Votre application peut être déployée avec succès dans {{site.data.keyword.Bluemix_notm}} à l'aide de l'interface de ligne de commande Cloud Foundry. Toutefois, vous ne pouvez pas déployer l'application dans {{site.data.keyword.Bluemix_notm}} avec IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} et le message d'erreur suivant s'affiche : `La facette de projet <nom_facette> n'est pas prise en charge.` Exemple :
+Votre application peut être déployée avec succès dans
+{{site.data.keyword.Bluemix_notm}} à l'aide de l'interface de ligne de commande Cloud Foundry. Toutefois, vous ne pouvez pas déployer l'application dans {{site.data.keyword.Bluemix_notm}} à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} et le message d'erreur suivante s'affiche : `La facette de projet <nom_facette> n'est pas prise en charge.` Par exemple :
 {: tsSymptoms}
 `La facette de projet Cloud Foundry Standalone Application version 1.0 n'est pas prise en charge.`
 
-Les outils IBM Eclipse pour {{site.data.keyword.Bluemix_notm}} mappent des projets vers les contextes d'exécution {{site.data.keyword.Bluemix_notm}} par facettes de projet. Les facettes définissent les exigences des projets Java EE dans Eclipse et sont utilisées dans le cadre de la configuration du contexte d'exécution pour que différents contextes d'exécution soient associés à différents projets. Si la facette qui est appliquée au projet n'est pas prise en charge par IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, vous ne pourrez peut-être pas déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+Les outils IBM Eclipse pour
+{{site.data.keyword.Bluemix_notm}} mappent des projets vers les contextes d'exécution
+{{site.data.keyword.Bluemix_notm}} par facettes de projet. Les facettes définissent les exigences des projets Java EE dans Eclipse et sont utilisées dans le cadre de la configuration du contexte d'exécution pour que différents contextes d'exécution soient associés à différents projets. Si la facette qui est appliquée au projet n'est pas prise en charge par IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, vous ne pourrez peut-être pas déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Vous devez supprimer la facette du projet Eclipse pour pouvoir déployer votre application à l'aide des outils IBM Eclipse pour {{site.data.keyword.Bluemix_notm}}.
+Vous devez supprimer la facette du projet Eclipse pour pouvoir déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsResolve}
 
-Pour supprimer la facette, dans les outils IBM Eclipse pour {{site.data.keyword.Bluemix_notm}}, cliquez sur **Projet>Propriétés>Facettes de projet** pour le projet concerné. Décochez ensuite la case correspondant à la facette non prise en charge.
+Pour supprimer la facette, cliquez dans IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, sur **Projet > Propriétés> Facettes de projet** pour le projet concerné. Décochez ensuite la case correspondant à la facette non prise en charge.
 
 
-## Réception d'erreurs 502 Bad Gateway
+## 502 Des erreurs Passerelle incorrecte sont renvoyées
 {: #ts_502_error}
 
-Si vous recevez des erreurs 502 Bad Gateway lorsque vous interagissez avec des applications
-sur {{site.data.keyword.Bluemix_notm}},
-consultez la page de statut {{site.data.keyword.Bluemix_notm}}
-et exécutez les actions en conséquence.
+Si vous recevez des erreurs 502 Passerelle incorrecte  lors d'une interaction avec des applications dans {{site.data.keyword.Bluemix_notm}}, vérifiez la page de statut {{site.data.keyword.Bluemix_notm}} et agissez en conséquence.
 
-Vous recevez des messages d'erreur commençant par 502 Bad Gateway. Exemple : `502 Bad Gateway: Registered endpoint failed to handle the
-request.`
+Vous recevez des messages d'erreur commençant par 502 Bad Gateway. Par exemple, vous pourriez rencontrer le message `502 Passerelle incorrecte : le noeud final enregistré n'a pas pu traiter la demande.`
 {: tsSymptoms}
 
-Une erreur Bad Gateway se produit généralement lorsque vous visitez un site Web qui utilise un serveur proxy pour stocker et relayer les données provenant du serveur principal hébergeant le site. Il se peut que le serveur principal et le serveur proxy ne se connectent pas correctement, ce qui déclenche l'affichage du code d'état HTTP 502 dans votre fenêtre de navigateur. Ce code d'état indique que le serveur principal du site n'a pas reçu l'implémentation HTTP attendue de la part du serveur proxy.
+Une erreur Passerelle incorrecte se produit généralement lorsque vous accédez à un site Web qui utilise un serveur proxy pour stocker et relayer les données du serveur principal hébergeant le site. Il se peut que le serveur principal et le serveur proxy ne se connectent pas correctement, ce qui déclenche l'affichage du code d'état HTTP 502 dans votre fenêtre de navigateur. Ce code d'état indique que le serveur principal du site n'a pas reçu l'implémentation HTTP attendue de la part du serveur proxy.
 {: tsCauses}
 
-D'autres raisons moins fréquentes pour une erreur Bad Gateway sont les décrochages du fournisseur d'accès Internet, des configurations de pare-feu incorrectes et des erreurs de cache du navigateur.
+Motifs moins fréquents d'une erreur Passerelle incorrecte : décrochages du fournisseur d'accès Internet, configurations incorrectes du pare-feu et erreurs de cache du navigateur.
 
-Si vous suspectez l'arrêt d'un service {{site.data.keyword.Bluemix_notm}}, consultez d'abord la page d'[état de {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window}. Une solution de contournement peut consister à utiliser le service dans une autre région {{site.data.keyword.Bluemix_notm}}. Des informations détaillées sont disponibles dans [Utilisation des services dans une autre région ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si le statut du service est normal, essayez la procédure suivante pour résoudre le problème :
+Si vous soupçonnez qu'un service {{site.data.keyword.Bluemix_notm}} est arrêté, vérifiez d'abord la page [statut {{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window}. Une solution de contournement peut consister à utiliser le service dans une autre région {{site.data.keyword.Bluemix_notm}}. Des informations détaillées sont disponibles dans la section [Utilisation des services dans une autre région ![External link icon](../icons/launch-glyph.svg "External link icon")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si le statut du service est normal, essayez la procédure suivante pour résoudre le problème :
 {: tsResolve}
 
-  * Exécutez à nouveau l'action :
+  * Réessayez l'action :
     * Rechargez la page en appuyant sur la touche F5 de votre clavier ou en cliquant sur le bouton d'actualisation. Si cette étape ne fonctionne pas, videz le cache de votre navigateur et supprimez les cookies, puis rechargez la page.
     * Utilisez un navigateur différent.
-    * Rallumez votre routeur, votre modem et votre ordinateur. Le réamorçage de ces
+    * Réamorcez votre routeur, votre modem et votre ordinateur. Le réamorçage de ces
 unités peut éliminer diverses erreurs à l'origine de l'erreur 502.
-  * Attendez et recommencez ultérieurement. Dans certaines instances, des problèmes temporaires peuvent se produire
+  * Patientez et essayez à nouveau ultérieurement. Dans certaines instances, des problèmes temporaires peuvent se produire
 avec votre fournisseur d'accès Internet ou les services {{site.data.keyword.Bluemix_notm}}. Vous pouvez attendre jusqu'à ce que les problèmes temporaires soient résolus.
-  * Si le problème existe toujours, contactez le support {{site.data.keyword.Bluemix_notm}}. Pour plus d'informations, voir [Contacter le support {{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](/docs/support/index.html#contacting-bluemix-support){: new_window}.
+  * Si le problème persiste, contactez le support {{site.data.keyword.Bluemix_notm}}. Voir [Contact du support {{site.data.keyword.Bluemix_notm}} ![ External link icon](../icons/launch-glyph.svg "External link icon")](/docs/support/index.html#contacting-bluemix-support){: new_window} pour plus d'informations.
 
 ## Dépassement du quota de disque
 {: #ts_disk_quota}
 
-Si votre espace disque est insuffisant, vous pouvez modifier manuellement le quota de disque
-pour obtenir de l'espace disque supplémentaire.
+Si votre espace disque est épuisé, vous pouvez modifier manuellement le quota de disque pour disposer de plus d'espace.
 
 Lorsque votre espace disque devient insuffisant, un message indiquant que le quota de disque est dépassé peut s'afficher. Pour résoudre le problème, vous pouvez tenter d'augmenter votre instance d'application pour obtenir davantage d'espace disque. Par exemple, vous pouvez passer de 256 Mo à 1256 Mo en modifiant le quota de mémoire sur la page de détails de l'application. Cependant, comme le quota de disque est resté le même, vous n'avez pas obtenu plus d'espace disque.
 {: tsSymptoms}
 
-Le quota de disque par défaut alloué à une application est de  1 Go. Si vous avez besoin de davantage d'espace disque, vous devez spécifier manuellement le quota de disque.
+Le quota de disque par défaut alloué à une application est de 1 Go. Si vous avez besoin de davantage d'espace disque, vous devez spécifier manuellement le quota de disque.
 {: tsCauses}
 
-Utilisez l'une des méthodes suivantes pour spécifier votre quota de disque. Le quota de disque maximal que vous pouvez spécifier est de 2 Go. Si les 2 Go ne sont toujours pas suffisants, essayez un service externe
-tel que [Object Store](/docs/services/ObjectStorage/index.html).
+Utilisez l'une des méthodes suivantes pour spécifier votre quota de disque. Le quota de disque maximal que vous pouvez spécifier est de 2 Go. Si les 2 Go ne sont toujours pas suffisants, essayez un service externe, tel que [Object Store](/docs/services/ObjectStorage/index.html).
 {: tsResolve}
 
   * Dans le fichier manifest.yml, ajoutez l'élément suivant :
     ```
 	disk_quota: <quota_disque>
 	```
-  * Utilisez l'option **-k** avec la commande `cf push` lorsque vous exécutez une commande push sur votre
-application dans {{site.data.keyword.Bluemix_notm}} :
+  * Utilisez l'option **-k** avec la commande `cf push` lorsque vous envoyez par commande push votre application à {{site.data.keyword.Bluemix_notm}} :
     ```
 	cf push nom_app -p chemin_app -k <quota_disque>
 	```
 
 
-## Impossibilité de recevoir des {{site.data.keyword.mobilepushshort}} pour les applications Android
+## Les applications Android ne peuvent pas recevoir de {{site.data.keyword.mobilepushshort}}
 {: #ts_push}
 
-Dans certaines régions où Google n'est pas accessible, les applications Android ne peuvent pas recevoir les notifications que vous envoyez via le service {{site.data.keyword.mobilepushshort}} d'IBM. Dans ce cas, une solution de contournement consiste à utiliser des services tiers.
+Dans certaines régions où Google n'est pas accessible, les applications Android ne peuvent pas recevoir les notifications que vous envoyez via le service IBM {{site.data.keyword.mobilepushshort}}. Dans ce cas, une solution de contournement consiste à utiliser des services tiers.
 
 Vous liez un service {{site.data.keyword.mobilepushshort}} pour votre application Bluemix et envoyez un message aux unités enregistrées. Toutefois, les applications qui sont développées sur la plateforme Android ne peuvent pas recevoir vos notifications dans certaines régions.
 {: tsSymptoms}
 
-Le service IBM {{site.data.keyword.mobilepushshort}} utilise le service de messagerie basée sur le cloud de Google (GCM) pour transmettre les notifications aux applications mobiles développées sur la plateforme Android. Les applications mobiles doivent pouvoir accéder au service GCM pour que les applications Android puissent recevoir les notifications. Dans les régions où le service GCM n'est pas accessible aux applications Android, ces dernières ne peuvent pas recevoir de notifications {{site.data.keyword.mobilepushshort}}.
+Le service IBM {{site.data.keyword.mobilepushshort}} utilise le service GCM (Google Cloud Messaging) pour diffuser les notifications aux applications mobiles développées sur la plateforme Android. Les applications mobiles doivent pouvoir accéder au service GCM pour que les applications Android puissent recevoir les notifications. Dans les régions où le service GCM n'est pas accessible aux applications Android, ces dernières ne peuvent pas recevoir de notifications {{site.data.keyword.mobilepushshort}}.
 {: tsCauses}
 
-Pour contourner ce problème, utilisez des services tiers qui ne reposent pas sur le service GCM, par exemple [Pushy ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](https://pushy.me){: new_window}, [igetui ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](http://www.getui.com/){: new_window} et [jpush ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](https://www.jpush.cn/){: new_window}.
+Pour contourner ce problème, utilisez des services tiers qui ne reposent pas sur le service GCM, par exemple [Pushy ![External link icon](../icons/launch-glyph.svg "External link icon")](https://pushy.me){: new_window}, [igetui ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.getui.com/){: new_window} et [jpush ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.jpush.cn/){: new_window}.
 {: tsResolve}
 
 
-## La limite des services de l'organisation est atteinte
+## La limite de services de l'organisation est dépassée
 {: #ts_servicelimit}
 
-Si vous possédez un compte d'essai, il se peut que vous ne puissiez pas créer d'application dans {{site.data.keyword.Bluemix_notm}} si vous avez atteint le nombre maximal de services pour votre organisation.
+Si vous utilisez un compte d'essai, il se peut que vous ne puissiez pas déployer une application dans {{site.data.keyword.Bluemix_notm}} si vous avez atteint le nombre maximal de services pour votre organisation.
 
 Lorsque vous tentez de créer une application dans {{site.data.keyword.Bluemix_notm}}, le message d'erreur suivant s'affiche :
 {: tsSymptoms}
 
-`BXNUI2032E: La ressource <instance_service> n'a pas été créée. Une erreur est survenue lors du contact de Cloud Foundry pour la création d'une ressource. Message Cloud Foundry : "You have exceeded your organization's services limit."`
+`BXNUI2032E: La ressource <instances_service> n'a pas été créée. Une erreur est survenue lors du contact de Cloud Foundry pour la création d'une ressource. Message Cloud Foundry : "You have exceeded your organization's services limit."`
 
 Cette erreur survient lorsque vous avez atteint le nombre maximal d'instances de service dont vous pouvez disposer pour votre compte. Le nombre maximal d'instances de service pour un compte d'essai est 10.
 {: tsCauses}
 
-Supprimez les instances de service dont vous n'avez pas besoin ou retirez la limite relative au nombre d'instances de service dont vous pouvez disposer.
+Supprimez les instances de service dont vous n'avez pas besoin ou supprimez la limite portant sur le nombre de services que vous pouvez utiliser.
 {: tsResolve}
 
   * Pour supprimer une instance de service, vous pouvez utiliser la console {{site.data.keyword.Bluemix_notm}} ou l'interface de ligne de commande.
 
     Pour utiliser la console {{site.data.keyword.Bluemix_notm}} afin de supprimer une instance de service, procédez comme suit :
-	  1. Dans le tableau de bord Services, cliquez sur le menu **Actions** pour le service que vous souhaitez supprimer.
+ 	  1. Dans le tableau de bord Services, cliquez sur le menu **Actions** du service que vous désirez supprimer.
 	  2. Cliquez sur **Supprimer le service**. Vous êtes invité à reconstituer l'application à laquelle l'instance de service était liée.
 
-    Pour utiliser l'interface de ligne de commande afin de supprimer une instance de service, procédez comme suit :
-	  1. Supprimez la liaison de l'instance de service à une application en entrant `cf unbind-service <nom_app> <nom_instance_service>`.
+    Pour utiliser l'interface de ligne de commande pour supprimer une instance de service, procédez comme suit :
+	  1. Annulez la liaison de l'instance de service à l'application en entrant `cf unbind-service <nom_application> <nom_instance_service>`.
 	  2. Supprimez l'instance de service en entrant `cf delete-service <nom_instance_service>`.
-	  3. Une fois l'instance de service supprimée, vous pouvez reconstituer l'application à laquelle l'instance de service était liée en entrant `cf restage <nom_app>`.
+	  3. Une fois l'instance de service supprimée, vous pouvez reconstituer l'application à laquelle l'instance de service était liée en entrant `cf restage <nom_application>`.
 
-  * Pour supprimer la limite relative au nombre d'instances de service dont vous pouvez disposer, convertissez votre compte d'essai en compte payant. Pour des informations sur la conversion de votre compte d'essai en compte payant, voir [Comment changer votre plan ?](/docs/pricing/index.html#changing).
+  * Pour supprimer la limite portant sur le nombre d'instances de service dont vous pouvez disposer, convertissez votre compte d'essai en compte payant. Pour plus d'informations sur la conversion de votre compte d'essai en compte payant, voir [Comment changer votre plan](/docs/pricing/index.html#changing).
 
-## Impossibilité d'exécuter des fichiers exécutables sur Bluemix
+## Impossible d'exécuter des fichiers exécutables sur Bluemix
 {: #ts_executable}
 
-Il peut être impossible d'exécuter des fichiers exécutables dans {{site.data.keyword.Bluemix_notm}} si ces fichiers ont été développés et générés dans un environnement différent.
+Il peut s'avérer impossible d'exécuter des fichiers exécutables sur {{site.data.keyword.Bluemix_notm}} si ces fichiers ont été développés et générés dans un environnement différent.
 
 Vous ne parvenez pas à exécuter des fichiers exécutables dans {{site.data.keyword.Bluemix_notm}} lorsque ceux-ci ont été développés et générés dans un environnement différent.
 {: tsSymptoms}
 
-Si le contenu à envoyer par commande push dans {{site.data.keyword.Bluemix_notm}} est déjà un fichier exécutable, il a déjà été généré et il n'est pas nécessaire de le générer dans {{site.data.keyword.Bluemix_notm}}. Dans ce cas, aucun pack de construction n'est requis pour l'exécution du fichier exécutable dans {{site.data.keyword.Bluemix_notm}}. Toutefois,
-vous devez indiquer explicitement à {{site.data.keyword.Bluemix_notm}} qu'aucun pack de construction n'est
-nécessaire.
+Si le contenu à envoyer par commande push dans {{site.data.keyword.Bluemix_notm}} est déjà un fichier exécutable, il a été construit au préalable et n'a pas besoin d'être construit dans {{site.data.keyword.Bluemix_notm}}. Dans ce cas, aucun pack de construction n'est requis pour l'exécution du fichier exécutable dans {{site.data.keyword.Bluemix_notm}}. Toutefois, vous devez indiquer explicitement à {{site.data.keyword.Bluemix_notm}} qu'aucun pack de construction n'est nécessaire.
 {: tsCauses}
 
-Lorsque vous envoyez par commande push le fichier exécutable dans
-{{site.data.keyword.Bluemix_notm}}, vous devez spécifier la valeur null-buildpack, qui indique qu'aucun pack de
-construction n'est requis. Spécifiez la valeur null-buildpack avec l'option **-b** dans la commande `cf push` :
+Lorsque vous envoyez par commande push le fichier exécutable dans {{site.data.keyword.Bluemix_notm}}, vous devez spécifier la valeur null-buildpack, qui indique qu'aucun pack de construction n'est requis. Spécifiez la valeur null-buildpack avec l'option **-b** dans la commande `cf push` :
 {: tsResolve}
 
 ```
@@ -374,41 +368,40 @@ Exemple :
 cf push nom_app -p chemin_app -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
-## La limite de mémoire de l'organisation a été atteinte
+## La limite mémoire de l'organisation est dépassée
 {: #ts_outofmemory}
 
-Si vous possédez un compte d'essai, il se peut que vous ne puissiez pas déployer une application dans {{site.data.keyword.Bluemix_notm}} si
-vous avez
-atteint la limite de mémoire définie pour votre organisation. Vous pouvez réduire la quantité de mémoire que vos applications utilisent ou augmenter le quota de mémoire de votre compte. Le quota de mémoire maximal pour un compte d'essai est 2 Go. Il ne peut être augmenté qu'en passant à un compte payant.
+Si vous utilisez un compte d'essai, il se peut que vous ne puissiez pas déployer une application dans {{site.data.keyword.Bluemix_notm}} si vous avez atteint la limite de mémoire de votre organisation. Vous pouvez réduire la quantité de mémoire que vos applications utilisent ou augmenter le quota de mémoire de votre compte. Le quota de mémoire maximal pour un compte d'essai est 2 Go. Il ne peut être augmenté qu'en passant à un compte payant.
 
-Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, le message d'erreur suivant s'affiche :
+Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, vous rencontrez le message d'erreur suivant :
 {: tsSymptoms}
 
-`FAILED Server error, status code: 400, error code: 100005, message: You have exceeded your organization's memory limit.`
+`FAILED Erreur de serveur, code statut : 400, code d'erreur : 100005, message : vous avez dépassé la limite mémoire de votre organisation.`
 
 Cette erreur survient lorsque la quantité de mémoire restante pour votre organisation est inférieure à la quantité de mémoire requise par l'application à déployer. Le quota de mémoire maximal pour un compte d'essai est 2 Go.
 {: tsCauses}
 
-Vous pouvez augmenter le quota de mémoire de votre compte ou réduire la mémoire que vos applications utilisent.
+Vous pouvez augmenter le quota de mémoire de votre compte ou diminuer la mémoire que vos applications utilisent.
 {: tsResolve}
 
-  * Pour augmenter le quota de mémoire de votre compte, convertissez votre compte d'essai en compte payant. Pour des informations sur la conversion de votre compte d'essai en compte payant, voir [Comptes payants](/docs/pricing/index.html#pay-accounts).
-  * Pour réduire la quantité de mémoire que vos applications utilisent, servez-vous de la console {{site.data.keyword.Bluemix_notm}} ou de l'interface de ligne de commande cf.
+  * Pour augmenter le quota de mémoire de votre compte, convertissez votre compte d'essai en compte payant. Pour plus d'informations sur la conversion de votre compte d'essai en compte payant, voir [comptes payants](/docs/pricing/index.html#pay-accounts).
+  * Pour réduire la quantité de mémoire que vos applications consomment, utilisez la console {{site.data.keyword.Bluemix_notm}} ou l'interface de ligne de commande cf.
 
     Si vous utilisez la console {{site.data.keyword.Bluemix_notm}}, procédez comme suit :
 
-    1. Dans l'application Applications, sélectionnez votre application. La page des détails de l'application s'ouvre.
-    2. Dans le panneau Contexte d'exécution, vous pouvez réduire la limite de mémoire maximal ou le nombre d'instances d'application, ou les deux, pour votre application.
+    1. Dans le tableau de bord Applications, sélectionnez votre application. La page des détails de l'application s'ouvre.
+    2. Dans le panneau Contexte d'exécution, vous pouvez réduire la limite de mémoire maximale, le nombre d'instances d'application, ou les deux, pour votre application.
 
     Si vous utilisez l'interface de ligne de commande cf, procédez comme suit :
 
-    1. Vérifiez la quantité de mémoire qui est utilisée par vos applications :
+    1. Vérifiez la quantité de mémoire utilisée par vos applications :
 
 	  ```
 	  cf apps
 	  ```
 
-	  La commande cf apps répertorie toutes les applications que vous avez déployées dans votre espace en cours. Le statut de chaque application est également affiché.
+	  La commande cf apps répertorie toutes les applications que vous avez déployées dans votre espace en cours. Le statut de chaque application est
+également affiché.
 
     2. Pour réduire la quantité de mémoire qui est utilisée par votre application, réduisez le nombre d'instances d'application ou la limite de mémoire maximale, ou les deux :
 
@@ -588,30 +581,30 @@ Utilisez le code suivant dans votre servlet ou votre fichier JSP :
 
 Des problèmes peuvent survenir lorsque vous mettez à jour ou déployez une application Node.js dans {{site.data.keyword.Bluemix_notm}}.
 
-Lorsque vous mettez à jour une application Node.js ou déployez votre application Node.js dans {{site.data.keyword.Bluemix_notm}}, l'un des messages d'erreur suivants peut s'afficher :
+Lorsque vous mettez à jour ou déployez votre application Node.js dans {{site.data.keyword.Bluemix_notm}}, l'un des messages d'erreur suivants peut s'afficher :
 {: tsSymptoms}
 
-`An app was not successfully detected by any available buildpack.`
+`Aucune application n'a été détectée par les packs de construction disponibles.`
 
-`Instance (index 0) failed to start accepting connections.`
+`L'Instance (index 0) ne peut pas commencer à accepter des connexions.`
 
-`Cannot get instances since staging failed.`
+`Impossible d'obtenir des instances vu que leur transfert a échoué.`
 
-Les causes possibles sont les suivantes :
+Causes possibles :
 {: tsCauses}
 
-  * La commande de démarrage n'est pas spécifiée.
-  * Les fichiers requis pour déployer une application Node.js sont manquants dans l'application ou se trouvent dans un dossier autre que le répertoire racine.
+  * La commande de démarrage n'a pas été spécifiée.
+  * Des fichiers requis pour déployer une application Node.js sont manquants dans l'application ou résident dans un dossier autre que le répertoire racine.
 
-Utilisez l'une des méthodes suivantes, selon la cause du problème à résoudre :
+Utilisez l'une des méthodes suivantes, selon la cause du problème :
 {: tsResolve}
 
-  * Spécifiez la commande de démarrage en appliquant l'une des méthodes suivantes :
-     * Utilisez l'interface de ligne de commande cf. Exemple :
+  * Spécifiez la commande de démarrage à l'aide d'une des méthodes suivantes :
+     * Utilisation de l'interface de ligne de commande cf. Exemple :
         ```
 		cf push MonNoeudJsUnique01 -p chemin_app -c "node app.js"
 		```
-    * Utilisez le fichier [package.json ![Icône de lien externe](../icons/launch-glyph.svg "External link icon")](https://docs.npmjs.com/json){: new_window}. Exemple :
+    * Utilisation du fichier [package.json ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.npmjs.com/json){: new_window}. Exemple :
 	    ```
 		{
       ...
@@ -620,7 +613,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème à résoudre
  	   }
 	}
 	    ```
-    * Utilisez le fichier `manifest.yml`. Exemple :
+    * Utilisation du fichier `manifest.yml`. Exemple :
 	    ```
 		applications:
   name: MonNoeudJsUnique01
@@ -649,7 +642,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème à résoudre
  }
     ```
 
-Pour d'autres conseils relatifs aux applications Node.js, voir [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![Icône de lien externe](../icons/launch-glyph.svg "External link icon"){: new_window}.
+Pour d'autres conseils relatifs aux applications Node.js, voir [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "External link icon"){: new_window}.
 
 
 ## Des erreurs de configuration figurent dans le fichier `server.xml` après l'importation d'une application Bluemix Liberty dans Eclipse
@@ -680,7 +673,7 @@ Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}} �
 Ce problème peut se produire si des scripts (tels que le script de détection, le script de compilation ou le script de publication) ne sont pas exécutables.
 {: tsCauses}
 
-Vous pouvez utiliser la commande [git update ![](../icons/launch-glyph.svg " ")](http://git-scm.com/docs/git-update-index){: new_window} afin d'activer le droit d'exécution pour chaque script. Par exemple, vous pouvez entrer `git update --chmod=+x script.sh`.
+Vous pouvez utiliser la commande [git update ![External link icon](../icons/launch-glyph.svg "External link icon")](http://git-scm.com/docs/git-update-index){: new_window} pour redéfinir chaque script comme exécutable. Par exemple, vous pouvez entrer `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## Impossible de déployer une application depuis Delivery Pipeline dans IBM Bluemix Continuous Delivery

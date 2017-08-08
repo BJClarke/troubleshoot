@@ -82,7 +82,7 @@ Sie müssen über eine gültige IBMid und ein Kennwort verfügen, um sich bei {{
 
  * Stellen Sie sicher, dass Sie eine vollständig qualifizierte E-Mail-Adresse für die IBMid eingeben.
  {: tsResolve}
- * Falls Sie einen SoftLayer-.Benutzer mit einer SoftLayer-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im Kundenportal zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid amelden können. 
+ * Falls Sie einen SoftLayer-.Benutzer mit einer SoftLayer-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im Kundenportal zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können.
  Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/softlayerlink.html#ibmid_switch).
 
 
@@ -97,11 +97,11 @@ Wenn Sie sich mit Ihrer IBMid anmelden, wird die folgende Nachricht angezeigt:
 Sie haben sich über das [Kundenportal](https://control.softlayer.com) mit einer gültigen IBM ID angemeldet, aber in SoftLayer zur Authentifizierung mit IBM ID gewechselt.
 {: tsCauses} 
  
-Führen Sie die folgenen Prüfungen durch:
+Führen Sie die folgenden Prüfungen durch:
 {: tsResolve}
  * Lassen Sie von Ihrem Masterbenutzer oder Kontoadministrator überprüfen, ob Sie zur Authentifizierung mit IBMid wechseln können.
  * Stellen Sie sicher, dass Sie den Schritt für den Wechsel zur IBMid in Ihrem SoftLayer-Konto ausgeführt haben. Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/softlayerlink.html#ibmid_switch).
- * Stellen Sie sicher, dass Sie die Aktionen ausgeführt haben, die in der E-Mail für die **Zuordnung des SoftLayer-Benutzers zu einer IBMid** beschrieben sind. Prüfen Sie, ob die E-Mail in Ihrem Posteingang oder im Spamordner vorhanden ist. Um die E-Mail erneut abzurufen, weil sie beispielsweise abgelaufen ist, wechseln Sie im Steuerungsportal auf die Seite für die Bearbeitung des Benutzerprofils und klicken Sie auf **E-Mail erneut senden**. Setzen Sie sich alternativ mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com){: new_window} in Verbindung.
+ * Stellen Sie sicher, dass Sie die Aktionen ausgeführt haben, die in der E-Mail für die **Zuordnung des SoftLayer-Benutzers zu einer IBMid** beschrieben sind. Prüfen Sie, ob die E-Mail in Ihrem Posteingang oder im Spamordner vorhanden ist. Um die E-Mail erneut abzurufen, weil sie beispielsweise abgelaufen ist, wechseln Sie im Steuerungsportal auf die Seite für die Bearbeitung des Benutzerprofils und klicken Sie auf **E-Mail erneut senden**. Setzen Sie sich alternativ mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com "Symbol für externen Link"){: new_window} in Verbindung.
 
 **Hinweis:** Falls Sie Ihre IBMid direkt über IBMid erstellt haben, empfangen Sie zwei E-Mails, die Sie verarbeiten müssen. Eine E-Mail stammt von der IBMid-Registrierung, die andere von Softlayer. Stellen Sie sicher, dass Sie die Aktionen ausführen, die in beiden E-Mails aufgeführt sind.
 
@@ -150,7 +150,7 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authenti
 Möglicherweise besteht ein Problem beim Service für die Authentifizierung mit IBMid.
 {: tsCauses}
 
-Überprüfen Sie den Status des Service auf der Seite [IBM BlueID ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} und wiederholen Sie anschließend den Versuch.
+Überprüfen Sie den Status des Service auf der Seite [IBM BlueID ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Symbol für externen Link"){: new_window} und wiederholen Sie anschließend den Versuch.
 {: tsResolve}
 
 
@@ -167,7 +167,7 @@ Wenn Sie sich für ein {{site.data.keyword.Bluemix_notm}}-Testkonto registriert 
 Wenn Sie sich für ein {{site.data.keyword.Bluemix_notm}}-Testkonto registriert haben, erhalten Sie eine Bestätigungs-E-Mail. Sie müssen auf den Link in dieser Bestätigungs-E-Mail klicken, um den Registrierungsprozess abzuschließen.
 {: tsCauses} 
 
-Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Sie angegeben haben. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Falls Sie die Bestätigungs-E-Mail nicht erhalten haben, setzen Sie sich mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com){: new_window} in Verbindung.  
+Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Sie angegeben haben. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Falls Sie die Bestätigungs-E-Mail nicht erhalten haben, setzen Sie sich mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com "Symbol für externen Link"){: new_window} in Verbindung.  
 {: tsResolve}
 
 
@@ -249,7 +249,7 @@ Wenn Sie nicht Benutzer zu Ihrer Organisation einladen können und zum Einladen 
   
 Wenn Sie nicht in der Lage sind, Benutzer einzuladen, weil Sie ein Mitarbeiter und kein Mitglied sind, müssen Sie Ihr vorheriges {{site.data.keyword.Bluemix_notm}}-Konto löschen und anschließend eingeladen werden, als Mitglied der Organisation am Konto teilzunehmen. Um Ihr vorheriges Konto zu löschen und dem Konto als Mitglied beizutreten, führen Sie die folgenden Schritte durch: 
 
-  1. Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport){: new_window}, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie Daten besitzen, die zu Ihrem alten Konto gehören, und die Sie speichern und in das neue Konto verschieben möchten, beziehen Sie diese Informationen in Ihre E-Mail ein. 
+  1. Wenden Sie sich an den [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport "Symbol für externen Link"){: new_window}, um ein Support-Ticket zu öffnen und die Löschung Ihres Kontos anzufordern. Wenn Sie Daten besitzen, die zu Ihrem alten Konto gehören, und die Sie speichern und in das neue Konto verschieben möchten, beziehen Sie diese Informationen in Ihre E-Mail ein. 
   2. Nachdem Ihr Konto gelöscht ist, lassen Sie sich von dem Benutzer mit der Organisationsmanager-Rolle als Organisationsmanager in die Organisation einladen. Anschließend melden Sie sich über die Einladung bei {{site.data.keyword.Bluemix_notm}} an. 
 
 ## Registrierung von Benutzern im Stapelbetrieb wird nicht unterstützt
@@ -287,7 +287,7 @@ Führen Sie nach Bedarf eine oder mehrere der folgenden Aktionen aus:
 
   * Aktualisieren Sie den Browser oder starten Sie ihn erneut.
   * Melden Sie sich bei {{site.data.keyword.Bluemix_notm}} ab und anschließend wieder an.
-  * Verwenden Sie den persönlichen Browsingmodus des Browsers. 
+  * Verwenden Sie den persönlichen Browsing-Modus des Browsers. 
   * Löschen Sie Cookies und den Inhalt des Browser-Cache.
   * Verwenden Sie einen anderen Browser. Informationen zu den Versionen der Browser, die von {{site.data.keyword.Bluemix_notm}} unterstützt werden, finden Sie in den [Voraussetzungen für Bluemix](/docs/overview/whatisbluemix.html#prereqs).
   * Wenn Sie die cf-Befehlszeilenschnittstelle installiert haben, geben Sie den Befehl `cf apps` ein, um anzuzeigen, ob die App aktiv ist.

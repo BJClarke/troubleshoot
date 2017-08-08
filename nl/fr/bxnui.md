@@ -609,7 +609,7 @@ Essayez à nouveau ultérieurement. Si ce message réapparaît, ouvrez la [page 
 Pour résoudre ce problème, accédez à [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0132E
-**Message** : Les informations **name** n'ont pas été extraites car un problème est survenu lors du contact de Cloud Foundry. 
+**Message** : Les informations __name__ n'ont pas été extraites car un problème est survenu lors du contact de Cloud Foundry. 
 
 Essayez à nouveau ultérieurement. Si ce message réapparaît, ouvrez la [page de statut Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} pour déterminer si un service ou un composant présente un problème. Si le problème persiste, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -751,7 +751,7 @@ Essayez à nouveau ultérieurement. Si ce message réapparaît, ouvrez la [page 
 
 ## BXNUI0514E 
 
-**Message** : Vous n'êtes développeur dans aucun des espaces de l'organisation '**orgName**'.
+**Message** : Vous n'êtes développeur dans aucun des espaces de l'organisation '__orgName__'.
 
 Essayez de sélectionner une autre organisation ou de créer un espace, ou demandez le rôle Développeur au responsable de votre organisation.
 
@@ -769,31 +769,31 @@ Essayez à nouveau ultérieurement. Si le problème persiste, rendez-vous sur la
 
 ## BXNUI0517E
 
-**Message** : L'espace de nom du conteneur de l'organisation n'a pas été extrait en raison d'une erreur interne dont l'ID d'incident est **incidentID**. 
+**Message** : L'espace de nom du conteneur de l'organisation n'a pas été extrait en raison d'une erreur interne dont l'ID d'incident est __incidentID__. 
 
 Essayez à nouveau ultérieurement. Si le problème persiste, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0518E
 
-**Message** : Le conteneur n'a pas été créé en raison d'une erreur interne dont l'ID d'incident est **incidentID**.
+**Message** : Le conteneur n'a pas été créé en raison d'une erreur interne dont l'ID d'incident est __incidentID__.
 
 Essayez à nouveau ultérieurement. Si le problème persiste, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0519E
 
-**Message** : Le groupe de conteneurs n'a pas été créé en raison d'une erreur interne dont l'ID d'incident est **incidentID**.
+**Message** : Le groupe de conteneurs n'a pas été créé en raison d'une erreur interne dont l'ID d'incident est __incidentID__.
 
 Essayez à nouveau ultérieurement. Si le problème persiste, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0521E
 
-**Message** : Une erreur interne avec l'ID d'incident **incidentID** est survenue lors d'une tentative de création d'un conteneur à partir de l'image. Certaines ressources, comme une adresse IP ou la mémoire, n'étaient pas disponibles lors de l'extraction de l'espace de nom.
+**Message** : Une erreur interne avec l'ID d'incident __incidentID__ est survenue lors d'une tentative de création d'un conteneur à partir de l'image. Certaines ressources, comme une adresse IP ou la mémoire, n'étaient pas disponibles lors de l'extraction de l'espace de nom.
 
 Pour ajuster les quotas, accédez à **Gérer les organisations**, cliquez sur l'onglet **Quota** pour votre organisation, puis cliquez sur **Conteneurs**. Ensuite, essayez à nouveau de sélectionner l'image.
 
 ## BXNUI0522E
 
-**Message** : Vous ne pouvez pas créer la ressource car vous n'êtes pas un développeur pour l'espace **spaceName** dans l'organisation **orgName**.
+**Message** : Vous ne pouvez pas créer la ressource car vous n'êtes pas un développeur pour l'espace __spaceName__ dans l'organisation __orgName__.
 
 Essayez de sélectionner un autre espace ou une autre organisation ou de créer un espace, ou demandez le rôle Développeur au responsable de votre organisation.
 
@@ -811,7 +811,7 @@ Essayez à nouveau ultérieurement. Si le problème persiste, rendez-vous sur la
 
 ## BXNUI0525E
 
-**Message** : La tentative de création d'un registre a échoué car vous ne disposez pas des droits d'accès à l'espace de nom du registre pour l'organisation **orgName**. Le rôle utilisateur de développeur est requis pour créer un registre.
+**Message** : La tentative de création d'un registre a échoué car vous ne disposez pas des droits d'accès à l'espace de nom du registre pour l'organisation __orgName__. Le rôle utilisateur de développeur est requis pour créer un registre.
 
 Demandez un autre rôle au responsable de votre organisation.
 
@@ -841,13 +841,13 @@ Cliquez sur **Créer** pour réessayer ou annulez l'action.
 
 ## BXNUI0701E
 
-**Message** : L'invitation des utilisateurs a échoué. Code d'erreur : **errorCode**.
+**Message** : L'invitation des utilisateurs a échoué. Code d'erreur : __errorCode__.
 
 Essayez à nouveau ultérieurement. Si ce message réapparaît, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0702E
 
-**Message** : L'invitation de **emailAddress** a échoué. Code d'erreur : **errorCode**.
+**Message** : L'invitation de __emailAddress__ a échoué. Code d'erreur : __errorCode__.
 
 Essayez à nouveau ultérieurement. Si ce message réapparaît, rendez-vous sur la page [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -859,7 +859,7 @@ Essayez à nouveau ultérieurement.
 
 ## BXNUI0704E
 
-**Message** : Les détails de cet utilisateur invité n'ont pas pu être chargés depuis la ou les régions suivantes : <strong>**regions**</strong>.
+**Message** : Les détails de cet utilisateur invité n'ont pas pu être chargés depuis la ou les régions suivantes : <strong>__regions__</strong>.
 
 Essayez à nouveau ultérieurement.
 

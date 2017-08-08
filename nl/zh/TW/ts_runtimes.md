@@ -1,8 +1,7 @@
 ---
 
 copyright:
-  years: 2015, 2017
-  
+  years: 2015, 2017  
 lastupdated: "2017-01-10"
 
 ---
@@ -36,16 +35,16 @@ lastupdated: "2017-01-10"
 您可以使用具有內建機制的建置套件來避免載入已作廢的元件，例如下列建置套件：
 {: tsResolve}
 
-  * [Cloud Foundry Java 建置套件 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/java-buildpack){: new_window}。這個建置套件具有內建的機制，可以確保使用最新版本的建置套件。如需此機制運作方式的相關資訊，請參閱 [extending-caches.md ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}。 
-  * [Cloud Foundry Node.js 建置套件 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}。此建置套件的功能與使用環境變數類似。為了讓 Node.js 建置套件能每次從網際網路下載 node 模組，請在 cf 指令行介面中，鍵入下列指令： 	
+  * [Cloud Foundry Java 建置套件 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/java-buildpack "外部鏈結圖示"){: new_window}。這個建置套件具有內建的機制，可以確保使用最新版本的建置套件。如需此機制運作方式的相關資訊，請參閱 [extending-caches.md ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "外部鏈結圖示"){: new_window}。 
+  * [Cloud Foundry Node.js 建置套件 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/nodejs-buildpack "外部鏈結圖示"){: new_window}。此建置套件的功能與使用環境變數類似。為了讓 Node.js 建置套件能每次從網際網路下載 node 模組，請在 cf 指令行介面中，鍵入下列指令： 	
   ```
   set NODE_MODULES_CACHE=false
   ```
 
 如果您使用的建置套件未提供自動載入最新元件的機制，您可以手動刪除快取目錄中的內容，然後重新推送應用程式。請使用下列步驟：
 
- 1. 移出空值建置套件的分支，例如 https://github.com/ryandotsmith/null-buildpack。如需如何移出分支的相關資訊，請參閱 [Git Basics - Getting a Git Repository ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository){: new_window}。  
- 2. 將下行新增到 `null-buildpack/bin/compile` 檔案並確定變更。如需如何確定變更的相關資訊，請參閱 [Git Basics - Recording Changes to the Repository ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){: new_window}。
+ 1. 移出空值建置套件的分支，例如 https://github.com/ryandotsmith/null-buildpack。如需如何移出分支的相關資訊，請參閱 [Git Basics - Getting a Git Repository ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "外部鏈結圖示"){: new_window}。  
+ 2. 將下行新增到 `null-buildpack/bin/compile` 檔案並確定變更。如需如何確定變更的相關資訊，請參閱 [Git Basics - Recording Changes to the Repository ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository "外部鏈結圖示"){: new_window}。
   ```
   rm -rfv $2/*
   ```
@@ -72,7 +71,7 @@ lastupdated: "2017-01-10"
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: fpm is running, pid 93
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
-在 PHP 建置套件中，error_log 參數會定義記載層次。依預設，`error_log` 參數的值為 **stderr notice**。下列範例顯示 Cloud Foundry 提供之 PHP 建置套件的 `nginx-defaults.conf` 檔案中的預設記載層次配置。如需相關資訊，請參閱 [cloudfoundry/php-buildpack ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}。
+在 PHP 建置套件中，error_log 參數會定義記載層次。依預設，`error_log` 參數的值為 **stderr notice**。下列範例顯示 Cloud Foundry 提供之 PHP 建置套件的 `nginx-defaults.conf` 檔案中的預設記載層次配置。如需相關資訊，請參閱 [cloudfoundry/php-buildpack ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf "外部鏈結圖示"){: new_window}。
 {: tsCauses} 
 
 ```
@@ -89,7 +88,7 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-如需如何變更預設記載配置的相關資訊，請參閱 [error_log ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}。
+如需如何變更預設記載配置的相關資訊，請參閱 [error_log ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://nginx.org/en/docs/ngx_core_module.html#error_log "外部鏈結圖示"){: new_window}。
 	
 
 ## 無法將協力廠商的 Python 檔案庫匯入 {{site.data.keyword.Bluemix_notm}}
@@ -173,7 +172,7 @@ Python 應用程式的配置資訊遺失。
 發生此問題的原因如下：
 {: tsCauses} 
 
-  * 追蹤或傾出管理功能僅適用於執行中的應用程式實例。在已停止、啟動中或已損毀的應用程式實例上，無法執行追蹤或傾出作業。
+  * 追蹤或傾出管理功能僅適用於執行中的應用程式實例。在已停止、啟動中或已當機的應用程式實例上，無法執行追蹤或傾出作業。
   * 當追蹤或傾出對話框開啟時，應用程式實例的狀態為變更中。 
 
 請關閉視窗，然後再重新開啟。

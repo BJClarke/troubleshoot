@@ -609,7 +609,7 @@ Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [pág
 Para resolver esse problema, acesse o [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0132E
-**Mensagem**: as informações de **nome** não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**Mensagem**: as informações de __nome__ não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
 
 Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -751,7 +751,7 @@ Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [pág
 
 ## BXNUI0514E 
 
-**Mensagem**: você não é um desenvolvedor para nenhum dos espaços na organização '**orgName**'.
+**Mensagem**: você não é um desenvolvedor para nenhum dos espaços na organização '__orgName__'.
 
 Tente selecionar outra organização ou crie um espaço ou solicite a função de desenvolvedor ao gerenciador da sua organização.
 
@@ -769,31 +769,31 @@ Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Blue
 
 ## BXNUI0517E
 
-**Mensagem**: o namespace do contêiner da organização não foi recuperado devido a um erro interno com o ID de incidente **incidentID**. 
+**Mensagem**: o namespace do contêiner da organização não foi recuperado devido a um erro interno com o ID de incidente __incidentID__. 
 
 Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0518E
 
-**Mensagem**: o contêiner não foi criado devido a um erro interno com o ID de incidente **incidentID**.
+**Mensagem**: o contêiner não foi criado devido a um erro interno com o ID de incidente __incidentID__.
 
 Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0519E
 
-**Mensagem**: o grupo de contêiner não foi criado devido a um erro interno com o ID de incidente **incidentID**.
+**Mensagem**: o grupo de contêiner não foi criado devido a um erro interno com o ID de incidente __incidentID__.
 
 Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0521E
 
-**Mensagem**: ao tentar criar um contêiner a partir da imagem, ocorreu um erro interno com o ID de incidente **incidentID**. Alguns recursos, como endereço IP ou memória, não estavam disponíveis quando o namespace estava sendo recuperado.
+**Mensagem**: ao tentar criar um contêiner a partir da imagem, ocorreu um erro interno com o ID de incidente __incidentID__. Alguns recursos, como endereço IP ou memória, não estavam disponíveis quando o namespace estava sendo recuperado.
 
 Para ajustar as cotas, acesse **Gerenciar organizações**, clique na guia **Cota** de sua organização e clique em **Contêineres**. Em seguida, tente selecionar a imagem novamente.
 
 ## BXNUI0522E
 
-**Mensagem**: não é possível criar o recurso porque você não é um desenvolvedor para o **spaceName** na organização **orgName**.
+**Mensagem**: não é possível criar o recurso porque você não é um desenvolvedor para o __spaceName__ na organização __orgName__.
 
 Tente selecionar outro espaço ou organização, ou crie um espaço, ou solicite a função de desenvolvedor a partir do gerente da organização.
 
@@ -811,7 +811,7 @@ Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Blue
 
 ## BXNUI0525E
 
-**Mensagem**: a tentativa de criar um registro falhou porque você não tem autoridade para o namespace de registro para a organização **orgName**. A função de usuário desenvolvedor é necessária para criar um registro.
+**Mensagem**: a tentativa de criar um registro falhou porque você não tem autoridade para o namespace de registro para a organização __orgName__. A função de usuário desenvolvedor é necessária para criar um registro.
 
 Solicite uma função diferente a partir do gerenciador de organização.
 
@@ -841,13 +841,13 @@ Clique em **Criar** para tentar novamente ou cancele a ação.
 
 ## BXNUI0701E
 
-**Mensagem**: falha ao convidar usuários. Código de erro: **errorCode**.
+**Mensagem**: falha ao convidar usuários. Código de erro: __errorCode__.
 
 Tente novamente mais tarde. Caso você veja essa mensagem novamente, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0702E
 
-**Mensagem**: falha ao convidar **emailAddress**. Código de erro: **errorCode**.
+**Mensagem**: falha ao convidar __emailAddress__. Código de erro: __errorCode__.
 
 Tente novamente mais tarde. Caso você veja essa mensagem novamente, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -859,7 +859,7 @@ Tente novamente mais tarde.
 
 ## BXNUI0704E
 
-**Mensagem**: não foi possível carregar os detalhes para esse usuário convidado na região ou regiões a seguir: <strong>**regions**</strong>.
+**Mensagem**: não foi possível carregar os detalhes para esse usuário convidado na região ou regiões a seguir: <strong>__regions__</strong>.
 
 Tente novamente mais tarde.
 

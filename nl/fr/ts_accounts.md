@@ -1,4 +1,4 @@
----
+﻿---
 
 copyright:
   years: 2015, 2017
@@ -24,10 +24,10 @@ Vous pouvez rencontrer des problèmes d'ordre général lorsque vous gérez votr
 ## Impossible d'accéder à une région {{site.data.keyword.Bluemix_notm}} différente
 {: #nosecondreg}
 
-Vous recevez un message d'erreur lorsque vous tentez de créer une nouvelle région {{site.data.keyword.Bluemix_notm}}.
+Vous recevez un message d'erreur lorsque vous tentez de créer une nouvelle région {{site.data.keyword.Bluemix_notm}}. 
 {: tsSymptoms}
 
-Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule région publique. La région {{site.data.keyword.Bluemix_notm}} publique dans laquelle vous désirez travailler est sélectionnée lors de la configuration initiale du compte.
+Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule région publique. La région {{site.data.keyword.Bluemix_notm}} publique dans laquelle vous désirez travailler est sélectionnée lors de la configuration initiale du compte. 
 {: tsCauses}
 
 Si vous utilisez un compte Standard, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres régions. Accédez à la page **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Standard.
@@ -36,10 +36,10 @@ Si vous utilisez un compte Standard, vous pouvez effectuer une mise à niveau ve
 ## Impossible de créer une nouvelle organisation
 {: #nosecondorg}
  
-Un message d'erreur est renvoyé lorsque vous tentez de créer une nouvelle organisation.
+Un message d'erreur est renvoyé lorsque vous tentez de créer une nouvelle organisation. 
 {: tsSymptoms}
 
-Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule organisation. Votre organisation est créée lors de la configuration initiale de votre compte.
+Il est probable que vous utilisez un compte Standard, lequel ne permet un développement que dans une seule organisation. Votre organisation est créée lors de la configuration initiale de votre compte. 
 {: tsCauses}
 
 Si vous utilisez un compte Standard, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres organisations. Accédez à la page **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Standard.
@@ -53,7 +53,7 @@ Le message d'erreur suivant s'affiche lorsque vous tentez de créer une nouvelle
 
 `Impossible de mettre à disposition une nouvelle instance Lite`
 
-Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite.
+Pour pouvoir maintenir la gratuité de ces plans, une seule instance est permise par plan Lite. 
 {: tsCauses}
 
 Vous pouvez créer des instances supplémentaires du service en sélectionnant l'un des plans de service facturables, lesquels sont disponibles dans les comptes facturables. Pour effectuer une mise à niveau vers un compte facturable depuis la console, accédez à la page **Gérer > Facturation et utilisation > Facturation**, puis cliquez sur **Ajouter une carte de crédit**.
@@ -89,7 +89,7 @@ Le statut de votre compte {{site.data.keyword.Bluemix_notm}} devient inactif lor
 {: tsCauses}
 
 
-Pour réactiver votre compte, contactez le [support {{site.data.keyword.Bluemix_notm}} ![](../icons/launch-glyph.svg "")](http://ibm.biz/bluemixsupport.com){: new_window}. Indiquez les informations suivantes dans votre courrier électronique :
+Pour réactiver votre compte, contactez le Support [{{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}. Indiquez les informations suivantes dans votre courrier électronique :
 {: tsResolve}
 
   * L'IBMid que vous utilisez pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
@@ -113,7 +113,7 @@ Pour créer un espace, appliquez l'une des méthodes suivantes :
 {: tsResolve}
  
   * Dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, sélectionnez l'organisation dans laquelle créer l'espace, puis cliquez sur **Créer un espace**.
-  * Dans l'interface de ligne de commande cf, tapez `cf create-space <nom_espace> -o <nom_organisation>`.
+  * Dans l'interface de ligne de commande cf, entrez `cf create-space <space_name> -o <organization_name>`.
 
   
 ## Les applications partagent le même nom de domaine
@@ -126,7 +126,7 @@ Ce problème peut se produire lorsque vous affectez la même route d'adresse URL
 
 Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine "mynewapp.stage1.mybluemix.net". Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez "mynewapp.mybluemix.net" à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement de {{site.data.keyword.Bluemix_notm}} pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Using Blue-Green Deployment to Reduce Downtime and Risk ![](../icons/launch-glyph.svg "External link icon")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Il s'agit du comportement de {{site.data.keyword.Bluemix_notm}} pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Using Blue-Green Deployment to Reduce Downtime and Risk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
   
 

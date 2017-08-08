@@ -605,7 +605,7 @@ Versuchen Sie es später erneut. Wird diese Nachricht erneut angezeigt, rufen Si
 Rufen Sie zur Lösung des Problems den [IBM Bluemix-Support](http://ibm.biz/bluemixsupport){: new_window} auf.
 
 ## BXNUI0132E
-**Nachricht**: Die Informationen zu **Name** wurden nicht abgerufen, da beim Kontaktieren von Cloud Foundry ein Problem auftrat. 
+**Nachricht**: Die Informationen zu __Name__ wurden nicht abgerufen, da beim Kontaktieren von Cloud Foundry ein Problem auftrat. 
 
 Versuchen Sie es später erneut. Wird diese Nachricht erneut angezeigt, rufen Sie die [Bluemix-Statusseite](https://developer.ibm.com/bluemix/support/#status){: new_window} auf, um zu prüfen, ob für einen Service oder eine Komponente ein Problem vorliegt. Wenn das Problem bestehen bleibt, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -747,7 +747,7 @@ Versuchen Sie es später erneut. Wird diese Nachricht erneut angezeigt, rufen Si
 
 ## BXNUI0514E 
 
-**Nachricht**: Sie sind kein Entwickler für die Bereiche in der Organisation **Organisationsname**.
+**Nachricht**: Sie sind kein Entwickler für die Bereiche in der Organisation __Organisationsname__.
 
 Wählen Sie eine andere Organisation aus oder erstellen Sie einen Bereich oder fordern Sie bei Ihrem Organisationsmanager die Entwicklerrolle an.
 
@@ -765,31 +765,31 @@ Versuchen Sie es später erneut. Wenn das Problem bestehen bleibt, wenden Sie si
 
 ## BXNUI0517E
 
-**Nachricht**: Der Containernamensbereich der Organisation wurde aufgrund eines internen Fehlers mit der Vorfall-ID **Vorfall-ID** nicht abgerufen. 
+**Nachricht**: Der Containernamensbereich der Organisation wurde aufgrund eines internen Fehlers mit der Vorfall-ID __Vorfall-ID__ nicht abgerufen. 
 
 Versuchen Sie es später erneut. Wenn das Problem bestehen bleibt, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0518E
 
-**Nachricht**: Der Container wurde aufgrund eines internen Fehlers mit der Vorfall-ID **Vorfall-ID** nicht erstellt.
+**Nachricht**: Der Container wurde aufgrund eines internen Fehlers mit der Vorfall-ID __Vorfall-ID__ nicht erstellt.
 
 Versuchen Sie es später erneut. Wenn das Problem bestehen bleibt, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0519E
 
-**Nachricht**: Die Containergruppe wurde aufgrund eines internen Fehlers mit der Vorfall-ID **Vorfall-ID** nicht erstellt.
+**Nachricht**: Die Containergruppe wurde aufgrund eines internen Fehlers mit der Vorfall-ID __Vorfall-ID__ nicht erstellt.
 
 Versuchen Sie es später erneut. Wenn das Problem bestehen bleibt, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0521E
 
-**Nachricht**: Bei dem Versuch, einen Container aus dem Image zu erstellen, trat ein interner Fehler mit der Vorfall-ID **Vorfall-ID** auf. Einige Ressourcen, z. B. IP-Adressen oder Speicher, waren nicht verfügbar, als der Namensbereich abgerufen wurde.
+**Nachricht**: Bei dem Versuch, einen Container aus dem Image zu erstellen, trat ein interner Fehler mit der Vorfall-ID __Vorfall-ID__ auf. Einige Ressourcen, z. B. IP-Adressen oder Speicher, waren nicht verfügbar, als der Namensbereich abgerufen wurde.
 
 Um die Kontingente anzupassen, rufen Sie **Organisationen verwalten** auf, klicken Sie auf die Registerkarte **Kontingent** für Ihre Organisation und klicken Sie auf **Container**. Versuchen Sie anschließend erneut, das Image auszuwählen.
 
 ## BXNUI0522E
 
-**Nachricht**: Sie können die Ressource  nicht erstellen, weil Sie kein Entwickler für **Bereichsname** in der Organisation **Organisationsname** sind.
+**Nachricht**: Sie können die Ressource  nicht erstellen, weil Sie kein Entwickler für __Bereichsname__ in der Organisation __Organisationsname__ sind.
 
 Wählen Sie einen anderen Bereich oder eine andere Organisation aus oder erstellen Sie einen Bereich oder fordern Sie bei Ihrem Organisationsmanager die Entwicklerrolle an.
 
@@ -807,7 +807,7 @@ Versuchen Sie es später erneut. Wenn das Problem bestehen bleibt, wenden Sie si
 
 ## BXNUI0525E
 
-**Nachricht**: Der Versuch, eine Registry zu erstellen, ist fehlgeschlagen, weil Sie keine Berechtigung für den Namensbereich der Registry für die Organisation **Organisationsname** besitzen. Zum Erstellen einer Registry ist die Benutzerrolle eines Entwicklers erforderlich.
+**Nachricht**: Der Versuch, eine Registry zu erstellen, ist fehlgeschlagen, weil Sie keine Berechtigung für den Namensbereich der Registry für die Organisation __Organisationsname__ besitzen. Zum Erstellen einer Registry ist die Benutzerrolle eines Entwicklers erforderlich.
 
 Fordern Sie beim zuständigen Organisationsmanager eine andere Rolle an.
 
@@ -837,13 +837,13 @@ Klicken Sie auf **Erstellen**, um den Vorgang zu wiederholen, oder brechen Sie d
 
 ## BXNUI0701E
 
-**Nachricht**: Das Einladen von Benutzern ist fehlgeschlagen. Fehlercode: **Fehlercode**.
+**Nachricht**: Das Einladen von Benutzern ist fehlgeschlagen. Fehlercode: __Fehlercode__.
 
 Versuchen Sie es später erneut. Wenn diese Nachricht erneut angezeigt wird, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
 ## BXNUI0702E
 
-**Nachricht**: Das Einladen von **E-Mail-Adresse** ist fehlgeschlagen. Fehlercode: **Fehlercode**.
+**Nachricht**: Das Einladen von __E-Mail-Adresse__ ist fehlgeschlagen. Fehlercode: __Fehlercode__.
 
 Versuchen Sie es später erneut. Wenn diese Nachricht erneut angezeigt wird, wenden Sie sich an den [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
@@ -855,7 +855,7 @@ Versuchen Sie es später erneut.
 
 ## BXNUI0704E
 
-**Nachricht**: Die Details für diesen eingeladenen Benutzer konnten nicht aus der folgenden Region bzw. den folgenden Regionen geladen werden: <strong>**Regionen**</strong>.
+**Nachricht**: Die Details für diesen eingeladenen Benutzer konnten nicht aus der folgenden Region bzw. den folgenden Regionen geladen werden: <strong>__Regionen__</strong>.
 
 Versuchen Sie es später erneut.
 

@@ -101,7 +101,7 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {: tsResolve}
  * IBM ID 인증으로 전환할 수 있는지 확인하려면 마스터 사용자 또는 계정 관리자에게 문의하십시오.
  * Softlayer 계정에서 IBM ID로 전환 단계를 완료했는지 확인하십시오. [IBM ID로 전환](/docs/admin/softlayerlink.html#ibmid_switch)을 참조하십시오.
- * **IBM ID와 SoftLayer 사용자 연관** 이메일에서 조치를 따르는지 확인하십시오. 받은 편지함과 스팸 폴더에서 이메일을 확인하십시오. 만료된 이메일을 다시 가져오려면 제어 포털의 사용자 프로파일 편집 페이지로 이동하고 **이메일 재발송**을 클릭하십시오. 또는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.
+ * **IBM ID와 SoftLayer 사용자 연관** 이메일에서 조치를 따르는지 확인하십시오. 받은 편지함과 스팸 폴더에서 이메일을 확인하십시오. 만료된 이메일을 다시 가져오려면 제어 포털의 사용자 프로파일 편집 페이지로 이동하고 **이메일 재발송**을 클릭하십시오. 또는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com "외부 링크 아이콘"){: new_window}에 문의하십시오.
 
 **참고:** IBM ID로 직접 자신의 IBM ID를 작성한 경우 처리할 두 개의 이메일(IBM ID 등록 이메일과 Softlayer 이메일)을 수신합니다. 두 개의 이메일에 있는 조치를 따라야 합니다.
 
@@ -150,7 +150,7 @@ IBM ID를 사용하여 로그인한 경우 로그인 성공 메시지가 표시�
 IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {: tsCauses}
 
-[IBM BlueID ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window}에서 서비스 상태를 검사한 다음 다시 시도하십시오.
+[IBM BlueID ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "외부 링크 아이콘"){: new_window}에서 서비스 상태를 검사한 다음 다시 시도하십시오.
 {: tsResolve}
 
 
@@ -168,7 +168,7 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {{site.data.keyword.Bluemix_notm}} 평가판 계정에 등록하면 확인 이메일을 받습니다. 확인 이메일에 있는 링크를 클릭하여 등록 프로세스를 완료해야 합니다.
 {: tsCauses} 
 
-확인 이메일이 사용자가 제공한 이메일 주소로 전송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 수신하지 못한 경우 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.  
+확인 이메일이 사용자가 제공한 이메일 주소로 전송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 수신하지 못한 경우 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com "외부 링크 아이콘"){: new_window}에 문의하십시오.  
 {: tsResolve}
 
 
@@ -241,7 +241,7 @@ nslookup stage1.mybluemix.net
   
 구성원이 아닌 협업자이기 때문에 사용자를 초대할 수 없는 경우 이전 {{site.data.keyword.Bluemix_notm}} 계정을 삭제한 다음 조직의 구성원으로 계정을 결합하도록 초대 받아야 합니다. 이전 계정을 삭제하고 구성원으로 계정에 참여하려면 다음 단계를 수행하십시오. 
 
-  1. [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport){: new_window}에 문의하여 지원 티켓을 열고 계정 삭제를 요청하십시오. 이전 계정과 연관된 데이터가 있어 이 데이터를 저장한 다음 새 계정으로 이동하려면 이메일에 이 정보를 포함시키십시오. 
+  1. [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport "외부 링크 아이콘"){: new_window}에 문의하여 지원 티켓을 열고 계정 삭제를 요청하십시오. 이전 계정과 연관된 데이터가 있어 이 데이터를 저장한 다음 새 계정으로 이동하려면 이메일에 이 정보를 포함시키십시오. 
   2. 계정이 삭제되면 조직 관리자 역할을 보유한 사용자가 자신을 조직 관리자로 조직에 초대하도록 하십시오. 그런 다음 초대장을 통해 {{site.data.keyword.Bluemix_notm}}에 등록하십시오. 
 
 ## 사용자 일괄 등록이 지원되지 않음

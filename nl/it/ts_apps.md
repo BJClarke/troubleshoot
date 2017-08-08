@@ -133,7 +133,7 @@ Per controllare la versione di Java eseguita da {{site.data.keyword.eclipsetools
 
 Se il JVM workbench JVM è IBM JVM 7 o 8 o una versione precedente di Oracle JVM 8, completa la seguente procedura per passare a Oracle JVM 8:
 
-  1. Scarica e installa Oracle JVM 8; per i dettagli consulta [Java SE Downloads ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
+  1. Scarica e installa Oracle JVM 8; per i dettagli consulta [Java SE Downloads ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "Icona link esterno"){: new_window}.
   2. Riavvia Eclipse.
   3. Controlla se la proprietà `eclipse.vm` punta alla tua nuova installazione di Oracle JVM 8.
 
@@ -180,7 +180,7 @@ Non puoi creare un'applicazione o un servizio se alla tua organizzazione corrent
 Quando tenti di creare un'applicazione in Bluemix, viene visualizzato il seguente messaggio di errore:
 {: tsSymptoms}
 
-`BXNUI0515E: Gli spazi nell'organizzazione non sono stati recuperati. Si è verificato un problema di rete oppure la tua organizzazione corrente non dispone di uno spazio associato ad essa.`
+`BXNUI0515E: Gli spazi nell'organizzazione non sono stati recuperati. Si è verificato un problema di rete oppure la tua organizzazione corrente non ha alcuno spazio associato.`
 
 Questo errore si verifica spesso la prima volta che si tenta di creare un'applicazione o un servizio dal Catalogo quando ancora non è stato creato uno spazio.
 {: tsCauses}
@@ -189,8 +189,7 @@ Assicurati di aver creato uno spazio nella tua organizzazione corrente. Per crea
 {: tsResolve}
 
   * Dalla barra dei menu, fai clic su **Gestisci > Account > Organizzazioni**. Seleziona l'organizzazione in cui vuoi creare lo spazio e fai clic su **Crea uno spazio**.
-  * Nell'interfaccia riga di comando cf, immetti `cf create-space <nome_spazio>
--o <nome_organizzazione>`.
+  * Nell'interfaccia riga di comando cf, immetti `cf create-space <nome_spazio> -o <nome_organizzazione>`.
 
 Riprova. Se visualizzi di nuovo questo messaggio, vai alla pagina sugli [stati Bluemix ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixstatus){: new_window} per controllare se un servizio o un componente ha qualche problema.
 
@@ -198,21 +197,21 @@ Riprova. Se visualizzi di nuovo questo messaggio, vai alla pagina sugli [stati B
 ## Impossibile effettuare le azioni richieste
 {: #ts_authority}
 
-Potresti non riuscire a completare delle azioni senza un'appropriata autorità di accesso.
+Potresti non riuscire a completare delle azioni senza un'appropriata autorizzazione di accesso.
 
-Quando tenti di eseguire azioni per un'istanza del servizio o un'istanza dell'applicazione, non riesci a completare le azioni richieste e visualizzai uno dei seguenti messaggi di errore:
+Quando tenti di eseguire azioni per un'istanza del servizio o un'istanza dell'applicazione, non riesci a completare le azioni richieste e visualizzi uno dei seguenti messaggi di errore:
 {: tsSymptoms}
 
-`BXNUI0514E: You are not a developer for any of the spaces in the <orgName> organization.`
+`BXNUI0514E: Non sei uno sviluppatore per nessuno degli spazi nell'organizzazione  <orgName>.`
 
-`Server error, status code: 403, error code: 10003, message: You are not authorized to perform the requested action.`
+`Errore server, codice di stato: 403, codice di errore: 10003, messaggio: Non sei autorizzato a effettuare l'azione richiesta.`
 
 Non disponi del livello di autorità adeguato per eseguire le azioni.
 {: tsCauses}
 
-Per ottenere il livello di autorità appropriato, utilizza uno dei seguenti metodi:
+Per ottenere il livello di autorizzazione appropriato, utilizza uno dei seguenti metodi:
 {: tsResolve}
- * Seleziona un'altra organizzazione e uno spazio per cui disponi del ruolo di sviluppatore.
+ * Seleziona un'organizzazione e uno spazio diversi per cui disponi del ruolo di sviluppatore.
  * Chiedi al gestore organizzazione di modificare il tuo ruolo in sviluppatore oppure di creare uno spazio e assegnarti quindi un ruolo sviluppatore. Consulta [Gestione di organizzazioni e spazi](/docs/admin/orgs_spaces.html) per i dettagli.
 
 ## Impossibile accedere ai servizi Bluemix a causa di errori di autorizzazione
@@ -238,64 +237,50 @@ Per ulteriori informazioni sui comandi che puoi utilizzare in altri linguaggi di
 ## Impossibile distribuire le applicazioni utilizzando IBM Eclipse Tools for Bluemix
 {: #ts_bm_tools_facet}
 
-Quando al tuo progetto Eclipse viene applicato un facet non supportato, potresti non essere in grado di distribuire le
-tue applicazioni a {{site.data.keyword.Bluemix_notm}} utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+Quando al tuo progetto Eclipse viene applicato un facet non supportato, potresti non essere in grado di distribuire le tue applicazioni a {{site.data.keyword.Bluemix_notm}} utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 
-Puoi distribuire correttamente la tua applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando la CLI Cloud Foundry. Tuttavia, non puoi distribuire l'applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} e vedi il messaggio di errore: `Project facet <facet_name> is not supported.` Per esempio:
+Puoi distribuire correttamente la tua applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando la CLI Cloud Foundry. Tuttavia, non puoi distribuire l'applicazione a {{site.data.keyword.Bluemix_notm}} utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} e visualizzi il messaggio di errore: `Project facet <facet_name> is not supported.` Ad esempio:
 {: tsSymptoms}
 `Project facet Cloud Foundry Standalone Application version 1.0 is not supported.`
 
 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} associa i progetti ai runtime {{site.data.keyword.Bluemix_notm}} in base ai facet di progetto. I facet definiscono i requisiti per i progetti Java EE in Eclipse e sono utilizzati come parte della configurazione di runtime, in modo che runtime differenti siano associati a progetti differenti. Se il facet applicato al progetto non è supportato da IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, potresti non essere in grado di distribuire la tua applicazione utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
-Devi rimuovere il facet dal progetto Eclipse in modo da poter distribuire la tua applicazione
-utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+Devi rimuovere il facet dal progetto Eclipse in modo da poter distribuire la tua applicazione utilizzando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsResolve}
 
-Per rimuovere il
-facet, in IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, fai clic su **Project>Properties>Project Facets** per il progetto. Deseleziona quindi la casella di spunta per il facet non supportato.
+Per rimuovere il facet, in IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, fai clic su **Project > Properties > Project Facets** per il progetto. Deseleziona quindi la casella di spunta per il facet non supportato.
 
 
 ## Ricezione di errori 502 Bad Gateway
 {: #ts_502_error}
 
-Se ricevi degli errori 502 Bad Gateway quando interagisci
-con le applicazioni su {{site.data.keyword.Bluemix_notm}},
-controlla la pagina degli stati di {{site.data.keyword.Bluemix_notm}}
-ed effettua le operazioni appropriate.
+Se ricevi degli errori 502 Bad Gateway quando interagisci con le applicazioni su {{site.data.keyword.Bluemix_notm}}, controlla la pagina degli stati di {{site.data.keyword.Bluemix_notm}} ed effettua le operazioni appropriate.
 
 Ricevi dei messaggi di errore che iniziano con 502 Bad Gateway. Ad esempio, potresti vedere `502 Bad Gateway: Registered endpoint failed to handle the request.`
 {: tsSymptoms}
 
-Un errore
-Bad Gateway di solito si verifica quando visiti un sito Web che utilizza
-un server proxy per memorizzare e inoltrare i dati dal server principale che
-ospita il sito. Il server principale e il server proxy potrebbero non connettersi correttamente, pertanto visualizzi il codice di stato HTTP 502 nella finestra del browser. Questo codice di stato indica che il server principale del sito non ha ricevuto l'implementazione HTTP prevista dal server proxy.
+Un errore Bad Gateway di solito si verifica quando visiti un sito Web che utilizza un server proxy per memorizzare e inoltrare i dati dal server principale che ospita il sito. Il server principale e il server proxy potrebbero non connettersi correttamente, pertanto visualizzi il codice di stato HTTP 502 nella finestra del browser. Questo codice di stato indica che il server principale del sito non ha ricevuto l'implementazione HTTP prevista dal server proxy.
 {: tsCauses}
 
-Altre cause meno comuni di un errore Bad Gateway sono
-interruzioni ISP (Internet Service Provider), configurazioni firewall non valide ed
-errori della cache del browser.
+Altre cause meno comuni di un errore Bad Gateway sono interruzioni ISP (Internet Service Provider), configurazioni firewall non valide ed errori della cache del browser.
 
-Se sospetti che un servizio {{site.data.keyword.Bluemix_notm}} sia inattivo, controlla prima la pagina [Stato di {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixstatus){: new_window}. Una soluzione potrebbe essere quella di utilizzare il servizio in un'altra regione {{site.data.keyword.Bluemix_notm}}. Informazioni dettagliate sono disponibili in [Utilizzo dei servizi in un'altra regione ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se lo stato del servizio è normale,
-prova le seguenti operazioni per risolvere il problema:
+Se sospetti che un servizio {{site.data.keyword.Bluemix_notm}} sia inattivo, controlla prima la pagina degli stati [{{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/bluemixstatus){: new_window}. Una soluzione potrebbe essere quella di utilizzare il servizio in un'altra regione {{site.data.keyword.Bluemix_notm}}. Informazioni dettagliate sono disponibili in [Utilizzo dei servizi in un'altra regione ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se lo stato del servizio è normale, prova le seguenti operazioni per risolvere il problema:
 {: tsResolve}
 
   * Ritenta l'azione:
-    * Ricarica la pagina premendo F5 sulla tastiera o facendo clic sul
-pulsante di aggiornamento. Se questa operazione non funziona, cancella la cache e i cookie del tuo browser e ricarica di nuovo la pagina.
+    * Ricarica la pagina premendo F5 sulla tastiera o facendo clic sul pulsante di aggiornamento. Se questa operazione non funziona, cancella la cache e i cookie del tuo browser e ricarica di nuovo la pagina.
     * Utilizza un browser differente.
     * Riavvia il router, il modem e il computer. Il riavvio di questi
 dispositivi può cancellare i diversi errori che portano all'errore 502.
   * Attendi e riprova in seguito. In alcuni casi, possono verificarsi dei
 problemi temporanei con il tuo provider dei servizi Internet o con i servizi {{site.data.keyword.Bluemix_notm}}. Puoi attendere finché i problemi non vengono risolti.
-  * Se il problema persiste, contatta il supporto {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, vedi [Come contattare il supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](/docs/support/index.html#contacting-bluemix-support){: new_window}.
+  * Se il problema persiste, contatta il supporto {{site.data.keyword.Bluemix_notm}}. Per ulteriori informazioni, consulta [Come contattare il supporto {{site.data.keyword.Bluemix_notm}} ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](/docs/support/index.html#contacting-bluemix-support){: new_window}.
 
 ## Quota disco superata
 {: #ts_disk_quota}
 
-Se esaurisci lo spazio su disco, puoi modificare manualmente la quota per
-ottenere ulteriore spazio sul disco.
+Se esaurisci lo spazio su disco, puoi modificare manualmente la quota per ottenere ulteriore spazio.
 
 Se esaurisci lo spazio su disco, potresti visualizzare un messaggio
 che indica che la quota di disco è stata superata. Per risolvere il problema,
@@ -305,21 +290,18 @@ la quota di memoria nella pagina dei dettagli dell'applicazione. Tuttavia, poich
 disco è rimasta la stessa, non hai ottenuto ulteriore spazio su disco.
 {: tsSymptoms}
 
-La quota di disco predefinita assegnata a un'applicazione è 1
-GB. Se hai bisogno di più spazio su disco, devi specificare manualmente la
+La quota di disco predefinita assegnata per un'applicazione è 1 GB. Se hai bisogno di più spazio su disco, devi specificare manualmente la
 quota di disco.
 {: tsCauses}
 
-Utilizza uno dei seguenti metodi per specificare la quota disco. La quota di disco massima che puoi specificare è 2 GB. Se 2 GB non è ancora
-sufficiente, prova un servizio esterno come [Object Store](/docs/services/ObjectStorage/index.html).
+Utilizza uno dei seguenti metodi per specificare la quota del disco. La quota di disco massima che puoi specificare è 2 GB. Se 2 GB non sono ancora sufficienti, prova un servizio esterno come [Object Store](/docs/services/ObjectStorage/index.html).
 {: tsResolve}
 
   * Nel file manifest.yml, aggiungi la seguente voce:
     ```
 	disk_quota: <quota_disco>
 	```
-  * Utilizza l'opzione **-k** con il comando `cf push`
-quando distribuisci la tua applicazione a {{site.data.keyword.Bluemix_notm}}:
+  * Utilizza l'opzione **-k** con  il comando `cf push` quando distribuisci la tua applicazione a {{site.data.keyword.Bluemix_notm}}:
     ```
 	cf push nomeapplicazione -p app_path -k <quota_disco>
 	```
@@ -352,8 +334,7 @@ Se utilizzi un account utente di prova, potresti non riuscire a creare un'applic
 Quando tenti di creare un'applicazione in {{site.data.keyword.Bluemix_notm}}, viene visualizzato il seguente messaggio di errore:
 {: tsSymptoms}
 
-`BXNUI2032E: La risorsa <istanze_servizio> non è stata creata. Mentre Cloud Foundry veniva contattato per creare la risorsa, si è verificato un errore. Messaggio di Cloud Foundry: "È stato superato il limite
-dei servizi dell'organizzazione."`
+`BXNUI2032E: La risorsa <service_instances> non è stata creata. Mentre Cloud Foundry veniva contattato per creare la risorsa, si è verificato un errore. Messaggio di Cloud Foundry: "È stato superato il limite dei servizi dell'organizzazione."`
 
 Questo errore si verifica quando superi il limite per il
 numero di istanze del servizio che puoi avere per l'account. Il
@@ -369,41 +350,33 @@ Elimina tutte le istanze dei servizi che non sono necessarie o rimuovi il limite
 	  1. Nel dashboard Servizi, fai clic sul menu **Azioni** per il servizio che vuoi eliminare.
 	  2. Fai clic su **Elimina servizio**. Ti verrà richiesto di preparare nuovamente l'applicazione a cui era associata l'istanza del servizio.
 
-    Per utilizzare l'interfaccia riga di comando per eliminare un'istanza del
-servizio, completa la seguente procedura:
-	  1. Annulla il bind dell'istanza del servizio da un'applicazione immettendo `cf unbind-service <nomeapplicazione> <nome_istanza_servizio>`.
+    Per utilizzare l'interfaccia riga di comando per eliminare un'istanza del servizio, completa la seguente procedura:
+	  1. Annulla il bind dell'istanza del servizio da un'applicazione immettendo  `cf unbind-service <nomeapplicazione> <nome_istanza_servizio>`.
 	  2. Elimina l'istanza del servizio immettendo `cf delete-service <nome_istanza_servizio>`.
 	  3. Dopo aver eliminato l'istanza del servizio, potresti voler preparare nuovamente l'applicazione a cui era associata l'istanza del servizio immettendo `cf restage <nomeapplicazione>`.
 
-  * Per rimuovere il limite sul numero di istanze del servizio che puoi avere,
-converti il tuo account di prova in un account a pagamento. Per informazioni su come convertire il tuo account di prova in un account a pagamento, vedi [Come modificare il tuo piano](/docs/pricing/index.html#changing).
+  * Per rimuovere il limite per il numero di istanze del servizio che puoi avere, converti il tuo account di prova in un account a pagamento. Per informazioni su come convertire il tuo account di prova in un account a pagamento, vedi [Come modificare il tuo piano](/docs/pricing/index.html#changing).
 
 ## Impossibile eseguire gli eseguibili su Bluemix
 {: #ts_executable}
 
-Potresti non riuscire ad eseguire gli eseguibili su {{site.data.keyword.Bluemix_notm}} se
-tali eseguibili sono stati sviluppati e creati in un ambiente diverso.
+Potresti non riuscire ad eseguire gli eseguibili su {{site.data.keyword.Bluemix_notm}} se tali eseguibili sono stati sviluppati e creati in un ambiente diverso.
 
 Non puoi eseguire gli eseguibili su {{site.data.keyword.Bluemix_notm}} se questi eseguibili sono stati sviluppati e creati in un ambiente diverso.
 {: tsSymptoms}
 
-Se il contenuto che desideri distribuire a {{site.data.keyword.Bluemix_notm}} è
-già un eseguibile, il contenuto è stato creato precedentemente e non è necessario
-crearlo in {{site.data.keyword.Bluemix_notm}}. In questo caso, non è richiesto alcun pacchetto di build per l'eseguibile da eseguire
+Se il contenuto che desideri distribuire a {{site.data.keyword.Bluemix_notm}} è già un eseguibile, il contenuto è stato creato precedentemente e non è necessario crearlo in {{site.data.keyword.Bluemix_notm}}. In questo caso, non è richiesto alcun pacchetto di build per l'eseguibile da eseguire
 su {{site.data.keyword.Bluemix_notm}}. Tuttavia, devi indicare esplicitamente a {{site.data.keyword.Bluemix_notm}} che
 non è richiesto alcun pacchetto di build.
 {: tsCauses}
 
-Quando distribuisci l'eseguibile a {{site.data.keyword.Bluemix_notm}},
-devi specificare un pacchetto di build null, che indica che
-non è richiesto alcun pacchetto di build. Specifica un pacchetto di build null utilizzando l'opzione **-b**
-con il comando `cf push`:
+Quando distribuisci l'eseguibile a {{site.data.keyword.Bluemix_notm}}, devi specificare un pacchetto di build null, che indica che non è richiesto alcun pacchetto di build. Specifica un pacchetto di build null utilizzando l'opzione **-b** con il comando `cf push`:
 {: tsResolve}
 
 ```
 cf push appname -p app_path -c <comando_di_avvio> -b <pacchetto_di_build-null>
 ```
-Per esempio:
+Ad esempio:
 ```
 cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
@@ -418,9 +391,7 @@ del tuo account. La quota massima di memoria per un account di prova è 2 GB e p
 Quando distribuisci un'applicazione a {{site.data.keyword.Bluemix_notm}}, visualizzi il seguente messaggio di errore:
 {: tsSymptoms}
 
-`FAILED Server error,
-status code: 400, error code: 100005, message: You have exceeded your
-organization's memory limit.`
+`FAILED Errore server, codice di stato: 400, codice di errore: 100005, messaggio: È stato superato il limite di memoria dell'organizzazione.`
 
 Questo errore si verifica quando la quantità di memoria rimanente per la tua organizzazione è inferiore alla quantità di memoria richiesta dall'applicazione che desideri distribuire. La quota massima di memoria
 per un account di prova è 2 GB.
@@ -429,10 +400,7 @@ per un account di prova è 2 GB.
 Puoi aumentare la quota di memoria del tuo account o ridurre la memoria utilizzata dalle tue applicazioni.
 {: tsResolve}
 
-  * Per aumentare la quota di memoria dell'account,
-converti il tuo account di prova in un account a pagamento. Per informazioni
-su come convertire il tuo account di prova in un account a pagamento, vedi [Pay
-accounts](/docs/pricing/index.html#pay-accounts).
+  * Per aumentare la quota di memoria dell'account, converti il tuo account di prova in un account a pagamento. Per informazioni su come convertire il tuo account di prova in un account a pagamento, vedi [Account a pagamento](/docs/pricing/index.html#pay-accounts).
   * Per ridurre la memoria utilizzata dalle tue applicazioni, utilizza la console {{site.data.keyword.Bluemix_notm}} o l'interfaccia riga di comando cf.
 
     Se utilizzi la console {{site.data.keyword.Bluemix_notm}}, completa la seguente procedura:
@@ -585,8 +553,7 @@ seguenti metodi:
     ```
     host: nome_host
 	```
-  * Se distribuisci la tua applicazione dal prompt dei comandi, utilizza il comando `cf
-push` con l'opzione **-n**.
+  * Se distribuisci la tua applicazione dal prompt dei comandi, utilizza il comando `cf push` con l'opzione **-n**.
     ```
     cf push appname -p percorso_applicazione -n nome_host
     ```
@@ -605,7 +572,7 @@ Questo problema potrebbe verificarsi se non si specifica il file WAR o il percor
 {: tsCauses}
 
 Utilizza l'opzione **-p** per specificare
-un file WAR o aggiungere il percorso del file WAR. Per esempio:
+un file WAR o aggiungere il percorso del file WAR. Ad esempio:
 {: tsResolve}
 
 ```
@@ -645,11 +612,9 @@ Puoi utilizzare il seguente codice nel tuo file servlet o JSP:
 ## Impossibile distribuire le applicazioni Node.js
 {: #ts_nodejs_deploy}
 
-Potresti riscontrare dei problemi quando aggiorni un'applicazione Node.js o la distribuisci a {{site.data.keyword.Bluemix_notm}}.
+Potresti riscontrare dei problemi quando aggiorni un'applicazione Node.js o quando la distribuisci a {{site.data.keyword.Bluemix_notm}}.
 
-Quando aggiorni un'applicazione Node.js o distribuisci la tua applicazione Node.js
-a {{site.data.keyword.Bluemix_notm}},
-potresti visualizzare uno dei seguenti messaggi di errore:
+Quando aggiorni un'applicazione Node.js o distribuisci la tua applicazione Node.js a {{site.data.keyword.Bluemix_notm}}, potresti visualizzare uno dei seguenti messaggi di errore:
 {: tsSymptoms}
 
 `An app was not successfully detected by any available buildpack.`
@@ -668,11 +633,12 @@ Utilizza uno dei seguenti metodi in base alla causa del problema:
 {: tsResolve}
 
   * Specifica il comando di avvio utilizzando uno dei seguenti metodi:
-     * Utilizza l'interfaccia riga di comando cf. Per esempio:
+     * Utilizza l'interfaccia riga di comando cf. Ad esempio:
         ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * Utilizza il file [package.json ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.npmjs.com/json){: new_window}. Per esempio:
+    * Utilizza il file [package.json ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://docs.npmjs.com/json){: new_window}. Ad
+esempio:
 	    ```
 		{
       ...
@@ -681,7 +647,8 @@ Utilizza uno dei seguenti metodi in base alla causa del problema:
  	   }
 	}
 	    ```
-    * Utilizza il file `manifest.yml`. Per esempio:
+    * Utilizza il file `manifest.yml`. Ad
+esempio:
 	    ```
 		applications:
   name: MyUniqueNodejs01
@@ -742,7 +709,7 @@ Quando distribuisci un'applicazione a {{site.data.keyword.Bluemix_notm}} utilizz
 Questo problema potrebbe verificarsi se gli script, ad esempio lo script di rilevamento, lo script di compilazione e lo script di rilascio, non sono eseguibili.
 {: tsCauses}
 
-Puoi utilizzare il comando [git update ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://git-scm.com/docs/git-update-index){: new_window} per modificare l'autorizzazione di ciascuno script in eseguibile. Ad esempio, puoi immettere `git update --chmod=+x script.sh`.
+Puoi utilizzare il comando [git update ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://git-scm.com/docs/git-update-index "Icona link esterno"){: new_window} per modificare l'autorizzazione di ciascuno script in eseguibile. Ad esempio, puoi immettere `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## Impossibile distribuire un'applicazione da Delivery Pipeline in IBM Bluemix Continuous Delivery
@@ -776,13 +743,13 @@ Questo problema si verifica perché non viene fornito alcun pacchetto di build i
 Per utilizzare un pacchetto di build personalizzato per le applicazioni Meteor, usa uno dei seguenti metodi:
 {: tsResolve}
 
-  * Se distribuisci la tua applicazione utilizzando il file `manifest.yml`, specifica l'URL o il nome del pacchetto di build personalizzato usando l'opzione buildpack. Per esempio:
+  * Se distribuisci la tua applicazione utilizzando il file `manifest.yml`, specifica l'URL o il nome del pacchetto di build personalizzato usando l'opzione buildpack. Ad esempio:
   ```
   buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```
   * Se distribuisci la tua applicazione dal prompt dei comandi, utilizza il comando `cf
 push` e specifica il pacchetto di build personalizzato usando
-l'opzione **-b**. Per esempio:
+l'opzione **-b**. Ad esempio:
     ```
 	cf push nomeapplicazione -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```

@@ -24,24 +24,26 @@ Allgemeine Probleme bei der Verwaltung Ihres Kontos können sein, dass verschied
 ## Fehler beim Zugriff auf eine andere {{site.data.keyword.Bluemix_notm}}-Region
 {: #nosecondreg}
 
-Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue {{site.data.keyword.Bluemix_notm}}-Region zu erstellen.
+Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue {{site.data.keyword.Bluemix_notm}}-Region zu erstellen. 
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer öffentlichen Region unterstützt. Sie wählen die öffentliche {{site.data.keyword.Bluemix_notm}}-Region, in der Sie arbeiten möchten, bei der Ersteinrichtung des Kontos aus.
+Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer öffentlichen Region unterstützt. Sie wählen die öffentliche {{site.data.keyword.Bluemix_notm}}-Region, in der Sie arbeiten möchten, bei der Ersteinrichtung des Kontos aus. 
 {: tsCauses}
 
-Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein belastbares Konto durchführen, um auf zusätzliche Regionen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.{: tsResolve}
+Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf zusätzliche Regionen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.
+{: tsResolve}
 
 ## Fehler beim Erstellen einer neuen Organisation
 {: #nosecondorg}
  
-Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue Organisation zu erstellen.
+Es wird eine Fehlernachricht empfangen, wenn Sie versuchen, eine neue Organisation zu erstellen. 
 {: tsSymptoms}
 
-Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer Organisation unterstützt. Die Organisation wird bei der Ersteinrichtung des Kontos erstellt.
+Dies liegt wahrscheinlich daran, dass Sie ein Standardkonto verwenden, das die Entwicklung in nur einer Organisation unterstützt. Die Organisation wird bei der Ersteinrichtung des Kontos erstellt. 
 {: tsCauses}
 
-Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein belastbares Konto durchführen, um auf zusätzliche Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.{: tsResolve}
+Wenn Sie ein Standardkonto haben, können Sie ein Upgrade auf ein gebührenpflichtiges Konto durchführen, um auf zusätzliche Organisationen zugreifen zu können. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**. Auf der Seite **Abrechnung** können Sie auch überprüfen, ob Sie ein Standardkonto haben.
+{: tsResolve}
 
 ## Fehler beim Erstellen einer neuen Lite-Planinstanz
 {: #nosecondlite}
@@ -51,10 +53,10 @@ Die folgende Fehlernachricht wird angezeigt, wenn Sie versuchen, eine neue Lite-
 
 `Fehler beim Erstellen einer neuen Lite-Instanz`
 
-Es gibt eine Begrenzung auf ein Instanz pro Lite-Planinstanz, damit wir diese Pläne kostenlos anbieten können.
+Es gibt eine Begrenzung auf ein Instanz pro Lite-Planinstanz, damit wir diese Pläne kostenlos anbieten können. 
 {: tsCauses}
 
-Sie können zusätzliche Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Um über die Konsole ein Upgrade auf ein belastbares Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+Sie können zusätzliche Instanzen des Service erstellen, indem Sie einen der abrechenbaren Servicepläne auswählen, die unter den gebührenpflichtigen Konten verfügbar sind. Um über die Konsole ein Upgrade auf ein gebührenpflichtiges Konto durchzuführen, rufen Sie die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 {: tsResolve}
 
 Wenn Sie kein Upgrade von einem Standardkonto durchführen möchten und Ihre vorhandene Lite-Serviceinstanz nicht mehr verwenden, können Sie die vorhandene Lite-Planinstanz über das Services-Dashboard löschen und dann eine neue Instanz erstellen. 
@@ -65,10 +67,10 @@ Wenn Sie kein Upgrade von einem Standardkonto durchführen möchten und Ihre vor
 Sie können keine Apps bereitstellen und erhalten eine Fehlermeldung, dass Sie die Speicherbegrenzung Ihrer Organisation überschritten haben.
 {: tsSymptoms}
 
-Bei einem Standardkonto können Ihre Cloud Foundry-Apps bis zu 256 MB des sofort verfügbaren Laufzeitspeichers verwenden. Bei belastbaren Konten gibt es eine Speicherbegrenzung von 2 GB.
+Bei einem Standardkonto können Ihre Cloud Foundry-Apps bis zu 256 MB des sofort verfügbaren Laufzeitspeichers verwenden. Bei gebührenpflichtigen Konten gibt es eine Speicherbegrenzung von 2 GB.
 {: tsCauses}
 
-Wenn Sie mit einem Standardkonto arbeiten, können Sie zusätzlichen Speicher durch ein Upgrade auf ein belastbares Konto erhalten. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
+Wenn Sie mit einem Standardkonto arbeiten, können Sie zusätzlichen Speicher durch ein Upgrade auf ein gebührenpflichtiges Konto erhalten. Rufen Sie in der Konsole die Seite **Verwalten > Abrechnung und Nutzung > Abrechnung** auf und klicken Sie auf **Kreditkarte hinzufügen**.
 {: tsResolve}
 
 Wenn Sie kein Upgrade von einem Standardkonto durchführen möchten, aber über inaktive Apps verfügen, können Sie die vorhandenen inaktiven Apps löschen, um etwas Laufzeitspeicher freizugeben. 
@@ -87,7 +89,7 @@ Der Status Ihres {{site.data.keyword.Bluemix_notm}}-Kontos verändert sich in 'I
 {: tsCauses}
 
 
-Setzen Sie sich zur Reaktivierung Ihres Kontos mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com){: new_window} in Verbindung. Geben Sie in der E-Mail die folgenden Informationen an:
+Setzen Sie sich zur Reaktivierung Ihres Kontos mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com "Symbol für externen Link"){: new_window} in Verbindung. Geben Sie in der E-Mail die folgenden Informationen an:
 {: tsResolve}
 
   * Die IBMid, mit der Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden.
@@ -111,7 +113,7 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
  
   * Wählen Sie auf dem Dashboard von {{site.data.keyword.Bluemix_notm}} die Organisation aus, in der Sie den Bereich erstellen möchten. Klicken Sie anschließend auf **Bereich erstellen**.
-  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <Name des Bereichs> -o <Name der Organisation>`.
+  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <space_name> -o <organization_name>`. 
 
   
 ## Apps verwenden denselben Domänennamen gemeinsam
@@ -124,7 +126,7 @@ Dieses Problem kann auftreten, wenn Sie unterschiedlichen Apps in einem Bereich 
 
 Beispiel: Sie übertragen die App 'myApp1' per Push-Operation an {{site.data.keyword.Bluemix_notm}} und legen als Domäne 'mynewapp.stage1.mybluemix.net' fest. Anschließend übertragen Sie eine weitere App mit dem Namen 'myApp2' per Push-Operation in denselben Bereich und legen für eine der URL-Routen den Namen 'mynewapp.stage1.mybluemix.net' fest. Die Route ist jetzt beiden Apps zugeordnet.
 
-Hierbei handelt es sich um ein unterstütztes Verhalten von {{site.data.keyword.Bluemix_notm}}; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie unter [Using Blue-Green Deployment to Reduce Downtime and Risk ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Hierbei handelt es sich um ein unterstütztes Verhalten von {{site.data.keyword.Bluemix_notm}}; Sie können dieses Verfahren verwenden, um beim Upgrade einer App Ausfallzeiten vollständig zu vermeiden. Weitere Informationen finden Sie unter [Using Blue-Green Deployment to Reduce Downtime and Risk ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "Symbol für externen Link"){: new_window}.
 {: tsResolve}
   
 

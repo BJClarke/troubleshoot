@@ -129,7 +129,7 @@ Para comprobar la versión de Java que ejecuta {{site.data.keyword.eclipsetoolsf
 
 Si la JVM del entorno de trabajos de IBM es IBM JVM 7 u 8, o una versión anterior de Oracle JVM 8, complete los siguientes pasos para conmutar a Oracle JVM 8:
 
-  1. Descargue y, a continuación, vuelva a instalar Oracle JVM 8, consulte [Java SE Downloads ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} para obtener detalles.
+  1. Descargue y, a continuación, vuelva a instalar Oracle JVM 8, consulte [Java SE Downloads ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "icono de enlace externo"){: new_window} para obtener detalles.
   2. Reinicie Eclipse.
   3. Compruebe si la propiedad `eclipse.vm` apunta a la nueva instalación de Oracle JVM 8.
 
@@ -175,7 +175,7 @@ No puede crear una app o un servicio si la organización actual no tiene un espa
 Cuando intenta crear una app en Bluemix, ve el siguiente mensaje de error:
 {: tsSymptoms}
 
-`BXNUI0515E: Los espacios de la organización no se han recuperado. Se ha producido un problema de conexión de red, o la organización actual no tiene un espacio asociado al mismo.`
+`BXNUI0515E: Los espacios de la organización no se han recuperado. Se ha producido un problema de conexión a la red, o su organización actual no tiene un espacio asociado con ella.`
 
 Este error se suele producir la primera vez que se intenta crear una app o un servicio desde el catálogo cuando aún no se ha creado un espacio.
 {: tsCauses}
@@ -186,10 +186,10 @@ Asegúrese de haber creado un espacio en la organización actual. Para crear un 
   * Desde la barra de menús, pulse **Gestionar > Cuenta > Organizaciones**. Seleccione la organización en la que desea crear el espacio y pulse **Crear un espacio**.
   * En la interfaz de línea de mandatos cf, escriba `cf create-space <nombre_espacio> -o <nombre_organización>`.
 
-Inténtelo de nuevo. Si vuelve a ver este mensaje, vaya a la página [Estado de Bluemix ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixstatus){: new_window} para comprobar si el servicio o el componente tienen algún problema.
+Inténtelo de nuevo. Si vuelve a ver este mensaje, vaya a la página [Estado de Bluemix ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixstatus){: new_window} para comprobar si el servicio o el componente tienen algún problema.
 
 
-## No se pueden realizar las acciones solicitadas
+## No se pueden efectuar las acciones solicitadas
 {: #ts_authority}
 
 Es posible que no pueda efectuar acciones sin la autoridad de acceso adecuada.
@@ -226,7 +226,7 @@ En lugar de codificar las credenciales en la app, utilice parámetros de conexi�
 ```
 process.env.VCAP_SERVICES
 ```
-Para obtener más información sobre los mandatos que puede utilizar en otros lenguajes de programación, consulte [Java ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} y [Ruby ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
+Para obtener más información sobre los mandatos que puede utilizar en otros lenguajes de programación, consulte [Java ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} y [Ruby ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
 
 
 ## No se pueden desplegar apps utilizando IBM Eclipse Tools for Bluemix
@@ -244,7 +244,7 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} asignan proyectos a los
 Debe eliminar la faceta del proyecto de Eclipse para poder desplegar la app utilizando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsResolve}
 
-Para eliminar la faceta, en IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, pulse **Proyecto>Propiedades>Facetas de proyecto** del proyecto. Luego, desmarque el recuadro de selección de la faceta a la que no se da soporte.
+Para eliminar la faceta, en IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, pulse **Proyecto > Propiedades > Facetas de proyecto** del proyecto. Luego, desmarque el recuadro de selección de la faceta a la que no se da soporte.
 
 
 ## Se han recibido errores 502 de pasarela errónea
@@ -260,7 +260,7 @@ Los errores de pasarela errónea suelen ocurrir al visitar un sitio web que util
 
 Otras causas menos habituales de un error de pasarela errónea son caídas del ISP (proveedor de servicios de Internet), configuraciones erróneas de cortafuegos y errores de caché de navegador.
 
-Si cree que algún servicio de {{site.data.keyword.Bluemix_notm}} no está disponible, compruebe primero la página [Estado de {{site.data.keyword.Bluemix_notm}} ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixstatus){: new_window}. Como método alternativo puede utilizar el servicio en otra región de {{site.data.keyword.Bluemix_notm}}. Encontrará información detallada en [Utilización de servicios en otra región![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si el estado del servicio es normal, pruebe los pasos siguientes para resolver el problema:
+Si cree que algún servicio de {{site.data.keyword.Bluemix_notm}} no está disponible, compruebe primero la página [Estado de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixstatus){: new_window}. Como método alternativo puede utilizar el servicio en otra región de {{site.data.keyword.Bluemix_notm}}. Hay disponible información detallada en [Utilización de servicios en otra región ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si el estado del servicio es normal, pruebe los pasos siguientes para resolver el problema:
 {: tsResolve}
 
   * Reintente la acción:
@@ -268,7 +268,7 @@ Si cree que algún servicio de {{site.data.keyword.Bluemix_notm}} no está dispo
     * Utilice otro navegador.
     * Rearranque el direccionador, el módem y el sistema. Rearrancar estos dispositivos puede borrar varios errores que provocan el error 502.
   * Espere y vuelva a intentarlo más adelante. En algunas instancias, pueden ocurrir problemas temporales en el proveedor de servicios de Internet o en los servicios de {{site.data.keyword.Bluemix_notm}}. Puede esperar a que se resuelvan los problemas temporales.
-  * Si el problema todavía existe, póngase en contacto con el equipo de soporte de {{site.data.keyword.Bluemix_notm}}. Consulte [Cómo ponerse en contacto con el equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](/docs/support/index.html#contacting-bluemix-support){: new_window} para obtener más información.
+  * Si el problema todavía existe, póngase en contacto con el equipo de soporte de {{site.data.keyword.Bluemix_notm}}. Consulte [Cómo ponerse en contacto con el soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](/docs/support/index.html#contacting-bluemix-support){: new_window} para obtener más información.
 
 ## Se ha excedido la cuota de disco
 {: #ts_disk_quota}
@@ -305,7 +305,7 @@ Enlaza un servicio {{site.data.keyword.mobilepushshort}} con la app de Bluemix y
 El servicio IBM {{site.data.keyword.mobilepushshort}} utiliza Google Cloud Messaging (GCM) para enviar notificaciones a apps móviles desarrolladas en la plataforma Android. Para permitir que las apps de Android reciban notificaciones, se debe poder acceder al servicio Google Cloud Messaging (GCM) en las apps móviles. En regiones en las que las apps Android no pueden acceder al servicio GCM, las apps Android no pueden recibir {{site.data.keyword.mobilepushshort}}.
 {: tsCauses}
 
-Como método alternativo, utilice servicios de tercero que no se basen en el servicio GCM, como por ejemplo [Pushy ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://pushy.me){: new_window}, [igetui ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.getui.com/){: new_window} y [jpush ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://www.jpush.cn/){: new_window}.
+Como método alternativo, utilice servicios de tercero que no se basen en el servicio GCM, como por ejemplo [Pushy ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://pushy.me){: new_window}, [igetui ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://www.getui.com/){: new_window} y [jpush ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://www.jpush.cn/){: new_window}.
 {: tsResolve}
 
 
@@ -578,7 +578,7 @@ Si actualiza una app Node.js o despliega una app Node.js en {{site.data.keyword.
 
 `La instancia (índice 0) no ha podido empezar a aceptar conexiones.`
 
-`No se pueden obtener instancias debido a un error de transferencia. `
+`No se pueden obtener instancias debido a un error de transferencia.`
 
 A continuación se detallan las causas posibles:
 {: tsCauses}
@@ -594,7 +594,7 @@ Utilice uno de los métodos siguientes en función de la causa del problema:
         ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * Utilice el archivo [package.json ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.npmjs.com/json){: new_window}. Por ejemplo:
+    * Utilice el archivo [package.json ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](https://docs.npmjs.com/json){: new_window}. Por ejemplo:
 	    ```
 		{
       ...
@@ -661,7 +661,7 @@ Si despliega una app en {{site.data.keyword.Bluemix_notm}} utilizando un paquete
 Este problema puede suceder si los scripts, como el script de detección, el script de compilación y el script de liberación, no son ejecutables.
 {: tsCauses}
 
-Puede utilizar el mandato [git update ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://git-scm.com/docs/git-update-index){: new_window} para cambiar el permiso de cada script por ejecutable. Por ejemplo, puede escribir `git update --chmod=+x script.sh`.
+Puede utilizar el mandato [git update ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://git-scm.com/docs/git-update-index "icono de enlace externo"){: new_window} para cambiar el permiso de cada script por ejecutable. Por ejemplo, puede escribir `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## No puede desplegar una app desde Delivery Pipeline en IBM Bluemix Continuous Delivery

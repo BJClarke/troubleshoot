@@ -102,7 +102,7 @@ Siga los pasos siguientes según proceda:
 {: tsResolve}
  * Póngase en contacto con el usuario maestro o con el administrador para comprobar que puede cambiar a la autenticación con ID de IBM.
  * Asegúrese de haber llevado a cabo el paso de cambio a ID de IBM en su cuenta de Softlayer. Consulte [Cambio a un ID de IBM](/docs/admin/softlayerlink.html#ibmid_switch).
- * Asegúrese de seguir las acciones del correo electrónico **Asociar su usuario de SoftLayer con un ID de IBM**. Consulte la bandeja de entrada y la carpeta spam para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del portal de control y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}}![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
+ * Asegúrese de seguir las acciones del correo electrónico **Asociar su usuario de SoftLayer con un ID de IBM**. Consulte la bandeja de entrada y la carpeta spam para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del portal de control y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com "Icono de enlace externo"){: new_window}.
 
 **Nota:** si ha creado su ID de IBM directamente con ID de IBM, habrá recibido dos correos electrónicos; uno del registro de ID de IBM y otro de Softlayer. Asegúrese de seguir las indicaciones de ambos correos electrónicos.
 
@@ -152,7 +152,7 @@ Cuando inicia una sesión en {{site.data.keyword.Bluemix_notm}}, la autenticaci�
 Es posible que haya un problema con el servicio de autenticación de ID de IBM.
 {: tsCauses}
 
-Compruebe el estado del servicio en [IBM BlueID ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} y vuélvalo a intentar.
+Compruebe el estado del servicio en [IBM BlueID ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "icono de enlace externo"){: new_window} y vuélvalo a intentar.
 {: tsResolve}
 
 
@@ -169,7 +169,7 @@ Después de registrarse para una cuenta de prueba de {{site.data.keyword.Bluemix
 Después de registrarse para una cuenta de prueba de {{site.data.keyword.Bluemix_notm}}, recibirá un correo electrónico de confirmación. Debe pulsar el enlace del correo electrónico de confirmación para completar el proceso de registro.
 {: tsCauses} 
 
-El correo electrónico de confirmación se envía a la dirección de correo electrónico que ha especificado. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
+El correo electrónico de confirmación se envía a la dirección de correo electrónico que ha especificado. Consulte la bandeja de entrada de la carpeta spam. Si no ha recibido el correo electrónico de confirmación, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com "Icono de enlace externo"){: new_window}.  
 {: tsResolve}
 
 
@@ -253,7 +253,7 @@ para cambiar el rol. Para identificar el gestor de la organización, siga estos 
   
 Si no puede invitar usuarios porque es colaborador y no un miembro, debe suprimir la cuenta anterior de {{site.data.keyword.Bluemix_notm}} y luego se le debe invitar como un miembro de la organización. Para suprimir la cuenta anterior y unirse como miembro, complete los siguientes pasos: 
 
-  1. Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://ibm.biz/bluemixsupport){: new_window} para abrir una incidencia de soporte y solicitar que se suprima la cuenta. Si tiene datos asociados con su antigua cuenta que desea guardar y moverlos a la nueva cuenta, incluya es información en el correo. 
+  1. Póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport "Icono de enlace externo"){: new_window} para abrir una incidencia de soporte y solicitar que se suprima la cuenta. Si tiene datos asociados con su antigua cuenta que desea guardar y moverlos a la nueva cuenta, incluya es información en el correo. 
   2. Cuando se suprima la cuenta, tendrá un usuario con el rol de gestor de la organización y le invitará a unirse como gestor. Luego, inicie sesión en {{site.data.keyword.Bluemix_notm}} desde la invitación. 
 
 ## No se da soporte al registro por lotes de usuarios

@@ -1,8 +1,7 @@
 ---
 
 copyright:
-  years: 2015, 2017
-  
+  years: 2015, 2017  
 lastupdated: "2017-06-01"
 
 ---
@@ -24,31 +23,31 @@ lastupdated: "2017-06-01"
 ## 無法存取不同 {{site.data.keyword.Bluemix_notm}} 地區
 {: #nosecondreg}
 
-當您嘗試建立新的 {{site.data.keyword.Bluemix_notm}} 地區時，會收到錯誤訊息。
+當您嘗試建立新的 {{site.data.keyword.Bluemix_notm}} 地區時，收到錯誤訊息。
 {: tsSymptoms}
 
 這可能是因為您使用「標準帳戶」，此帳戶僅支援在一個公用地區中進行開發。第一次設定帳戶時，可以選取您要使用的 {{site.data.keyword.Bluemix_notm}} 公用地區。
 {: tsCauses}
 
-如果您有「標準帳戶」，則可以升級至計費帳戶來存取其他地區。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。在**計費**頁面上，您也可以確認是否有「標準帳戶」。
+如果您有「標準帳戶」，則可以升級至計費帳戶來存取其他地區。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。在**計費**頁面上，您也可以檢查是否有「標準帳戶」。
 {: tsResolve}
 
 ## 無法建立新的組織
 {: #nosecondorg}
  
-當您嘗試建立新的組織時，會收到錯誤訊息。
+當您嘗試建立新的組織時，收到錯誤訊息。
 {: tsSymptoms}
 
-這可能是因為您使用「標準帳戶」，此帳戶僅支援在一個組織中進行開發。第一次設定您的帳戶時，可以建立組織。
+這可能是因為您使用「標準帳戶」，此帳戶僅支援在一個組織中進行開發。第一次設定帳戶時，可以建立組織。
 {: tsCauses}
 
-如果您有「標準帳戶」，則可以升級至計費帳戶來存取其他組織。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。在**計費**頁面上，您也可以確認是否有「標準帳戶」。
+如果您有「標準帳戶」，則可以升級至計費帳戶來存取其他組織。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。在**計費**頁面上，您也可以檢查是否有「標準帳戶」。
 {: tsResolve}
 
 ## 無法建立新的「精簡方案」實例
 {: #nosecondlite}
 
-當您嘗試建立新的「精簡方案」實例時，會顯示下列錯誤訊息：
+當您嘗試建立新的「精簡方案」實例時，顯示下列錯誤訊息：
 {: tsSymptoms}
 
 `無法佈建新的「精簡」實例`
@@ -67,7 +66,7 @@ lastupdated: "2017-06-01"
 您無法部署應用程式，並收到錯誤，指出您已超出組織的記憶體限制。
 {: tsSymptoms}
 
-在「標準帳戶」中，Cloud Foundry 應用程式可以同時存取最多 256 MB 的運行環境記憶體。在計費帳戶中，有 2GB 記憶體限制。
+在「標準帳戶」中，Cloud Foundry 應用程式可以同時存取最多 256 MB 的運行環境記憶體。在計費帳戶中，則是 2GB 的記憶體限制。
 {: tsCauses}
 
 如果您使用的是「標準帳戶」，則可以升級至計費帳戶來取得其他記憶體。請移至主控台中的**管理 > 計費及用量 > 計費**頁面，然後按一下**新增信用卡**。
@@ -89,7 +88,7 @@ lastupdated: "2017-06-01"
 {: tsCauses}
 
 
-若要重新啟動您的帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。在電子郵件中包含下列資訊：
+若要重新啟動您的帳戶，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com "外部鏈結圖示"){: new_window} 聯絡。在電子郵件中包含下列資訊：
 {: tsResolve}
 
   * 您用來登入 {{site.data.keyword.Bluemix_notm}} 的 IBM ID。
@@ -126,7 +125,7 @@ lastupdated: "2017-06-01"
 
 例如，您將 myApp1 應用程式推送至 {{site.data.keyword.Bluemix_notm}}，並將網域設為 "mynewapp.stage1.mybluemix.net"。然後，將另一個 myApp2 應用程式推送至相同的空間，並將其中一個 URL 路徑設為 "mynewapp.stage1.mybluemix.net"。路徑現在同時對映至這兩個應用程式。
 
-這是 {{site.data.keyword.Bluemix_notm}} 的支援行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱 [Using Blue-Green Deployment to Reduce Downtime and Risk ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}。
+這是 {{site.data.keyword.Bluemix_notm}} 的支援行為，而且您可以使用此作法，讓應用程式升級達到零中斷時間。如需相關資訊，請參閱 [Using Blue-Green Deployment to Reduce Downtime and Risk ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "外部鏈結圖示"){: new_window}。
 {: tsResolve}
   
 

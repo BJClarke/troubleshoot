@@ -36,16 +36,16 @@ Algunos paquetes de compilación no están configurados para descargar automáti
 Puede utilizar paquetes de compilación que tengan mecanismos incorporados para evitar que se carguen componentes obsoletos, como por ejemplo los siguientes paquetes de compilación: 
 {: tsResolve}
 
-  * [Paquete de compilación Cloud Foundry Java ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/java-buildpack){: new_window}. Este paquete de compilación tiene un mecanismo incorporado para garantizar que se utiliza la versión más reciente del paquete de compilación. Para obtener más información sobre el funcionamiento de este mecanismo, consulte [extending-caches.md ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}. 
-  * [Paquete de compilación Cloud Foundry Node.js ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}. Este paquete de compilación ofrece una funcionalidad similar utilizando variables de entorno. Para habilitar el paquete de compilación Node.js para descargar módulos de nodo de Internet cada vez, escriba el siguiente mandato en la interfaz de línea de mandatos cf: 	
+  * [Paquete de compilación Cloud Foundry Java ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/java-buildpack "icono de enlace externo"){: new_window}. Este paquete de compilación tiene un mecanismo incorporado para garantizar que se utiliza la versión más reciente del paquete de compilación. Para obtener más información sobre el funcionamiento de este mecanismo, consulte [extending-caches.md ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "icono de enlace externo"){: new_window}. 
+  * [Paquete de compilación Cloud Foundry Node.js ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/nodejs-buildpack "icono de enlace externo"){: new_window}. Este paquete de compilación ofrece una funcionalidad similar utilizando variables de entorno. Para habilitar el paquete de compilación Node.js para descargar módulos de nodo de Internet cada vez, escriba el siguiente mandato en la interfaz de línea de mandatos cf: 	
   ```
   set NODE_MODULES_CACHE=false
   ```
 
 Si el paquete de compilación que utiliza no ofrece un mecanismo para cargar los últimos componentes automáticamente, puede suprimir manualmente el contenido del directorio de memoria caché y volver a enviar por push la app. Siga los siguientes pasos:
 
- 1. Extraiga una rama de un paquete de compilación nulo como, por ejemplo, https://github.com/ryandotsmith/null-buildpack. Para obtener información sobre cómo extraer una rama, consulte [Conceptos básicos de Git - Obtención de un repositorio Git![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository){: new_window}.  
- 2. Añada la siguiente línea al archivo `null-buildpack/bin/compile` y confirme los cambios. Para obtener información sobre cómo confirmar cambios, consulte [Conceptos básicos de Git - Grabación de cambios en el repositorio![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){: new_window}.
+ 1. Extraiga una rama de un paquete de compilación nulo como, por ejemplo, https://github.com/ryandotsmith/null-buildpack. Para obtener información sobre cómo extraer una rama, consulte [Conceptos básicos de Git - Obtención de un repositorio Git![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "icono de enlace externo"){: new_window}.  
+ 2. Añada la siguiente línea al archivo `null-buildpack/bin/compile` y confirme los cambios. Para obtener información sobre cómo confirmar cambios, consulte [Conceptos básicos de Git - Grabación de cambios en el repositorio![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository "icono de enlace externo"){: new_window}.
   ```
   rm -rfv $2/*
   ```
@@ -72,7 +72,7 @@ Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} utilizando un pa
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: fpm is running, pid 93
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
-En el paquete de compilación PHP, el parámetro error_log define el nivel de registro. De forma predeterminada, el valor del parámetro `error_log` es **stderr notice**. El ejemplo siguiente muestra la configuración del nivel de registro predeterminado del archivo `nginx-defaults.conf` del paquete de compilación PHP que proporciona Cloud Foundry. Para obtener más información, consulte [cloudfoundry/php-buildpack ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}.
+En el paquete de compilación PHP, el parámetro error_log define el nivel de registro. De forma predeterminada, el valor del parámetro `error_log` es **stderr notice**. El ejemplo siguiente muestra la configuración del nivel de registro predeterminado del archivo `nginx-defaults.conf` del paquete de compilación PHP que proporciona Cloud Foundry. Para obtener más información, consulte [cloudfoundry/php-buildpack ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf "icono de enlace externo"){: new_window}.
 {: tsCauses} 
 
 ```
@@ -90,7 +90,7 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-Para obtener más información sobre cómo cambiar la configuración de registro, consulte [error_log ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
+Para obtener más información sobre cómo cambiar la configuración de registro, consulte [error_log ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](http://nginx.org/en/docs/ngx_core_module.html#error_log "icono de enlace externo"){: new_window}.
 	
 
 ## No se puede importar una biblioteca Python de terceros en {{site.data.keyword.Bluemix_notm}}
