@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015, 2017
 
-lastupdated: "2016-11-21" 
+lastupdated: "2016-08-15" 
 
 ---
 
@@ -304,7 +304,7 @@ The following browsers are supported. Ensure that you use the latest version for
 * Internet Explorer
 * Safari
 
-For details, see the [Bluemix Prerequisites page](https://developer.ibm.com/bluemix/support/#prereqs).
+For details, see the [list of prerequisites](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}.
 
 		
 ## BXNUI0065E
@@ -778,9 +778,17 @@ Try again later. If the problem continues, go to [IBM Bluemix Support](http://ib
 
 ## BXNUI0519E
 
-**Message**:The container group wasn't created because of an internal error with incident ID __incidentID__.
+**Message**: The container group wasn't created because of an internal error with incident ID __incidentID__.
 
 Try again later. If the problem continues, go to [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI0520E
+
+**Message**: The container was not created.
+
+The __serviceName__ service could not be bound to the container because the service does not support the creation of keys.
+
+Select a different service.
 
 ## BXNUI0521E
 
@@ -1011,7 +1019,7 @@ Contact the system administrator for assistance in fixing the datastore componen
 
 While Cloud Foundry was being contacted to create the resource, an error occurred. Cloud Foundry message: "{0}." 
 
-For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/managingapps.html#tr_servicelimit){: new_window}.
+For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}.
 
 ## BXNUI2033E
  **Message**: The {1} resource wasn't modified. While Cloud Foundry was being contacted to modify the resource, an error occurred. Cloud Foundry message: "{0}."
@@ -1564,4 +1572,19 @@ Try again later. If the problem continues, go to [IBM Bluemix Support](http://ib
 ## BXNUI3065E 
 **Message**: A problem occurred while contacting IBM Virtual Servers.
 
-Try again later. If the problem continues, go to [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}."
+Try again later. If the problem continues, go to [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI3066E 
+**Message**: The attempt to migrate your app failed because we couldn't contact Cloud Foundry to switch your app to Diego.
+
+Try again later. If you see this message again, contact [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI3066E 
+**Message**: The attempt to migrate your app failed because we couldn't contact Cloud Foundry to switch your app to Diego.
+
+Try again later. If you see this message again, contact [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI3067E 
+**Message**: The attempt to roll your app back to DEA failed because we couldn't contact Cloud Foundry.
+
+Try again. If you see this message again, contact [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}."
