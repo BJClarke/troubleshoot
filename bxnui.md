@@ -1579,11 +1579,6 @@ Try again later. If the problem continues, go to [IBM Bluemix Support](http://ib
 
 Try again later. If you see this message again, contact [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
 
-## BXNUI3066E 
-**Message**: The attempt to migrate your app failed because we couldn't contact Cloud Foundry to switch your app to Diego.
-
-Try again later. If you see this message again, contact [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
-
 ## BXNUI3067E 
 **Message**: The attempt to roll your app back to DEA failed because we couldn't contact Cloud Foundry.
 
