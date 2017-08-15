@@ -22,7 +22,7 @@ When you receive an error message from {{site.data.keyword.Bluemix}}, you can us
 ## BXNUI0001E
 **Message**: The page wasn't loaded because Bluemix didn't detect whether a session exists. 
 
-For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}.
+For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
 <!-- BXNUI0002E to be deleted -->
 <!-- BXNUI0003E to be deleted -->
 
@@ -81,7 +81,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 ## BXNUI0016E
 **Message**: The apps and services weren't retrieved because a Bluemix page didn't load. 
 
-For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}.
+For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
 
 ## BXNUI0017E 
 **Message**: The service instance wasn't retrieved because a problem occurred contacting Cloud Foundry. 
@@ -463,12 +463,12 @@ Use a different name and try again.
 
 Your account is inactive because it was canceled or suspended. 
 
-For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_accnt_inactive){: new_window}.
+For instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}.
 
 ## BXNUI0097E
 **Message**: Before you can add an app, at least one space must be associated with your organization and region. 
 
-On the Dashboard, click **Create a Space**. When the space is created, try again. For more instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_no_space){: new_window}.
+On the Dashboard, click **Create a Space**. When the space is created, try again. For more instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}.
 
 ## BXNUI0098E
 **Message**: The list of credentials can't be retrieved at the moment.
@@ -754,9 +754,9 @@ Try to select another org or create a space, or request the developer role from 
 
 ## BXNUI0515E
 
-**Message**: The spaces in the org weren't retrieved because of a network connection problem.
+**Message**: The spaces in the org weren't retrieved. Either a network connection problem occurred, or your current organization does not have a space associated with it. 
 
-Try again later. If you see this message again, go to the [Bluemix status page](https://developer.ibm.com/bluemix/support/#status){: new_window} to check whether a service or component has an issue. If the problem continues, go to [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}.
+Try again later. If you see this message again, go to the [Bluemix status page](https://developer.ibm.com/bluemix/support/#status){: new_window} to check whether a service or component has an issue. Or, for instructions to fix this problem, see this [troubleshooting topic](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}.
 
 ## BXNUI0516E
 
