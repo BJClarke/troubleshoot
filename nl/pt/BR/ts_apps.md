@@ -267,7 +267,7 @@ Um erro Gateway inválido acontece geralmente quando você visita um website que
 
 Outras causas menos comuns de um erro Gateway inválido são Internet service provider (ISP) descartável, configurações inválidas de firewall e erros de cache do navegador.
 
-Se você suspeitar que um serviço do {{site.data.keyword.Bluemix_notm}} está inativo, verifique primeiro a página [Status do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
+Se você suspeita que um serviço do {{site.data.keyword.Bluemix_notm}} está inativo, primeiro verifique a página de status do   [{{site.data.keyword.Bluemix_notm}} ![ Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
 {: tsResolve}
 
   * Tente a ação novamente:

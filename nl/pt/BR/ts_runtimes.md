@@ -36,7 +36,7 @@ Ao enviar por push ou remontar um app após a atualização do buildpack, os com
 Alguns buildpacks não são configurados para fazer download automaticamente de todos os componentes atualizados da Internet para assegurar que você sempre use a versão mais recente.
 {: tsCauses} 
 
-É possível usar buildpacks que tenham mecanismos integrados para evitar o carregamento de componentes obsoletos, por exemplo, os buildpacks a seguir: 
+É possível usar buildpacks que tenham mecanismos integrados para evitar o carregamento de componentes obsoletos, por exemplo, os buildpacks a seguir:
 {: tsResolve}
 
   * [Buildpack Java do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack "Ícone de link externo"){: new_window}. Esse buildpack tem um mecanismo integrado

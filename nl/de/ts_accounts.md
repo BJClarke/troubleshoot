@@ -113,7 +113,7 @@ Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
  
   * Wählen Sie auf dem Dashboard von {{site.data.keyword.Bluemix_notm}} die Organisation aus, in der Sie den Bereich erstellen möchten. Klicken Sie anschließend auf **Bereich erstellen**.
-  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <space_name> -o <organization_name>`. 
+  * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
 
   
 ## Apps verwenden denselben Domänennamen gemeinsam

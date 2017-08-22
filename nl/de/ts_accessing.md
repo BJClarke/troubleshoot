@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -82,7 +82,7 @@ Sie müssen über eine gültige IBMid und ein Kennwort verfügen, um sich bei {{
 
  * Stellen Sie sicher, dass Sie eine vollständig qualifizierte E-Mail-Adresse für die IBMid eingeben.
  {: tsResolve}
- * Falls Sie einen SoftLayer-.Benutzer mit einer SoftLayer-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im Kundenportal zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können.
+ * Falls Sie einen SoftLayer-.Benutzer mit einer SoftLayer-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im Kundenportal zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können. 
  Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/softlayerlink.html#ibmid_switch).
 
 
@@ -150,7 +150,7 @@ Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authenti
 Möglicherweise besteht ein Problem beim Service für die Authentifizierung mit IBMid.
 {: tsCauses}
 
-Überprüfen Sie den Status des Service auf der Seite [IBM BlueID ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Symbol für externen Link"){: new_window} und wiederholen Sie anschließend den Versuch.
+Überprüfen Sie den Status des Service auf der Seite [IBM IBMid ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Symbol für externen Link"){: new_window} und wiederholen Sie anschließend den Versuch.
 {: tsResolve}
 
 

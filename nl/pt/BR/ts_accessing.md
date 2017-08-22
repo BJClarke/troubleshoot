@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -151,7 +151,7 @@ Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o I
 Pode haver um problema com o serviço de autenticação do IBMid.
 {: tsCauses}
 
-Verifique o status do serviço em [IBM BlueID ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Ícone de link externo"){: new_window} e, em seguida, tente novamente.
+Verifique o status do serviço em [IBMid da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Ícone de link externo"){: new_window} e, em seguida, tente novamente.
 {: tsResolve}
 
 

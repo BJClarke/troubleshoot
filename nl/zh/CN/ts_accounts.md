@@ -67,7 +67,7 @@ lastupdated: "2017-06-01"
 您无法部署应用程序，且会获取错误，说明您已超出组织的内存限制。
 {: tsSymptoms}
 
-在标准帐户中，您的 Cloud Foundry 应用程序最多可以使用 256 MB 的即时运行时内存。在计费帐户中，存在 2GB 的内存限制。
+在标准帐户中，您的 Cloud Foundry 应用程序最多可以使用 256 MB 的即时运行时内存。在计费帐户中，存在 2 GB 的内存限制。
 {: tsCauses}
 
 如果您使用标准帐户，那么您可以升级到计费帐户以获取其他内存。请转至控制台中的**管理 > 计费和使用情况 > 计费**页面，然后单击**添加信用卡**。
@@ -113,7 +113,7 @@ lastupdated: "2017-06-01"
 {: tsResolve}
  
   * 在 {{site.data.keyword.Bluemix_notm}}“仪表板”上，选择要在其中创建空间的组织，然后单击**创建空间**。
-  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`。
+  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`.
 
   
 ## 应用程序共享相同的域名

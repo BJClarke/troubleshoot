@@ -37,7 +37,7 @@ lastupdated: "2017-01-10"
 {: tsResolve}
 
   * [Cloud Foundry Java buildpack ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://github.com/cloudfoundry/java-buildpack "外部链接图标"){: new_window}. 此 buildpack 具有内置机制来确保使用 buildpack 的最新版本。有关此机制如何工作的更多信息，请参阅 [extending-caches.md ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "外部链接图标"){: new_window}。 
-  * [Cloud Foundry Node.js buildpack ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://github.com/cloudfoundry/nodejs-buildpack "外部链接图标"){: new_window}。此 buildpack 通过使用环境变量来提供类似功能。要使 Node.js buildpack 每次都能够从因特网下载节点模型，请在 cf 命令行界面中键入以下命令： 	
+  * [Cloud Foundry Node.js buildpack ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://github.com/cloudfoundry/nodejs-buildpack "外部链接图标"){: new_window}。此 buildpack 通过使用环境变量来提供类似功能。要使 Node.js buildpack 每次都能够从因特网下载节点模型，请在 cf 命令行界面中输入以下命令： 	
   ```
   set NODE_MODULES_CACHE=false
   ```

@@ -36,16 +36,16 @@ lastupdated: "2017-01-10"
 기본 제공 메커니즘이 더 이상 사용되지 않는 컴포넌트를 로드하지 않도록 하는 빌드팩을 사용할 수 있습니다(예: 다음 빌드팩).
 {: tsResolve}
 
-  * [Cloud Foundry Java buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/java-buildpack "외부 링크 아이콘"){: new_window}. 최신 버전의 빌드팩을 사용하도록 이 빌드팩에는 기본 메커니즘이 포함되어 있습니다. 이 메커니즘의 작동 방식에 대한 자세한 정보는 [extending-caches.md ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "외부 링크 아이콘"){: new_window}를 참조하십시오. 
-  * [Cloud Foundry Node.js buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/nodejs-buildpack "외부 링크 아이콘"){: new_window}. 이 빌드팩은 환경 변수를 사용하여 비슷한 기능을 제공합니다. Node.js 빌드팩이 항상 인터넷에서 노드 모듈을 다운로드하게 하려면 cf 명령행 인터페이스에서 다음 명령을 입력하십시오. 	
+  * [Cloud Foundry Java buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/java-buildpack ){: new_window}. 최신 버전의 빌드팩을 사용하도록 이 빌드팩에는 기본 메커니즘이 포함되어 있습니다. 이 메커니즘의 작동 방식에 대한 자세한 정보는 [extending-caches.md ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md ){: new_window}를 참조하십시오. 
+  * [Cloud Foundry Node.js buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/nodejs-buildpack ){: new_window}. 이 빌드팩은 환경 변수를 사용하여 비슷한 기능을 제공합니다. Node.js 빌드팩이 항상 인터넷에서 노드 모듈을 다운로드하게 하려면 cf 명령행 인터페이스에서 다음 명령을 입력하십시오. 	
   ```
   set NODE_MODULES_CACHE=false
   ```
 
 사용 중인 빌드팩이 자동으로 최신 컴포넌트를 로드하는 메커니즘을 제공하지 않는 경우 수동으로 캐시 디렉토리에서 컨텐츠를 삭제하고 앱을 다시 푸시할 수 있습니다. 다음 단계를 수행하십시오.
 
- 1. 널 빌드팩의 분기를 체크아웃합니다. 예: https://github.com/ryandotsmith/null-buildpack 분기를 체크아웃하는 방법에 대한 정보는 [Git Basics - Getting a Git Repository ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "외부 링크 아이콘"){: new_window}를 참조하십시오.  
- 2. `null-buildpack/bin/compile` 파일에 다음 링크를 추가하고 변경사항을 커미트합니다. 변경사항을 커미트하는 방법에 대한 정보는 [Git Basics - Recording Changes to the Repository ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository "외부 링크 아이콘"){: new_window}를 참조하십시오.
+ 1. 널 빌드팩의 분기를 체크아웃합니다. 예: https://github.com/ryandotsmith/null-buildpack 분기를 체크아웃하는 방법에 대한 정보는 [Git Basics - Getting a Git Repository ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository ){: new_window}를 참조하십시오.  
+ 2. `null-buildpack/bin/compile` 파일에 다음 링크를 추가하고 변경사항을 커미트합니다. 변경사항을 커미트하는 방법에 대한 정보는 [Git Basics - Recording Changes to the Repository ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository ){: new_window}를 참조하십시오.
   ```
   rm -rfv $2/*
   ```
@@ -72,7 +72,7 @@ PHP 빌드팩을 사용하여 {{site.data.keyword.Bluemix_notm}}에 앱을 푸�
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: fpm is running, pid 93
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
-PHP 빌드팩에서 error_log 매개변수는 로깅 레벨을 정의합니다. 기본적으로 `error_log` 매개변수의 값은 **stderr notice**입니다. 다음 예는 Cloud Foundry가 제공하는 PHP 빌드팩의 `nginx-defaults.conf` 파일에 있는 기본 로깅 레벨 구성을 표시합니다. 자세한 정보는 [cloudfoundry/php-buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf "외부 링크 아이콘"){: new_window}을 참조하십시오.
+PHP 빌드팩에서 error_log 매개변수는 로깅 레벨을 정의합니다. 기본적으로 `error_log` 매개변수의 값은 **stderr notice**입니다. 다음 예는 Cloud Foundry가 제공하는 PHP 빌드팩의 `nginx-defaults.conf` 파일에 있는 기본 로깅 레벨 구성을 표시합니다. 자세한 정보는 [cloudfoundry/php-buildpack ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf ){: new_window}을 참조하십시오.
 {: tsCauses} 
 
 ```
@@ -89,7 +89,7 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-기본 로깅 구성 변경 방법에 대한 자세한 정보는 [error_log ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://nginx.org/en/docs/ngx_core_module.html#error_log "외부 링크 아이콘"){: new_window}를 참조하십시오.
+기본 로깅 구성 변경 방법에 대한 자세한 정보는 [error_log ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://nginx.org/en/docs/ngx_core_module.html#error_log ){: new_window}를 참조하십시오.
 	
 
 ## 써드파티 Python 라이브러리를 {{site.data.keyword.Bluemix_notm}}로 가져올 수 없음

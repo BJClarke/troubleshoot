@@ -129,7 +129,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 
 워크벤치 JVM이 IBM JVM 7 또는 8, 또는 Oracle JVM 8의 이전 버전인 경우에는 다음 단계를 완료하여 Oracle JVM 8로 전환하십시오.
 
-  1. Oracle JVM 8을 다운로드한 후에 이를 설치하십시오. 세부사항은 [Java SE Downloads ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "외부 링크 아이콘"){: new_window}를 참조하십시오.
+  1. Oracle JVM 8을 다운로드한 후에 이를 설치하십시오. 세부사항은 [Java SE Downloads ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.oracle.com/technetwork/java/javase/downloads/index.html ){: new_window}를 참조하십시오.
   2. Eclipse를 다시 시작하십시오.
   3. `eclipse.vm` 특성이 Oracle JVM 8의 새 설치를 지시하는지 확인하십시오.
 
@@ -628,7 +628,7 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
  }
     ```
 
-Node.js 앱에 대한 추가 팁은 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘"){: new_window}를 참조하십시오.
+Node.js 앱에 대한 추가 팁은 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "외부 링크 아이콘"){: new_window}를 참조하십시오.
 
 
 ## Bluemix Liberty 앱을 Eclipse로 가져온 후 `server.xml` 파일에 구성 오류가 나타남
@@ -657,7 +657,7 @@ Liberty 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시되면 Liberty 빌드
 이 문제점은 발견 스크립트, 컴파일 스크립트, 릴리스 스크립트 등의 스크립트가 실행 가능하지 않을 경우에 발생합니다.
 {: tsCauses}
 
-[git update ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://git-scm.com/docs/git-update-index "외부 링크 아이콘"){: new_window} 명령을 사용하여 각 스크립트의 권한을 실행 가능으로 변경할 수 있습니다. 예를 들어 `git update --chmod=+x script.sh`를 입력합니다.
+[git update ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://git-scm.com/docs/git-update-index ){: new_window} 명령을 사용하여 각 스크립트의 권한을 실행 가능으로 변경할 수 있습니다. 예를 들어 `git update --chmod=+x script.sh`를 입력합니다.
 {: tsResolve}
 
 ## IBM Bluemix Continuous Delivery에서 Delivery Pipeline로부터 앱을 배치할 수 없음

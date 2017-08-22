@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2017  
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -148,7 +148,7 @@ lastupdated: "2017-03-02"
 IBM ID 鑑別服務可能有問題。
 {: tsCauses}
 
-在 [IBM BlueID ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部鏈結圖示"){: new_window} 檢查服務狀態，然後重試。
+在 [IBM IBMid ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部鏈結圖示"){: new_window} 檢查服務狀態，然後重試。
 {: tsResolve}
 
 

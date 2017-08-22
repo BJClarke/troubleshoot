@@ -91,7 +91,7 @@ El estado de la cuenta de {{site.data.keyword.Bluemix_notm}} pasa a ser inactivo
 {: tsCauses}
 
 
-Para volver a activar la cuenta, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com "Icono de enlace externo"){: new_window}. Incluya la siguiente información en el correo electrónico:
+Para volver a activar la cuenta, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}. Incluya la siguiente información en el correo electrónico:
 {: tsResolve}
 
   * El ID de IBM que utiliza para iniciar la sesión en {{site.data.keyword.Bluemix_notm}}.
@@ -128,7 +128,7 @@ Este problema puede producirse cuando se asigna la misma ruta de URL a distintas
 
 Por ejemplo, supongamos que envía la app myApp1 a {{site.data.keyword.Bluemix_notm}} y establece el dominio en "mynewapp.stage1.mybluemix.net". Luego envía otra app myApp2 al mismo espacio y establece una de sus rutas de URL en "mynewapp.stage1.mybluemix.net". Ahora la ruta está correlacionada a ambas apps.
 
-Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue azul-verde para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "icono de enlace externo"){: new_window}.
+Este es el comportamiento soportado de {{site.data.keyword.Bluemix_notm}} y puede utilizar este procedimiento para conseguir un tiempo de inactividad cero para la actualización de la app. Para obtener más información, consulte [Utilización del despliegue azul-verde para reducir el tiempo de inactividad y el riesgo ![icono de enlace externo](../icons/launch-glyph.svg "icono de enlace externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
   
 

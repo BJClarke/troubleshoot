@@ -56,7 +56,7 @@ lastupdated: "2017-04-10"
 您可以使用支持多个 IP 地址间智能故障转移的 DNS 提供程序，并手动配置 DNS 设置，以启用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。具有此功能的 DNS 提供程序包括 NSONE、Akamai 和 Dyn。
 {: tsResolve}
 
-配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中键入以下命令：
+配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中输入以下命令：
 ```
 nslookup stage1.mybluemix.net
 ```
@@ -405,7 +405,7 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 此行为是 Cloud Foundry 故意为之。
 {: tsCauses}
 
-您可以通过在命令行界面中键入以下命令来手动重新启动应用程序：
+您可以通过在命令行界面中输入以下命令来手动重新启动应用程序：
 {: tsResolve}
 
 ```
@@ -653,7 +653,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 如果脚本（如检测脚本、编译脚本和发布脚本）不可执行，那么可能发生此问题。
 {: tsCauses}
 
-您可以使用 [git update ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://git-scm.com/docs/git-update-index "外部链接图标"){: new_window} 命令将每个脚本的许可权更改为可执行。例如，可以键入 `git update --chmod=+x script.sh`。
+您可以使用 [git update ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://git-scm.com/docs/git-update-index "外部链接图标"){: new_window} 命令将每个脚本的许可权更改为可执行。例如，可以输入 `git update --chmod=+x script.sh`。
 {: tsResolve}
 
 ## 无法通过 IBM Bluemix Continuous Delivery 中的 Delivery Pipeline 部署应用程序

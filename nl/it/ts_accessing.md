@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -150,7 +150,7 @@ Quando accedi a {{site.data.keyword.Bluemix_notm}}, l'autenticazione tramite l'I
 Potrebbe esserci un problema con il servizio di autenticazione ID IBM.
 {: tsCauses}
 
-Controlla lo stato del servizio in [IBM BlueID ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Icona link esterno"){: new_window} e riprova.
+Controlla lo stato del servizio in [IBM IBMid ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Icona link esterno"){: new_window} e riprova.
 {: tsResolve}
 
 

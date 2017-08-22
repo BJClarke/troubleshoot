@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -148,7 +148,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM BlueID ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部リンク・アイコン"){: new_window}でサービスの状況を確認し、再試行してください。
+[IBM IBMid ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "「外部リンク」アイコン"){: new_window} で、サービスの状況を確認し、再試行してください。
 {: tsResolve}
 
 

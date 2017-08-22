@@ -155,7 +155,7 @@ Führen Sie die folgenden Schritte aus, um die nicht verwendete Route zu lösche
 	 cf routes
 	 ```
   2. Wenn die Route nicht zum aktuellen Bereich gehört, wechseln Sie in den betreffenden Bereich oder in die betreffende Organisation. Geben Sie dazu den folgenden Befehl ein:
-  ```
+     ```
 	 cf target -o org_name -s space_name
 	 ```
   3. Löschen Sie die App-Route, indem Sie den folgenden Befehl eingeben:
@@ -175,7 +175,7 @@ Sie können eine App oder einen Service nicht erstellen, wenn der derzeitigen Or
 Bei dem Versuch, in Bluemix eine App zu erstellen, wird die folgende Fehlernachricht angezeigt:
 {: tsSymptoms}
 
-`BXNUI0515E: Die Bereiche in der Organisation wurden nicht abgerufen. Es ist entweder ein Netzverbindungsproblem aufgetreten oder Ihrer aktuellen Organisation ist kein Bereich zugeordnet. `
+`BXNUI0515E: Die Bereiche in der Organisation wurden nicht abgerufen. Es ist entweder ein Netzverbindungsproblem aufgetreten oder Ihrer aktuellen Organisation ist kein Bereich zugeordnet.`
 
 Dieser Fehler tritt oft auf, wenn Sie zum ersten Mal versuchen, im Katalog eine App oder einen Service zu erstellen, wenn noch kein Bereich erstellt wurde.
 {: tsCauses}
@@ -336,8 +336,7 @@ Löschen Sie alle nicht benötigten Serviceinstanzen oder entfernen Sie den Gren
 	  2. Löschen Sie die Serviceinstanz durch Eingeben von `cf delete-service <Serviceinstanzname>`.
 	  3. Nach dem Löschen der Serviceinstanz möchten Sie möglicherweise ein erneutes Staging für Ihre App, an die die Serviceinstanz gebunden war, mit dem Befehl `cf restage <App-Name>` durchführen.
 
-  * Zum Löschen des Grenzwerts für die Anzahl Serviceinstanzen, die für Sie bestehen können, wandeln Sie Ihr Testkonto in ein Zahlungskonto um. 
-Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie unter [Vorgehensweise zum Ändern des Plans](/docs/pricing/index.html#changing).
+  * Zum Löschen des Grenzwerts für die Anzahl Serviceinstanzen, die für Sie bestehen können, wandeln Sie Ihr Testkonto in ein Zahlungskonto um. Informationen dazu, wie Ihr Testkonto in ein Zahlungskonto umgewandelt wird, finden Sie unter [Vorgehensweise zum Ändern des Plans](/docs/pricing/index.html#changing).
 
 ## Ausführbare Dateien können in Bluemix nicht ausgeführt werden
 {: #ts_executable}
@@ -347,8 +346,7 @@ Möglicherweise können Sie ausführbare Dateien in {{site.data.keyword.Bluemix_
 Sie können ausführbare Dateien nicht in {{site.data.keyword.Bluemix_notm}} ausführen, wenn diese ausführbaren Dateien in einer anderen Umgebung entwickelt und der Build für sie dort erstellt wurde.
 {: tsSymptoms}
 
-Wenn es sich bei dem Inhalt, den Sie per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen wollen, bereits um eine ausführbare Datei handelt, wurde der Build für den Inhalt zuvor erstellt und ein erneuter Build in {{site.data.keyword.Bluemix_notm}} ist nicht erforderlich.
-In diesem Fall ist kein Buildpack erforderlich, damit die ausführbare Datei in {{site.data.keyword.Bluemix_notm}} ausgeführt werden kann. Sie müssen jedoch für {{site.data.keyword.Bluemix_notm}} explizit angeben, dass ein Buildpack nicht erforderlich ist.
+Wenn es sich bei dem Inhalt, den Sie per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen wollen, bereits um eine ausführbare Datei handelt, wurde der Build für den Inhalt zuvor erstellt und ein erneuter Build in {{site.data.keyword.Bluemix_notm}} ist nicht erforderlich. In diesem Fall ist kein Buildpack erforderlich, damit die ausführbare Datei in {{site.data.keyword.Bluemix_notm}} ausgeführt werden kann. Sie müssen jedoch für {{site.data.keyword.Bluemix_notm}} explizit angeben, dass ein Buildpack nicht erforderlich ist.
 {: tsCauses}
 
 Wenn Sie die ausführbare Datei per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, müssen Sie durch einen 'Null-Buildpack' angeben, dass kein Buildpack erforderlich ist. Geben Sie ein Null-Buildpack an, indem Sie die Option **-b** mit dem Befehl `cf push` verwenden:

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -149,7 +149,7 @@ lastupdated: "2017-03-02"
 IBM 标识认证服务可能发生问题。
 {: tsCauses}
 
-在 [IBM BlueID ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部链接图标"){: new_window} 上检查该服务的状态，然后重试。
+在 [IBM IBMid![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部链接图标"){: new_window} 上检查该服务的状态，然后重试。
 {: tsResolve}
 
 
@@ -162,7 +162,6 @@ IBM 标识认证服务可能发生问题。
 {: tsSymptoms}
 
 <code>帐户暂挂。请等待最多 24 小时以获取电子邮件确认并请检查垃圾邮件文件夹。如果仍未收到确认电子邮件，请联系 <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Bluemix 支持</a>。</code>
-
 
 在注册 {{site.data.keyword.Bluemix_notm}} 试用帐户后，您将收到确认电子邮件。必须单击确认电子邮件中的链接以完成注册过程。
 {: tsCauses} 
@@ -202,7 +201,7 @@ IBM 标识认证服务可能发生问题。
 您可以使用支持多个 IP 地址间智能故障转移的 DNS 提供程序，并手动配置 DNS 设置，以启用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。具有此功能的 DNS 提供程序包括 NSONE、Akamai 和 Dyn。
 {: tsResolve}
 
-配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中键入以下命令：
+配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中输入以下命令：
 ```
 nslookup stage1.mybluemix.net
 ```

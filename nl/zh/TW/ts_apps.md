@@ -208,7 +208,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 若要取得適當的權限層級，請使用下列其中一種方法：
 {: tsResolve}
  * 選取另一個您具有開發人員角色的組織及空間。
- * 要求組織管理者將您的角色變更為開發人員，或建立空間，然後將開發人員角色指派給您。如需詳細資料，請參閱 [管理組織及空間](/docs/admin/orgs_spaces.html)。
+ * 要求組織管理者將您的角色變更為開發人員，或建立空間，然後將開發人員角色指派給您。如需詳細資料，請參閱[管理組織及空間](/docs/admin/orgs_spaces.html)。
 
 ## 因為授權錯誤，所以無法存取 Bluemix 服務
 {: #ts_vcap}
@@ -269,20 +269,20 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 會依專案資料類�
     * 使用不同的瀏覽器。
     * 將路由器、數據機及電腦重新開機。將這些裝置重新開機可清除導致錯誤 502 的許多種錯誤。
   * 等待並於稍後再試一次。在部分情況下，暫時問題可能是由於網際網路服務供應商或 {{site.data.keyword.Bluemix_notm}} 服務所造成。您可能要等待暫時問題獲得解決。
-  * 如果問題仍然存在，請與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡。如需相關資訊，請參閱 [與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](/docs/support/index.html#contacting-bluemix-support){: new_window}。
+  * 如果問題仍然存在，請與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡。如需相關資訊，請參閱[與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](/docs/support/index.html#contacting-bluemix-support){: new_window}。
 
-## 已超出磁碟限額
+## 已超出磁碟配額
 {: #ts_disk_quota}
 
-如果您已耗盡磁碟空間，可以手動修改磁碟限額以取得更多磁碟空間。
+如果您已耗盡磁碟空間，可以手動修改磁碟配額以取得更多磁碟空間。
 
-當您耗盡磁碟空間時，可能會看到一則指出已超出磁碟限額的訊息。為解決此問題，您可能已嘗試擴充應用程式實例以取得更多磁碟空間。例如，您可能透過變更應用程式詳細資料頁面上的記憶體配額，從 256 MB 擴充為 1256 MB。不過，因為磁碟限額保持不變，所以您並未取得更多磁碟空間。
+當您耗盡磁碟空間時，可能會看到一則指出已超出磁碟配額的訊息。為解決此問題，您可能已嘗試擴充應用程式實例以取得更多磁碟空間。例如，您可能透過變更應用程式詳細資料頁面上的記憶體配額，從 256 MB 擴充為 1256 MB。不過，因為磁碟配額保持不變，所以您並未取得更多磁碟空間。
 {: tsSymptoms}
 
-配置給應用程式的預設磁碟限額是 1 GB。如果您需要更多磁碟空間，則必須手動指定磁碟限額。
+配置給應用程式的預設磁碟配額是 1 GB。如果您需要更多磁碟空間，則必須手動指定磁碟配額。
 {: tsCauses}
 
-請使用下列其中一種方法來指定您的磁碟限額。您可以指定的磁碟限額上限是 2 GB。如果 2 GB 仍然不夠，請嘗試使用外部服務，例如 [物件儲存庫](/docs/services/ObjectStorage/index.html)。
+請使用下列其中一種方法來指定您的磁碟配額。您可以指定的磁碟配額上限是 2 GB。如果 2 GB 仍然不夠，請嘗試使用外部服務，例如 [物件儲存庫](/docs/services/ObjectStorage/index.html)。
 {: tsResolve}
 
   * 在 manifest.yml 檔案中，新增下列項目：
@@ -611,7 +611,7 @@ cf push MyUniqueAppName02 -p "./app.war"
   ...
         ```
 
-  * 確定 `package.json` 檔案存在於您的 Node.js 應用程式中，Node.js 建置套件才能辨識應用程式。請確定此檔案位在應用程式的根目錄中。下列範例顯示簡式 `package.json` 檔案：  
+  * 確定 `package.json` 檔案存在於您的 Node.js 應用程式中，Node.js 建置套件才能辨識應用程式。請確定此檔案位在應用程式的根目錄中。下列範例顯示簡單的 `package.json` 檔案：  
 	```
 	{
         "name": "MyUniqueNodejs01",

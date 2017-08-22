@@ -1,9 +1,9 @@
-﻿---
+---
 
 copyright:
   years: 2015, 2017
   
-lastupdated: "2017-03-02"
+lastupdated: "2017-08-10"
 
 ---
 
@@ -151,7 +151,7 @@ Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}}, l'authentific
 Il s'agit peut-être d'un problème lié au service d'authentification via IBMid.
 {: tsCauses}
 
-Vérifiez le statut du service sur le site [IBM BlueID ![External link icon](../icons/launch-glyph.svg "External link icon")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window}, puis essayez à nouveau l'opération.
+Vérifiez le statut du service sur le site [IBM IBMid ![External link icon](../icons/launch-glyph.svg "External link icon")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window}, puis essayez à nouveau l'opération.
 {: tsResolve}
 
 
