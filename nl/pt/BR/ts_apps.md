@@ -133,7 +133,7 @@ Para verificar a versão de Java que o {{site.data.keyword.eclipsetoolsfull}} ex
 
 Se a sua JVM de ambiente de trabalho for IBM JVM 7 ou 8, ou uma versão anterior do Oracle JVM 8, conclua as etapas a seguir para alternar para o Oracle JVM 8:
 
-  1. Faça download e, em seguida, instale o Oracle JVM 8. Veja [Downloads de Java SE ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "Ícone de link externo"){: new_window} para obter detalhes.
+  1. Faça download e, em seguida, instale o Oracle JVM 8. Veja [Downloads de Java SE ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} para obter detalhes.
   2. Reinicie o Eclipse.
   3. Verifique se a propriedade `eclipse.vm` aponta para sua nova instalação do Oracle JVM 8.
 
@@ -243,9 +243,7 @@ Quando uma máscara não suportada é aplicada ao projeto Eclipse, é possível 
 {: tsSymptoms}
 `A máscara de projeto Cloud Foundry Standalone Application versão 1.0 não é suportada.`
 
-O IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} mapeia projetos para tempos de execução do {{site.data.keyword.Bluemix_notm}} por máscaras de projeto. As máscaras definem os requisitos para
-projetos Java EE no Eclipse e são usadas como parte da configuração de tempo de execução
-para que diferentes tempos de execução sejam associados a diferentes projetos. Caso a máscara aplicada ao projeto não seja suportada pelo IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, talvez não seja possível implementar o app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+O IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} mapeia projetos para tempos de execução do {{site.data.keyword.Bluemix_notm}} por máscaras de projeto. As máscaras definem os requisitos para projetos Java EE no Eclipse e são usadas como parte da configuração de tempo de execução para que diferentes tempos de execução sejam associados a diferentes projetos. Caso a máscara aplicada ao projeto não seja suportada pelo IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, talvez não seja possível implementar o app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Deve-se remover a máscara do projeto Eclipse para que você possa implementar seu app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
@@ -267,16 +265,14 @@ Um erro Gateway inválido acontece geralmente quando você visita um website que
 
 Outras causas menos comuns de um erro Gateway inválido são Internet service provider (ISP) descartável, configurações inválidas de firewall e erros de cache do navegador.
 
-Se você suspeita que um serviço do {{site.data.keyword.Bluemix_notm}} está inativo, primeiro verifique a página de status do   [{{site.data.keyword.Bluemix_notm}} ![ Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
+Se você suspeitar que um serviço {{site.data.keyword.Bluemix_notm}} esteja inativo, primeiro verifique o status da página [{{site.data.keyword.Bluemix_notm}}! [Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
 {: tsResolve}
 
   * Tente a ação novamente:
     * Recarregue a página pressionando F5 no teclado ou clicando no botão de atualização. Se essa etapa não funcionar, limpe o cache e os cookies de seu navegador e, em seguida, recarregue novamente.
     * Use um navegador diferente.
-    * Reinicialize o roteador, o modem e o computador. Reinicializar esses dispositivos pode limpar diversos erros
-que conduzem ao erro 502.
-  * Aguarde e tente novamente mais tarde. Em algumas instâncias, os problemas temporários podem ocorrer com seu provedor
-de serviços da Internet ou serviços do {{site.data.keyword.Bluemix_notm}}. É possível aguardar até que os problemas temporários sejam resolvidos.
+    * Reinicialize o roteador, o modem e o computador. Reinicializar esses dispositivos pode limpar diversos erros que conduzem ao erro 502.
+  * Aguarde e tente novamente mais tarde. Em algumas instâncias, os problemas temporários podem ocorrer com seu provedor de serviços da Internet ou serviços do {{site.data.keyword.Bluemix_notm}}. É possível aguardar até que os problemas temporários sejam resolvidos.
   * Se o problema ainda existir, entre em contato com o suporte do {{site.data.keyword.Bluemix_notm}}. Veja [Entrando em contato com o Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/support/index.html#contacting-bluemix-support){: new_window} para obter mais informações.
 
 ## A cota do disco foi excedida
@@ -284,10 +280,7 @@ de serviços da Internet ou serviços do {{site.data.keyword.Bluemix_notm}}. É 
 
 Se você ficar sem espaço em disco, será possível modificar manualmente a cota do disco para obter mais espaço em disco.
 
-Quando o espaço em disco se esgotar,
-você poderá ver uma mensagem que indica se a cota do disco foi excedida. Para resolver o problema,
-você pode ter tentado aumentar a escala de sua instância de app para obter mais espaço em disco. Por exemplo, você pode
-escalar de 256 MB para 1256 MB, mudando a cota de memória na página de detalhes do app. No entanto, como a cota do disco permaneceu a mesma, você não obteve mais espaço em disco.
+Quando o espaço em disco se esgotar, você poderá ver uma mensagem que indica se a cota do disco foi excedida. Para resolver o problema, você pode ter tentado aumentar a escala de sua instância de app para obter mais espaço em disco. Por exemplo, você pode escalar de 256 MB para 1256 MB, mudando a cota de memória na página de detalhes do app. No entanto, como a cota do disco permaneceu a mesma, você não obteve mais espaço em disco.
 {: tsSymptoms}
 
 A cota de disco padrão alocada para um app é 1 GB. Se você precisar de mais espaço em disco, deve especificar manualmente a cota do disco.
@@ -707,7 +700,7 @@ Ao implementar um app no {{site.data.keyword.Bluemix_notm}} usando um buildpack 
 Esse problema poderá ocorrer se scripts, como o script de detecção, o script de compilação e o script de liberação não forem executáveis.
 {: tsCauses}
 
-É possível usar o comando [git update ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://git-scm.com/docs/git-update-index "Ícone de link externo"){: new_window} para mudar a permissão de cada script para executável. Por exemplo, é possível digitar `git update --chmod=+x script.sh`.
+É possível usar o comando [git update ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://git-scm.com/docs/git-update-index){: new_window} para mudar a permissão de cada script para executável. Por exemplo, é possível digitar `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## Não é possível implementar um app do Delivery Pipeline no IBM Bluemix Continuous Delivery

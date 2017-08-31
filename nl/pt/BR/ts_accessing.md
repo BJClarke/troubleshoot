@@ -102,7 +102,7 @@ Conclua as verificações a seguir, conforme apropriado:
 {: tsResolve}
  * Entre em contato com o usuário principal ou com o administrador da conta para verificar se você está ativado para alternar para a autenticação do IBMid.
  * Assegure-se de concluir a etapa Alternar para o IBMid na conta do Softlayer. Veja [Alternando para o IBMid](/docs/admin/softlayerlink.html#ibmid_switch).
- * Assegure-se de seguir as ações no e-mail **Associar o usuário do SoftLayer a um IBMid**. Verifique o e-mail em sua caixa de entrada e sua pasta de spam. Para obter o e-mail novamente, por exemplo, se ele tiver expirado, acesse a página Editar perfil do usuário no Portal de controle e clique em **Reenviar e-mail**. Como alternativa, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com "Ícone de link externo"){: new_window}.
+ * Assegure-se de seguir as ações no e-mail **Associar o usuário do SoftLayer a um IBMid**. Verifique o e-mail em sua caixa de entrada e sua pasta de spam. Para obter o e-mail novamente, por exemplo, se ele tiver expirado, acesse a página Editar perfil do usuário no Portal de controle e clique em **Reenviar e-mail**. Como alternativa, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
 **Nota:** se tiver criado seu IBMid diretamente com o IBMid, você receberá dois e-mails para processar; um do registro do IBMid e um do Softlayer. Assegure-se de seguir as ações dos dois e-mails.
 
@@ -151,7 +151,7 @@ Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o I
 Pode haver um problema com o serviço de autenticação do IBMid.
 {: tsCauses}
 
-Verifique o status do serviço em [IBMid da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "Ícone de link externo"){: new_window} e, em seguida, tente novamente.
+Verifique o status do serviço em [IBMid da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} e, em seguida, tente novamente.
 {: tsResolve}
 
 
@@ -171,7 +171,7 @@ você receberá um email de confirmação. Deve-se clicar no link
 que está no email de confirmação para concluir o processo de registro.
 {: tsCauses} 
 
-O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com "Ícone de link externo"){: new_window}.  
+O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 
@@ -257,7 +257,7 @@ etapas a seguir:
 Se não puder convidar usuários porque é um colaborador e não um membro, sua conta anterior do {{site.data.keyword.Bluemix_notm}} deverá ser excluída e você convidado para se associar à conta, em seguida, como um membro da organização. Para excluir sua conta anterior e se associar à conta como um membro,
 conclua as etapas a seguir: 
 
-  1. Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport "Ícone de link externo"){: new_window} para abrir um chamado de suporte e solicitar que sua conta seja excluída. Se houver dados associados
+  1. Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport){: new_window} para abrir um chamado de suporte e solicitar que sua conta seja excluída. Se houver dados associados
 à sua conta antiga que você deseja salvar e mover para a nova conta,
 inclua essas informações em seu email. 
   2. Após sua conta ser excluída, peça a um usuário com a função de gerenciador

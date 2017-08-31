@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015, 2017
 
-lastupdated: "2016-11-21" 
+lastupdated: "2016-08-15" 
 
 ---
 
@@ -22,7 +22,7 @@ Cuando reciba un mensaje de error de {{site.data.keyword.Bluemix}}, puede utiliz
 ## BXNUI0001E
 **Mensaje**: La página no se ha cargado porque Bluemix no ha detectado si existe una sesión. 
 
-Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}.
+Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
 <!-- BXNUI0002E to be deleted -->
 <!-- BXNUI0003E to be deleted -->
 
@@ -81,7 +81,7 @@ Vuelva a intentarlo más tarde. Si vuelve a ver este mensaje, vaya a la [página
 ## BXNUI0016E
 **Mensaje**: Las apps y servicios no se han recuperado porque no se ha cargado una página de Bluemix. 
 
-Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}.
+Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
 
 ## BXNUI0017E 
 **Mensaje**: No se ha recuperado la instancia de servicio porque se ha producido un problema al establecer contacto con Cloud Foundry. 
@@ -304,7 +304,7 @@ Se da soporte a los siguientes navegadores. Asegúrese de utilizar la versión m
 * Internet Explorer
 * Safari
 
-Para obtener detalles, consulte la [página Requisitos previos de Bluemix](https://developer.ibm.com/bluemix/support/#prereqs).
+Para obtener detalles, consulte la [lista de requisitos previos](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}.
 
 		
 ## BXNUI0065E
@@ -463,12 +463,12 @@ Utilice un nombre distinto y vuelva a intentarlo.
 
 La cuenta está inactiva porque se ha cancelado o suspendido. 
 
-Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_accnt_inactive){: new_window}.
+Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}.
 
 ## BXNUI0097E
 **Mensaje**: Para poder añadir una app, al menos un espacio debe estar asociado con la organización y la región. 
 
-En el Panel de control, pulse **Crear un espacio**. Cuando se cree el espacio, vuélvalo a intentar. Para obtener más instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_no_space){: new_window}.
+En el Panel de control, pulse **Crear un espacio**. Cuando se cree el espacio, vuélvalo a intentar. Para obtener más instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}.
 
 ## BXNUI0098E
 **Mensaje**: No se ha podido recuperar la lista de credenciales en este momento.
@@ -753,9 +753,9 @@ Intente seleccionar otra organización o crear un espacio, o bien solicite el ro
 
 ## BXNUI0515E
 
-**Mensaje**: Los espacios de la organización no se han recuperado porque se ha producido un problema de conexión de red.
+**Mensaje**: Los espacios de la organización no se han recuperado. Se ha producido un problema de conexión a la red, o su organización actual no tiene un espacio asociado con ella. 
 
-Vuelva a intentarlo más tarde. Si vuelve a ver este mensaje, vaya a la [página de estado de Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para comprobar si el servicio o el componente tienen algún problema. Si el problema continúa, vaya a [Soporte de IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+Vuelva a intentarlo más tarde. Si vuelve a ver este mensaje, vaya a la [página de estado de Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para comprobar si el servicio o el componente tienen algún problema. O bien, para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}.
 
 ## BXNUI0516E
 
@@ -780,6 +780,14 @@ Vuelva a intentarlo más tarde. Si el problema continúa, vaya a [Soporte de IBM
 **Mensaje**: No se ha creado el grupo de contenedores debido a un error interno con el ID de incidente __IDincidente__.
 
 Vuelva a intentarlo más tarde. Si el problema continúa, vaya a [Soporte de IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI0520E
+
+**Mensaje**: No se ha creado el contenedor.
+
+No se ha podido enlazar el servicio __nombreServicio__ porque el servicio no da soporte a la creación de claves. 
+
+Seleccione un servicio diferente.
 
 ## BXNUI0521E
 
@@ -1010,7 +1018,7 @@ Póngase en contacto con el administrador del sistema para obtener ayuda para co
 
 Mientras se estaba contactando con Cloud Foundry para crear el recurso, se ha producido un error. Mensaje de Cloud Foundry: "{0}". 
 
-Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/managingapps.html#tr_servicelimit){: new_window}.
+Para obtener instrucciones para solucionar este problema, consulte este [tema de resolución de problemas](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}.
 
 ## BXNUI2033E
  **Mensaje**: El recurso {1} no se ha modificado. Mientras se estaba contactando con Cloud Foundry para modificar el recurso, se ha producido un error. Mensaje de Cloud Foundry: "{0}".
@@ -1566,3 +1574,13 @@ Vuelva a intentarlo más tarde. Si el problema continúa, vaya a [Soporte de IBM
 **Mensaje**: Se ha producido un problema al ponerse en contacto con Servidores virtuales de IBM.
 
 Vuelva a intentarlo más tarde. Si el problema continúa, vaya a [Soporte de IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI3066E 
+**Mensaje**: El intento de migrar su app ha fallado porque no se ha podido contactar con Cloud Foundry para cambiar su app a Diego.
+
+Vuelva a intentarlo más tarde. Si vuelve a ver este mensaje, póngase en contacto con el [Soporte de IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+
+## BXNUI3067E 
+**Mensaje**: El intento de retrotraer su app a DEA ha fallado porque no se ha podido contactar con Cloud Foundry.
+
+Inténtelo de nuevo. Si vuelve a ver este mensaje, póngase en contacto con el [Soporte de IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.

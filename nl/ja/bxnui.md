@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015, 2017
 
-lastupdated: "2016-11-21"
+lastupdated: "2016-08-15"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2016-11-21"
 ## BXNUI0001E
 **メッセージ**: セッションが存在しているかどうかを Bluemix が検出しなかったため、ページはロードされませんでした。 
 
-この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}を参照してください。
+この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}を参照してください。
 <!-- BXNUI0002E to be deleted -->
 <!-- BXNUI0003E to be deleted -->
 
@@ -81,7 +81,7 @@ lastupdated: "2016-11-21"
 ## BXNUI0016E
 **メッセージ**: Bluemix ページがロードされなかったため、アプリおよびサービスは取得されませんでした。 
 
-この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}を参照してください。
+この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}を参照してください。
 
 ## BXNUI0017E 
 **メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・インスタンスは取得されませんでした。  
@@ -302,7 +302,7 @@ Bluemix からログアウトされます。
 * Internet Explorer
 * Safari
 
-詳しくは、[Bluemix Prerequisites ページ](https://developer.ibm.com/bluemix/support/#prereqs)を参照してください。
+詳しくは、[前提条件のリスト](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}を参照してください。
 
 		
 ## BXNUI0065E
@@ -461,12 +461,12 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 アカウントは取り消されたか中断されたため、非アクティブです。 
 
-この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_accnt_inactive){: new_window}を参照してください。
+この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}を参照してください。
 
 ## BXNUI0097E
 **メッセージ**:  アプリを追加するには、その前に、少なくとも 1 つのスペースが組織と地域に関連付けられていなければなりません。 
 
-ダッシュボードで、**「スペースの作成」**をクリックします。 スペースが作成されたら、やり直してください。 この問題を修正する詳細手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_no_space){: new_window}を参照してください。
+ダッシュボードで、**「スペースの作成」**をクリックします。 スペースが作成されたら、やり直してください。 この問題を修正する詳細手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}を参照してください。
 
 ## BXNUI0098E
 **メッセージ**: 現在、資格情報のリストを取得できません。 
@@ -751,9 +751,9 @@ Bluemix からログアウトされます。
 
 ## BXNUI0515E
 
-**メッセージ**: ネットワーク接続の問題のために、組織のスペースは取得されませんでした。
+**メッセージ**: 組織のスペースは取得されませんでした。ネットワーク接続問題が発生したか、現在の組織に関連付けられているスペースがないかのいずれかです。 
 
-後で再試行してください。 このメッセージが再び表示された場合は、[Bluemix ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+後で再試行してください。 このメッセージが再び表示された場合は、[Bluemix ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 または、この問題を修正する手順について、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}を参照してください。 
 
 ## BXNUI0516E
 
@@ -778,6 +778,14 @@ Bluemix からログアウトされます。
 **メッセージ**: インシデント ID __incidentID__ の内部エラーのため、コンテナー・グループは作成されませんでした。
 
 後で再試行してください。 問題が続く場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+
+## BXNUI0520E
+
+**メッセージ**: コンテナーは作成されませんでした。
+
+__serviceName__ サービスは、キーの作成をサポートしていないため、コンテナーにバインドできませんでした。
+
+別のサービスを選択してください。
 
 ## BXNUI0521E
 
@@ -1009,7 +1017,7 @@ Bluemix からログアウトされます。
 
 リソースを作成するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。" 
 
-この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/managingapps.html#tr_servicelimit){: new_window}を参照してください。
+この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}を参照してください。
 
 ## BXNUI2033E
  **メッセージ**: {1} リソースは変更されませんでした。リソースを変更するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。"
@@ -1562,4 +1570,15 @@ Bluemix からログアウトされます。
 ## BXNUI3065E 
 **メッセージ**: IBM Virtual Servers に接続しているときに問題が発生しました。
 
-後で再試行してください。 この問題が続く場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。"
+後で再試行してください。 問題が続く場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+
+## BXNUI3066E 
+**メッセージ**: アプリをマイグレーションしようとして失敗しました。Cloud Foundry に接続してアプリを Diego に切り替えることができなかったためです。
+
+後で再試行してください。 このメッセージが再び表示される場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+
+## BXNUI3067E 
+**Message**: アプリを DEA にロールバックしようとして失敗しました。Cloud Foundry に接続できなかったためです。
+
+やり直してください。
+このメッセージが再び表示される場合は、[IBM Bluemix サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。

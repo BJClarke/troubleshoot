@@ -36,16 +36,16 @@ lastupdated: "2017-01-10"
 組み込みメカニズムを備えたビルドパックを使用して、使用できないコンポーネントをロードしないようにすることができます。例えば、以下のビルドパックを使用できます。
 {: tsResolve}
 
-  * [Cloud Foundry Java ビルドパック![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/cloudfoundry/java-buildpack "外部リンク・アイコン"){: new_window}。このビルドパックには、最新バージョンのビルドパックが使用されるように組み込みメカニズムが装備されています。このメカニズムによる処理方法について詳しくは、[extending-caches.md ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md "「外部リンク」アイコン"){: new_window}を参照してください。 
-  * [Cloud Foundry Node.js ビルドパック![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/cloudfoundry/nodejs-buildpack "外部リンク・アイコン"){: new_window}。このビルドパックは、環境変数を使用して同様の機能を提供します。この Node.js ビルドパックを有効にして、毎回インターネットからノード・モジュールをダウンロードするには、cf コマンド・ライン・インターフェースに次のコマンドを入力します。 	
+  * [Cloud Foundry Java ビルドパック![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/cloudfoundry/java-buildpack){: new_window}。このビルドパックには、最新バージョンのビルドパックが使用されるように組み込みメカニズムが装備されています。このメカニズムによる処理方法について詳しくは、[extending-caches.md ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}を参照してください。 
+  * [Cloud Foundry Node.js ビルドパック![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}。このビルドパックは、環境変数を使用して同様の機能を提供します。この Node.js ビルドパックを有効にして、毎回インターネットからノード・モジュールをダウンロードするには、cf コマンド・ライン・インターフェースに次のコマンドを入力します。 	
   ```
   set NODE_MODULES_CACHE=false
   ```
 
 使用中のビルドパックが最新のコンポーネントを自動的にロードするメカニズムを提供していない場合は、手動でキャッシュ・ディレクトリー内のコンテンツを削除し、アプリを再度プッシュします。次の手順を使用します。
 
- 1. ヌル・ビルドパックのブランチ (例えば https://github.com/ryandotsmith/null-buildpack) をチェックアウトします。ブランチをチェックアウトする方法については、[Git Basics - Getting a Git Repository![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository "「外部リンク」アイコン"){: new_window} を参照してください。  
- 2. `null-buildpack/bin/compile` ファイルに以下の行を追加して変更をコミットします。変更をコミットする方法については、[Git Basics - Recording Changes to the Repository ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository "「外部リンク」アイコン"){: new_window} を参照してください。
+ 1. ヌル・ビルドパックのブランチ (例えば https://github.com/ryandotsmith/null-buildpack) をチェックアウトします。ブランチをチェックアウトする方法については、[Git Basics - Getting a Git Repository![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository){: new_window} を参照してください。  
+ 2. `null-buildpack/bin/compile` ファイルに以下の行を追加して変更をコミットします。変更をコミットする方法については、[Git Basics - Recording Changes to the Repository ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository){: new_window} を参照してください。
   ```
 rm -rfv $2/*
   ```
@@ -72,7 +72,7 @@ PHP ビルドパックを使用してアプリを {{site.data.keyword.Bluemix_no
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: fpm is running, pid 93
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
-PHP ビルドパックでは、error_log パラメーターはロギング・レベルを定義します。デフォルトでは、`error_log` パラメーターの値は **stderr notice** です。次の例は、Cloud Foundry が提供する PHP ビルドパックの `nginx-defaults.conf` ファイルに含まれる、デフォルトのロギング・レベル構成を示しています。詳しくは、[cloudfoundry/php-buildpack ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf "「外部リンク」アイコン"){: new_window} を参照してください。
+PHP ビルドパックでは、error_log パラメーターはロギング・レベルを定義します。デフォルトでは、`error_log` パラメーターの値は **stderr notice** です。次の例は、Cloud Foundry が提供する PHP ビルドパックの `nginx-defaults.conf` ファイルに含まれる、デフォルトのロギング・レベル構成を示しています。詳しくは、[cloudfoundry/php-buildpack ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window} を参照してください。
 {: tsCauses} 
 
 ```
@@ -89,7 +89,7 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-デフォルトのロギング構成を変更する方法について詳しくは、『[error_log ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://nginx.org/en/docs/ngx_core_module.html#error_log "「外部リンク」アイコン"){: new_window}』を参照してください。
+デフォルトのロギング構成を変更する方法について詳しくは、『[error_log ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}』を参照してください。
 	
 
 ## サード・パーティーの Python ライブラリーを {{site.data.keyword.Bluemix_notm}} にインポートできない

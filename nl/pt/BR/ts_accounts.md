@@ -90,7 +90,7 @@ O status de sua conta do {{site.data.keyword.Bluemix_notm}} torna-se inativo qua
 {: tsCauses}
 
 
-Para reativar sua conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com "Ícone de link externo"){: new_window}. Inclua as informações a seguir no e-mail:
+Para reativar sua conta, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}. Inclua as informações a seguir no e-mail:
 {: tsResolve}
 
   * O ID IBM que você usa para efetuar login no {{site.data.keyword.Bluemix_notm}}.
@@ -127,7 +127,7 @@ Esse problema pode ocorrer quando você designa a mesma rota de URL a diferentes
 
 Por exemplo, você envia por push o app myApp1 para o {{site.data.keyword.Bluemix_notm}} e configura o domínio como "mynewapp.stage1.mybluemix.net". Em seguida, você envia por push outro app myApp2 para o mesmo espaço e configura uma de suas rotas de URL como "mynewapp.stage1.mybluemix.net". A rota agora é mapeada para ambos os apps.
 
-Esse é o comportamento suportado do {{site.data.keyword.Bluemix_notm}} e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade de seu app. Para obter mais informações, veja [Usando a implementação blue-green para reduzir o tempo de inatividade e o risco ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "Ícone de link externo"){: new_window}.
+Esse é o comportamento suportado do {{site.data.keyword.Bluemix_notm}} e é possível usar essa prática para atingir o tempo de inatividade zero para o upgrade de seu app. Para obter mais informações, veja [Usando a implementação blue-green para reduzir o tempo de inatividade e o risco ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
   
 

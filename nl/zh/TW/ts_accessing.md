@@ -99,7 +99,7 @@ lastupdated: "2017-08-10"
 {: tsResolve}
  * 與主要使用者或帳戶管理者聯絡，確定您可以切換至 IBM ID 鑑別。
  * 確定您已經在 SoftLayer 帳戶中完成「切換至 IBM ID」步驟。請參閱[切換至 IBM ID](/docs/admin/softlayerlink.html#ibmid_switch)。
- * 確定您已遵循**建立 SoftLayer 使用者與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣和垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如它已到期），請移至「控制入口網站」中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請聯絡 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com "外部鏈結圖示"){: new_window}。
+ * 確定您已遵循**建立 SoftLayer 使用者與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣和垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如它已到期），請移至「控制入口網站」中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請聯絡 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window}。
 
 **附註：**如果您是直接以 IBM ID 來建立您的 IBM ID，您會收到兩封要處理的電子郵件；一封來自 IBM ID 登錄，另一封來自 Softlayer。請務必遵循這兩封電子郵件中的動作。
 
@@ -148,7 +148,7 @@ lastupdated: "2017-08-10"
 IBM ID 鑑別服務可能有問題。
 {: tsCauses}
 
-在 [IBM IBMid ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "外部鏈結圖示"){: new_window} 檢查服務狀態，然後重試。
+在 [IBM IBMid ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} 檢查服務狀態，然後重試。
 {: tsResolve}
 
 
@@ -165,7 +165,7 @@ IBM ID 鑑別服務可能有問題。
 在登錄取得 {{site.data.keyword.Bluemix_notm}} 試用帳戶之後，您會收到一封確認電子郵件。您必須按一下此封確認電子郵件中的鏈結，才能完成登錄程序。
 {: tsCauses} 
 
-確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com "外部鏈結圖示"){: new_window} 聯絡。  
+確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。  
 {: tsResolve}
 
 
@@ -239,7 +239,7 @@ nslookup stage1.mybluemix.net
   
 如果您因自己是合作人員（而非成員）而無法邀請使用者，則必須刪除您先前的 {{site.data.keyword.Bluemix_notm}} 帳戶，然後受邀以組織成員的身分加入帳戶。若要刪除先前的帳戶並以成員的身分加入帳戶，請完成下列步驟： 
 
-  1. 與 [{{site.data.keyword.Bluemix_notm}} 支援中心聯絡 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport "外部鏈結圖示"){: new_window}，以開立支援問題單，並要求刪除您的帳戶。如果您的資料與要儲存並移至新帳戶的舊帳戶相關聯，請在電子郵件中包含此資訊。 
+  1. 與 [{{site.data.keyword.Bluemix_notm}} 支援中心聯絡 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport){: new_window}，以開立支援問題單，並要求刪除您的帳戶。如果您的資料與要儲存並移至新帳戶的舊帳戶相關聯，請在電子郵件中包含此資訊。 
   2. 刪除您的帳戶之後，請讓具有組織管理員角色的使用者，邀請您以組織管理員的身分加入組織。然後，透過該邀請註冊 {{site.data.keyword.Bluemix_notm}}。 
 
 ## 不支援將使用者批次登錄

@@ -99,7 +99,7 @@ IBM ID を使用してログインすると、以下のメッセージが表示�
 {: tsResolve}
  * マスター・ユーザーまたはアカウント管理者に連絡して、IBM ID 認証への切り替えが有効になっているかどうかを確認します。
  * SoftLayer アカウントで「IBM ID への切り替え」ステップが完了していることを確認します。[IBM ID への切り替え](/docs/admin/softlayerlink.html#ibmid_switch)を参照してください。
- * **「SoftLayer ユーザーと IBM ID の関連付け (Associate your SoftLayer user with an IBMid)」** E メールのアクションに従っていることを確認します。E メールの受信ボックスとスパム・フォルダーを確認してください。この E メールを再度取得するには (例えば、有効期限が切れた場合)、コントロール・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com "外部リンク・アイコン"){: new_window}に連絡してください。
+ * **「SoftLayer ユーザーと IBM ID の関連付け (Associate your SoftLayer user with an IBMid)」** E メールのアクションに従っていることを確認します。E メールの受信ボックスとスパム・フォルダーを確認してください。この E メールを再度取得するには (例えば、有効期限が切れた場合)、コントロール・ポータルの「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
 
 **注:** IBM ID を使用して直接 IBM ID を作成した場合、処理する必要がある 2 つの E メールを受け取ります。1 つは IBM ID 登録からのもので、もう 1 つは Softlayer からのものです。両方の E メールのアクションに従っていることを確認してください。
 
@@ -148,7 +148,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM IBMid ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e "「外部リンク」アイコン"){: new_window} で、サービスの状況を確認し、再試行してください。
+[IBM IBMid ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} で、サービスの状況を確認し、再試行してください。
 {: tsResolve}
 
 
@@ -166,7 +166,7 @@ IBM ID 認証サービスに問題がある可能性があります。
 {{site.data.keyword.Bluemix_notm}} トライアル・アカウントに登録した後、確認の E メールが届きます。その確認 E メールに記載されたリンクをクリックして、登録プロセスを完了する必要があります。
 {: tsCauses} 
 
-確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。受信ボックスとスパム・フォルダーを確認してください。確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/bluemixsupport.com "「外部リンク」アイコン"){: new_window}にお問い合わせください。  
+確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。受信ボックスとスパム・フォルダーを確認してください。確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}にお問い合わせください。  
 {: tsResolve}
 
 
@@ -239,7 +239,7 @@ nslookup stage1.mybluemix.net
   
 自分がコラボレーターでありメンバーではないためにユーザーを招待できない場合、古い {{site.data.keyword.Bluemix_notm}} アカウントを削除してから、招待を受けて組織のメンバーとしてアカウントに参加する必要があります。古いアカウントを削除してメンバーとしてアカウントに参加するには、以下のステップを実行してください。 
 
-  1. [{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/bluemixsupport "「外部リンク」アイコン"){: new_window}に連絡してサポート・チケットをオープンし、アカウントの削除を依頼します。古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。 
+  1. [{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/bluemixsupport){: new_window}に連絡してサポート・チケットをオープンし、アカウントの削除を依頼します。古いアカウントに関連付けられているデータで、保存して新規アカウントに移行したいものがあれば、その情報を E メールに記載してください。 
   2. 自分のアカウントが削除された後、組織の管理者の役割を持つユーザーに、自分を組織の管理者として組織に招待してもらいます。その後、招待から {{site.data.keyword.Bluemix_notm}} に登録します。 
 
 ## ユーザーのバッチ登録がサポートされない

@@ -4,9 +4,9 @@
 
 copyright:
 
-  years: 2015, 2016
+  years: 2015, 2017
 
-lastupdated: "2016-11-21"
+lastupdated: "2016-08-15" 
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2016-11-21"
 ## BXNUI0001E
 **消息**：未装入页面，因为 Bluemix 未检测到会话是否存在。 
 
-有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}。
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}。
 <!-- BXNUI0002E to be deleted -->
 <!-- BXNUI0003E to be deleted -->
 
@@ -81,7 +81,7 @@ lastupdated: "2016-11-21"
 ## BXNUI0016E
 **消息**：未检索到应用程序和服务，因为未装入某个 Bluemix 页面。 
 
-有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/accessing.html#tr_err){: new_window}。
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}。
 
 ## BXNUI0017E 
 **消息**：未检索到服务实例，因为联系 Cloud Foundry 时发生问题。 
@@ -302,7 +302,7 @@ lastupdated: "2016-11-21"
 * Internet Explorer
 * Safari
 
-有关详细信息，请参阅 [Bluemix 先决条件页面](https://developer.ibm.com/bluemix/support/#prereqs)。
+有关详细信息，请参阅[先决条件列表](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}。
 
 		
 ## BXNUI0065E
@@ -461,12 +461,12 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 您的帐户处于不活动状态，因为它已被取消或暂挂。 
 
-有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_accnt_inactive){: new_window}。
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}。
 
 ## BXNUI0097E
 **消息**：必须至少有一个空间与您的组织和区域相关联，才能添加应用程序。 
 
-在“仪表板”上，单击**创建空间**。创建空间后，请重试。有关修复此问题的更多指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/managingaccounts.html#ts_no_space){: new_window}。
+在“仪表板”上，单击**创建空间**。创建空间后，请重试。有关修复此问题的更多指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}。
 
 ## BXNUI0098E
 **消息**：此时无法检索凭证列表。
@@ -751,9 +751,9 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0515E
 
-**消息**：未检索到组织中的空间，因为发生了网络连接问题。
+**消息**：未检索到组织中的空间。发生了网络连接问题，或者当前组织没有与其相关联的空间。 
 
-请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。或者，有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}。
 
 ## BXNUI0516E
 
@@ -778,6 +778,14 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 **消息**：未创建容器组，因为发生了事件标识为 __incidentID__ 的内部错误。
 
 请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
+
+## BXNUI0520E
+
+**消息**：未创建容器。
+
+__serviceName__ 服务无法绑定到容器，因为该服务不支持创建密钥。
+
+请选择其他服务。
 
 ## BXNUI0521E
 
@@ -1008,7 +1016,7 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 联系 Cloud Foundry 来创建资源时，发生了错误。Cloud Foundry 消息：“{0}”。 
 
-有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/managingapps.html#tr_servicelimit){: new_window}。
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}。
 
 ## BXNUI2033E
  **消息**：未修改 {1} 资源。正在联系 Cloud Foundry 来修改资源时，发生了错误。Cloud Foundry 消息：“{0}”。
@@ -1562,3 +1570,13 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 **消息**：联系 IBM Virtual Servers 时发生问题。
 
 请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
+
+## BXNUI3066E 
+**消息**：尝试迁移应用程序失败，因为无法连接 Cloud Foundry 以将应用程序切换至 Diego。
+
+请稍后重试。如果再次看到此消息，请联系 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
+
+## BXNUI3067E 
+**消息**：尝试将应用程序回滚到 DEA 失败，因为无法连接 Cloud Foundry。
+
+请重试。如果再次看到此消息，请联系 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。

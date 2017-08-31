@@ -133,7 +133,7 @@ Per controllare la versione di Java eseguita da {{site.data.keyword.eclipsetools
 
 Se il JVM workbench JVM è IBM JVM 7 o 8 o una versione precedente di Oracle JVM 8, completa la seguente procedura per passare a Oracle JVM 8:
 
-  1. Scarica e installa Oracle JVM 8; per i dettagli consulta [Java SE Downloads ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.oracle.com/technetwork/java/javase/downloads/index.html "Icona link esterno"){: new_window}.
+  1. Scarica e installa Oracle JVM 8; per i dettagli consulta [Java SE Downloads ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
   2. Riavvia Eclipse.
   3. Controlla se la proprietà `eclipse.vm` punta alla tua nuova installazione di Oracle JVM 8.
 
@@ -709,7 +709,7 @@ Quando distribuisci un'applicazione a {{site.data.keyword.Bluemix_notm}} utilizz
 Questo problema potrebbe verificarsi se gli script, ad esempio lo script di rilevamento, lo script di compilazione e lo script di rilascio, non sono eseguibili.
 {: tsCauses}
 
-Puoi utilizzare il comando [git update ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://git-scm.com/docs/git-update-index "Icona link esterno"){: new_window} per modificare l'autorizzazione di ciascuno script in eseguibile. Ad esempio, puoi immettere `git update --chmod=+x script.sh`.
+Puoi utilizzare il comando [git update ![Icona link esterno](../icons/launch-glyph.svg "Icona link esterno")](http://git-scm.com/docs/git-update-index){: new_window} per modificare l'autorizzazione di ciascuno script in eseguibile. Ad esempio, puoi immettere `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## Impossibile distribuire un'applicazione da Delivery Pipeline in IBM Bluemix Continuous Delivery

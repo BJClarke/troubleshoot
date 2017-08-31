@@ -89,7 +89,7 @@ lastupdated: "2017-06-01"
 {: tsCauses}
 
 
-要重新激活您的帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com "外部链接图标"){: new_window}。请在电子邮件中包含以下信息：
+要重新激活您的帐户，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。请在电子邮件中包含以下信息：
 {: tsResolve}
 
   * 您用于登录到 {{site.data.keyword.Bluemix_notm}} 的 IBM 标识。
@@ -126,7 +126,7 @@ lastupdated: "2017-06-01"
 
 例如，将 myApp1 应用程序推送到 {{site.data.keyword.Bluemix_notm}}，并将域设置为“mynewapp.stage1.mybluemix.net”。然后，将另一个应用程序 myApp2 推送到同一空间，并将该应用程序的其中一个 URL 路径设置为“mynewapp.stage1.mybluemix.net”。现在，该路径映射到两个应用程序。
 
-此行为受 {{site.data.keyword.Bluemix_notm}} 支持，您可以使用这一做法来杜绝应用程序升级时的停机状况。有关更多信息，请参阅 [Using Blue-Green Deployment to Reduce Downtime and Risk ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "外部链接图标"){: new_window}。
+此行为受 {{site.data.keyword.Bluemix_notm}} 支持，您可以使用这一做法来杜绝应用程序升级时的停机状况。有关更多信息，请参阅 [Using Blue-Green Deployment to Reduce Downtime and Risk ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}。
 {: tsResolve}
   
 

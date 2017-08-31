@@ -88,7 +88,7 @@ lastupdated: "2017-06-01"
 {: tsCauses}
 
 
-アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com "External link icon"){: new_window}に連絡してください。E メールに、以下の情報を含めてください。
+アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。E メールに、以下の情報を含めてください。
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。
@@ -125,7 +125,7 @@ lastupdated: "2017-06-01"
 
 例えば、myApp1 アプリを {{site.data.keyword.Bluemix_notm}} にプッシュし、そのドメインを「mynewapp.stage1.mybluemix.net」に設定します。次に、別の myApp2 アプリを同じスペースにプッシュし、その URL 経路の 1 つを「mynewapp.stage1.mybluemix.net」に設定します。この経路は、この時点で両方のアプリにマップされています。
 
-これは {{site.data.keyword.Bluemix_notm}} のサポートされている動作で、このプラクティスを用いてアプリのアップグレードにおけるゼロ・ダウン時間を実現することができます。詳しくは、[Using Blue-Green Deployment to Reduce Downtime and Risk ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html "外部リンク・アイコン"){: new_window}を参照してください。
+これは {{site.data.keyword.Bluemix_notm}} のサポートされている動作で、このプラクティスを用いてアプリのアップグレードにおけるゼロ・ダウン時間を実現することができます。詳しくは、[Using Blue-Green Deployment to Reduce Downtime and Risk ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}を参照してください。
 {: tsResolve}
   
 
