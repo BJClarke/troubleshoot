@@ -1575,7 +1575,7 @@ Bluemix에서 로그아웃됩니다.
 나중에 다시 시도하십시오. 문제점이 지속되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}로 이동하십시오.
 
 ## BXNUI3066E 
-**메시지**: 앱을 Diego로 전환하기 위해 Cloud Foundry에 접속할 수 없으므로 앱을 마이그레이션하지 못했습니다.
+**메시지**: Diego로 앱을 전환하기 위해 Cloud Foundry에 접속할 수 없으므로 앱을 마이그레이션하지 못했습니다. 
 
 나중에 다시 시도하십시오. 이 메시지가 다시 표시되면 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}에 문의하십시오.
 

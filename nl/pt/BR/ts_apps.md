@@ -243,7 +243,9 @@ Quando uma máscara não suportada é aplicada ao projeto Eclipse, é possível 
 {: tsSymptoms}
 `A máscara de projeto Cloud Foundry Standalone Application versão 1.0 não é suportada.`
 
-O IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} mapeia projetos para tempos de execução do {{site.data.keyword.Bluemix_notm}} por máscaras de projeto. As máscaras definem os requisitos para projetos Java EE no Eclipse e são usadas como parte da configuração de tempo de execução para que diferentes tempos de execução sejam associados a diferentes projetos. Caso a máscara aplicada ao projeto não seja suportada pelo IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, talvez não seja possível implementar o app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+O IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} mapeia projetos para tempos de execução do {{site.data.keyword.Bluemix_notm}} por máscaras de projeto. As máscaras definem os requisitos para
+projetos Java EE no Eclipse e são usadas como parte da configuração de tempo de execução
+para que diferentes tempos de execução sejam associados a diferentes projetos. Caso a máscara aplicada ao projeto não seja suportada pelo IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, talvez não seja possível implementar o app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Deve-se remover a máscara do projeto Eclipse para que você possa implementar seu app usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
@@ -280,7 +282,10 @@ Se você suspeitar que um serviço {{site.data.keyword.Bluemix_notm}} esteja ina
 
 Se você ficar sem espaço em disco, será possível modificar manualmente a cota do disco para obter mais espaço em disco.
 
-Quando o espaço em disco se esgotar, você poderá ver uma mensagem que indica se a cota do disco foi excedida. Para resolver o problema, você pode ter tentado aumentar a escala de sua instância de app para obter mais espaço em disco. Por exemplo, você pode escalar de 256 MB para 1256 MB, mudando a cota de memória na página de detalhes do app. No entanto, como a cota do disco permaneceu a mesma, você não obteve mais espaço em disco.
+Quando o espaço em disco se esgotar,
+você poderá ver uma mensagem que indica se a cota do disco foi excedida. Para resolver o problema,
+você pode ter tentado aumentar a escala de sua instância de app para obter mais espaço em disco. Por exemplo, você pode
+escalar de 256 MB para 1256 MB, mudando a cota de memória na página de detalhes do app. No entanto, como a cota do disco permaneceu a mesma, você não obteve mais espaço em disco.
 {: tsSymptoms}
 
 A cota de disco padrão alocada para um app é 1 GB. Se você precisar de mais espaço em disco, deve especificar manualmente a cota do disco.

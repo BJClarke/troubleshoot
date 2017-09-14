@@ -451,7 +451,8 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} からアプリを {{si
 
 ある {{site.data.keyword.Bluemix_notm}} 地域で作業しているときに、{{site.data.keyword.Bluemix_notm}} で自分の組織が見つからない場合があります。
 
-{{site.data.keyword.Bluemix_notm}} コンソールに正常にログインできますが、cf コマンド・ライン・インターフェースまたは Eclipse プラグインを使用してアプリをプッシュすることができません。{: tsSymptoms}
+{{site.data.keyword.Bluemix_notm}} コンソールに正常にログインできますが、cf コマンド・ライン・インターフェースまたは Eclipse プラグインを使用してアプリをプッシュすることができません。
+{: tsSymptoms}
 
 cf コマンド・ライン・インターフェースを使用してアプリケーションを  {{site.data.keyword.Bluemix_notm}} にプッシュしようとすると、メッセージ内に組織名が指定された、次のいずれかのメッセージが表示されます。
 
@@ -659,7 +660,8 @@ Java』](/docs/runtimes/liberty/index.html)を参照してください。
  {{site.data.keyword.contdelivery_short}} の {{site.data.keyword.deliverypipeline}} を使用してアプリをデプロイすると、エラー・メッセージ`「サポートされるアプリケーション・タイプを検出できません (Unable to detect a supported application type)」`が表示されることがあります。
 {: tsSymptoms}
 
- この問題は、{{site.data.keyword.Bluemix_notm}} にアプリをデプロイするために、パイプラインが `manifest.yml` ファイルを必要とすることが原因で発生する可能性があります。{: tsCauses}
+ この問題は、{{site.data.keyword.Bluemix_notm}} にアプリをデプロイするために、パイプラインが `manifest.yml` ファイルを必要とすることが原因で発生する可能性があります。
+ {: tsCauses}
 
  この問題を解決するには、`manifest.yml` ファイルを作成する必要があります。`manifest.yml` ファイルの作成方法について詳しくは、『[アプリケーション・マニフェスト](/docs/manageapps/depapps.html#appmanifest)』を参照してください。
 {: tsResolve}

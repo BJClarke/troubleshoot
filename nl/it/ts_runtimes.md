@@ -115,7 +115,8 @@ non riesce.
 Informazioni di configurazione mancanti per l'applicazione Python.
 {: tsCauses}
 
-Aggiungi un file `requirements.txt` e un file `Procfile` alla directory root della tua applicazione Python. Le seguenti informazioni presumono che tu stia importando la libreria `web.py`:
+Aggiungi un file `requirements.txt` e un file `Procfile` nella directory root della tua applicazione Python. Le seguenti informazioni presumono che
+si stia importando la libreria `web.py`:
 {: tsResolve}
 
  1. Aggiungi un file `requirements.txt` alla directory root della tua applicazione Python.

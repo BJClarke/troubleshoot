@@ -103,7 +103,8 @@ pid @{HOME}/nginx/logs/nginx.pid;
 Python アプリの構成情報が欠落しています。
 {: tsCauses}
 
-`requirements.txt` ファイルと `Procfile` ファイルを Python アプリのルート・ディレクトリーに追加します。以下の情報は、`web.py` ライブラリーをインポートしていると仮定しています。{: tsResolve}
+`requirements.txt` ファイルと `Procfile` ファイルを Python アプリのルート・ディレクトリーに追加します。以下の情報は、`web.py` ライブラリーをインポートしていると仮定しています。
+{: tsResolve}
 
  1. `requirements.txt` ファイルを Python アプリのルート・ディレクトリーに追加します。
  
