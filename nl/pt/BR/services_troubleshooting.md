@@ -1,17 +1,15 @@
 ---
 
 copyright:
-  years: 2015, 2015
+  years: 2015, 2017
   
 lastupdated: "2015-12-09"
 
 
 ---
 
-# Resolução de problemas para serviços
+# 有关服务的故障诊断
 {: #services_troubleshooting}
 
 
-Se você tiver problemas com serviços do {{site.data.keyword.Bluemix}},
-é possível revisar as informações de resolução de problemas para determinar qual ação
-tomar.
+如果您遇到 {{site.data.keyword.Bluemix}} 服务问题，可以查看故障诊断信息来确定要采取的操作。

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  year: 2015, 2016
+  years: 2015, 2017
   
 lastupdated: "2016-08-12"
 

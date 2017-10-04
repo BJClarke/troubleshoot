@@ -6,324 +6,319 @@ copyright:
 
   years: 2015, 2017
 
-lastupdated: "2016-08-15" 
+lastupdated: "2017-08-15" 
 
 ---
 
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Mensagens de erro do {{site.data.keyword.Bluemix_notm}}
+# {{site.data.keyword.Bluemix_notm}} 错误消息
 
 
-Se você receber uma mensagem de erro do {{site.data.keyword.Bluemix}},
-poderá usar o ID da mensagem para localizar informações adicionais sobre como resolver
-o problema.
+当您从 {{site.data.keyword.Bluemix}} 收到错误消息时，可以使用消息标识来查找有关如何解决问题的更多信息。
 {:shortdesc}
 
 ## BXNUI0001E
-**Mensagem**: a página não foi carregada, pois o Bluemix não detectou se existe uma sessão. 
+**消息**：未装入页面，因为 Bluemix 未检测到会话是否存在。 
 
-Para obter instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}。
 <!-- BXNUI0002E to be deleted -->
 <!-- BXNUI0003E to be deleted -->
 
 ## BXNUI0004E
-**Mensagem**: o app '{0}' não foi excluído, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除“{0}”应用程序，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0005E
-**Mensagem**: o app '{0}' não foi criado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未创建“{0}”应用程序，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0006E
-**Mensagem**: o app '{0}' não foi parado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：“{0}”应用程序未停止，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI0007E removed -->
 
 ## BXNUI0008E
-**Mensagem**: os detalhes do app '{0}' não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”应用程序详细信息，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0009E
-**Mensagem**: os iniciadores do aplicativo não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到应用程序入门模板，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0010E
-**Mensagem**: o iniciador '{0}' para o app '{1}' não foi recuperado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{1}”应用程序的“{0}”入门模板，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0011E
-**Mensagem**: o iniciador '{0}' não foi recuperado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”入门模板，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0013E
-**Mensagem**: a instância de serviço '{0}' não foi criada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未创建“{0}”服务实例，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0014E
-**Mensagem**: as configurações para o serviço '{0}' não foram atualizadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未更新“{0}”服务的设置，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0015E
-**Mensagem**: as ofertas de serviço não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到服务产品，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0016E
-**Mensagem**: os apps e serviços não foram recuperados, pois uma página do Bluemix não foi carregada. 
+**消息**：未检索到应用程序和服务，因为未装入某个 Bluemix 页面。 
 
-Para obter instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}.
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}。
 
 ## BXNUI0017E 
-**Mensagem**: a instância de serviço não foi recuperada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到服务实例，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0018E
-**Mensagem**: as instâncias para o app '{0}' não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”应用程序的实例，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0019E
-**Mensagem**: as instâncias para seu app não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry.
+**消息**：未检索到应用程序的实例，因为联系 Cloud Foundry 时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0020E
-**Mensagem**: as configurações para o app '{0}' não foram atualizadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未更新“{0}”应用程序的设置，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0021E
-**Mensagem**: as variáveis de ambiente para o app '{0}' não foram atualizadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+**消息**：未更新“{0}”应用程序的环境变量，因为联系 Cloud Foundry 时发生问题。请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0022E
-**Mensagem**: as rotas para o app '{0}' não foram atualizadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未更新“{0}”应用程序的路径，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0023E
-**Mensagem**: as configurações para a instância de serviço '{0}' não foram atualizadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+**消息**：未更新“{0}”服务实例的设置，因为联系 Cloud Foundry 时发生问题。请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0024E
-**Mensagem**: a iniciação rápida para o app '{0}' não foi recuperada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”应用程序的快速启动，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0025E
-**Mensagem**: a iniciação rápida para o serviço '{0}' não foi recuperada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”服务的快速启动，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0026E
-**Mensagem**: o espaço '{0}' não foi criado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未创建“{0}”空间，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0027E
-**Mensagem**: o espaço '{0}' não foi excluído, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除“{0}”空间，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0028E
-**Mensagem**: a organização '{0}' não foi criada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未创建“{0}”组织，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0029E
-**Mensagem**: a organização '{0}' não foi excluída, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除“{0}”组织，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0030E
-**Mensagem**: a rota '{0}' não foi mapeada para o app '{1}', pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：“{0}”路径未映射到“{1}”应用程序，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0031E
-**Mensagem**: a rota '{0}' não teve o mapeamento removido do app '{1}', pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未从“{1}”应用程序取消“{0}”路径的映射，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0032E
-**Mensagem**: as informações para a organização ou o espaço '{0}' não foram salvas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未保存“{0}”组织或空间的信息，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0033E 
-**Mensagem**: o serviço '{0}' não foi incluído para o app '{1}', pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：“{0}”服务未添加到“{1}”应用程序，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0034E
-**Mensagem**: o serviço '{0}' não foi removido do app '{1}', pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未从“{1}”应用程序中除去“{0}”服务，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0035E
-**Mensagem**: a instância de serviço '{0}' não foi excluída, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除“{0}”服务实例，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0036E
-**Mensagem**: as ligações de serviço para o app ou serviço '{0}' não foram excluídas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除“{0}”应用程序或服务的服务绑定，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0037E
-**Mensagem**: as instâncias de serviço que foram ligadas ao app '{0}' não foram excluídas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除绑定到“{0}”应用程序的服务实例，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0038E 
-**Mensagem**: as rotas associadas ao app '{0}' não foram excluídas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未删除与“{0}”应用程序关联的路径，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0039E
-**Mensagem**: as associações de rota para o domínio '{0}'  devem ser excluídas. 
+**消息**：必须删除“{0}”域的路径关联。 
 
-Na página de Visão geral do app, clique no menu suspenso **Rotas e domínios** e selecione **Editar
-rotas**.
+在应用程序的“概述”页面上，单击**路径和域**下拉列表，然后选择**编辑路径**。
 
 ## BXNUI0040E
-**Mensagem**: as ligações de serviços não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到服务绑定，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI0041E to be deleted -->
 <!-- BXNUI0042E to be deleted -->
 <!-- BXNUI0043E to be deleted -->
 		
 ## BXNUI0044E
-**Mensagem**: as informações não foram recuperadas do servidor, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未从服务器检索到信息，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0045E 
-**Mensagem**: os arquivos ou logs para o aplicativo '{0}' não foram recuperados usando a instância '{1}', pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：通过使用“{1}”实例，未检索到“{0}”应用程序的文件或日志，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0046E
-**Mensagem**: suas organizações não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到您的组织，因为联系 Cloud Foundry 时发生问题。 
 
-Você efetuará logout do Bluemix.
+会为您注销 Bluemix。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0048E
-**Mensagem**: os espaços para a organização '{0}' não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”组织的空间，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0049E
-**Mensagem**: os domínios da organização não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到组织的域，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0050E 
-**Mensagem**: o resumo da organização não foi recuperado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到组织的摘要，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0052E
-**Mensagem**: os usuários para a organização '{0}' não foram atualizados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未更新“{0}”组织的用户，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0053E 
-**Mensagem**: os usuários para o espaço '{0}' não foram atualizados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未更新“{0}”空间的用户，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0054E
-**Mensagem**: o usuário '{0}' não foi recuperado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到用户“{0}”，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0055E
-**Mensagem**: os usuários para a organização-mãe do espaço '{0}' não foram atualizados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”空间的父组织的用户，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0056E
-**Mensagem**: os usuários para a organização '{0}' não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”组织的用户，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0057E
-**Mensagem**: os usuários para o espaço '{0}' não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”空间的用户，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0058E
-**Mensagem**: um domínio não foi criado, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未创建某个域，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0059E
-**Mensagem**: um domínio não foi excluído, pois ocorreu um problema ao contatar o IBM DataPower Gateway. 
+**消息**：未删除某个域，因为联系 IBM DataPower Gateway 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0060E
-**Mensagem**: um certificado para o domínio '{0}' não foi transferido por upload, pois ocorreu um problema ao contatar o IBM DataPower Gateway. 
+**消息**：未上传“{0}”域的某个证书，因为联系 IBM DataPower Gateway 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0061E
-**Mensagem**: o usuário '{0}' não foi incluído na conta, pois ocorreu um problema ao contatar o sistema de suporte aos negócios. 
+**消息**：未将用户“{0}”添加到帐户，因为联系业务支持系统时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0062E
-**Mensagem**: sua sessão expirou e deve-se efetuar login novamente.
+**消息**：会话已到期，您必须再次登录。
 
 ## BXNUI0063E
-**Mensagem**: a operação atingiu o tempo limite. 
+**消息**：操作已超时。 
 
-Tente novamente mais tarde.
+请稍后重试。
 		
 ## BXNUI0064E
-**Mensagem**: o navegador que você está usando não é suportado pelo IBM Bluemix. 
+**消息**：IBM Bluemix 不支持您正在使用的浏览器。 
 
-Os navegadores a seguir são suportados. Assegure-se de usar a versão mais recente para o seu sistema operacional.
+支持以下浏览器。确保使用最新版本的操作系统。
 * Google Chrome
 * Mozilla Firefox
 * Internet Explorer
 * Safari
 
-Para obter detalhes, veja a [lista de pré-requisitos](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}.
+有关详细信息，请参阅[先决条件列表](https://www.{DomainName}/docs/overview/prereqs.html#browsers){: new_window}。
 
 		
 ## BXNUI0065E
-**Mensagem**: a variável de ambiente VCAP_SERVICES para '{0}' não foi recuperada, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到“{0}”的 VCAP_SERVICES 环境变量，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0066E
-**Mensagem**: o tempo de execução não pode ser excluído, pois quando o tempo de execução foi incluído, um valor de buildpack foi configurado explicitamente para o aplicativo usando a opção `-b` no comando push `cf`. 
+**消息**：无法删除运行时，因为添加运行时的时候，在 `cf` push 命令中使用 `-b` 选项为应用程序显式设置了 buildpack 值。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0067E
-**Mensagem**: os dados para os planos não foram recuperados, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到套餐的数据，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 <!-- ## BXNUI0068E
 **Message**:The operation on the client timed out. 
@@ -331,187 +326,187 @@ Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [pág
 Try again later. If you see this message again, go to the [Bluemix status page](https://developer.ibm.com/bluemix/support/#status){: new_window} to check whether a service or component has an issue. If the problem continues, go to [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}. -->
 
 ## BXNUI0070E
-**Mensagem**: o certificado para o domínio '{0}' não foi recuperado, pois ocorreu um problema ao contatar o IBM DataPower Gateway. 
+**消息**：未检索到“{0}”域的证书，因为联系 IBM DataPower Gateway 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0071E
-**Mensagem**: o certificado para o domínio '{0}' não foi excluído, pois ocorreu um problema ao contatar o IBM DataPower Gateway. 
+**消息**：未删除“{0}”域的证书，因为联系 IBM DataPower Gateway 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0072E
-**Mensagem**: o certificado para o domínio '{0}' não foi substituído, pois ocorreu um problema ao contatar o IBM DataPower Gateway. 
+**消息**：未更换“{0}”域的证书，因为联系 IBM DataPower Gateway 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0073E
-**Mensagem**: informações sobre os certificados transferidos por upload não puderam ser recuperadas.
+**消息**：无法检索到有关已上传证书的信息。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0076E
-**Mensagem**: o serviço '{0}' já está conectado a todos os apps no espaço '{1}'.
+**消息**：“{0}”服务已连接到“{1}”空间中的所有应用程序。
 
-Para usar um plano diferente deste serviço, deve-se excluir o serviço e conectá-lo novamente.
+要将其他计划用于此服务，必须删除该服务并重新连接该服务。
 		
 ## BXNUI0077E
-**Mensagem**: o serviço '{0}' já existe no espaço '{1}'.
+**消息**：“{0}”服务在“{1}”空间中已存在。
 
-Escolha um outro espaço, se necessário.
+需要时，选择其他空间。
 		
 ## BXNUI0078E
-**Mensagem**: o app '{1}' já usa o serviço '{0}'.
+**消息**：“{1}”应用程序已使用“{0}”服务。
 
-Selecione um serviço diferente.
+请选择其他服务。
 
 ## BXNUI0079E
-**Mensagem**: o app '{1}' já usa o serviço '{2}'. Os serviços '{0}' e '{2}' não podem ser usados juntos.
+**消息**：“{1}”应用程序已使用“{2}”服务。不能同时使用“{0}”服务和“{2}”服务。
 
-Selecione um serviço diferente.
+请选择其他服务。
 
 ## BXNUI0080E
-**Mensagem**: para que seja possível incluir o serviço '{0}' no app '{1}', o app deve usar o serviço de pré-requisito '{2}'.
+**消息**：“{1}”应用程序必须使用必备服务“{2}”，然后才可将“{0}”服务添加到该应用程序。
 
-Inclua primeiro o serviço de pré-requisito e, em seguida, tente novamente.
+请先添加必备服务，然后重试。
 
 ## BXNUI0081E
-**Mensagem**: você transferiu por upload {0} certificados, que é o número máximo que sua organização pode usar.
+**消息**：上传了 {0} 个证书，这是组织可以使用的最大数量。
 
-Exclua um certificado ou faça upgrade de sua conta.
+删除证书或升级帐户。
 
 ## BXNUI0082E
-**Mensagem**: o Bluemix não pode carregar suas preferências de notificação no momento.
+**消息**：此时 Bluemix 无法装入通知首选项。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0083E
-**Mensagem**: suas preferências de notificação não puderam ser salvas.
+**消息**：无法保存通知首选项。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0085E
-**Mensagem**: os dados de uso para contêineres não foram recuperados. 
+**消息**：未检索到容器的使用情况数据。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0086E
-**Mensagem**: o contêiner '{0}' não foi iniciado. 
+**消息**：“{0}”容器未启动。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0087E
-**Mensagem**: o contêiner '{0}' não foi parado. 
+**消息**：“{0}”容器未停止。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0088E 
-**Mensagem**: o contêiner '{0}' não foi reiniciado. 
+**消息**：“{0}”容器未重新启动。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0089E
-**Mensagem**: o contêiner '{0}' não pode ser pausado. 
+**消息**：无法暂停“{0}”容器。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0090E 
-**Mensagem**: o contêiner '{0}' não pode ser removido da pausa. 
+**消息**：无法取消暂停“{0}”容器。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0091E
-**Mensagem**: o contêiner '{0}' não foi excluído. 
+**消息**：未删除“{0}”容器。 
 
-O contêiner pode estar temporariamente fora de serviço. 
+容器可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0092E
-**Mensagem**: o grupo de VMs '{0}' não foi excluído devido a um problema ao conectar aos recursos da VM. 
+**消息**：未删除“{0}”VM 组，因为连接到 VM 资源时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0093E
-**Mensagem**: o grupo de contêiner '{0}' não foi excluído. 
+**消息**：未删除“{0}”容器组。 
 
-O grupo de contêineres pode estar temporariamente fora de serviço. 
+容器组可能暂时停止运行。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 		
 ## BXNUI0094E
-**Mensagem**: o nome do registro não pôde ser configurado.
+**消息**：无法设置注册表名称。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0095E
-**Mensagem**: o nome do registro privado já está sendo usado.
+**消息**：专用注册表名称已在使用中。
 
-Use um nome diferente e tente novamente.
+请使用另一名称并重试。
 
 ## BXNUI0096E
-**Mensagem**: o app não foi criado. 
+**消息**：未创建应用程序。 
 
-Sua conta está inativa porque foi cancelada ou suspensa. 
+您的帐户处于不活动状态，因为它已被取消或暂挂。 
 
-Para obter instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}.
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_accnt_inactive){: new_window}。
 
 ## BXNUI0097E
-**Mensagem**: para que seja possível incluir um app, pelo menos um espaço deve estar associado à sua organização ou região. 
+**消息**：必须至少有一个空间与您的组织和区域相关联，才能添加应用程序。 
 
-No Painel, clique em **Criar um espaço**. Quando o espaço tiver sido criado, tente novamente. Para obter mais instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}.
+在“仪表板”上，单击**创建空间**。创建空间后，请重试。有关修复此问题的更多指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}。
 
 ## BXNUI0098E
-**Mensagem**: a lista de credenciais não pode ser recuperada no momento.
+**消息**：此时无法检索凭证列表。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0099E
 
-**Mensagem**: a credencial '{0}' não foi incluída. 
+**消息**：未添加“{0}”凭证。 
 
-Tente usar um nome diferente ou tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请尝试使用其他名称，或者稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0100E
 
-**Mensagem**: a credencial '{0}' não foi excluída.
+**消息**：未删除“{0}”凭证。
 
-A credencial pode já ter sido excluída. 
+该凭证可能已删除。 
 
-Retorne ao Painel e tente novamente. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请返回到“仪表板”，然后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0101E
 
-**Mensagem**: suas configurações do navegador atual evitam janelas pop-up.
+**消息**：当前浏览器设置阻止显示弹出窗口。
 
-Mude as configurações do navegador para permitir janelas pop-up.
+请更改浏览器设置以允许弹出窗口。
 
 ## BXNUI0111E
-**Mensagem**: o servidor de login não pode ser contatado no momento. 
+**消息**：此时无法联系登录服务器。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0112E
-**Mensagem**: o plano não pôde ser atualizado.
+**消息**：无法更新套餐。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0113E
-**Mensagem**: a instância de serviço {0} não foi excluída, pois suas credenciais não foram excluídas. 
+**消息**：未删除 {0} 服务实例，因为未删除其凭证。 
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- ## BXNUI0115E
 **Message**:Containers weren't retrieved because a problem occurred contacting IBM Containers. 
@@ -526,372 +521,371 @@ Try again later. If you see this message again, go to the [Bluemix status page](
 
 ## BXNUI0118E
 
-**Mensagem**: o acesso do {0} ao {1} não pôde ser revogado. 
+**消息**：无法撤销 {0} 对 {1} 的访问权。 
 
-Tente revogar o acesso novamente. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请重试撤销访问权。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0119E
 
-**Mensagem**: a VM '{0}' não foi iniciada devido a um problema ao conectar aos recursos da VM. 
+**消息**：“{0}”VM 未启动，因为连接到 VM 资源时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0120E
 
-**Mensagem**: a VM '{0}' não foi parada devido a um problema ao conectar aos recursos da VM. 
+**消息**：“{0}”VM 未停止，因为连接到 VM 资源时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0121E
 
-**Mensagem**: a VM '{0}' não foi reinicializada devido a um problema ao conectar aos recursos da VM.
+**消息**：“{0}”VM 未重新引导，因为连接到 VM 资源时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0122E
 
-**Mensagem**: a VM '{0}' não foi suspensa devido a um problema ao conectar aos recursos da VM.
+**消息**：未暂挂“{0}”VM，因为连接到 VM 资源时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0123E
 
-**Mensagem**: a VM '{0}' não foi continuada devido a um problema ao conectar aos recursos da VM.
+**消息**：未恢复“{0}”VM，因为连接到 VM 资源时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0124E
 
-**Mensagem**: a VM '{0}' não foi excluída devido a um problema ao conectar aos recursos da VM.
+**消息**：未删除“{0}”VM，因为连接到 VM 资源时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0125E
 
-**Mensagem**: você efetuará logout porque não é um membro de uma conta ativa.
+**消息**：您将被注销，因为您不是活动帐户的成员。
 
-A sua conta do Bluemix pode ter expirado ou ter sido cancelada ou você pode ter sido removido de sua organização.
-Entre em contato com o gerente de sua organização. Ou, para obter ajuda e opções de suporte, consulte a seção Resolução de problemas do Bluemix Docs.
+您的 Bluemix 帐户可能已到期或已取消，或者已将您从组织中除去。请联系组织管理员。或者，要获取帮助和支持选项，请参阅“Bluemix 文档”的“故障诊断”部分。
 
 ## BXNUI0126E
 
-**Mensagem**: o grupo de contêiner {0} ainda está em processo de ser excluído. 
+**消息**：删除 {0} 容器组的操作仍在进行中。 
 
-Atualize a página posteriormente para verificar se o grupo de contêineres foi excluído.
+稍后刷新页面，以验证容器组已删除。
 
 ## BXNUI0127E
 
-**Mensagem**: o contêiner {0} ainda está em processo de ser excluído. 
+**消息**：删除 {0} 容器的操作仍在进行中。 
 
-Atualize a página posteriormente para verificar se o contêiner foi excluído.
+稍后刷新页面，以验证容器已删除。
 
 ## BXNUI0128E
 
-**Mensagem**: suas organizações não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry.
+**消息**：未检索到您的组织，因为联系 Cloud Foundry 时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0129E
-**Mensagem**: as informações de conta não foram recuperadas, pois ocorreu um problema ao contatar o sistema de suporte aos negócios. 
+**消息**：未检索到帐户信息，因为联系业务支持系统时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0130E
-**Mensagem**: as informações de conta não foram recuperadas, pois ocorreu um problema ao contatar o sistema de suporte aos negócios. 
+**消息**：未检索到帐户信息，因为联系业务支持系统时发生问题。 
 
-Você efetuará logout do Bluemix.
+会为您注销 Bluemix。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0131E
-**Mensagem**: seu endereço de e-mail não foi registrado, pois ocorreu um erro durante o processo de registro. 
+**消息**：未注册您的电子邮件地址，因为注册期间发生错误。 
 
-Para resolver esse problema, acesse o [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+要解决此问题，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0132E
-**Mensagem**: as informações de __nome__ não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry. 
+**消息**：未检索到 __name__ 信息，因为联系 Cloud Foundry 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0133E 
 
-**Mensagem**: as ligações de serviços não foram recuperadas, pois ocorreu um problema ao contatar o Cloud Foundry.
+**消息**：未检索到服务绑定，因为联系 Cloud Foundry 时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0200E 
-**Mensagem**: as rotas para o app não foram recuperadas devido a um erro interno.
+**消息**：未检索到应用程序的路径，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse <a href='http://ibm.biz/bluemixsupport' target='_blank'>Suporte do IBM Bluemix</a>.
+请稍后重试。如果此问题继续存在，请转至 <a href='http://ibm.biz/bluemixsupport' target='_blank'>IBM Bluemix Support</a>。
 
 ## BXNUI0201E 
-**Mensagem**: as rotas para o espaço não foram recuperadas devido a um erro interno.
+**消息**：未检索到空间的路径，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse <a href='http://ibm.biz/bluemixsupport' target='_blank'>Suporte do IBM Bluemix</a>.
+请稍后重试。如果此问题继续存在，请转至 <a href='http://ibm.biz/bluemixsupport' target='_blank'>IBM Bluemix Support</a>。
 
 ## BXNUI0202E 
-**Mensagem**: os domínios para a organização não foram recuperados devido a um erro interno.
+**消息**：未检索到组织的域，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse <a href='http://ibm.biz/bluemixsupport' target='_blank'>Suporte do IBM Bluemix</a>.
+请稍后重试。如果此问题继续存在，请转至 <a href='http://ibm.biz/bluemixsupport' target='_blank'>IBM Bluemix Support</a>。
 	
 ## BXNUI0203E 
-**Mensagem**: as rotas para o app não foram recuperadas devido a um erro interno.
+**消息**：未检索到应用程序的路径，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse <a href='http://ibm.biz/bluemixsupport' target='_blank'>Suporte do IBM Bluemix</a>.
+请稍后重试。如果此问题继续存在，请转至 <a href='http://ibm.biz/bluemixsupport' target='_blank'>IBM Bluemix Support</a>。
 
 ## BXNUI0300E
-**Mensagem**: as informações de uso não puderam ser recuperadas.
+**消息**：无法检索到使用情况信息。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0301E
-**Mensagem**: enquanto as informações de uso estavam sendo recuperadas, as organizações não puderam ser recuperadas.
+**消息**：检索使用情况信息期间，无法检索到组织。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0305E
-**Mensagem**: as informações de uso não puderam ser exibidas.
+**消息**：无法显示使用情况信息。
 
-Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0306E
-**Mensagem**: as informações de serviços de terceiros não puderam ser recuperadas.
+**消息**：无法检索到第三方服务信息。
 
-Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0307E 
-**Mensagem**: códigos promocionais não podem ser aplicados nesse momento.
+**消息**：此时不能应用促销码。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0400E
-**Mensagem**: a lista de países não pôde ser exibida. 
+**消息**：无法显示国家或地区列表。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0402E
-**Mensagem**: sua conta não pode ser cancelada nesse momento.
+**消息**：此时无法取消您的帐户。
 
-Tente novamente mais tarde ou acesse o [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试或转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0500E
-**Mensagem**: sua solicitação para reservar uma instância dedicada não foi enviada devido a um erro. 
+**消息**：未提交保留专用实例的请求，因为发生了错误。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0501E
-**Mensagem**: esse nome de contêiner já está em uso.
+**消息**：该容器名称已被使用。
 
-Insira um nome diferente.
+请输入其他名称。
  
 ## BXNUI0502E
-**Mensagem**: o contêiner não foi criado.  
+**消息**：未创建容器。  
 
-Sua função de usuário não possui a autoridade necessária nesse espaço ou você não é um membro do espaço. 
+您的用户角色在此空间中没有所需的权限，或者您不是空间的成员。 
 
-Se você for um membro do espaço, deve ter a função de usuário de desenvolvedor para criar instâncias do contêiner. É possível solicitar essa função ao gerenciador da organização. Se você não for um membro desse espaço, será possível solicitar para ser incluído nele.
+如果您是空间的成员，那么必须具有开发者用户角色才能创建容器实例。您可向您的组织管理员请求此角色。如果您不是此空间的成员，那么可以请求添加到空间。
 
 ## BXNUI0503E
-**Mensagem**: o contêiner não foi criado devido a um erro interno.
+**消息**：未创建容器，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0504E
-**Mensagem**: o contêiner foi criado, mas o endereço IP não foi designado a ele porque esse endereço IP não está disponível. 
+**消息**：已创建容器，但未向其分配 IP 地址，因为该 IP 地址不可用。 
 
-Selecione um endereço IP diferente ou selecione para solicitar e ligar o endereço IP público.
+请选择其他 IP 地址，或者选择请求并构建公共 IP 地址。
 
 ## BXNUI0505E
-**Mensagem**: o contêiner foi criado, mas nenhum endereço IP foi designado a ele porque não havia endereços IP disponíveis.
+**消息**：已创建容器，但未向其分配 IP 地址，因为没有可用的 IP 地址。
 
-É possível ajustar a cota na guia Cota de sua organização.
+您可以在组织的“配额”选项卡上调整配额。
 
 ## BXNUI0506E
-**Mensagem**: o contêiner não foi criado porque os detalhes da variável de ambiente VCAP_SERVICES não foram recuperados. 
+**消息**：未创建容器，因为未检索到 VCAP_SERVICES 环境变量详细信息。 
 
-Ligue um serviço ao seu app selecionado ou selecione um app diferente.
+请将服务绑定至所选应用程序，或者选择其他应用程序。
 
 ## BXNUI0507E
-**Mensagem**: esse nome do grupo de contêiner já está em uso.
+**消息**：该容器组名称已被使用。
 
-Insira um nome diferente.
+请输入其他名称。
 
 ## BXNUI0508E
-**Mensagem**: o grupo de contêiner não foi criado, pois sua função de usuário não tem a autoridade necessária nesse espaço. 
+**消息**：未创建容器组，因为您的用户角色在此空间中没有所需的权限。 
 
-Para criar grupos de contêineres, deve-se ter a função de desenvolvedor. Solicite essa função ao gerenciador da sua organização.
+要创建容器组，必须具有开发者角色。请向您的组织管理员请求此角色。
 
 ## BXNUI0509E
-**Mensagem**: o grupo de contêiner não foi criado devido a um erro interno.
+**消息**：未创建容器组，因为发生了内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0510E
-**Mensagem**: o contêiner não foi criado porque alguns recursos, como um endereço IP ou uma memória, não estão disponíveis. 
+**消息**：未创建容器，因为某些资源（例如 IP 地址或内存）不可用。 
 
-Para ajustar as cotas, acesse **Gerenciar organizações**, clique na guia **Cota** de sua organização e clique em **Contêineres**. Em seguida, tente selecionar a imagem novamente.
+要调整配额，请转到**管理组织**，并依次单击组织的**配额**选项卡和**容器**。然后，重新尝试选择映像。
 
 ## BXNUI0511E
 
-**Mensagem**: o grupo de contêiner não foi criado porque alguns recursos, como um endereço IP ou uma memória, não estão disponíveis. 
+**消息**：未创建容器组，因为某些资源（例如 IP 地址或内存）不可用。 
 
-Para ajustar as cotas, acesse **Gerenciar organizações**, clique na guia **Cota** de sua organização e clique em **Contêineres**. Em seguida, tente criar o grupo de contêineres novamente.
+要调整配额，请转到**管理组织**，并依次单击组织的**配额**选项卡和**容器**。然后，重新尝试创建容器组。
 
 ## BXNUI0512E
 
-**Mensagem**: Durante a tentativa de criar um contêiner a partir da imagem, um erro interno ocorreu. Alguns recursos, como endereço IP ou memória, não estavam disponíveis quando o namespace estava sendo recuperado. 
+**消息**：尝试基于映像创建容器时，发生了内部错误。在检索名称空间期间，某些资源（例如 IP 地址或内存）不可用。 
 
-Para ajustar as cotas, acesse **Gerenciar organizações**, clique na guia **Cota** de sua organização e clique em **Contêineres**. Em seguida, tente selecionar a imagem novamente.
+要调整配额，请转到**管理组织**，并依次单击组织的**配额**选项卡和**容器**。然后，重新尝试选择映像。
 
 ## BXNUI0513E
 
-**Mensagem**: os contêineres não foram recuperados, pois ocorreu um problema ao contatar o IBM Containers. 
+**消息**：未检索到容器，因为联系 IBM Containers 时发生问题。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0514E 
 
-**Mensagem**: você não é um desenvolvedor para nenhum dos espaços na organização '__orgName__'.
+**消息**：您不是“__orgName__”组织中任何空间的开发者。
 
-Tente selecionar outra organização ou crie um espaço ou solicite a função de desenvolvedor ao gerenciador da sua organização.
+请尝试选择其他组织或创建空间，或向组织管理员请求开发者角色。
 
 ## BXNUI0515E
 
-**Mensagem**: os espaços na organização não foram recuperados. Ocorreu um problema de conexão de rede ou a sua organização atual não tem um espaço associado a ela. 
+**消息**：未检索到组织中的空间。发生了网络连接问题，或者当前组织没有与其相关联的空间。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Ou, para obter instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。或者，有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}。
 
 ## BXNUI0516E
 
-**Mensagem**: o namespace do contêiner da organização não foi recuperado devido a um erro interno. 
+**消息**：未检索到组织的容器名称空间，因为发生了内部错误。 
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0517E
 
-**Mensagem**: o namespace do contêiner da organização não foi recuperado devido a um erro interno com o ID de incidente __incidentID__. 
+**消息**：未检索到组织的容器名称空间，因为发生了事件标识为 __incidentID__ 的内部错误。 
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0518E
 
-**Mensagem**: o contêiner não foi criado devido a um erro interno com o ID de incidente __incidentID__.
+**消息**：未创建容器，因为发生了事件标识为 __incidentID__ 的内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0519E
 
-**Mensagem**: o grupo de contêiner não foi criado devido a um erro interno com o ID de incidente __incidentID__.
+**消息**：未创建容器组，因为发生了事件标识为 __incidentID__ 的内部错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0520E
 
-**Mensagem**: o contêiner não foi criado.
+**消息**：未创建容器。
 
-O serviço __serviceName__ não pôde ser vinculado ao contêiner porque o serviço não suporta a criação de chaves.
+__serviceName__ 服务无法绑定到容器，因为该服务不支持创建密钥。
 
-Selecione um serviço diferente.
+请选择其他服务。
 
 ## BXNUI0521E
 
-**Mensagem**: ao tentar criar um contêiner a partir da imagem, ocorreu um erro interno com o ID de incidente __incidentID__. Alguns recursos, como endereço IP ou memória, não estavam disponíveis quando o namespace estava sendo recuperado.
+**消息**：尝试基于映像创建容器时，发生了事件标识为 __incidentID__ 的内部错误。在检索名称空间期间，某些资源（例如 IP 地址或内存）不可用。
 
-Para ajustar as cotas, acesse **Gerenciar organizações**, clique na guia **Cota** de sua organização e clique em **Contêineres**. Em seguida, tente selecionar a imagem novamente.
+要调整配额，请转到**管理组织**，并依次单击组织的**配额**选项卡和**容器**。然后，重新尝试选择映像。
 
 ## BXNUI0522E
 
-**Mensagem**: não é possível criar o recurso porque você não é um desenvolvedor para o __spaceName__ na organização __orgName__.
+**消息**：您无法创建该资源，因为您不是 __orgName__ 组织中 __spaceName__ 空间的开发者。
 
-Tente selecionar outro espaço ou organização, ou crie um espaço, ou solicite a função de desenvolvedor a partir do gerente da organização.
+请尝试选择其他空间或组织，或者创建空间，或向组织管理员请求开发者角色。
 
 ## BXNUI0523E
 
-**Mensagem**: os recursos de infraestrutura não foram recuperados porque ocorreu um problema ao contatar o SoftLayer.
+**消息**：未检索到基础架构资源，因为联系 SoftLayer 时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0524E
 
-**Mensagem**: a tentativa de registrar o namespace do contêiner falhou porque ocorreu um problema ao conectar-se à API do contêiner.
+**消息**：尝试注册容器名称空间失败，因为连接到容器 API 时发生问题。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0525E
 
-**Mensagem**: a tentativa de criar um registro falhou porque você não tem autoridade para o namespace de registro para a organização __orgName__. A função de usuário desenvolvedor é necessária para criar um registro.
+**消息**：尝试创建注册表失败，因为您无权访问组织 __orgName__ 的注册表名称空间。必须有开发者用户角色才能创建注册表。
 
-Solicite uma função diferente a partir do gerenciador de organização.
+请向组织管理员请求其他角色。
 
 ## BXNUI0526E
 
-**Mensagem**: a tentativa de recuperar a imagem de contêiner falhou porque ocorreu um problema ao contatar o IBM Containers.
+**消息**：尝试检索容器映像失败，因为联系 IBM Containers 时发生问题。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0600E
 
-**Mensagem**: a rota '{0}' já está designada.
+**消息**：已分配路径“{0}”。
 
-Tente uma rota diferente.
+请尝试其他路径。
 
 ## BXNUI0602E
 
-**Mensagem**: falha ao incluir o serviço {0} em seu aplicativo, pois ocorreu um problema ao contatar o Cloud Foundry.
+**消息**：未能将 {0} 服务添加到应用程序，因为联系 Cloud Foundry 时发生问题。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0700E
 
-**Mensagem**: o espaço ‘{0}’ não foi criado, pois ocorreu um problema ao contatar o Cloud Foundry.
+**消息**：未创建“{0}”空间，因为联系 Cloud Foundry 时发生问题。
 
-Clique em **Criar** para tentar novamente ou cancele a ação.
+单击**创建**来重试或取消操作。
 
 ## BXNUI0701E
 
-**Mensagem**: falha ao convidar usuários. Código de erro: __errorCode__.
+**消息**：未能邀请用户。错误代码：__errorCode__。
 
-Tente novamente mais tarde. Caso você veja essa mensagem novamente, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0702E
 
-**Mensagem**: falha ao convidar __emailAddress__. Código de erro: __errorCode__.
+**消息**：未能邀请 __emailAddress__。错误代码：__errorCode__。
 
-Tente novamente mais tarde. Caso você veja essa mensagem novamente, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI0703E
 
-**Mensagem**: os detalhes para este usuário convidado estão indisponíveis atualmente.
+**消息**：此被邀用户的详细信息当前不可用。
 
-Tente novamente mais tarde.
+请稍后重试。
 
 ## BXNUI0704E
 
-**Mensagem**: não foi possível carregar os detalhes para esse usuário convidado na região ou regiões a seguir: <strong>__regions__</strong>.
+**消息**：此被邀用户的详细信息无法从以下区域装入：<strong>__regions__</strong>
 
-Tente novamente mais tarde.
+请稍后重试。
 
 ## BXNUI2000E
-**Mensagem**: a solicitação não foi processada devido a um erro. Esta exceção foi emitida: {0}
+**消息**：未处理请求，因为发生了错误。发出了以下异常：{0}
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2001E 
-**Mensagem**: não existe nenhum arquivo Ant `build.xml` para o iniciador "{0}". 
+**消息**：不存在“{0}”入门模板的 Ant `build.xml` 文件。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2002E
-**Mensagem**: não existe nenhum construtor para o iniciador "{0}". 
+**消息**：不存在“{0}”入门模板的构建器。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI2003E removed -->
 
 ## BXNUI2004E 
-**Mensagem**: o app não foi criado por causa de um erro do servidor em nuvem.
+**消息**：未创建应用程序，因为云服务器中发生了错误。
 
-Tente novamente. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI2005E removed -->
 
@@ -900,433 +894,433 @@ Tente novamente. Se o problema continuar, acesse [Suporte do IBM Bluemix](http:/
 <!-- BXNUI2007E removed -->
 
 ## BXNUI2008E 
-**Mensagem**: o app não foi criado porque um arquivo .zip não pôde ser criado para o app {0} que usa o iniciador {1}. 
+**消息**：未创建应用程序，因为无法为使用 {1} 入门模板的 {0} 应用程序创建 .zip 文件。 
 
-Tente novamente. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2009E
-**Mensagem**: a configuração não foi carregada devido a um erro.
+**消息**：未装入配置，因为发生了错误。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2010E
-**Mensagem**: a configuração não pôde ser carregada.
+**消息**：无法装入配置。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2011E 
-**Mensagem**: a configuração não pode ser salva porque vem de várias fontes.
+**消息**：无法保存配置，因为配置来自多个源。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
  
 ## BXNUI2012E
-**Mensagem**: a configuração não pode ser salva porque é somente leitura. 
+**消息**：无法保存配置，因为配置为只读。 
 
 ## BXNUI2013E 
-**Mensagem**: a classe não foi criada a partir da configuração "{0}" devido a um erro. 
+**消息**：无法通过“{0}”配置创建类，因为发生了错误。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2014E 
-**Mensagem**: o nome da classe não está na configuração "{0}". 
+**消息**：“{0}”配置中没有该类名。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2015E 
-**Mensagem**: a tentativa de efetuar login falhou porque a URL do controlador de nuvem está formatada incorretamente. 
+**消息**：登录尝试失败，因为云控制器 URL 的格式不正确。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2016E
-**Mensagem**: os metadados do recurso não puderam ser carregados. 
+**消息**：无法装入资源元数据。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2017E 
-**Mensagem**: os metadados do recurso não puderam ser salvos. 
+**消息**：无法保存资源元数据。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2018E 
-**Mensagem**: os metadados para o iniciador "{1}" não tinham a propriedade "{0}" necessária. 
+**消息**：“{1}”入门模板的元数据没有必需的“{0}”属性。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2019E
-**Mensagem**: os metadados do modelo especificaram um tipo de gerenciamento de controle de fonte desconhecido de "{0}". 
+**消息**：模板元数据指定了未知的源代码控制管理类型“{0}”。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2020E 
-**Mensagem**: o recurso "{0}" não existe. 
+**消息**：“{0}”资源不存在。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2021E
-**Mensagem**: o diretório do iniciador "{0}" não existe.
+**消息**：“{0}”入门模板目录不存在。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2022E
-**Mensagem**: os iniciadores não puderam ser copiados.
+**消息**：无法复制入门模板。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2023E 
-**Mensagem**: a variável de ambiente `VCAP_SERVICES` não está definida. 
+**消息**：未定义 `VCAP_SERVICES` 环境变量。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2024E
-**Mensagem**: o registro automático para usuários não está ativado.
+**消息**：未启用用户自注册。
 
-Entre em contato com o proprietário da conta.
+请联系帐户所有者。
 
 ## BXNUI2025E 
-**Mensagem**: ocorreu um erro durante uma tentativa de construir uma tag de entidade para o armazenamento em cache da web. O IBM Bluemix não pôde determinar se um ícone foi armazenado em cache. 
+**消息**：尝试为 Web 高速缓存构建实体标记期间发生错误。IBM Bluemix 无法确定是否对图标进行了高速缓存。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2026E
-**Mensagem**: outro usuário já usa esse nome. 
+**消息**：其他用户已使用该名称。 
 
-Tente novamente com um nome de usuário diferente.
+请使用其他用户名重试。
 
 ## BXNUI2027E
-**Mensagem**: nenhum usuário efetuou login.
+**消息**：没有用户登录。
 
-Efetue login e tente novamente.
+请登录并重试。
 
 ## BXNUI2028E 
-**Mensagem**: o Cloud Foundry emitiu uma exceção inesperada com esta mensagem: "{0}"
+**消息**：Cloud Foundry 发出了意外异常，消息为：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2029E
-**Mensagem**: as informações de nuvem não puderam ser recuperadas. 
+**消息**：无法检索到云信息。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2030E
-**Mensagem**: mensagem do Cloud Foundry: "{0}"
+**消息**：Cloud Foundry 消息：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2031E
-**Mensagem**: o componente de armazenamento de dados do Bluemix não está disponível. 
+**消息**：Bluemix 数据存储组件不可用。 
 
-Entre em contato com o administrador do sistema para obter assistência na correção do componente de armazenamento de dados.
+请联系系统管理员以协助修订数据存储组件。
 
 ## BXNUI2032E
-**Mensagem**: o recurso {1} não foi criado. 
+**消息**：未创建 {1} 资源。 
 
-Ocorreu um erro enquanto o Cloud Foundry estava sendo contatado para criar o recurso. Mensagem do Cloud Foundry: "{0}". 
+联系 Cloud Foundry 来创建资源时，发生了错误。Cloud Foundry 消息：“{0}”。 
 
-Para obter instruções para corrigir esse problema, consulte este [tópico de resolução de problemas](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}.
+有关修复此问题的指示信息，请参阅此[故障诊断主题](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}。
 
 ## BXNUI2033E
- **Mensagem**: o recurso {1} não foi modificado. Ocorreu um erro enquanto o Cloud Foundry estava sendo contatado para modificar o recurso. Mensagem do Cloud Foundry: "{0}".
+ **消息**：未修改 {1} 资源。正在联系 Cloud Foundry 来修改资源时，发生了错误。Cloud Foundry 消息：“{0}”。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2034E
- **Mensagem**: o recurso {1} não foi recuperado. Ocorreu um erro enquanto o Cloud Foundry estava sendo contatado para recuperar o recurso. Mensagem do Cloud Foundry: "{0}".
+ **消息**：未检索到 {1} 资源。正在联系 Cloud Foundry 来检索资源时，发生了错误。Cloud Foundry 消息：“{0}”。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2035E
- **Mensagem**: o recurso {1} não foi excluído. Ocorreu um erro enquanto o Cloud Foundry estava sendo contatado para excluir o recurso. Mensagem do Cloud Foundry: "{0}".
+ **消息**：未删除 {1} 资源。正在联系 Cloud Foundry 来删除资源时，发生了错误。Cloud Foundry 消息：“{0}”。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2036E
-**Mensagem**: para modificar iniciadores, deve-se ter permissões adicionais. 
+**消息**：要修改入门模板，您必须具有其他许可权。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2037E
-**Mensagem**: os metadados do iniciador com o ID "{0}" na URL "{1}" não puderam ser lidos. 
+**消息**：无法读取 URL“{1}”上标识“{0}”的入门模板元数据。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2038E
-**Mensagem**: o registro do ID do iniciador "{0}" falhou para a URL "{1}". 
+**消息**：向 URL“{1}”注册入门模板标识“{0}”失败。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2039E
-**Mensagem**: o ID do iniciador "{0}" não foi copiado porque o repositório Git associado ao modelo de modelo não está acessível. 
+**消息**：未复制入门模板标识“{0}”，因为无法访问与样板模板关联的 Git 存储库。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2040E
-**Mensagem**: os metadados para o ID de iniciador "{0}" não puderam ser registrados. 
+**消息**：无法注册入门模板标识“{0}”的元数据。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2041E 
-**Mensagem**: os metadados do registro do iniciador não puderam ser lidos. 
+**消息**：无法读取入门模板注册表元数据。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2042E
-**Mensagem**: um archive do iniciador "{0}" não pôde ser criado. 
+**消息**：无法创建“{0}”入门模板的归档。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2043E
-**Mensagem**: a URL dos metadados de modelo {0} é inválida. Erro: "{1}". 
+**消息**：模板元数据 URL {0} 无效。错误：“{1}”。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2044E
-**Mensagem**: a URL dos metadados do iniciador {0} é inválida porque o nome do host é inválido. 
+**消息**：入门模板元数据 URL {0} 无效，因为主机名无效。 
 
-O nome do host deve incluir somente caracteres alfanuméricos e traço.
+主机名只能包含字母数字和短划线字符。
 
-Tente novamente.
+请重试。
 
 ## BXNUI2045E
-**Mensagem**: o serviço "{0}" não existe. 
+**消息**：“{0}”服务不存在。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2046E
-**Mensagem**: as categorias de serviço não puderam ser lidas.
+**消息**：无法读取服务类别。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2047E
-**Mensagem**: o serviço "{0}" já existe. 
+**消息**：“{0}”服务已存在。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2048E
-**Mensagem**: a ação falhou porque o rótulo do serviço e o provedor não podem ser atualizados. 
+**消息**：操作失败，因为无法更新服务标签和提供者。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2049E
-**Mensagem**: as instâncias do serviço "{0}" já existem. 
+**消息**：“{0}”服务的实例已存在。 
 
-Exclua as instâncias e, em seguida, tente novamente.
+请先删除这些实例，然后重试。
 
 ## BXNUI2050E
-**Mensagem**: a organização "{0}" não existe. 
+**消息**：“{0}”组织不存在。 
 
-Certifique-se de que a organização esteja especificada corretamente. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请确保正确指定了组织。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2051E
-**Mensagem**: não foi possível criar um ícone enquanto o serviço estava sendo criado. 
+**消息**：创建服务期间，无法创建某个图标。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2052E
-**Mensagem**: a tentativa de login falhou. 
+**消息**：登录尝试失败。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2053E
-**Mensagem**: a tentativa de login falhou porque a solicitação do token de acesso não pôde ser codificada. 
+**消息**：登录尝试失败，因为无法对访问令牌请求进行编码。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2054E
-**Mensagem**: o Bluemix requer autorização com o escopo {0}. 
+**消息**：Bluemix 需要作用域为 {0} 的权限。 
 
-Tente efetuar login novamente e fornecer a autorização solicitada.
+请尝试再次登录，并提供请求的权限。
 
 ## BXNUI2055E
-**Mensagem**: falha na tentativa de conectar ao Cloud Foundry devido à exceção a seguir: "{0}".
+**消息**：尝试连接到 Cloud Foundry 失败，因为发生了以下异常：“{0}”。
 
-Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2056E
-**Mensagem**: suas informações sobre o usuário não puderam ser recuperadas.
+**消息**：无法检索到您的用户信息。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2057E
-**Mensagem**: o JSON não pode ter uma impressão elegante. 
+**消息**：无法清晰打印 JSON。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2058E
-**Mensagem**: a solicitação é desautorizada porque não tem o escopo requerido {0}. 
+**消息**：未授权该请求，因为该请求不具有必需的作用域 {0}。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2059E
-**Mensagem**: não é possível publicar um serviço com as tags "ibm_created" ou "3rd_party". Essas tags podem ser configuradas somente por um administrador.
+**消息**：无法使用“ibm_created”或“3rd_party”标记发布某个服务。这些标记只能由管理员设置。
 
 ## BXNUI2060E
-**Mensagem**: as informações de uso não puderam ser processadas. 
+**消息**：无法处理使用情况信息。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2061E
-**Mensagem**: as informações do catálogo de precificação não podem ser analisadas. 
+**消息**：无法解析定价目录信息。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2062E
-**Mensagem**: as informações de conta não puderam ser processadas. 
+**消息**：无法处理帐户信息。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}. 
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。 
 
 ## BXNUI2063E
-**Mensagem**: nenhum iniciador está associado a este app. 
+**消息**：没有与此应用程序关联的入门模板。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2064E
-**Mensagem**: o ID exclusivo do Web identity não pode ser recuperado. 
+**消息**：无法检索到 Web 身份唯一标识。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2065E
-**Mensagem**: o ID do modelo é inválido porque contém HTML. 
+**消息**：模板标识无效，因为此标识包含 HTML。 
 
-O ID do modelo não pode incluir as tags HTML `<` e `>`.
+模板标识不能包含 HTML 标记 `<` 和 `>`。
 
-Remova essas tags e tente novamente.
+请除去这些标记，然后重试。
 
 ## BXNUI2066E
-**Mensagem**: nenhum repositório JazzHub está associado a este app. 
+**消息**：没有与此应用程序关联的 JazzHub 存储库。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2067E
-**Um broker de serviço com o ID "{1}" não foi criado ou atualizado porque uma URL inválida, "{0}", foi detectada.
+**未创建或更新标识为“{1}”的服务代理程序，因为检测到无效 URL“{0}”。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2068E
-**Mensagem**: uma URL remota para o ID de serviço "{0}" não foi carregada porque um valor de URL nula foi detectado. 
+**消息**：未装入服务标识“{0}”的远程 URL，因为检测到空 URL 值。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
  
 ## BXNUI2069E
-**Mensagem**: a URL, "{0}", para o ID de serviço, "{2}", não foi carregada devido a um erro: "{1}". 
+**消息**：未装入服务标识“{2}”的 URL“{0}”，因为发生了错误：“{1}”。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2070E
-**Mensagem**: a organização {0} não possui {1}.
+**消息**：{0} 组织未拥有 {1}。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2071E
-**Mensagem**: somente gerenciadores podem modificar certificados.
+**消息**：只有管理员才能修改证书。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2072E
-**Mensagem**: o certificado não foi transferido por upload. 
+**消息**：未上传证书。 
 
-O nome de domínio {0} especificado no certificado não corresponde ao nome do domínio customizado. 
+证书中指定的域名 {0} 与您的定制域名不匹配。 
 
-Corrija o nome de domínio no certificado e tente novamente.
+请更正证书中的域名，然后重试。
  
 ## BXNUI2073E
-**Mensagem**: a chave privada não corresponde ao certificado público. 
+**消息**：专用密钥与公用证书不匹配。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2074E
-**Mensagem**: a chave privada não é suportada. Uma chave RSA não criptografada é esperada. 
+**消息**：不支持专用密钥。应该使用未加密的 RSA 密钥。 
 
 ## BXNUI2075E
-**Mensagem**: a chave pública não é suportada. Os algoritmos suportados incluem: RSA.
+**消息**：不支持公用密钥。支持的算法包括：RSA。
 
 ## BXNUI2076E
-**Mensagem**: o certificado ainda não é válido. Ele torna-se válido em {0}.
+**消息**：证书尚未生效。证书将在 {0} 生效。
 
 ## BXNUI2077E
-**Mensagem**: o certificado expirou em {0}.
+**消息**：证书已在 {0} 到期。
 
 ## BXNUI2078E
-**Mensagem**: o certificado intermediário ainda não é válido. Ele torna-se válido em {0}.
+**消息**：中间证书尚未生效。证书将在 {0} 生效。
 
 ## BXNUI2079E
-**Mensagem**: o certificado intermediário expirou em {0}.
+**消息**：中间证书已在 {0} 到期。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2080E
-**Mensagem**: a operação atingiu o tempo limite enquanto os certificados e as chaves estavam sendo modificados. 
+**消息**：此操作在修改证书和密钥期间超时。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2081E
-**Mensagem**: os certificados e chaves não foram modificados porque ocorreu um erro desconhecido: {0}. 
+**消息**：未修改证书和密钥，因为发生了未知错误：{0}。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2082E
-**Mensagem**: o conteúdo do certificado transferido por upload não foi lido porque ocorreu um problema: {0}. 
+**消息**：未读取已上传证书的内容，因为发生了问题：{0}。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2083E
-**Mensagem**: a solicitação para uma extensão do Business Support Systems não pôde ser concluída. 
+**消息**：无法完成扩展业务支持系统的请求。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2084E 
-**Mensagem**: a lista de países que suportam pagamento não pôde ser recuperada. 
+**消息**：无法检索到支持付款的国家或地区列表。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2085E
-**Mensagem**: o cálculo de custo de precificação não pode ser analisado. 
+**消息**：无法解析定价成本计算。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2086E
-**Mensagem**: Durante uma tentativa de recuperar certificados transferidos por upload, a organização não pôde ser localizada.
+**消息**：尝试检索已上传证书期间，找不到组织。
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2087E 
-**Mensagem**: o nome do app é muito longo. Esse nome do app é limitado a {0} caracteres. 
+**消息**：应用程序名称太长。此应用程序名称限制为 {0} 个字符。 
 
-Tente novamente com um nome mais curto.
+请使用较短的名称重试。
 
 ## BXNUI2088E 
-**Mensagem**: a ação que você solicitou não foi concluída porque o token CSRF está ausente ou é inválido. 
+**消息**：未完成请求的操作，因为 CSRF 令牌缺失或无效。 
 
-Efetue logout, efetue login novamente e tente outra vez. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请注销，然后重新登录并重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2089E
-**Mensagem**: ocorreu um erro durante uma tentativa de registrar um modelo na URL "{0}". Erro: "{1}". 
+**消息**：尝试在 URL“{0}”上注册模板时发生错误。错误：“{1}”。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2090E
-**Mensagem**: a tentativa de registrar um modelo na URL a seguir falhou: "{0}". O conteúdo do modelo está malformado. Erro: "{1}"
+**消息**：尝试在以下 URL 上注册模板失败：“{0}”。模板内容的格式不正确。错误：“{1}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2091E
-**Mensagem**: falha na tentativa de se conectar à URL do broker de serviço, "{0}", devido a um erro: "{1}". 
+**消息**：尝试连接到服务代理程序 URL“{0}”失败，因为发生了错误：“{1}”。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2092E
-**Mensagem**: uma tentativa de obter o catálogo do broker de serviço na URL, "{0}", retornou nulo. 
+**消息**：尝试在 URL“{0}”上获取服务代理程序目录时返回空值。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2093E
-**Mensagem**: o número de certificados intermediários excede o número permitido. 
+**消息**：中间证书数超过允许的数量。 
 
-Para obter detalhes sobre o número de certificados permitido e como excluir ou substituí-los, consulte este [tópico](https://www.{DomainName}/docs/manageapps/securingapps.html#ssl_certificate){: new_window}. 
+有关允许的证书数以及如何删除或更换证书的详细信息，请参阅本[主题](https://www.{DomainName}/docs/manageapps/securingapps.html#ssl_certificate){: new_window}。 
 
 ## BXNUI2094E
-**Mensagem**: falha na tentativa da operação devido a um erro de conexão. 
+**消息**：尝试的操作失败，因为发生了连接错误。 
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI2095E was removed -->
 <!-- BXNUI2096E was removed -->
@@ -1334,255 +1328,255 @@ Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [pág
 <!-- BXNUI2098E was removed -->
 
 ## BXNUI2099E
-**Mensagem**: o faturamento de serviço do Bluemix emitiu uma exceção inesperada com esta mensagem: "{0}""
+**消息**：Bluemix 服务记帐发出了意外异常，消息为：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2100E
-**Mensagem**: o JazzHub emitiu uma exceção inesperada com esta mensagem: "{0}"
+**消息**：JazzHub 发出了意外异常，消息为：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
  
 ## BXNUI2101E
-**Mensagem**: o IBM DataPower emitiu uma exceção inesperada com esta mensagem: "{0}"
+**消息**：IBM DataPower 发出了意外异常，消息为：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2102E
-**Mensagem**: mensagem de faturamento de serviço do Bluemix: "{0}"
+**消息**：Bluemix 服务记帐消息：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
  
 ## BXNUI2103E
-**Mensagem**: mensagem do JazzHub: "{0}"
+**消息**：JazzHub 消息：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2104E
-**Mensagem**: mensagem do IBM DataPower: "{0}"
+**消息**：IBM DataPower 消息：“{0}”
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2105E
-**Mensagem**: falha na tentativa de se conectar ao Cloud Foundry. 
+**消息**：尝试连接到 Cloud Foundry 失败。 
 
-Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 <!-- BXNUI2106E removed -->
 
 <!-- BXNUI2107E removed -->
 
 ## BXNUI2108E
-**Mensagem**: o conteúdo do certificado transferido por upload não foi lido porque ocorreu um problema: {0}. 
+**消息**：未读取已上传证书的内容，因为发生了问题：{0}。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2109E
-**Mensagem**: o broker de serviço não foi criado ou atualizado porque seu ID do usuário ("{0}") não está designado à função de gerenciador de organização na organização. 
+**消息**：未创建或更新服务代理程序，因为没有在组织中为您的用户标识（“{0}”）分配组织管理员角色。 
 
-Deve-se ser um gerenciador na organização "{1}", conforme especificado para owningOrganization no arquivo de entrada JSON, para criar ou atualizar esse broker de serviço.  
+您必须是组织“{1}”中的组织管理员（如 JSON 输入文件中为 owningOrganization 所指定），才能创建或更新此服务代理程序。  
 
-Verifique se você inseriu a organização proprietária correta ou solicite essa função do proprietário da conta ou de um gerenciador de organização. 
+验证输入的所属组织是否正确，或者向帐户所有者或组织管理员请求该角色。 
 
 ## BXNUI2111E
 
-**Mensagem**: o certificado de cliente ainda não é válido. Ele torna-se válido em {0}. 
+**消息**：客户机证书尚未生效。证书将在 {0} 生效。 
 
 ## BXNUI2112E
 
-**Mensagem**: o certificado de cliente expirou em {0}. 
+**消息**：客户机证书已在 {0} 到期。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI2113E
 
-**Mensagem**: as preferências da plataforma do usuário não puderam ser processadas. 
+**消息**：无法处理用户平台首选项。 
 
-Acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3000E 
-**Mensagem**: a operação para iniciar a instância de contêiner atingiu o tempo limite.
+**消息**：启动容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3001E 
-**Mensagem**: a operação de parada da instância de contêiner atingiu o tempo limite.
+**消息**：停止容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3002E 
-**Mensagem**: a operação para reiniciar a instância de contêiner atingiu o tempo limite.
+**消息**：重新启动容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3003E 
-**Mensagem**: a operação para pausar a instância de contêiner atingiu o tempo limite.
+**消息**：暂停容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3004E 
-**Mensagem**: a operação para remover a pausa da instância de contêiner atingiu o tempo limite.
+**消息**：取消暂停容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3005E 
-**Mensagem**: a operação para excluir a instância de contêiner atingiu o tempo limite.
+**消息**：删除容器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3006E 
-**Mensagem**: a operação para iniciar a instância de contêiner encontrou um erro de conexão.
+**消息**：启动容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3007E 
-**Mensagem**: a operação de parada da instância de contêiner encontrou um erro de conexão.
+**消息**：停止容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3008E 
-**Mensagem**: a operação para reiniciar a instância de contêiner encontrou um erro de conexão.
+**消息**：重新启动容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3009E 
-**Mensagem**: a operação para pausar a instância de contêiner encontrou um erro de conexão.
+**消息**：暂停容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3010E 
-**Mensagem**: a operação para remover a pausa da instância de contêiner encontrou um erro de conexão.
+**消息**：取消暂停容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3011E 
-**Mensagem**: a operação para excluir a instância de contêiner encontrou um erro de conexão.
+**消息**：删除容器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3012E 
-**Mensagem**: ocorreu um erro ao reiniciar o contêiner.
+**消息**：重新启动容器时发生错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3013E 
-**Mensagem**: ocorreu um erro ao pausar o contêiner.
+**消息**：暂停容器时发生错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3014E 
-**Mensagem**: ocorreu um erro ao remover a pausa do contêiner.
+**消息**：取消暂停容器时发生错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 	
 ## BXNUI3015E 
-**Mensagem**: ocorreu um problema de autenticação. 
+**消息**：发生了认证问题。 
 
-Efetue logout, efetue login novamente e tente outra vez.  Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请注销，然后重新登录并重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3016E 
-**Mensagem**: o contêiner não existe. Ele pode ter sido excluído. 
+**消息**：容器不存在。它可能已被删除。 
 
-Verifique e tente novamente.  Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请检查并重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3017E 
-**Mensagem**: ocorreu um problema ao entrar em contato com o IBM Containers.
+**消息**：联系 IBM Containers 时发生问题。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3018E 
-**Mensagem**: ocorreu um erro ao parar o contêiner e ele está agora em estado de conflito.
+**消息**：停止容器时发生错误，现在该容器处于冲突状态。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}."
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3050E 
-**Mensagem**: a operação para iniciar a instância do servidor virtual atingiu o tempo limite.
+**消息**：启动虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3051E 
-**Mensagem**: a operação de parada da instância do servidor virtual atingiu o tempo limite.
+**消息**：停止虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3052E 
-**Mensagem**: a operação para continuar a instância do servidor virtual atingiu o tempo limite.
+**消息**：恢复虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3053E 
-**Mensagem**: a operação para suspender a instância do servidor virtual atingiu o tempo limite.
+**消息**：暂挂虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3054E 
-**Mensagem**: a operação para reinicializar a instância do servidor virtual atingiu o tempo limite.
+**消息**：重新引导虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3055E 
-**Mensagem**: a operação para excluir a instância do servidor virtual atingiu o tempo limite.
+**消息**：删除虚拟服务器实例的操作已超时。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, acesse a [página de status do Bluemix](https://developer.ibm.com/bluemix/support/#status){: new_window} para verificar se um serviço ou componente tem um problema. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请转至 [Bluemix 状态页面](https://developer.ibm.com/bluemix/support/#status){: new_window}，查看服务或组件是否存在问题。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3056E 
-**Mensagem**: a operação para iniciar a instância do servidor virtual encontrou um erro de conexão.
+**消息**：启动虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3057E 
-**Mensagem**: a operação de parada da instância do servidor virtual encontrou um erro de conexão.
+**消息**：停止虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3058E 
-**Mensagem**: a operação para continuar a instância do servidor virtual encontrou um erro de conexão.
+**消息**：恢复虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3059E 
-**Mensagem**: a operação para suspender a instância do servidor virtual encontrou um erro de conexão.
+**消息**：暂挂虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3060E 
-**Mensagem**: a operação para reinicializar a instância do servidor virtual encontrou um erro de conexão.
+**消息**：重新引导虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3061E 
-**Mensagem**: a operação para excluir a instância do servidor virtual encontrou um erro de conexão.
+**消息**：删除虚拟服务器实例的操作遇到连接错误。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3062E 
-**Mensagem**: ocorreu um problema de autenticação. 
+**消息**：发生了认证问题。 
 
-Efetue logout, efetue login novamente e tente outra vez. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请注销，然后重新登录并重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3063E 
-**Mensagem**: o servidor virtual não existe. 
+**消息**：虚拟服务器不存在。 
 
-Ele pode ter sido excluído. 
+它可能已被删除。 
 
-Verifique e tente novamente.  Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请检查并重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3064E 
-**Mensagem**: ocorreu um erro e a instância do servidor virtual agora está em um estado de conflito.
+**消息**：发生错误，虚拟服务器实例现在处于冲突状态。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3065E 
-**Mensagem**: ocorreu um problema ao contatar o IBM Virtual Servers.
+**消息**：联系 IBM Virtual Servers 时发生问题。
 
-Tente novamente mais tarde. Se o problema continuar, acesse [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果此问题继续存在，请转至 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3066E 
-**Mensagem**: a tentativa de migrar seu app falhou porque não conseguimos entrar em contato com a Cloud Foundry para alternar seu app para Diego.
+**消息**：尝试迁移应用程序失败，因为无法连接 Cloud Foundry 以将应用程序切换至 Diego。
 
-Tente novamente mais tarde. Se você vir essa mensagem novamente, entre em contato com o [Suporte IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}.
+请稍后重试。如果再次看到此消息，请联系 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。
 
 ## BXNUI3067E 
-**Mensagem**: a tentativa de retroceder seu app de volta ao DEA falhou porque não conseguimos entrar em contato com a Cloud Foundry.
+**消息**：尝试将应用程序回滚到 DEA 失败，因为无法连接 Cloud Foundry。
 
-Tente novamente. Se você vir essa mensagem novamente, entre em contato com o [Suporte do IBM Bluemix](http://ibm.biz/bluemixsupport){: new_window}."
+请重试。如果再次看到此消息，请联系 [IBM Bluemix Support](http://ibm.biz/bluemixsupport){: new_window}。

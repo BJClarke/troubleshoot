@@ -18,58 +18,59 @@ lastupdated: "2017-04-10"
 
 
 
-# 有关管理应用程序的故障诊断
+# 管理應用程式疑難排解
 {: #managingapps}
 
 
-有关管理应用程序的一般性问题可能包括：无法更新应用程序或未显示双字节字符。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
+管理應用程式的一般問題，可能包括無法更新應用程式，或是未顯示雙位元組字元。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
 {:shortdesc}
 
 
-## 您有未保存的更改
+## 您有未儲存的變更
 {: #ts_unsaved_changes}
 
-在应用程序详细信息页面上进行浏览时，可能无法执行任何操作，系统可能会提示您保存更改后才能继续。
+在應用程式詳細資料頁面上進行瀏覽時，可能無法執行任何動作，系統可能會提示您儲存變更後才能繼續。
 
-在应用程序详细信息页面上尝试检查应用程序或服务时，总是提示以下错误消息：
+在應用程式詳細資料頁面上嘗試檢查應用程式或服務時，總是收到下列錯誤訊息：
 {: tsSymptoms}
 
-`您在页面 app_name 中有未保存的更改。请保存或取消这些更改。`
+`您在頁面 app_name 中有未儲存的變更。請儲存或取消這些變更。`
 
-在运行时窗格中的**实例**或**内存配额**字段上滚动鼠标时，值会更改。这是故意这样设计的；但是，当您要离开该页面时，会有错误消息提示您保存内存或实例设置。
+在運行環境窗格的**實例**或**記憶體配額**欄位上捲動滑鼠時，值就會變更。這是有意這樣設計的；但是，當您要離開該頁面時，會有錯誤訊息提示您儲存記憶體或實例設定。
 {: tsCauses}
 
-关闭消息窗口，然后单击运行时窗格中的**重置**按钮。
+關閉訊息視窗，然後按一下運行環境窗格中的**重設**按鈕。
 {: tsResolve}
 
-## Bluemix 区域之间的自动故障转移不可用
+## Bluemix 地區之間的自動失效接手無法使用
 {: #ts_failover}
 
-无法使用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。但可以使用支持多个 IP 地址间故障转移的 DNS 提供程序来作为变通方法。
+您無法在 {{site.data.keyword.Bluemix_notm}} 地區之間使用自動失效接手。不過，您可以使用支援在多個 IP 位址之間進行失效接手的 DNS 提供者，作為暫行解決方法。
 
-当某个 {{site.data.keyword.Bluemix_notm}} 区域变为不可用时，在该区域运行的应用程序也不可用，即使在另一个 {{site.data.keyword.Bluemix_notm}} 区域中有相同的应用程序正在运行，也是如此。
+當 {{site.data.keyword.Bluemix_notm}} 地區變成無法使用時，在該地區中執行的應用程式也會無法使用，即使相同應用程式正在另一個 {{site.data.keyword.Bluemix_notm}} 地區中執行亦然。
 {: tsSymptoms}
 
-{{site.data.keyword.Bluemix_notm}} 尚不提供从一个区域到另一个区域的自动故障转移。
+{{site.data.keyword.Bluemix_notm}} 尚未提供從一個地區到另一個地區的自動失效接手。
 {: tsCauses}
 
-您可以使用支持多个 IP 地址间智能故障转移的 DNS 提供程序，并手动配置 DNS 设置，以启用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。具有此功能的 DNS 提供程序包括 NSONE、Akamai 和 Dyn。
+您可以使用支援在多個 IP 位址之間進行智慧型失效接手的 DNS 提供者，並且手動配置 DNS 設定，以啟用 {{site.data.keyword.Bluemix_notm}} 地區之間的自動失效接手。具有此功能的 DNS 提供者包括 NSONE、Akamai、Dyn。
 {: tsResolve}
 
-配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中输入以下命令：
+當您配置 DNS 設定時，必須指定應用程式執行所在之 {{site.data.keyword.Bluemix_notm}} 地區的公用 IP 位址。若要取得 {{site.data.keyword.Bluemix_notm}} 地區的公用 IP 位址，請使用 `nslookup` 指令。例如，您可以在指令行視窗鍵入下列指令：
+
 ```
 nslookup stage1.mybluemix.net
 ```
 
-## 无法将应用程序切换到调试方式
+## 無法將應用程式切換為除錯模式
 {: #ts_debug}
 
-如果 Java 虚拟机 (JVM) 版本为 8 或更低版本，那么可能无法启用调试方式。
+如果 Java 虛擬機器 (JVM) 版本是第 8 版或更舊版本，則您可能無法啟用除錯模式。
 
-选择**启用应用程序调试**后，工具会尝试将应用程序切换到调试方式。然后，Eclipse 工作台会启动调试会话。工具成功启用调试方式时，Web 应用程序状态会依次显示 `Updating mode`、`Developing` 和 `Debugging`。
+在您選取**啟用應用程式除錯**之後，工具會嘗試將應用程式切換為除錯模式。然後，Eclipse 工作台會開始除錯階段作業。工具順利啟用除錯模式時，Web 應用程式狀態會顯示`更新模式`、`開發中`及`除錯中`。
 {: tsSymptoms}
 
-但是，工具启用调试方式失败时，Web 应用程序状态只会依次显示 `Updating mode` 和 `Developing`，而不会显示 `Debugging`。工具还可能会在“控制台”视图中显示以下错误消息：
+不過，當工具無法啟用除錯模式時，Web 應用程式狀態只會顯示`更新模式`及`開發中`，並不會顯示`除錯中`。工具可能也會在「主控台」視圖中顯示下列錯誤訊息：
 
 ```
 bluemixMgmgClient - ???? [pool-1-thread-1] .... ERROR --- ClientProxyImpl: Cannot create the websocket connections for MyWebProj
@@ -110,239 +111,244 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 ... 7 more
 ```
 
-以下 Java 虚拟机 (JVM) 版本无法建立调试会话：IBM JVM 7、IBM JVM 8 以及早于 Oracle JVM 8 的版本。
+下列 Java 虛擬機器 (JVM) 版本無法建立除錯階段作業：IBM JVM 7、IBM JVM 8 及舊版 Oracle JVM 8。
 {: tsCauses}
 
-如果工作台 JVM 是上述其中一个版本，那么在创建调试会话时可能会发生问题。工作台 JVM 版本通常是本地计算机的系统 JVM。系统 JVM 与运行中 {{site.data.keyword.Bluemix_notm}} Java&trade; 应用程序的 JVM 不同。{{site.data.keyword.Bluemix_notm}} Java 应用程序几乎总是在 IBM JVM 上运行，但有时会在 OpenJDK JVM 上运行。
+如果您的工作台 JVM 為上述其中一種版本，您可能會在建立除錯階段作業時發生問題。您的工作台 JVM 版本一般是本端電腦的系統 JVM。您的系統 JVM 與您執行中之 {{site.data.keyword.Bluemix_notm}} Java&trade; 應用程式的 JVM 不同。{{site.data.keyword.Bluemix_notm}} Java 應用程式幾乎都是在 IBM JVM 上執行，偶爾才會在 OpenJDK JVM 上執行。
 
-要检查 {{site.data.keyword.eclipsetoolsfull}} 运行的 Java 版本，请完成以下步骤：
+若要檢查 {{site.data.keyword.eclipsetoolsfull}} 執行的 Java 版本，請完成下列步驟：
 {: tsResolve}
 
-  1. 在 IBM Eclipse Tools for Bluemix 中，选择**帮助** > **关于 Eclipse** > **安装详细信息** > **配置**。
-  2. 从列表中找到 `eclipse.vm` 属性。以下行是 `eclipse.vm` 属性的示例：
+  1. 在 IBM Eclipse Tools for Bluemix 中，選取**說明** > **關於 Eclipse** > **安裝詳細資料** > **配置**。
+  2. 從清單中尋找 `eclipse.vm` 內容。下列這一行是 `eclipse.vm` 內容範例：
 
 	```
 	eclipse.vm=C:\Program Files\IBM\ibm-java-sdk-80-win-x86_64\bin\..\jre\bin\j9vm\jvm.dll
 	```
 
-  3. 在命令行中，从 Java 安装的 `bin` 目录输入 `java -version`。这将显示 IBM JVM 版本信息。
+  3. 在指令行中，從 Java 安裝的 `bin` 目錄中輸入 `java -version`。即會顯示 IBM JVM 版本資訊。
 
-如果工作台 JVM 为 IBM JVM 7 或 8，或者为早于 Oracle JVM 8 的版本，请完成以下步骤来切换到 Oracle JVM 8：
+如果您的工作台 JVM 是 IBM JVM 7 或 8，或舊版 Oracle JVM 8，請完成下列步驟來切換至 Oracle JVM 8：
 
-  1. 下载并安装 Oracle JVM 8；请参阅 [Java SE Downloads ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} 以获取详细信息。
-  2. 重新启动 Eclipse。
-  3. 检查 `eclipse.vm` 属性是否指向 Oracle JVM 8 的新安装。
+  1. 下載並安裝 Oracle JVM 8，如需詳細資料，請參閱 [Java SE Downloads ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}。
+  2. 重新啟動 Eclipse。
+  3. 檢查 `eclipse.vm` 內容是否指向新的 Oracle JVM 8 安裝。
 
 
-## 无法复用已删除应用程序的名称
+## 無法重複使用已刪除應用程式的名稱
 {: #ts_reuse_appname}
 
-删除应用程序之后，您仅可以在删除应用程序路径之后复用应用程序名称。
+在您刪除應用程式之後，只有在刪除應用程式路徑之後才能重複使用應用程式名稱。
 
-尝试复用应用程序名称时，您会收到以下消息：
+當您嘗試重複使用應用程式名稱時，會收到下列訊息：
 {: tsSymptoms}
 
-`名称已经由其他应用程序使用。`
+`The name is already used by another app.`
 
-删除应用程序时，不会自动删除其作为应用程序 URL 的路径。因此无法对其进行复用。您必须转至创建应用程序的空间，来删除路径，以便可以对其进行复用。
+刪除應用程式時，不會自動刪除其路徑（即應用程式的 URL）。因此，無法重複使用。您必須移至建立應用程式的空間來刪除路徑，才能重複使用。
 {: tsCauses}
 
-完成以下步骤以删除未用的路径：
+請完成下列步驟，以刪除未用的路徑：
 {: tsResolve}
 
-  1. 通过输入以下命令，检查路径是否属于当前空间：
+  1. 輸入下列指令，檢查路徑是否屬於現行空間：
      ```
 	 cf routes
 	 ```
-  2. 如果路径不属于当前空间，请通过输入以下命令，切换到其所属的空间或组织：
+  2. 如果路徑不屬於現行空間，請輸入下列指令來切換至其所屬空間或組織：
      ```
 	 cf target -o org_name -s space_name
 	 ```
-  3. 通过输入以下命令，删除应用程序路径：
+  3. 輸入下列指令，來刪除應用程式路徑：
      ```
 	 cf delete-route domain_name -n host_name
 	 ```
-	 例如： 	
+	 例如：
 ```
 	 cf delete-route mybluemix.net -n app001
 	 ```
 
-## 无法在组织中检索空间
+## 無法擷取組織中的空間
 {: #ts_retrieve_space}
 
-如果当前组织没有与其相关联的空间，那么您无法创建应用程序或服务。
+如果現行組織沒有與其相關聯的空間，則無法建立應用程式或服務。
 
-尝试在 Bluemix 中创建应用程序时，您会看到以下错误消息：
+當您嘗試在 Bluemix 中建立應用程式時，會看到下列錯誤訊息：
 {: tsSymptoms}
 
-`BXNUI0515E: 未检索到组织中的空间。发生了网络连接问题，或者当前组织没有与其相关联的空间。`
+`BXNUI0515E: The spaces in the org weren't retrieved. Either a network connection problem occurred, or your current organization does not have a space associated with it.`
 
-通常当您第一次尝试在尚未创建空间的情况下通过目录创建应用程序或服务时，会发生此错误。
+通常在您第一次嘗試從「型錄」建立應用程式或服務，但尚未建立空間時，會發生此錯誤。
 {: tsCauses}
 
-请确保在当前组织中已创建空间。要创建空间，请使用以下某种方法：
+確定已在現行組織中建立空間。若要建立空間，請使用下列其中一種方法：
 {: tsResolve}
 
+  * 從功能表列中，按一下**管理 > 帳戶 > 組織**。選取要在其中建立空間的組織，然後按一下**建立空間**。
+  * 在 cf 指令行介面中，鍵入 `cf create-space &lt;space_name> -o &lt;organization_name>`。
 
-* 在菜单栏中，单击**管理 > 帐户 > 组织**。选择要在其中创建空间的组织，然后单击**创建空间**。
-  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`。请重试。如果再次看到此消息，请转至 [Bluemix 状态 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixstatus){: new_window} 页面，检查服务或组件是否存在问题。
+請重試。如果還是出現此訊息，請移至 [Bluemix 狀態 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixstatus){: new_window} 頁面，以檢查服務或元件是否有問題。
 
 
-## 无法执行请求的操作
+## 無法執行所要求的動作
 {: #ts_authority}
 
-没有相应的访问权限，您可能无法完成操作。
-尝试对服务实例或应用程序实例执行操作时，无法完成请求的操作，并看到以下某条错误消息：
+您可能沒有適當的存取權，無法完成動作。
+
+當您嘗試執行服務實例或應用程式實例的動作時，無法完成所要求的動作，並且看到下列其中一個錯誤訊息：
 {: tsSymptoms}
 
-`BXNUI0514E: 您不是 <orgName> 组织中任何空间的开发者。`
+`BXNUI0514E: You are not a developer for any of the spaces in the <orgName> organization.`
 
-`服务器错误，状态码：403，错误代码：10003，消息：您无权执行请求的操作。`
+`Server error, status code: 403, error code: 10003, message: You are not authorized to perform the requested action.`
 
-您没有执行操作所需的相应级别的权限。
+您沒有執行動作的適當權限層級。
 {: tsCauses}
 
-要获取相应级别的权限，请使用以下某种方法：
+若要取得適當的權限層級，請使用下列其中一種方法：
 {: tsResolve}
- * 选择您对其具有开发者角色的另一个组织和空间。
+ * 選取另一個您具有開發人員角色的組織及空間。
+ * 要求組織管理者將您的角色變更為開發人員，或建立空間，然後將開發人員角色指派給您。如需詳細資料，請參閱[管理組織及空間](/docs/admin/orgs_spaces.html)。
 
- * 请求组织管理员将您的角色更改为开发者，或者创建空间，然后为您分配开发者角色。有关详细信息，请参阅[管理组织和空间](/docs/admin/orgs_spaces.html)。
-
-## 由于授权错误而无法访问 Bluemix 服务
+## 因為授權錯誤，所以無法存取 Bluemix 服務
 {: #ts_vcap}
 
-应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务时，如果服务凭证是硬编码到应用程序中的，那么可能会发生授权错误。
+如果服務認證寫在您的應用程式中，則您的應用程式存取 {{site.data.keyword.Bluemix_notm}} 服務時可能會發生授權錯誤。
 
-将应用程序配置为与 {{site.data.keyword.Bluemix_notm}} 服务通信后，将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。但是，无法使用应用程序来访问 {{site.data.keyword.Bluemix_notm}} 服务，并且会收到授权错误。
+配置應用程式與 {{site.data.keyword.Bluemix_notm}} 服務通訊之後，即將應用程式部署至 {{site.data.keyword.Bluemix_notm}}。不過，您無法使用應用程式來存取 {{site.data.keyword.Bluemix_notm}} 服務，而且會收到授權錯誤。
 {: tsSymptoms}
 
-硬编码到应用程序中的凭证可能不正确。每次重新创建服务时，用于访问该服务的凭证都会改变。
+寫在應用程式中的認證可能不正確。每次重建服務時，用來存取它的認證都會變更。
 {: tsCauses}
 
-不要将凭证硬编码到应用程序中，而是改用 VCAP_SERVICES 环境变量中的连接参数。具体如何使用 VCAP_SERVICES 环境变量中的连接参数取决于程序语言。例如，对于 Node.js 应用程序，可以使用以下命令：
+請使用 VCAP_SERVICES 環境變數中的連線參數，而不是將認證寫在應用程式中。使用 VCAP_SERVICES 環境變數中連線參數的方法，會視程式語言而改變。例如，對於 Node.js 應用程式，您可以使用下列指令：
 {: tsResolve}
 
 ```
 process.env.VCAP_SERVICES
 ```
-有关其他程序语言中可以使用的命令的更多信息，请参阅 [Java ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} 和 [Ruby ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}。
+如需可在其他程式語言中使用之指令的相關資訊，請參閱 [Java ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} 及 [Ruby ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}。
 
-## 无法使用 IBM Eclipse Tools for Bluemix 部署应用程序
+
+## 無法使用 IBM Eclipse Tools for Bluemix 來部署應用程式
 {: #ts_bm_tools_facet}
 
-将不受支持的构面应用于 Eclipse 项目时，可能无法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。
+將不受支援的資料類型套用至 Eclipse 專案時，您可能無法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 將您的應用程式部署至 {{site.data.keyword.Bluemix_notm}}。
 
-使用 Cloud Foundry CLI 可将应用程序成功部署到 {{site.data.keyword.Bluemix_notm}}。但是，无法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序部署到 {{site.data.keyword.Bluemix_notm}}，并且会看到以下错误消息：`项目构面 <facet_name> 不受支持。`例如：
+您可以使用 Cloud Foundry CLI，順利地將應用程式部署至 {{site.data.keyword.Bluemix_notm}}。不過，您無法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 將應用程式部署至 {{site.data.keyword.Bluemix_notm}}，並且會看到此錯誤訊息：`Project facet <facet_name> is not supported`。例如：
 {: tsSymptoms}
-`项目构面 Cloud Foundry Standalone Application V1.0 不受支持。`
+`Project facet Cloud Foundry Standalone Application version 1.0 is not supported.`
 
-IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 通过项目构面将项目映射到 {{site.data.keyword.Bluemix_notm}} 运行时。构面为 Eclipse 中的 Java EE 项目定义需求，并用作运行时配置的一部分，以便将不同运行时与不同项目关联。如果应用于项目的构面不受 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 支持，那么您可能无法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 部署应用程序。
+IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 會依專案資料類型將專案對映至 {{site.data.keyword.Bluemix_notm}} 運行環境。資料類型可定義 Eclipse 中 Java EE 專案的需求，並作為運行環境配置的一部分，以便不同的運行環境與不同的專案相關聯。如果 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 不支援套用至專案的資料類型，您可能無法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 來部署應用程式。
 {: tsCauses}
 
-必须从 Eclipse 项目中除去该构面，才能使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 部署应用程序。
+您必須從 Eclipse 專案中移除資料類型，才能使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 來部署應用程式。
 {: tsResolve}
 
-要除去该构面，请在 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 中单击该项目的**项目 > 属性 > 项目构面**。然后，清除不受支持构面的复选框。
+若要移除資料類型，請在 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 中，針對專案按一下**專案 > 內容 > 專案資料類型**。然後，清除不受支援之資料類型的勾選框。
 
 
-## 收到 502 无效网关错误
+## 收到「502 錯誤的閘道」錯誤
 {: #ts_502_error}
 
-如果在与 {{site.data.keyword.Bluemix_notm}} 上的应用程序进行交互时收到“502 无效网关”错误，请检查 {{site.data.keyword.Bluemix_notm}} 状态页面，然后执行相应的操作。
+如果您在 {{site.data.keyword.Bluemix_notm}} 上與應用程式互動時，收到「502 錯誤的閘道」錯誤，請檢查 {{site.data.keyword.Bluemix_notm}} 狀態頁面，然後採取相應的動作。
 
-您收到以“502 无效网关”开头的错误消息。例如，您可能会看到：`502 无效网关：注册的端点未能处理请求。`
+您收到開頭為「502 錯誤的閘道」的錯誤訊息。例如，您可能會看到 `502 Bad Gateway: Registered endpoint failed to handle the request`。
 {: tsSymptoms}
 
-通常会在以下情况下发生“无效网关”错误：您访问某个 Web 站点，该站点使用代理服务器来存储和中继来自托管该站点的主服务器中的数据。主服务器和代理服务器之间可能未正确连接，因此您会在浏览器窗口中看到 HTTP 状态码 502。此状态码指示该站点的主服务器未收到本该从代理服务器发来的 HTTP 实现。
+「錯誤的閘道」錯誤通常發生在您所造訪的網站使用 Proxy 伺服器來儲存及中繼來自管理網站之主要伺服器的資料時。主要伺服器及 Proxy 伺服器可能未適當連接，因此您會在瀏覽器視窗中看到 HTTP 狀態碼 502。此狀態碼表示網站的主要伺服器未收到它預期來自 Proxy 伺服器的 HTTP 實作。
 {: tsCauses}
 
-其他导致“无效网关”错误的不太常见的原因包括：因特网服务提供商 (ISP) 信息遗失、防火墙配置错误以及浏览器高速缓存错误。
+其他較少見的「錯誤的閘道」錯誤原因，包括網際網路服務供應商 (ISP) 脫離、不正確的防火牆配置及瀏覽器快取錯誤。
 
-如果您怀疑 {{site.data.keyword.Bluemix_notm}} 服务已关闭，请先检查 [{{site.data.keyword.Bluemix_notm}} 状态 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixstatus){: new_window} 页面。变通方法可能是在其他 {{site.data.keyword.Bluemix_notm}} 区域中使用该服务。有关详细信息，请参阅[在其他区域使用服务 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](/docs/services/reqnsi.html#cross_region_service){: new_window}。如果服务状态正常，请尝试执行以下步骤来解决问题：
+如果您懷疑 {{site.data.keyword.Bluemix_notm}} 服務已關閉，請先檢查 [{{site.data.keyword.Bluemix_notm}} 狀態 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixstatus){: new_window} 頁面。在另一個 {{site.data.keyword.Bluemix_notm}} 地區中使用服務也許可以作為暫行解決方法。詳細資訊位於 [在另一個地區中使用服務 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](/docs/services/reqnsi.html#cross_region_service){: new_window}。如果服務狀態正常，請嘗試下列步驟來解決問題：
 {: tsResolve}
 
-  * 重试操作：
-    * 通过按键盘上的 F5 键或单击刷新按钮，重新装入页面。如果此步骤无效，请清除浏览器的高速缓存和 cookie，然后再重新装入。
-    * 使用其他浏览器。
-    * 重新引导路由器、调制解调器和计算机。重新引导这些设备可以清理导致 502 错误的各种错误。
-* 等待并稍后重试。在某些情况下，您的因特网服务提供商或 {{site.data.keyword.Bluemix_notm}} 服务可能会发生临时问题。您可以一直等到临时问题得到解决为止。
-* 如果问题持续存在，请联系 {{site.data.keyword.Bluemix_notm}} 支持。有关更多信息，请参阅[联系 {{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](/docs/support/index.html#contacting-bluemix-support){: new_window}。
-## 超出磁盘配额
+  * 重試動作：
+    * 按鍵盤上的 F5，或按一下重新整理按鈕，以重新載入頁面。如果此步驟無效，請清除瀏覽器的快取及 Cookie，然後再重新載入。
+    * 使用不同的瀏覽器。
+    * 將路由器、數據機及電腦重新開機。將這些裝置重新開機可清除導致錯誤 502 的許多種錯誤。
+  * 等待並於稍後再試一次。在部分情況下，暫時問題可能是由於網際網路服務供應商或 {{site.data.keyword.Bluemix_notm}} 服務所造成。您可能要等待暫時問題獲得解決。
+  * 如果問題仍然存在，請與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡。如需相關資訊，請參閱[與 {{site.data.keyword.Bluemix_notm}} 支援中心聯絡 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](/docs/support/index.html#contacting-bluemix-support){: new_window}。
+
+## 已超出磁碟配額
 {: #ts_disk_quota}
 
-如果磁盘空间不足，可以手动修改磁盘配额来获取更多的磁盘空间。
+如果您已耗盡磁碟空間，可以手動修改磁碟配額以取得更多磁碟空間。
 
-磁盘空间不足时，可能会看到一条消息，指示超过磁盘配额。为了解决该问题，您可能尝试了通过扩展应用程序实例来获取更多的磁盘空间。例如，您可能更改了应用程序详细信息页面上的内存配额，将大小从 256 MB 扩展到 1256 MB。但是，由于磁盘配额依然未变，所以您并没有获得更多的磁盘空间。 
+當您耗盡磁碟空間時，可能會看到一則指出已超出磁碟配額的訊息。為解決此問題，您可能已嘗試擴充應用程式實例以取得更多磁碟空間。例如，您可能透過變更應用程式詳細資料頁面上的記憶體配額，從 256 MB 擴充為 1256 MB。不過，因為磁碟配額保持不變，所以您並未取得更多磁碟空間。
 {: tsSymptoms}
 
-为应用程序分配的缺省磁盘配额为 1 GB。如果您需要更多的磁盘空间，必须手动指定磁盘配额。 
+配置給應用程式的預設磁碟配額是 1 GB。如果您需要更多磁碟空間，則必須手動指定磁碟配額。
 {: tsCauses}
 
-使用以下某种方法可指定磁盘配额。可指定的最大磁盘配额为 2 GB。如果 2 GB 仍不够，请尝试外部服务，例如[对象存储](/docs/services/ObjectStorage/index.html)。
+請使用下列其中一種方法來指定您的磁碟配額。您可以指定的磁碟配額上限是 2 GB。如果 2 GB 仍然不夠，請嘗試使用外部服務，例如 [物件儲存庫](/docs/services/ObjectStorage/index.html)。
 {: tsResolve}
 
-  * 在 manifest.yml 文件中，添加以下项：
+  * 在 manifest.yml 檔案中，新增下列項目：
     ```
 	disk_quota: <disk_quota>
 	```
-  * 在用于将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 的 `cf push` 命令中使用 **-k** 选项：
+  * 當您將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時，請使用 **-k** 選項與 `cf push` 指令搭配：
     ```
 	cf push appname -p app_path -k <disk_quota>
 	```
 
 
-## Android 应用程序收不到 {{site.data.keyword.mobilepushshort}}
+## Android 應用程式收不到 {{site.data.keyword.mobilepushshort}}
 {: #ts_push}
 
-在无法访问 Google 的某些地区，Android 应用程序收不到您通过 IBM {{site.data.keyword.mobilepushshort}} 服务发送出来的通知。在这种情况下，变通方法是使用第三方服务。为 Bluemix 应用程序绑定 {{site.data.keyword.mobilepushshort}} 服务，并将消息发送给已注册的设备。但在某些地区，在 Android 平台上开发的应用程序收不到您的通知。
+在無法存取 Google 的特定地區中，Android 應用程式收不到您透過 IBM {{site.data.keyword.mobilepushshort}} 服務送出的通知。在此情況下，暫行解決方法是使用協力廠商服務。為您的 Bluemix 應用程式連結一個 {{site.data.keyword.mobilepushshort}} 服務，並將訊息傳送至已登錄的裝置。不過，在特定地區，Android 平台上開發的應用程式收不到您的通知。
 {: tsSymptoms}
 
-IBM {{site.data.keyword.mobilepushshort}} 服务使用 Google 云消息传递 (GCM) 服务将通知分派到在 Android 平台上开发的移动应用程序。要使 Android 应用程序能够接收通知，移动应用程序必须可以访问 Google 云消息传递 (GCM) 服务。在 Android 应用程序无法访问 GCM 服务的区域中，Android 应用程序收不到 {{site.data.keyword.mobilepushshort}}。
+IBM {{site.data.keyword.mobilepushshort}} 服務使用「Google 雲端通訊 (GCM)」服務，將通知分派至 Android 平台上開發的行動應用程式。若要讓 Android 應用程式收到通知，行動應用程式必須可存取「Google 雲端通訊 (GCM)」服務。在 Android 應用程式無法呼叫到 GCM 服務的地區，Android 應用程式即收不到 {{site.data.keyword.mobilepushshort}}。
 {: tsCauses}
 
-作为变通方法，请使用不依赖于 GCM 服务的第三方服务，例如 [Pushy ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://pushy.me){: new_window}、[igetui ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://www.getui.com/){: new_window} 和 [jpush ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://www.jpush.cn/){: new_window}。
+暫行解決方法是使用不依賴 GCM 服務的協力廠商服務，例如 [Pushy ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://pushy.me){: new_window}、[igetui ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://www.getui.com/){: new_window} 及 [jpush ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://www.jpush.cn/){: new_window}。
 {: tsResolve}
 
 
-## 超过组织的服务限制
+## 已超出組織的服務限制
 {: #ts_servicelimit}
 
-如果您是试用帐户用户，那么可能无法在超过组织的服务限制的情况下在 {{site.data.keyword.Bluemix_notm}} 中创建应用程序。尝试在 {{site.data.keyword.Bluemix_notm}} 中创建应用程序时，您会看到以下错误消息：
+如果您是試用帳戶使用者，可能會在超出組織的服務限制時，無法在 {{site.data.keyword.Bluemix_notm}} 中建立應用程式。
+
+當您嘗試在 {{site.data.keyword.Bluemix_notm}} 中建立應用程式時，會看到下列錯誤訊息：
 {: tsSymptoms}
 
-`BXNUI2032E: 未创建 <service_instances> 资源。联系 Cloud Foundry 来创建资源时，发生了错误。Cloud Foundry 消息：“已超过组织的服务限制。”`
+`BXNUI2032E: 未建立 <service_instances> 資源。聯絡 Cloud Foundry 以建立資源時發生錯誤。Cloud Foundry 訊息："You have exceeded your organization's services limit."`
 
-在已超过您帐户可拥有的服务实例数的限制时，会发生此错误。试用帐户的最大服务实例数是 10。
+當您超出帳戶可用的服務實例數目限制時，就會發生這個錯誤。試用帳戶的服務實例數目上限是 10。
 {: tsCauses}
 
-删除不需要的任何服务实例，或者除去对您可拥有的服务实例数的限制。
+請刪除任何不需要的服務實例，或移除您可以擁有的服務實例數目限制。
 {: tsResolve}
 
-  * 要删除服务实例，可以使用 {{site.data.keyword.Bluemix_notm}} 控制台或者命令行界面。
+  * 若要刪除服務實例，您可以使用 {{site.data.keyword.Bluemix_notm}} 主控台或指令行介面。
 
-    要使用 {{site.data.keyword.Bluemix_notm}} 控制台删除服务实例，请完成以下步骤：
-	  1. 在“服务”仪表板中，单击要删除的服务的**操作**菜单。
-	  2. 单击**删除服务**。系统会提示您重新编译打包该服务实例绑定到的应用程序。
+    若要使用 {{site.data.keyword.Bluemix_notm}} 主控台來刪除服務實例，請完成下列步驟：
+	  1. 在「服務」儀表板中，按一下您要刪除之服務的**動作**功能表。
+	  2. 按一下**刪除服務**。系統接著會提示您重新編譯打包服務實例所連結的應用程式。
 
-要使用命令行界面删除服务实例，请完成以下步骤：
-	  1. 通过输入 `cf unbind-service <appname> <service_instance_name>`，取消服务实例与应用程序的绑定。
-	  2. 通过输入 `cf delete-service <service_instance_name>`，删除服务实例。
-	  3. 在删除服务实例之后，可能需要通过输入 `cf restage <appname>`，重新编译打包该服务实例绑定到的应用程序。
+    若要使用指令行介面來刪除服務實例，請完成下列步驟：
+	  1. 鍵入 `cf unbind-service <appname> <service_instance_name>`，取消服務實例與應用程式的連結。
+	  2. 鍵入 `cf delete-service <service_instance_name>`，以刪除服務實例。
+	  3. 刪除服務實例之後，您可能會想要鍵入 `cf restage <appname>`，以重新編譯打包服務實例所連結的應用程式。
 
-  * 要除去您可拥有的服务实例数的限制，请将试用帐户转换为付费帐户。有关如何将试用帐户转换为付费帐户的信息，请参阅[如何更改套餐](/docs/pricing/index.html#changing)。
+  * 若要移除您可以擁有之服務實例數目的限制，請將您的試用帳戶轉換為付費帳戶。如需如何將試用帳戶轉換為付費帳戶的相關資訊，請參閱[如何變更方案](/docs/pricing/index.html#changing)。
 
-## 无法在 Bluemix 上运行可执行文件
+## 執行檔無法在 Bluemix 上執行
 {: #ts_executable}
 
-如果可执行文件是在不同环境中开发和构建的，那么可能无法在 {{site.data.keyword.Bluemix_notm}} 上运行这些可执行文件。
+在不同環境中開發及建置的執行檔，可能無法在 {{site.data.keyword.Bluemix_notm}} 上執行。
 
-如果可执行文件是在不同环境中开发和构建的，那么无法在 {{site.data.keyword.Bluemix_notm}} 上运行这些可执行文件。
+在不同環境中開發及建置的執行檔，無法在 {{site.data.keyword.Bluemix_notm}} 上執行。
 {: tsSymptoms}
 
-如果要推送到 {{site.data.keyword.Bluemix_notm}} 的内容已经是可执行文件，那么该内容先前已构建，因此不需要在 {{site.data.keyword.Bluemix_notm}} 上进行构建。在此情况下，无需任何 buildpack，可执行文件就可以在 {{site.data.keyword.Bluemix_notm}} 上运行。但是，必须向 {{site.data.keyword.Bluemix_notm}} 明确指示不需要 buildpack。
+如果您要推送至 {{site.data.keyword.Bluemix_notm}} 的內容已經是執行檔，表示該內容先前就已建置好，不需要在 {{site.data.keyword.Bluemix_notm}} 上建置。在此情況下，執行檔不需要任何建置套件，就可以在 {{site.data.keyword.Bluemix_notm}} 上執行。不過，您必須明確地向 {{site.data.keyword.Bluemix_notm}} 指出不需要任何建置套件。
 {: tsCauses}
 
-将可执行文件推送到 {{site.data.keyword.Bluemix_notm}} 时，必须指定 null-buildpack，它指示不需要 buildpack。指定 null-buildpack 的方法是使用带 **-b** 选项的 `cf push` 命令：
+當您將執行檔推送至 {{site.data.keyword.Bluemix_notm}} 時，必須指定 null-buildpack，表示不需要任何建置套件。請搭配使用 **-b** 選項與 `cf push` 指令來指定 null-buildpack：
 {: tsResolve}
 
 ```
@@ -353,174 +359,173 @@ cf push appname -p app_path -c <start_command> -b <null-buildpack>
 cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
-## 超过组织的内存限制
+## 已超出組織的記憶體限制
 {: #ts_outofmemory}
 
-如果您是试用帐户用户，那么可能无法在超过组织的内存限制的情况下将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。您可以减少应用程序使用的内存，或者增加您帐户的内存配额。试用帐户的最大内存配额为 2 GB，并且只能通过移至付费帐户来增大内存配额。
-将应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，您会看到以下错误消息：
+如果您是試用帳戶使用者，則超出組織的記憶體限制時，可能無法將應用程式部署至 {{site.data.keyword.Bluemix_notm}}。您可以減少應用程式所使用的記憶體，或增加帳戶的記憶體配額。試用帳戶的記憶體配額上限為 2 GB，而且只能透過移至付費帳戶來增加。當您將應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，會看到下列錯誤訊息：
 {: tsSymptoms}
 
-`失败：服务器错误，状态码：400，错误代码：100005，消息：您已超过组织的内存限制。`
+`FAILED Server error, status code: 400, error code: 100005, message: You have exceeded your organization's memory limit.`
 
-当组织的剩余内存量低于您要部署的应用程序所需的内存量时，会发生此错误。试用帐户的最大内存配额为 2 GB。
+當組織剩餘的記憶體量少於您想要部署之應用程式所需的記憶體量時，就會發生這個錯誤。試用帳戶的記憶體配額上限為 2 GB。
 {: tsCauses}
 
-您可以增加帐户的内存配额，或者减少应用程序使用的内存。
+您可以增加帳戶的記憶體配額，或減少應用程式所使用的記憶體。
 {: tsResolve}
 
-  * 要增加帐户的内存配额，请将试用帐户转换为付费帐户。有关将试用帐户转换为付费帐户的信息，请参阅[付费帐户](/docs/pricing/index.html#pay-accounts)。
-  * 要减少应用程序使用的内存，请使用 {{site.data.keyword.Bluemix_notm}} 控制台或 cf 命令行界面。
+  * 若要增加帳戶的記憶體配額，請將試用帳戶轉換為付費帳戶。如需如何將試用帳戶轉換為付費帳戶的相關資訊，請參閱[付費帳戶](/docs/pricing/index.html#pay-accounts)。
+  * 若要減少應用程式所使用的記憶體，請使用 {{site.data.keyword.Bluemix_notm}} 主控台或 cf 指令行介面。
 
-    如果使用 {{site.data.keyword.Bluemix_notm}} 控制台，请完成以下步骤：
+    如果您使用 {{site.data.keyword.Bluemix_notm}} 主控台，請完成下列步驟：
 
-    1. 在“应用程序仪表板”中，选择应用程序。这将打开应用程序详细信息页面。
-    2. 在运行时窗格中，可以减少应用程序的最大内存限制和/或应用程序实例数。
+    1. 在「應用程式儀表板」中，選取應用程式。即會開啟應用程式詳細資料頁面。
+    2. 在「運行環境」窗格中，您可以針對您的應用程式減少記憶體上限及（或）應用程式實例的數目。
 
-    如果使用 cf 命令行界面，请完成以下步骤：
+    如果您使用 cf 指令行介面，請完成下列步驟：
 
-    1. 检查应用程序使用了多少内存：
+    1. 檢查有多少記憶體用於應用程式：
 
 	  ```
 	  cf apps
 	  ```
 
-	  cf apps 命令会列出当前空间中部署的所有应用程序。还会显示每个应用程序的状态。
-    2. 要减少应用程序使用的内存量，请减少应用程序实例数和/或最大内存限制：
+	  cf apps 指令會列出您在現行空間中部署的所有應用程式。也會顯示每個一應用程式的狀態。
+    2. 若要減少應用程式所使用的記憶體量，請減少應用程式實例的數目及（或）記憶體上限：
 
 	  ```
 	  cf push appname -p app_path -i instance_number -m memory_limit
       ```
 
-    3. 重新启动应用程序以使更改生效。
+    3. 重新啟動應用程式，讓變更生效。
 
 
-## 应用程序不会自动重新启动
+## 應用程式不會自動重新啟動
 {: #ts_apps_not_auto_restarted}
 
-当绑定到应用程序的服务停止工作时，该应用程序不会自动重新启动。	  
+當連結至應用程式的服務停止運作時，不會自動重新啟動應用程式。	  
 
-当绑定到应用程序的服务崩溃时，应用程序可能会发生如中断、异常和连接失败等问题。 {{site.data.keyword.Bluemix_notm}} 不会自动重新启动应用程序以从这些问题中恢复。
+當連結至應用程式的服務當機時，應用程式可能會發生運作中斷、異常狀況和連線失敗之類的問題。{{site.data.keyword.Bluemix_notm}} 不會自動重新啟動應用程式，以從這些問題回復。
 {: tsSymptoms}
 
-此行为是 Cloud Foundry 故意为之。
+此行為是 Cloud Foundry 的設計。
 {: tsCauses}
 
-您可以通过在命令行界面中输入以下命令来手动重新启动应用程序：
+您可以在指令行介面中鍵入下列指令，以手動重新啟動應用程式：
 {: tsResolve}
 
 ```
 cf push appname -p app_path
-  ```
-此外，还可以对应用程序进行编码，以识别如中断、异常和连接失败等问题，并从这些问题中进行恢复。
+```
+此外，您可以將應用程式編碼成可識別運作中斷、異常狀況和連線失敗之類的問題，並從其中回復。
 
-## 推送应用程序时用户定义的变量丢失
+## 推送應用程式時遺失使用者定義變數
 {: #ts_varsnotretained}
 
-从 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，会重置您所指定的变量，但如果将变量保存到清单文件中，那么将另当别论。
+當您從 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 推送應用程式至 {{site.data.keyword.Bluemix_notm}} 時，您指定的變數會重設，除非您將變數儲存至資訊清單檔。
 
-从 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 后，您所指定的变量会丢失。
+在您從 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 推送應用程式至 {{site.data.keyword.Bluemix_notm}} 之後，您指定的變數會遺失。
 {: tsSymptoms}
 
-只有将您所指定的变量保持到清单文件中，这些变量才会得到保存。
+唯有在您將指定的變數儲存到資訊清單檔時，才會儲存您指定的變數。
 {: tsCauses}
 
-从 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，请在“应用程序”向导的“应用程序详细信息”页面上选中**保存到清单文件**复选框。这样，您在向导中指定的变量就会保存到应用程序的清单文件中。 下次打开向导时，这些变量会自动显示出来。
+當您從 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 推送應用程式至 {{site.data.keyword.Bluemix_notm}} 時，請在「應用程式」精靈的「應用程式詳細資料」頁面中，選取**儲存至資訊清單檔**勾選框。然後，您在精靈中指定的變數便會儲存到應用程式的資訊清單檔。下次開啟精靈時，會自動顯示變數。
 {: tsResolve}
 
 <!-- begin STAGING ONLY -->
 
-## Bluemix Live Sync“调试”功能无法通过命令行启动
+## 未從指令行啟動 Bluemix Live Sync 的「除錯」
 {: #ts_no_debug}
 
-您使用命令行为应用程序启用了 IBM Bluemix Live Sync“调试”功能，但是您无法访问“调试”界面。  
+您已使用指令行來啟用應用程式的 IBM Bluemix Live Sync 的「除錯」特性，但無法存取「除錯」介面。  
 
-您通过设置 **BLUEMIX_APP_MGMT_ENABLE** 环境变量启用了应用程序的“调试”功能。但是，您无法在 `app_url/bluemix-debug/manage` 处访问“调试”用户界面。
+您已設定 **BLUEMIX_APP_MGMT_ENABLE** 環境變數來啟用應用程式的「除錯」特性。不過，您無法在 `app_url/bluemix-debug/manage` 存取「除錯」使用者介面。
 {: tsSymptoms}
 
-在以下几种情况下，无法启用“调试”功能：
+在下列情況下，無法啟用「除錯」特性：
 {: tsCauses}
 
-  * `manifest.yml` 包含命令属性时
-  * 使用 **-c** 选项将应用程序推送至 {{site.data.keyword.Bluemix_notm}} 时
+  * `manifest.yml` 包含 command 屬性時
+  * 當您使用 **-c** 選項來將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時
 
-使用以下其中一个选项可解决该问题：
+請使用下列其中一個選項來解決問題：
 {: tsResolve}
 
-  * 建议的作法是使用 IBM Node.js buildpack 启动应用程序。有关更多信息，请参阅[将 Node.js 应用程序部署至 {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime) 主题的“启动命令”一节。
-  * 通过将 `manifest.yml` 中的命令属性修改为命令 null 或通过编辑推送命令以包括 `-c null`，禁用现有应用程序的命令。
-  * 从 `manifest.yml` 中除去**命令**属性。然后，从 {{site.data.keyword.Bluemix_notm}} 中删除当前应用程序，并重新推送应用程序。
+  * 建議的作法是使用 IBM Node.js 建置套件來啟動應用程式。如需相關資訊，請參閱[將 Node.js 應用程式部署至 {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime) 主題的「啟動指令」小節。
+  * 將 `manifest.yml` 中的 command 屬性修訂為 command: null 或編輯 push 指令以包含 `-c null`，來停用現有應用程式的指令。
+  * 從 `manifest.yml` 移除 **command** 屬性。然後，從 {{site.data.keyword.Bluemix_notm}} 刪除現行應用程式，並重新推送應用程式。
 
 <!-- end STAGING ONLY -->  
 
 
-## 在 Bluemix 上找不到组织
+## 在 Bluemix 上找不到組織
 {: #ts_orgs}
 
-在 {{site.data.keyword.Bluemix_notm}} 区域上工作时，可能在 {{site.data.keyword.Bluemix_notm}} 上找不到组织。
+在使用 {{site.data.keyword.Bluemix_notm}} 地區時，可能找不到 {{site.data.keyword.Bluemix_notm}} 上的組織。
 
-您可以成功登录到 {{site.data.keyword.Bluemix_notm}} 控制台，但不能使用 cf 命令行界面或 Eclipse 插件来推送应用程序。
+您可以順利登入 {{site.data.keyword.Bluemix_notm}} 主控台，但無法使用 cf 指令行介面或 Eclipse 外掛程式來推送應用程式。
 {: tsSymptoms}
 
-尝试使用 cf 命令行界面将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，您会看到以下某个错误消息（消息中指定了组织名称）：
+嘗試使用 cf 指令行介面將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時，您看到下列其中一則錯誤訊息，且訊息中指定了組織名稱：
 
-`查找组织时出错`
+`尋找組織時發生錯誤`
 
-`找不到组织`
+`找不到組織`
 
-尝试使用 Cloud Foundry Eclipse 插件将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，您会看到以下错误消息：
+嘗試使用 Cloud Foundry Eclipse 外掛程式將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時，您看到下列錯誤訊息：
 
 `找不到 cloudspace。`
 
-发生此问题的原因是您要使用的区域的 API 端点未指定，并且您要查找的组织可能位于其他区域中。
+這個問題會發生是因為未指定您要使用之地區的 API 端點，而您要尋找的組織可能是在不同的地區。
 {: tsCauses}
 
-如果使用 cf 命令行界面将应用程序推送到 {{site.data.keyword.Bluemix_notm}}，请输入 cf api 命令并指定区域的 API 端点。例如，输入以下命令以连接到 {{site.data.keyword.Bluemix_notm}} 欧洲英国区域：
+如果您使用 cf 指令行介面將應用程式推送至 {{site.data.keyword.Bluemix_notm}}，請輸入 cf api 指令，並指定地區的 API 端點。例如，輸入下列指令以連接 {{site.data.keyword.Bluemix_notm}} 歐洲英國地區：
 {: tsResolve}
 
 ```
 cf api https://api.eu-gb.bluemix.net
 ```
-如果要使用 Eclipse 工具将应用程序推送到 {{site.data.keyword.Bluemix_notm}}，必须先创建 {{site.data.keyword.Bluemix_notm}} 服务器，然后指定所创建组织所在的 {{site.data.keyword.Bluemix_notm}} 区域的 API 端点。有关使用 Eclipse 工具的更多信息，请参阅[使用 IBM Eclipse Tools for Bluemix 部署应用程序](/docs/manageapps/eclipsetools/eclipsetools.html)。  
+如果您使用 Eclipse 工具將應用程式推送至 {{site.data.keyword.Bluemix_notm}}，則必須先建立 {{site.data.keyword.Bluemix_notm}} 伺服器，並指定您組織建立所在 {{site.data.keyword.Bluemix_notm}} 地區的 API 端點。如需使用 Eclipse 工具的相關資訊，請參閱[使用 IBM Eclipse Tools for Bluemix 部署應用程式](/docs/manageapps/eclipsetools/eclipsetools.html)。  
 
-## 无法创建应用程序路径
+## 無法建立應用程式路徑
 {: #ts_hostistaken}
 
-将应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，如果您所指定的主机名已在使用，那么无法创建该应用程序的路径。
+將應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，如果指定的主機名稱已被使用，則無法建立應用程式路徑。
 
-将应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，您会看到以下错误消息：
+將應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，您看到下列錯誤訊息：
 {: tsSymptoms}
 
-`正在创建路径 hostname.domainname ... 失败 服务器错误，状态码：400，错误代码：210003，消息：所采用的主机为：hostname`
+`Creating route hostname.domainname ... FAILED Server error, status code: 400, error code: 210003, message: The host is taken: hostname`
 
-如果您所指定的主机名已在使用，那么会发生此问题。
+如果已使用指定的主機名稱，則會發生此問題。
 {: tsCauses}
 
-您所指定的主机名在您所使用的域中必须是唯一的。要指定不同的主机名，请使用以下某个方法：
+在您使用的網域內，您指定的主機名稱必須是唯一的。若要指定不同的主機名稱，請使用下列其中一種方法：
 {: tsResolve}
 
-  * 如果通过使用 `manifest.yml` 文件来部署应用程序，请在 host 选项中指定主机名。	 
+  * 如果您使用 `manifest.yml` 檔案來部署應用程式，請在 host 選項中指定主機名稱。	 
     ```
     host: host_name	
 	```
-  * 如果从命令提示符部署应用程序，请使用带有 **-n** 选项的 `cf push` 命令。
+  * 如果您從命令提示字元部署應用程式，請搭配使用 `cf push` 指令與 **-n** 選項。
     ```
     cf push appname -p app_path -n host_name
     ```
 
 
-## 无法使用 cf push 命令推送 WAR 应用程序
+## 無法使用 cf push 指令推送 WAR 應用程式
 {: #ts_cf_war}
 
-如果未正确指定应用程序位置，那么可能无法使用 cf push 命令来将归档的 Web 应用程序推送到 {{site.data.keyword.Bluemix_notm}}。
+如果未正確指定應用程式位置，則可能無法使用 cf push 指令，將保存的 Web 應用程式部署至 {{site.data.keyword.Bluemix_notm}}。
 
-使用 `cf push` 命令将 WAR 应用程序上传到 {{site.data.keyword.Bluemix_notm}} 时，您会看到以下错误消息：
+使用 `cf push` 指令將 WAR 應用程式上傳至 {{site.data.keyword.Bluemix_notm}} 時，您看到下列錯誤訊息：
 {: tsSymptoms}
-`编译打包错误：由于编译打包失败，无法获取实例。`
+`Staging error: cannot get instances since staging failed.`
 
-如果未指定 WAR 文件，或者未指定 WAR 文件的路径，那么可能会发生此问题。
+如果未指定 WAR 檔，或未指定 WAR 檔的路徑，就可能會發生此問題。
 {: tsCauses}
 
-使用 **-p** 选项来指定 WAR 文件或将路径添加到 WAR 文件。例如：
+請使用 **-p** 選項來指定 WAR 檔，或新增 WAR 檔的路徑。例如：
 {: tsResolve}
 
 ```
@@ -530,25 +535,27 @@ cf push MyUniqueAppName01 -p app.war
 ```
 cf push MyUniqueAppName02 -p "./app.war"
 ```
-有关 `cf push` 命令的更多信息，请输入 `cf push -h`。
+如需 `cf push` 指令的相關資訊，請輸入 `cf push -h`。
 
 
 
-## 将 Liberty 应用程序推送到 Bluemix 时未正确显示双字节字符
+
+
+## 將 Liberty 應用程式推送至 Bluemix 後，未能適當地顯示雙位元組字元
 {: #ts_doublebytes}
 
-如果没有为 servlet 或 JSP 文件正确配置 Unicode 支持，那么可能未正确显示双字节字符。
+如果未適當配置 Servlet 或 JSP 檔的 Unicode 支援，則可能無法適當顯示雙位元組字元。
 
-将 Liberty 应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，未正确显示在应用程序内指定的双字节字符。
+將 Liberty 應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時，無法適當顯示應用程式內所指定的雙位元組字元。
 {: tsSymptoms}
 
-如果没有为 servlet 或 JSP 文件正确配置 Unicode 支持，那么可能发生该问题。
+如果未適當配置 Servlet 或 JSP 檔的 Unicode 支援，就可能會發生此問題。
 {: tsCauses}
 
-您可以在 servlet 或 JSP 文件内使用以下代码：
+您可以在 Servlet 或 JSP 檔中使用下列程式碼：
 {: tsResolve}
 
-  * 在 servlet 源文件中，
+  * 在 Servlet 原始檔中
     ```
 	response.setContentType("text/html; charset=UTF-8");
 	```
@@ -558,35 +565,35 @@ cf push MyUniqueAppName02 -p "./app.war"
 	```
 
 
-## 无法部署 Node.js 应用程序
+## 無法部署 Node.js 應用程式
 {: #ts_nodejs_deploy}
 
-您在更新 Node.js 应用程序或将 Node.js 应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时可能会遇到问题。
+當您更新 Node.js 應用程式或是將 Node.js 應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，可能會發生問題。
 
-更新 Node.js 应用程序或将 Node.js 应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，可能会看到以下某条错误消息：
+當您更新 Node.js 應用程式或是將 Node.js 應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，可能會看到下列其中一則錯誤訊息：
 {: tsSymptoms}
 
-`任何可用 buildpack 均未成功检测到应用程序。`
+`An app was not successfully detected by any available buildpack.`
 
-`实例（索引 0）未能开始接受连接。`
+`Instance (index 0) failed to start accepting connections.`
 
-`由于编译打包失败，无法获取实例。`
+`Cannot get instances since staging failed.`
 
-可能的原因如下所示：
+可能的原因如下：
 {: tsCauses}
 
-  * 未指定启动命令。
-  * 部署 Node.js 应用程序所需的文件在应用程序中缺失，或者位于非根目录的文件夹中。
+  * 未指定啟動指令。
+  * 應用程式遺漏部署 Node.js 應用程式所需的檔案，或是放在非根目錄的資料夾中。
 
-根据问题原因，使用以下某种方法：
+請根據問題的原因，使用下列其中一種方法：
 {: tsResolve}
 
-  * 通过以下某种方法来指定启动命令：
-     * 使用 cf 命令行界面。例如：
+  * 以下列其中一種方法指定啟動指令：
+     * 使用 cf 指令行介面。例如：
 ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * 使用 [package.json ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://docs.npmjs.com/json){: new_window} 文件。例如： 	
+    * 使用 [package.json ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.npmjs.com/json){: new_window} 檔案。例如：
 ```
 		{
       ...
@@ -595,7 +602,7 @@ cf push MyUniqueAppName02 -p "./app.war"
  	   }
 	}
 	    ```
-    * 使用 `manifest.yml` 文件。例如： 	
+    * 使用 `manifest.yml` 檔案。例如：
 ```
 		applications:
   name: MyUniqueNodejs01
@@ -604,8 +611,7 @@ cf push MyUniqueAppName02 -p "./app.war"
   ...
         ```
 
-  * 确保 Node.js 应用程序中存在 `package.json` 文件，这样 Node.js buildpack 才能识别该应用程序。确保此文件位于应用程序的根目录中。	
-    以下示例显示简单的 `package.json` 文件：   
+  * 確定 `package.json` 檔案存在於您的 Node.js 應用程式中，Node.js 建置套件才能辨識應用程式。請確定此檔案位在應用程式的根目錄中。下列範例顯示簡單的 `package.json` 檔案：  
 	```
 	{
         "name": "MyUniqueNodejs01",
@@ -624,71 +630,71 @@ cf push MyUniqueAppName02 -p "./app.war"
  }
     ```
 
-有关 Node.js 应用程序的更多提示，请参阅 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "外部链接图标"){: new_window}。
+如需 Node.js 應用程式的相關提示，請參閱 [Node.js 應用程式的提示](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "外部鏈結圖示"){: new_window}。
 
 
-## 将 Bluemix Liberty 应用程序导入到 Eclipse 之后，`server.xml` 文件中出现配置错误
+## 將 Bluemix Liberty 應用程式匯入至 Eclipse 之後，`server.xml` 檔案中出現配置錯誤
 {: #ts_eclipse}
 
-在将 {{site.data.keyword.Bluemix_notm}} Liberty 应用程序导入到 Eclipse 之后，如果在 `server.xml` 文件中看到配置错误，那么可能需要从项目中除去 `server.xml` 文件。
+如果您在將 {{site.data.keyword.Bluemix_notm}} Liberty 應用程式匯入至 Eclipse 之後，於 `server.xml` 檔案中看到配置錯誤，則可能需要移除專案中的 `server.xml` 檔案。
 
-在将 {{site.data.keyword.Bluemix_notm}} Liberty 应用程序导入到 Eclipse 之后，在 Eclipse“问题”视图中看到 `server.xml` 文件内的配置错误。
+將 {{site.data.keyword.Bluemix_notm}} Liberty 應用程式匯入至 Eclipse 之後，您會從「Eclipse 問題」視圖中，看到 `server.xml` 檔案內的配置錯誤。
 {: tsSymptoms}
 
-将 Liberty 应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，Liberty buildpack 会使用 `server.xml` 文件来配置应用程序，并生成 `runtime-vars.xml` 文件。将应用程序导入到 Eclipse 时，本地环境中不存在 `runtime-vars.xml` 文件。
+Liberty 建置套件會使用 `server.xml` 檔案來配置應用程式，並且在將 Liberty 應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時產生 `runtime-vars.xml` 檔案。將應用程式匯入至 Eclipse 時，本端環境中沒有 `runtime-vars.xml` 檔案。
 {: tsCauses}
 
-您可以通过从项目中除去 server.xml 文件来解决此问题。将应用程序作为 WAR 应用程序进行推送时，buildpack 会动态创建 `server.xml` 文件。有关更多信息，请参阅 [Liberty for Java](/docs/runtimes/liberty/index.html)。
+您可以移除專案中的 server.xml 檔案，來解決此問題。將應用程式推送為 WAR 應用程式時，此建置套件會動態建立 `server.xml` 檔案。如需相關資訊，請參閱 [Liberty for Java](/docs/runtimes/liberty/index.html)。
 {: tsResolve}
 
 
-## 使用定制 buildpack 无法编译打包应用程序
+## 無法使用自訂建置套件來編譯打包應用程式
 {: #ts_bp_compilation}
 
-如果定制 buildpack 中的脚本不可执行，那么您可能无法使用该 buildpack 将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。
+如果自訂建置套件中的 Script 無法執行，您可能無法使用該建置套件將應用程式部署至 {{site.data.keyword.Bluemix_notm}}。
 
-使用定制 buildpack 将应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，您会看到错误消息：`应用程序未能编译打包，因此没有要显示的实例。`
+使用自訂建置套件將應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，您看到此錯誤訊息：`無法編譯打包應用程式，因此沒有可顯示的實例。`
 {: tsSymptoms}
 
-如果脚本（如检测脚本、编译脚本和发布脚本）不可执行，那么可能发生此问题。
+如果 Script（例如偵測 Script、編譯 Script 及釋放 Script）無法執行，就可能會發生此問題。
 {: tsCauses}
 
-您可以使用 [git update ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://git-scm.com/docs/git-update-index){: new_window} 命令将每个脚本的许可权更改为可执行。例如，可以输入 `git update --chmod=+x script.sh`。
+您可以使用 [git update ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://git-scm.com/docs/git-update-index){: new_window} 指令，將每一個 Script 的許可權變更為「可執行」。例如，您可以鍵入 `git update --chmod=+x script.sh`。
 {: tsResolve}
 
-## 无法通过 IBM Bluemix Continuous Delivery 中的 Delivery Pipeline 部署应用程序
+## 在 IBM Bluemix Continuous Delivery 中無法從 Delivery Pipeline 部署應用程式
  {: #ts_devops_to_bm}
 
- 如果应用程序中不存在 `manifest.yml` 文件，那么可能无法使用 {{site.data.keyword.contdelivery_short}} 中的 {{site.data.keyword.deliverypipeline}} 来部署应用程序。
+ 如果應用程式中沒有 `manifest.yml` 檔案，您可能無法在 {{site.data.keyword.contdelivery_short}} 中使用 {{site.data.keyword.deliverypipeline}} 來部署應用程式。
 
- 使用 {{site.data.keyword.contdelivery_short}} 中的 {{site.data.keyword.deliverypipeline}} 部署应用程序时，可能会显示错误消息：`检测不到受支持的应用程序类型`。
+ 當您在 {{site.data.keyword.contdelivery_short}} 中使用 {{site.data.keyword.deliverypipeline}} 來部署應用程式時，可能會顯示 `Unable to detect a supported application type` 錯誤訊息。
  {: tsSymptoms}
 
- 发生此问题的原因可能是管道需要使用 `manifest.yml` 文件将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。
+ 因為管線需要 `manifest.yml` 檔案，才能將應用程式部署至 {{site.data.keyword.Bluemix_notm}}，所以可能會發生此問題。
  {: tsCauses}
 
- 要解决此问题，您必须创建 `manifest.yml` 文件。有关如何创建 `manifest.yml` 文件的更多信息，请参阅 [应用程序清单](/docs/manageapps/depapps.html#appmanifest)。
+ 若要解決此問題，您必須建立 `manifest.yml` 檔案。如需如何建立 `manifest.yml` 檔案的相關資訊，請參閱[應用程式資訊清單](/docs/manageapps/depapps.html#appmanifest)。
  {: tsResolve}
 
-## 无法推送 Meteor 应用程序
+## 無法推送 Meteor 應用程式
 {: #ts_meteor}
 
-如果未正确指定 buildpack，那么可能无法将 Meteor 应用程序推送到 {{site.data.keyword.Bluemix_notm}}。
+如果未正確指定建置套件，您可能無法將 Meteor 應用程式推送至 {{site.data.keyword.Bluemix_notm}}。
 
-将 Meteor 应用程序部署到 {{site.data.keyword.Bluemix_notm}} 时，您可能会看到错误消息：`应用程序未能编译打包，因此没有要显示的实例。`
+當您將 Meteor 應用程式部署至 {{site.data.keyword.Bluemix_notm}} 時，可能會看到此錯誤訊息：`無法編譯打包應用程式，因此沒有可顯示的實例。`
 {: tsSymptoms}
 
-发生此问题的原因是没有可用于 Meteor 应用程序的内置 buildpack。必须使用定制 buildpack。
+此問題的發生原因是未針對 Meteor 應用程式提供內建的建置套件。您必須使用自訂建置套件。
 {: tsCauses}
 
-要对 Meteor 应用程序使用定制 buildpack，请使用以下其中一种方法：
+若要針對 Meteor 應用程式使用自訂建置套件，請使用下列其中一種方法：
 {: tsResolve}
 
-  * 如果使用 `manifest.yml` 文件来部署应用程序，请使用 buildpack 选项来指定定制 buildpack 的 URL 或名称。例如：
+  * 如果您使用 `manifest.yml` 檔案來部署應用程式，請使用 buildpack 選項指定自訂建置套件的 URL 或名稱。例如：
   ```
-buildpack: https://github.com/Sing-Li/bluemix-bp-meteor 
+  buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```
-  * 如果从命令提示符部署应用程序，请使用 `cf push` 命令并通过 **-b** 选项来指定定制 buildpack。例如：
+  * 如果您從命令提示字元部署應用程式，請使用 `cf push` 指令，並使用 **-b** 選項指定自訂建置套件。例如：
     ```
-	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor 
+	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```
