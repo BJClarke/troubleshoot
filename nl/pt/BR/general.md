@@ -16,27 +16,37 @@ lastupdated: "2016-08-12"
 {:shortdesc: .shortdesc}
 
 
-# 一般服务问题
+# Problemas gerais de serviços
 {: #general}
 
 
-{{site.data.keyword.Bluemix}} 服务问题可能包括：删除服务实例时发生网关超时错误。然而，在许多情况下，只需执行几个简单的步骤即可解决这些问题。
+Problemas de serviços do {{site.data.keyword.Bluemix}}
+podem incluir um erro de tempo limite do gateway que ocorre quando você
+exclui uma instância de serviço. No entanto, em vários casos, é possível recuperar-se desses
+problemas seguindo algumas etapas simples.
 {:shortdesc}
 
-## 删除服务实例时服务代理程序发生错误
+## Ocorre um erro de broker de serviço ao excluir uma instância de serviço
 {: #ts_service_broker}
 
-当您尝试删除已从云控制器删除的服务实例时，可能会收到错误消息。
+Você poderá receber uma mensagem de erro quando tentar excluir
+uma instância de serviço que já foi excluída do controlador de nuvem.
 {:shortdesc}
 
 
-尝试删除服务实例时，看到服务代理程序错误消息：`网关超时`。
+Quando você tenta excluir uma instância de serviço, vê a mensagem de erro do broker de serviço, `Tempo limite do gateway`.
 {: tsSymptoms}
 
 
-如果已从云控制器删除服务实例，那么会发生此问题。
+Esse problema ocorrerá se
+    a instância de serviço já tiver sido excluída do
+controlador de nuvem.
 {: tsCauses}
 
 
-要解决此问题，请使用相同服务名称创建服务实例，然后将其绑定到您的应用程序。此后，您可以删除服务实例和使用该服务的应用程序。   
+Para
+    resolver esse problema, crie uma instância de serviço com o mesmo
+nome de serviço e depois ligue-o aos seus aplicativos. Depois disso,
+será possível excluir a instância de serviço e os aplicativos que usam
+    o serviço.   
 {: tsResolve}

@@ -16,268 +16,293 @@ lastupdated: "2017-08-10"
 
 
 
-# 有关访问 {{site.data.keyword.Bluemix_notm}} 的故障诊断 
+# Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}} 
 {: #accessing}
 
 
-访问 {{site.data.keyword.Bluemix}} 的一般性问题可能包括登录到 {{site.data.keyword.Bluemix_notm}} 有问题或帐户处于暂挂状态。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
+Problemas gerais ao acessar o {{site.data.keyword.Bluemix}} podem incluir dificuldades em efetuar login no {{site.data.keyword.Bluemix_notm}} ou em uma conta que está em um estado pendente. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples. 
 {:shortdesc}
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：密码不正确
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: senha incorreta
 {: #ts_logintobm}
 
-您必须具有与 IBM 标识关联的有效密码才能登录到 {{site.data.keyword.Bluemix_notm}} 控制台。
+Deve-se ter uma senha válida que esteja associada a seu IBMid para efetuar login no console do {{site.data.keyword.Bluemix_notm}}.
 
-您必须具有与 IBM 标识或 SoftLayer 标识关联的有效密码才能通过[客户门户网站](https://control.softlayer.com)登录。
+Deve-se ter uma senha válida que esteja associada a seu IBMid ou ID do SoftLayer para efetuar login por meio do [Portal do cliente](https://control.softlayer.com).
 
-尝试登录到 {{site.data.keyword.Bluemix_notm}} 时，显示了以下错误消息：
+Ao tentar efetuar login no {{site.data.keyword.Bluemix_notm}}, a mensagem de erro a seguir será exibida: 
 {: tsSymptoms} 
 
-`输入的密码不正确。`
+`A senha inserida não está correta.`
 
-用于登录到 {{site.data.keyword.Bluemix_notm}} 的 IBM 标识和密码无效。
+O IBMid e a senha que são usados para efetuar login no {{site.data.keyword.Bluemix_notm}} não são válidos.
 {: tsCauses} 
  
-使用以下其中一种解决方案：
+Use uma das soluções a seguir:
 {: tsResolve}
- * 输入正确的密码。要检查 IBM 标识和密码是否有效，可以转至“我的 IBM 个人档案”页面，单击**登录**，并在“登录”页面中输入 IBM 标识和密码。 
- * 如果忘记密码，请单击**忘记密码**以重置密码。然后，返回到 [Bluemix 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)并重新登录。
- * 如果忘记 IBM 标识或密码问题仍未解决，请联系全球 IBM 注册帮助台来获取帮助。 
- * 要获取有效的 IBM 标识和密码，请转至“我的 IBM 个人档案”页面，然后单击**注册**。
+ * Digite a senha correta. Para verificar se seu IBMid e senha são válidos, é possível acessar a página Meu perfil IBM, clicar em **Efetuar login** e inserir seu IBMid e senha na página Efetuar login. 
+ * Caso tenha esquecido sua senha, clique em **Esqueceu sua senha** para reconfigurar sua senha. Em seguida, retorne para o [console do Bluemix](https://console.{DomainName}) ou para o [Portal do cliente](https://control.softlayer.com) e efetue login novamente.
+ * Caso tenha esquecido seu IBMid ou continue tendo problemas com a senha, entre em contato com o Help desk de registro IBM mundial para obter ajuda. 
+ * Para obter um IBMid e uma senha válidos, acesse a página Meu perfil IBM e, em seguida, clique em **Registrar**.
   
-**注：**如果您位于“登录到 IBM”页面上，并且登录过程出于任何原因（例如，重置密码）而中断，请返回到 [Bluemix 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)，然后重新启动登录过程。
+**Nota:** se você estiver na página Conectar à IBM e o processo de login for interrompido por algum motivo (por exemplo, reconfiguração de senha), retorne para o [console do Bluemix](https://console.{DomainName}) ou para o [Portal do cliente](https://control.softlayer.com) e inicie o processo de login novamente.
  
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：登录凭证无效
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: credenciais de login inválidas
 {: #ts_login_invalid_credentials}
 
-使用 IBM 标识登录时，显示了以下消息：
+Ao efetuar login usando seu IBMid, a mensagem a seguir é exibida:
 {: tsSymptoms}
 
-`提供的登录凭证无效。如果您有与帐户关联的 IBM 标识，请在此登录` 
+`Credenciais de login inválidas fornecidas. Se você tiver um IBMid associado à sua conta, efetue login aqui` 
 
-* 您已切换到 IBM 标识，但尝试了使用先前的 SoftLayer 用户名和密码通过[客户门户网站](https://control.softlayer.com)登录。
+* Você alternou para um IBMid, mas tentou efetuar login por meio do [Portal do cliente](https://control.softlayer.com) usando seu nome de usuário e senha anteriores do SoftLayer. 
 {: tsCauses}
 
-* 您尝试了通过[客户门户网站](https://control.softlayer.com)登录，但在“用户名”和“密码”字段中输入的是 IBM 标识和密码。 
+* Você tentou efetuar login por meio do [Portal do cliente](https://control.softlayer.com), mas inseriu seu IBMid e senha nos campos Nome de usuário e Senha. 
 
-单击消息中的**在此登录**，或转至“IBM 标识帐户登录”部分并单击**使用 IBM 标识登录**。
+Clique em **efetuar login aqui** na mensagem ou acesse a seção Login da conta IBMid e clique em **Efetuar login com o IBMid**.
 {: tsResolve}
 
-不要使用用于先前 SoftLayer 标识的**用户名**和**密码**字段。
+Não use os campos **Nome do usuário** e **Senha** que foram usados com o ID anterior do Softlayer.
 
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：无法识别 IBM 标识或电子邮件
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: IBMid ou e-mail não reconhecido
 {: #ts_softlayer_username}
 
-登录到 {{site.data.keyword.Bluemix_notm}} 控制台时，显示了以下消息：
+Ao efetuar login no console do {{site.data.keyword.Bluemix_notm}}, a mensagem a seguir será exibida: 
 {: tsSymptoms} 
 
-`无法识别此 IBM 标识或电子邮件。`
+`Nós não reconhecemos este IBMid ou e-mail. `
 
-您尝试了登录到 {{site.data.keyword.Bluemix_notm}} 控制台，但未使用有效的 IBM 标识。例如，未输入 IBM 标识的标准电子邮件地址，或者尝试使用的是 SoftLayer 用户名和密码。
+Você tentou efetuar login no console do {{site.data.keyword.Bluemix_notm}}, mas não usou um IBMid válido. Por exemplo, você não inseriu um endereço de e-mail completo para o IBMid ou tentou usar um nome de usuário e uma senha do SoftLayer.
 {: tsCauses}
  
-您必须具有有效的 IBM 标识和密码才能登录到 {{site.data.keyword.Bluemix_notm}}。
+Deve-se ter um ID IBM e uma senha válidos para efetuar login no
+{{site.data.keyword.Bluemix_notm}}.
 
- * 确保输入 IBM 标识的标准电子邮件地址。
+ * Assegure-se de inserir um endereço de e-mail completo para o IBMid.
  {: tsResolve}
- * 如果您是使用 SoftLayer 标识的 SoftLayer 用户，那么必须切换到客户门户网站以在您有权访问的每个帐户内进行 IBM 标识认证，然后才能使用 IBM 标识认证进行登录。有关更多信息，请参阅[切换到 IBM 标识](/docs/admin/softlayerlink.html#ibmid_switch)。
+ * No caso de um usuário do SoftLayer com um ID do SoftLayer, deve-se alternar para a autenticação do IBMid no Portal do cliente em cada conta à qual tiver acesso antes de ser possível efetuar login usando a autenticação do IBMid. 
+ Para obter mais informações, veja [Alternando para o IBMid](/docs/admin/softlayerlink.html#ibmid_switch).
 
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：IBM 标识与任何 IBM Cloud 帐户都不关联
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: o IBMid não está associado a nenhuma conta do IBM Cloud
 {: #ts_login_noswitch}
 
-使用 IBM 标识登录时，显示了以下消息：
+Ao efetuar login usando seu IBMid, a mensagem a seguir é exibida:
 {: tsSymptoms}
 
-`由于认证成功，您已位于此页面中，但是此 IBM 标识未与任何 IBM Cloud 帐户关联。如果您认为这是错误，请联系帐户所有者或主用户。`
+`You have reached this page because your authentication was successful, however, this IBMid is not associated with any IBM Cloud accounts. If you believe this to be in error, contact your Account Owner or Master User.`
 
-您已使用有效的 IBM 标识通过[客户门户网站](https://control.softlayer.com)登录，但未在 SoftLayer 中切换到 IBM 标识认证。
+Você efetuou login por meio do [Portal do cliente](https://control.softlayer.com) com um IBMid válido, mas não alternou para a autenticação do IBMid no SoftLayer.
 {: tsCauses} 
  
-根据需要，完成以下检查：
+Conclua as verificações a seguir, conforme apropriado:
 {: tsResolve}
- * 联系主用户或帐户管理员来检查是否支持您切换到 IBM 标识认证。
- * 确保在 SoftLayer 帐户中完成“切换到 IBM 标识”步骤。请参阅[切换到 IBM 标识](/docs/admin/softlayerlink.html#ibmid_switch)。
- * 确保执行**将 SoftLayer 用户与 IBM 标识相关联**电子邮件中的操作。检查收件箱和垃圾邮件文件夹中是否有该电子邮件。要再次获取此电子邮件（例如，如果电子邮件已到期），请转至“控制门户网站”中的“编辑用户个人档案”页面，然后单击**重新发送电子邮件**。或者，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。
+ * Entre em contato com o usuário principal ou com o administrador da conta para verificar se você está ativado para alternar para a autenticação do IBMid.
+ * Assegure-se de concluir a etapa Alternar para o IBMid na conta do Softlayer. Veja [Alternando para o IBMid](/docs/admin/softlayerlink.html#ibmid_switch).
+ * Assegure-se de seguir as ações no e-mail **Associar o usuário do SoftLayer a um IBMid**. Verifique o e-mail em sua caixa de entrada e sua pasta de spam. Para obter o e-mail novamente, por exemplo, se ele tiver expirado, acesse a página Editar perfil do usuário no Portal de controle e clique em **Reenviar e-mail**. Como alternativa, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-**注：**如果您是直接使用 IBM 标识创建的 IBM 标识，那么会收到两封需要处理的电子邮件；一封来自 IBM 标识注册，一封来自 SoftLayer。确保执行这两封电子邮件中的操作。
+**Nota:** se tiver criado seu IBMid diretamente com o IBMid, você receberá dois e-mails para processar; um do registro do IBMid e um do Softlayer. Assegure-se de seguir as ações dos dois e-mails.
 
-根据帐户的设置方式，下面的一些登录选项可能适用： 
- * 使用 SoftLayer 标识的 SoftLayer 用户必须通过[客户门户网站](https://control.softlayer.com)登录。
- * 使用 IBM 标识且具有或不具有链接 Bluemix 帐户的 SoftLayer 用户可以通过[客户门户网站](https://control.softlayer.com)登录来打开 SoftLayer 客户门户网站，也可以通过 [Bluemix 控制台](https://console.{DomainName})登录来打开“基础架构”仪表板。 
+Dependendo de como sua conta foi configurada, algumas dessas opções de login podem se aplicar a você: 
+ * Os usuários do SoftLayer com IDs do SoftLayer devem efetuar login por meio do [Portal do Cliente](https://control.softlayer.com).
+ * Os usuários do SoftLayer com um IBMid e com ou sem uma conta do Bluemix vinculada podem efetuar login por meio do [Portal do Cliente](https://control.softlayer.com) para abrir o Portal do Cliente SoftLayer ou por meio do [console do Bluemix](https://console.{DomainName}) para abrir o painel Infraestrutura. 
 
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：IBM 标识与任何 {{site.data.keyword.Bluemix_notm}} 帐户都不关联
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: o IBMid não está associado a nenhuma conta do {{site.data.keyword.Bluemix_notm}}
 {: #ts_unabletologin}
 
-登录到 {{site.data.keyword.Bluemix_notm}} 时，显示了以下消息：
+Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a mensagem a seguir é exibida: 
 {: tsSymptoms} 
  
-`由于认证成功，您已位于此页面中，但是此 IBM 标识未与任何 {{site.data.keyword.Bluemix_notm}} 帐户关联。`
+`You have reached this page because your authentication was successful, however, this IBMid is not associated with any  {{site.data.keyword.Bluemix_notm}} accounts.`
 
-您已使用有效的 IBM 标识通过 [Bluemix 控制台](https://console.{DomainName})登录，但还没有创建 {{site.data.keyword.Bluemix_notm}} 帐户。
+Você efetuou login por meio do [console do Bluemix](https://console.{DomainName}) com um IBMid válido, mas ainda não tem uma conta criada do {{site.data.keyword.Bluemix_notm}}. 
 {: tsCauses} 
 
-要创建 {{site.data.keyword.Bluemix_notm}} 帐户，请执行注册过程。
+Para criar uma conta do {{site.data.keyword.Bluemix_notm}}, siga o processo de inscrição. 
 {: tsResolve}
 
-根据帐户的设置方式，下面的一些登录选项可能适用： 
- * 没有链接 SoftLayer 帐户的 Bluemix 用户必须通过 Bluemix 控制台登录。
- * 具有链接 SoftLayer 帐户的 Bluemix 用户可以通过 [Bluemix 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)登录。
+Dependendo de como sua conta foi configurada, algumas dessas opções de login podem se aplicar a você: 
+ * Os usuários do Bluemix sem uma conta do SoftLayer vinculada devem efetuar login por meio do console do Bluemix.
+ * Os usuários do Bluemix com uma conta do SoftLayer vinculada podem efetuar login por meio do [console do Bluemix](https://console.{DomainName}) ou do [Portal do Cliente](https://control.softlayer.com).
  
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：控制台未打开
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: o console não abre
 {: #ts_login_stalls}
 
-使用 IBM 标识登录时，显示了登录成功消息，但未返回到 [Bluemix 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)。
+Ao efetuar login usando seu IBMid, uma mensagem de êxito de login será exibida, mas você não retornará para o [console do Bluemix](https://console.{DomainName}) ou para o [Portal do cliente](https://control.softlayer.com).
 {: tsSymptoms}
 
-使用以下其中一种解决方案：
+Use uma das soluções a seguir:
 {: tsResolve}
- * 关闭浏览器，清除高速缓存和 cookie，然后重试登录。
- * 确保是通过 [Bluemix 控制台](https://console.{DomainName})或[客户门户网站](https://control.softlayer.com)登录的，而不是直接从 IBM 标识认证服务进行登录。
+ * Feche seu navegador, limpe o cache e os cookies e, em seguida, tente efetuar login novamente.
+ * Assegure-se de efetuar login por meio do [console do Bluemix](https://console.{DomainName}) ou do [Portal do cliente](https://control.softlayer.com), em vez de diretamente do serviço de autenticação do IBMid.
  
  
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：IBM 标识登录未完成
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: o login do IBMid não é concluído
 {: #ts_login_ibmid}
 
-登录到 {{site.data.keyword.Bluemix_notm}} 时，使用 IBM 标识认证未完成。
+Ao efetuar login no {{site.data.keyword.Bluemix_notm}}, a autenticação com o IBMid não é concluída.
 {: tsSymptoms}
 
-IBM 标识认证服务可能发生问题。
+Pode haver um problema com o serviço de autenticação do IBMid.
 {: tsCauses}
 
-在 [IBM IBMid![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} 上检查该服务的状态，然后重试。
+Verifique o status do serviço em [IBMid da IBM ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} e, em seguida, tente novamente.
 {: tsResolve}
 
 
-## 无法登录到 {{site.data.keyword.Bluemix_notm}}：帐户暂挂
+## Não é possível efetuar login no {{site.data.keyword.Bluemix_notm}}: a conta está pendente
 {: #ts_accntpding}
 
-如果帐户暂挂，那么无法登录到 {{site.data.keyword.Bluemix_notm}}。
+Se a sua conta estiver pendente, não será possível efetuar login no {{site.data.keyword.Bluemix_notm}}.
  
-在注册 {{site.data.keyword.Bluemix_notm}} 试用帐户后，可能无法登录到 {{site.data.keyword.Bluemix_notm}}。将显示以下消息：
+Depois de registrar em uma conta de avaliação do {{site.data.keyword.Bluemix_notm}},
+talvez você não possa efetuar login no {{site.data.keyword.Bluemix_notm}}. É exibida a seguinte mensagem:
 {: tsSymptoms}
 
-<code>帐户暂挂。请等待最多 24 小时以获取电子邮件确认并请检查垃圾邮件文件夹。如果仍未收到确认电子邮件，请联系 <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Bluemix 支持</a>。</code>
+<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por email e verifique também sua pasta de spam. Se você ainda não tiver recebido sua confirmação por e-mail, entre em contato com o <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Suporte do Bluemix</a>.</code>
 
-在注册 {{site.data.keyword.Bluemix_notm}} 试用帐户后，您将收到确认电子邮件。必须单击确认电子邮件中的链接以完成注册过程。
+Depois de registrar em uma conta de avaliação do {{site.data.keyword.Bluemix_notm}},
+você receberá um email de confirmação. Deve-se clicar no link
+que está no email de confirmação para concluir o processo de registro.
 {: tsCauses} 
 
-确认电子邮件将发送到提供的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果尚未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。  
+O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 
-## 您有未保存的更改
+## Você possui mudanças não salvas
 {: #ts_unsaved_changes}
 
-在应用程序详细信息页面上进行浏览时，可能无法执行任何操作，系统可能会提示您保存更改后才能继续。 
+Ao navegar na página de detalhes do app, talvez não seja possível executar quaisquer ações e você pode ser solicitado a salvar as mudanças para que possa continuar. 
 
-在应用程序详细信息页面上尝试检查应用程序或服务时，总是提示以下错误消息：
+Ao tentar verificar seu app ou serviços na página de detalhes do app, você continua obtendo a mensagem de erro a seguir:
 {: tsSymptoms} 
 
-`您在页面 app_name 中有未保存的更改。请保存或取消这些更改。`
+`Você possui mudanças não salvas na página app_name. Salve ou cancele as mudanças.`
 
-在运行时窗格中的**实例**或**内存配额**字段上滚动鼠标时，值会更改。这是故意这样设计的；但是，当您要离开该页面时，会有错误消息提示您保存内存或实例设置。
+Ao rolar o seu mouse sobre o campo **INSTÂNCIAS** ou **COTA DE MEMÓRIA** na área de janela de tempo de execução, os valores mudam. Esse comportamento é por design; no entanto, a mensagem de erro solicita que você salve a memória ou as configurações da instância antes de navegar para fora da página. 
 {: tsCauses}
 
-关闭消息窗口，然后单击运行时窗格中的**重置**按钮。
+Feche a janela da mensagem e, em seguida, clique no botão **RECONFIGURAR** na área de janela de tempo de execução. 
 {: tsResolve} 
   
     
-## {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移不可用
+## O failover automático entre regiões do {{site.data.keyword.Bluemix_notm}} não está disponível
 {: #ts_failover}
 
-无法使用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。但可以使用支持多个 IP 地址间故障转移的 DNS 提供程序来作为变通方法。
+Não é possível usar failover automático entre regiões do {{site.data.keyword.Bluemix_notm}}. No entanto, é possível usar um provedor de DNS que suporte failover entre vários
+endereços IP como solução alternativa.
 
-当某个 {{site.data.keyword.Bluemix_notm}} 区域变为不可用时，在该区域运行的应用程序也不可用，即使在另一个 {{site.data.keyword.Bluemix_notm}} 区域中有相同的应用程序正在运行，也是如此。
+Quando um região do {{site.data.keyword.Bluemix_notm}} se torna indisponível, os apps em execução nessa região também ficam indisponíveis, ainda que os mesmos apps estejam em execução em outra região do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
  
-{{site.data.keyword.Bluemix_notm}} 尚不提供从一个区域到另一个区域的自动故障转移。
+O {{site.data.keyword.Bluemix_notm}} ainda não fornece failover automático de uma região para outra.
 {: tsCauses}
  
-您可以使用支持多个 IP 地址间智能故障转移的 DNS 提供程序，并手动配置 DNS 设置，以启用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。具有此功能的 DNS 提供程序包括 NSONE、Akamai 和 Dyn。
+É possível usar um provedor de DNS que suporte failover inteligente entre vários endereços de IDs e configurar manualmente as definições de DNS para ativar o failover automático entre regiões do {{site.data.keyword.Bluemix_notm}}. Os provedores de DNS com essa capacidade incluem NSONE, Akamai, Dyn.
 {: tsResolve}
 
-配置 DNS 设置时，必须指定应用程序运行所在 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址。要获取 {{site.data.keyword.Bluemix_notm}} 区域的公共 IP 地址，请使用 `nslookup` 命令。例如，可以在命令行窗口中输入以下命令：
+Ao configurar suas definições de DNS, deve-se especificar os endereços IP públicos das regiões do {{site.data.keyword.Bluemix_notm}} em que seu apps estão em execução. Para obter o endereço IP público
+de uma região do {{site.data.keyword.Bluemix_notm}},
+use o comando `nslookup`. Por exemplo, é possível
+digitar o comando a seguir em uma janela de linha de comandos:
 ```
 nslookup stage1.mybluemix.net
 ```
 
-## 无法向组织添加用户
+## Não é possível incluir usuários em uma organização
 {: #ts_adduser}
 
-您可以邀请多个用户在同一组织下工作。只有帐户所有者或组织管理员兼组织成员，才能邀请用户加入组织。
+É possível convidar mais de um usuário para trabalhar sob a mesma organização. É possível convidar os usuários para a sua organização
+somente se você for o proprietário da conta ou se for ambos, um gerente
+e um membro da organização.
  
-在**管理组织**部分中看不到**邀请新用户**链接。
+Não é possível ver o link **Convidar um novo usuário** na seção **Gerenciar organizações**. 
 {: tsSymptoms}
 
-只有以下 {{site.data.keyword.Bluemix_notm}} 用户才能邀请用户加入组织：
+Somente os usuários {{site.data.keyword.Bluemix_notm}} a seguir
+podem convidar usuários para uma organização:
 {: tsCauses}
-  * 组织的帐户所有者
-  * 组织管理员兼组织成员，而不是组织的合作者
+  * O proprietário da conta da organização
+  * Os gerenciadores de organização que também são membros, não colaboradores, da organização
   
-在 {{site.data.keyword.Bluemix_notm}} 中，您可以是组织的成员，也可以是组织的合作者：
+No
+{{site.data.keyword.Bluemix_notm}}, é possível ser um membro ou um colaborador de uma organização:
 
-<dl><dt>合作者</dt>
-<dd>如果您已有 {{site.data.keyword.Bluemix_notm}} 帐户，并且有其他人邀请您加入组织，那么您就是组织的合作者。</dd>
-<dt>成员</dt>
-<dd>如果您没有 {{site.data.keyword.Bluemix_notm}} 帐户，但有人邀请您加入组织，并且您通过邀请注册了 {{site.data.keyword.Bluemix_notm}}，那么您就是组织的成员。</dd>
+<dl><dt>Colaborador</dt>
+<dd>Você é um colaborador de uma organização, se já tiver uma conta
+{{site.data.keyword.Bluemix_notm}} e alguém
+convidá-lo para a organização.</dd>
+<dt>Membro</dt>
+<dd>Você é um membro de uma organização, se não tiver uma conta {{site.data.keyword.Bluemix_notm}}, mas então
+alguém convidá-lo para a organização e você se inscrever para {{site.data.keyword.Bluemix_notm}} a partir do convite.</dd>
 </dl>
 
-如果您是组织的合作者，即使被指定为组织管理员，也不能邀请用户加入组织。
+Não será possível convidar usuários para a sua organização, se você for um colaborador da organização, mesmo se tiver sido designado como um gerenciador da organização.
 
-**注：**所有组织管理员（包括组织的合作者）都可以添加、修改和除去组织中的已有用户。
+**Nota:** Todos os gerenciadores de organização, incluindo aqueles que são colaboradores de uma organização, podem incluir, modificar e remover os usuários que já estão na organização.
 
-如果无法邀请用户加入组织，并需要其他角色来完成此操作，请联系组织管理员来更改您的角色。要识别组织管理员，请完成以下步骤：
+Se não puder convidar usuários para sua organização e precisar de uma função diferente para fazer isso, entre em contato com o gerenciador de sua organização para mudar sua função. Para identificar o gerente da organização, conclua as
+etapas a seguir:
 {: tsResolve}
 
-  1. 转至 {{site.data.keyword.Bluemix_notm}}“仪表板”。在菜单栏中，单击**帐户**菜单项，然后单击**管理组织**。
-  2. 转至您的组织，并查看**用户**选项卡上的组织管理员信息。  
+  1. Acesse o Painel do {{site.data.keyword.Bluemix_notm}}. Na barra de menus, clique no item de menu **Conta** e clique em **Gerenciar organizações**.
+  2. Acesse sua organização e visualize as informações sobre o gerente da organização na guia **USUÁRIOS**.  
   
-如果您由于是合作者（并非成员）而无法邀请用户，那么您必须删除您先前的 {{site.data.keyword.Bluemix_notm}} 帐户，然后受邀以组织成员身份加入该帐户。要删除您先前的帐户并以成员身份加入帐户，请完成以下步骤： 
+Se não puder convidar usuários porque é um colaborador e não um membro, sua conta anterior do {{site.data.keyword.Bluemix_notm}} deverá ser excluída e você convidado para se associar à conta, em seguida, como um membro da organização. Para excluir sua conta anterior e se associar à conta como um membro,
+conclua as etapas a seguir: 
 
-  1. 联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport){: new_window}，以开具一个支持凭单，请求删除您的帐户。如果存在与旧帐户相关联的数据并且想要将其保存并移动到新帐户，请在您的电子邮件中包含此信息。 
-  2. 在您的帐户被删除后，让具有组织管理员角色的用户以组织管理员身份邀请您加入组织。然后，通过邀请注册 {{site.data.keyword.Bluemix_notm}}。 
+  1. Entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport){: new_window} para abrir um chamado de suporte e solicitar que sua conta seja excluída. Se houver dados associados
+à sua conta antiga que você deseja salvar e mover para a nova conta,
+inclua essas informações em seu email. 
+  2. Após sua conta ser excluída, peça a um usuário com a função de gerenciador
+de organização para convidá-lo para a organização como um gerenciador de organização. Em seguida, inscreva-se no {{site.data.keyword.Bluemix_notm}} a partir do convite. 
 
-## 不支持用户批量注册
+## O registro em lote de usuários não é suportado
 {: #ts_batchregistration}
 
-在对 {{site.data.keyword.Bluemix_notm}} 注册用户时，必须单独注册每个用户。
+Ao
+registrar usuários para {{site.data.keyword.Bluemix_notm}},
+deve-se registrar cada usuário individualmente.
 
-{{site.data.keyword.Bluemix_notm}} 不提供同时注册多个用户的功能。
+O {{site.data.keyword.Bluemix_notm}} não fornece a capacidade para registrar múltiplos usuários ao mesmo tempo.
 {: tsSymptoms}
  
-{{site.data.keyword.Bluemix_notm}} 不支持用户批量注册。要对 {{site.data.keyword.Bluemix_notm}} 注册用户，必须单独注册每个用户。
+O {{site.data.keyword.Bluemix_notm}} não suporta registro de lote de usuários. Para registrar usuários para o {{site.data.keyword.Bluemix_notm}},
+deve-se registrar cada usuário individualmente.
 {: tsCauses}
  
-要对 {{site.data.keyword.Bluemix_notm}} 注册多个用户，请为每个用户完成以下步骤：
+Para registrar múltiplos usuários para o {{site.data.keyword.Bluemix_notm}}, conclua as etapas a seguir para cada usuário:
 {: tsResolve}
 
-  1. 在 {{site.data.keyword.Bluemix_notm}} 控制台中单击**注册**。
-  2. 按照向导的提示完成每个步骤。
+  1. Clique em **INSCREVER-SE** no console do {{site.data.keyword.Bluemix_notm}}.
+  2. Conclua as etapas seguindo o assistente.
     
 
-## 无法装入 {{site.data.keyword.Bluemix_notm}} 页面
+## A página do {{site.data.keyword.Bluemix_notm}} não pode ser carregada
 {: #ts_err}
 
-在使用 {{site.data.keyword.Bluemix_notm}} 控制台时，您可能无法装入 {{site.data.keyword.Bluemix_notm}} 页面。相反，您可能会看到错误消息 BXNUI0001E 或 BXNUI0016E。
+Ao usar o console do {{site.data.keyword.Bluemix_notm}}, você pode não ser capaz de carregar uma página do {{site.data.keyword.Bluemix_notm}}. Em vez disso, talvez você veja as mensagens de erro BXNUI0001E ou BXNUI0016E.
  
-在使用 {{site.data.keyword.Bluemix_notm}} 控制台时，您可能会看到以下其中一条错误消息：
+É possível ver uma das mensagens de erro a seguir ao usar o console do {{site.data.keyword.Bluemix_notm}}:
 {: tsSymptoms}
 
-`BXNUI0001E: 未装入页面，因为 Bluemix 未检测到是否存在会话。`
+`BXNUI0001E: A página não foi carregada, pois o Bluemix não detectou se existe uma sessão.`
 
-`BXNUI0016E: 未检索到应用程序和服务，因为未装入 Bluemix 页面。`
+`BXNUI0016E: Os apps e serviços não foram recuperados, pois uma página do Bluemix não foi carregada.`
 
-根据需要完成以下一个或多个操作：
+Conclua uma ou mais das ações a seguir, conforme necessário:
 {: tsResolve}
 
-  * 刷新或重新启动浏览器。
-  * 注销 {{site.data.keyword.Bluemix_notm}}，并重新登录。
-  * 使用浏览器的隐私浏览模式。 
-  * 清除浏览器的 cookie 和高速缓存。
-  * 使用其他浏览器。有关 {{site.data.keyword.Bluemix_notm}} 支持的浏览器版本的信息，请参阅 [Bluemix 先决条件](/docs/overview/whatisbluemix.html#prereqs)。
-  * 如果安装了 cf 命令行界面，请输入 `cf apps` 命令以查看应用程序是否正在运行。
+  * Atualizar ou reiniciar seu navegador.
+  * Efetuar logout do {{site.data.keyword.Bluemix_notm}} e
+efetuar login novamente.
+  * Usar o modo de navegação privada do seu navegador. 
+  * Limpar os cookies e o cache do navegador.
+  * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores que são suportados pelo {{site.data.keyword.Bluemix_notm}}, veja [Pré-requisitos do Bluemix](/docs/overview/whatisbluemix.html#prereqs).
+  * Se você tiver instalado a interface de linha de comandos cf, insira o comando `cf apps` para ver se seu app está em execução.
