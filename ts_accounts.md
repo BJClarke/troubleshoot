@@ -24,25 +24,25 @@ General problems with managing your account might include different apps share t
 ## Unable to access a different {{site.data.keyword.Bluemix_notm}} region
 {: #nosecondreg}
 
-An error message is received when you try to create a new {{site.data.keyword.Bluemix_notm}} region. 
+An error message is displayed when you try to create a new {{site.data.keyword.Bluemix_notm}} region. 
 {: tsSymptoms}
 
-This is likely because you are using a Standard account, which supports development in one public region only. You select the {{site.data.keyword.Bluemix_notm}} public region in which you want to work when the account is first set up. 
+This is likely because you are using a Lite account, which supports development in one public region only. You select the {{site.data.keyword.Bluemix_notm}} public region in which you want to work when the account is first set up. 
 {: tsCauses}
 
-If you have a Standard account, you can upgrade to a billable account to access additional regions. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check if you have a Standard account.
+If you have a Lite account, you can upgrade to a billable account to access additional regions. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check to see if you have a Lite account.
 {: tsResolve}
 
 ## Unable to create new organization
 {: #nosecondorg}
  
-An error message is received when you try to create a new organization. 
+An error message is displayed when you try to create a new organization. 
 {: tsSymptoms}
 
-This is likely because you are using a Standard account, which supports development in one organization only. You create the organization when your account is first set up. 
+This is likely because you are using a Lite account, which supports development in one organization only. You create the organization when your account is first set up. 
 {: tsCauses}
 
-If you have a Standard account, you can upgrade to a billable account to access additional organizations. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check if you have a Standard account.
+If you have a Standard account, you can upgrade to a billable account to access additional organizations. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**. On the **Billing** page, you can also check to see if you have a Lite account.
 {: tsResolve}
 
 ## Unable to create new Lite plan instance
@@ -59,21 +59,21 @@ There is a limit of one instance per Lite plan instance to allow us to keep thes
 You can create additional instances of the service by selecting one of the billable service plans, which are available in the billable accounts. To upgrade to a billable account from the console, go to the **Manage > Billing and Usage > Billing** page, and click **Add Credit Card**.
 {: tsResolve}
 
-If you do not want to upgrade from a Standard account and are no longer using your existing Lite service instance, you can delete the exisiting Lite plan instance from the Services dashboard and then create a new instance. 
+If you do not want to upgrade from a Lite account and are no longer using your existing Lite service instance, you can delete the existing Lite plan instance from the Services dashboard and then create a new instance. 
 
 ## Exceeded the runtime memory allowance
 {: #noruntimemem}
 
-You are unable to deploy apps and get an error stating that you have exceeded your organization's memory limit.
+You can't deploy apps and get an error stating that you have exceeded your organization's memory limit.
 {: tsSymptoms}
 
-In a Standard account your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there is a 2GB memory limit.
+In a Lite account your Cloud Foundry apps can use up to 256 MB of instantaneous runtime memory. In billable accounts, there is a 2GB memory limit.
 {: tsCauses}
 
-If you are using a Standard account, you can get additional memory by upgrading to a billable account. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**.
+If you are using a Lite account, you can get additional memory by upgrading to a billable account. Go to the **Manage > Billing and Usage > Billing** page in the console, and click **Add Credit Card**.
 {: tsResolve}
 
-If you do not want to upgrade from a Standard account but have some idle apps, you can delete the idle apps to free up some runtime memory. 
+If you do not want to upgrade from a Lite account but have some idle apps, you can delete them to free up some runtime memory. 
 
 ## Account is inactive
 {: #ts_accnt_inactive}
