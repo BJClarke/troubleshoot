@@ -19,8 +19,8 @@ If you experience problems with {{site.data.keyword.Bluemix}}, you can use this 
 
 Log in to the {{site.data.keyword.Bluemix_notm}} console:
 * To view the status of the running services and runtimes, click **Support > Status** in the menu bar.
-* To view notifications, click **Manage** > **Account** > **Platform Notifications** in the menu bar.
 * To search the documentation and Stack Overflow or developerWorks (dW) Answers forums for answers, manage tickets, or to contact Support from the Support Center, click **Support** > **Support Center** in the menu bar.
+* To ensure that you have email notifications setup for planned maintenance and incidents, click **Manage** > **Account** > **Platform Notifications** in the menu bar.
 
 If you have a linked account, an account that is linked between Platform as a Service (PaaS) and Infrastructure as a Service (IaaS) services, log in to the {{site.data.keyword.Bluemix_notm}} console:
 * To view the status of the running services and runtimes, click the **{{site.data.keyword.Bluemix_notm}} Apps** link.
