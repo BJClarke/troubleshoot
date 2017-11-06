@@ -25,7 +25,7 @@ lastupdated: "2017-11-02"
 ## Linked accounts cannot add or edit support tickets
 {: #ts_service_broker}
 
-If you have a linked account, you might not be able to add or edit {{{site.data.keyword.Bluemix_notm}} support tickets.
+If you have a linked account, you might not be able to add or edit {{site.data.keyword.Bluemix_notm}} support tickets.
 {:shortdesc}
 
 You are unable to create or edit support tickets in {{site.data.keyword.Bluemix_notm}}.
