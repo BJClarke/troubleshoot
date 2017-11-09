@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-11-09"
+lastupdated: "2017-04-10"
 
 ---
 
@@ -16,8 +16,11 @@ lastupdated: "2017-11-09"
 
 
 
+
+
 # 管理應用程式疑難排解
 {: #managingapps}
+
 
 管理應用程式的一般問題，可能包括無法更新應用程式，或是未顯示雙位元組字元。在許多情況下，您可以遵照一些簡單的步驟，從這些問題回復。
 {:shortdesc}
@@ -429,6 +432,31 @@ cf push appname -p app_path
 當您從 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 推送應用程式至 {{site.data.keyword.Bluemix_notm}} 時，請在「應用程式」精靈的「應用程式詳細資料」頁面中，選取**儲存至資訊清單檔**勾選框。然後，您在精靈中指定的變數便會儲存到應用程式的資訊清單檔。下次開啟精靈時，會自動顯示變數。
 {: tsResolve}
 
+<!-- begin STAGING ONLY -->
+
+## 未從指令行啟動 Bluemix Live Sync 的「除錯」
+{: #ts_no_debug}
+
+您已使用指令行來啟用應用程式的 IBM Bluemix Live Sync 的「除錯」特性，但無法存取「除錯」介面。  
+
+您已設定 **BLUEMIX_APP_MGMT_ENABLE** 環境變數來啟用應用程式的「除錯」特性。不過，您無法在 `app_url/bluemix-debug/manage` 存取「除錯」使用者介面。
+{: tsSymptoms}
+
+在下列情況下，無法啟用「除錯」特性：
+{: tsCauses}
+
+  * `manifest.yml` 包含 command 屬性時
+  * 當您使用 **-c** 選項來將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 時
+
+請使用下列其中一個選項來解決問題：
+{: tsResolve}
+
+  * 建議的作法是使用 IBM Node.js 建置套件來啟動應用程式。如需相關資訊，請參閱[將 Node.js 應用程式部署至 {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime) 主題的「啟動指令」小節。
+  * 將 `manifest.yml` 中的 command 屬性修訂為 command: null 或編輯 push 指令以包含 `-c null`，來停用現有應用程式的指令。
+  * 從 `manifest.yml` 移除 **command** 屬性。然後，從 {{site.data.keyword.Bluemix_notm}} 刪除現行應用程式，並重新推送應用程式。
+
+<!-- end STAGING ONLY -->  
+
 
 ## 在 Bluemix 上找不到組織
 {: #ts_orgs}
@@ -477,7 +505,7 @@ cf api https://api.eu-gb.bluemix.net
 
   * 如果您使用 `manifest.yml` 檔案來部署應用程式，請在 host 選項中指定主機名稱。	 
     ```
-    host: host_name
+    host: host_name	
 	```
   * 如果您從命令提示字元部署應用程式，請搭配使用 `cf push` 指令與 **-n** 選項。
     ```

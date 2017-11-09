@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-11-09"
+lastupdated: "2017-04-10"
 
 ---
 
@@ -13,6 +13,9 @@ lastupdated: "2017-11-09"
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+
+
+
 
 
 # Fehlerbehebung für die Verwaltung von Apps
@@ -431,7 +434,32 @@ Die angegebenen Variablen werden nur gespeichert, wenn Sie sie in der Manifestda
 {: tsCauses}
 
 Wenn Sie eine App aus IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} mit einer Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, wählen Sie das Kontrollkästchen **In Manifestdatei speichern** auf der Seite 'Anwendungsdetails' im Assistenten 'Anwendung' aus. Danach werden die Variablen, die Sie im Assistenten angeben, in der Manifestdatei für die Anwendung gespeichert. Beim nächsten Öffnen des Assistenten werden die Variablen automatisch angezeigt.
-{: tsResolve}  
+{: tsResolve}
+
+<!-- begin STAGING ONLY -->
+
+## Bluemix Live Sync Debug wird über die Befehlszeile nicht gestartet
+{: #ts_no_debug}
+
+Sie haben die IBM Bluemix Live Sync Debug-Funktion für Ihre App über die Befehlszeile aktiviert, aber Sie können nicht auf die Debug-Schnittstelle zugreifen.  
+
+Sie haben die Debug-Funktion für Ihre App aktiviert, indem Sie die Umgebungsvariable **BLUEMIX_APP_MGMT_ENABLE** festgelegt haben. Sie können jedoch nicht auf die Debug-Benutzerschnittstelle unter `app_url/bluemix-debug/manage` zugreifen.
+{: tsSymptoms}
+
+Die Debug-Funktion kann in den folgenden Situationen nicht aktiviert werden:
+{: tsCauses}
+
+  * Wenn die Datei `manifest.yml` das Attribut 'command' enthält.
+  * Wenn Sie die Option **-c** verwenden, um eine App durch eine Push-Operation an {{site.data.keyword.Bluemix_notm}} zu übertragen.
+
+Verwenden Sie eine der folgenden Optionen, um das Problem zu lösen:
+{: tsResolve}
+
+  * Das empfohlene Verfahren besteht darin, das IBM Node.js-Buildpack zum Starten der App zu verwenden. Weitere Informationen finden Sie im Abschnitt zum Startbefehl im Thema über die [Bereitstellung einer Node.js-Anwendung in {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime).
+  * Inaktivieren Sie den Befehl für Ihre vorhandene App, indem Sie das Attribut 'command' in Ihrer Datei `manifest.yml` in 'command: null' ändern oder indem Sie Ihren Push-Befehl bearbeiten, sodass er die Option `-c null` enthält.
+  * Entfernen Sie das Attribut **command** aus der Datei `manifest.yml`. Löschen Sie anschließend die aktuelle App aus {{site.data.keyword.Bluemix_notm}} und stellen Sie sie durch eine Push-Operation erneut bereit.
+
+<!-- end STAGING ONLY -->  
 
 
 ## Organisationen werden in Bluemix nicht gefunden

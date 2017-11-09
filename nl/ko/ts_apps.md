@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-11-09"
+lastupdated: "2017-04-10"
 
 ---
 
@@ -15,8 +15,12 @@ lastupdated: "2017-11-09"
 {:codeblock: .codeblock}
 
 
+
+
+
 # 앱 관리 문제점 해결
 {: #managingapps}
+
 
 앱 관리와 관련된 일반적인 문제점으로는 앱을 업데이트할 수 없거나 2바이트 문자가 표시되지 않는 경우가 있습니다. 대부분 몇 가지 간단한 단계를 수행하여 이러한 문제점에서 복구할 수 있습니다.
 {:shortdesc}
@@ -52,7 +56,7 @@ lastupdated: "2017-11-09"
 여러 IP 주소 간의 지능형 장애 복구를 지원하는 DNS 제공자를 사용하여 {{site.data.keyword.Bluemix_notm}} 지역 간의 자동 장애 복구를 지원하도록 DNS 설정을 수동으로 구성할 수 있습니다. 이 기능이 있는 DNS 제공자에는 NSONE, Akamai, Dyn이 포함됩니다.
 {: tsResolve}
 
-DNS 설정을 구성할 때 앱이 실행 중인 {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 지정해야 합니다. {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 가져오려면 `nslookup` 명령을 사용하십시오. 예를 들어, 명령행 창에 다음 명령을 입력할 수 있습니다.
+DNS 설정을 구성할 때 앱이 실행 중인 {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 지정해야 합니다. {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 가져오려면 `nslookup` 명령을 사용하십시오. 예를 들어, 명령행 창에 다음 명령을 입력할 수 있습니다. 
 ```
 nslookup stage1.mybluemix.net
 ```
@@ -60,7 +64,7 @@ nslookup stage1.mybluemix.net
 ## 앱을 디버그 모드로 전환할 수 없음
 {: #ts_debug}
 
-JVM(Java Virtual Machine)이 버전 8 이하인 경우에는 디버그 모드를 사용하지 못할 수 있습니다.
+JVM(Java Virtual Machine)이 버전 8 이하인 경우에는 디버그 모드를 사용하지 못할 수 있습니다. 
 
 **애플리케이션 디버그 사용**을 선택한 이후, 도구는 해당 앱을 디버그 모드로 전환하려고 시도합니다. 그리고 Eclipse 워크벤치는 디버그 세션을 시작합니다. 도구에서 디버그 모드를 정상적으로 사용하는 경우, 웹 애플리케이션 상태는 `Updating mode`, `Developing` 및 `Debugging`을 표시합니다.
 {: tsSymptoms}
@@ -133,7 +137,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 ## 삭제된 앱의 이름을 재사용할 수 없음
 {: #ts_reuse_appname}
 
-앱을 삭제한 후에는 앱 라우트를 삭제한 후에만 앱 이름을 재사용할 수 있습니다.
+앱을 삭제한 후에는 앱 라우트를 삭제한 후에만 앱 이름을 재사용할 수 있습니다. 
 
 앱 이름을 재사용하려고 하면 다음 메시지가 수신됩니다.
 {: tsSymptoms}
@@ -146,7 +150,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 다음 단계를 수행하여 사용하지 않는 라우트를 삭제하십시오.
 {: tsResolve}
 
-  1. 다음 명령을 입력하여 라우트가 현재 영역에 속하는지 확인하십시오.
+  1. 다음 명령을 입력하여 라우트가 현재 영역에 속하는지 확인하십시오. 
      ```
 	 cf routes
 	 ```
@@ -428,6 +432,32 @@ cf push appname -p app_path
 앱을 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}에서 {{site.data.keyword.Bluemix_notm}}로 푸시하는 경우 애플리케이션 마법사의 애플리케이션 세부사항 페이지에서 **Manifest 파일에 저장** 선택란을 선택하십시오. 그러면 마법사에서 지정한 변수가 애플리케이션의 Manifest 파일에 저장됩니다. 다음에 마법사를 열면 변수가 자동으로 표시됩니다.
 {: tsResolve}
 
+<!-- begin STAGING ONLY -->
+
+## Bluemix Live Sync 디버그가 명령행에서 시작되지 않음
+{: #ts_no_debug}
+
+명령행을 사용하여 앱의 IBM Bluemix Live Sync 디버그 기능을 사용할 수 있지만 디버그 인터페이스에 액세스할 수 없습니다.  
+
+**BLUEMIX_APP_MGMT_ENABLE** 환경 변수를 설정하여 앱의 디버그 기능을 사용으로 설정했습니다. 하지만 `app_url/bluemix-debug/manage`에서 디버그 사용자 인터페이스에 액세스할 수 없습니다.
+{: tsSymptoms}
+
+다음과 같은 상황에서는 디버그 기능을 사용할 수 없습니다.
+{: tsCauses}
+
+  * `manifest.yml`에 명령 속성이 포함된 경우
+  * **-c** 옵션을 사용하여 앱을 {{site.data.keyword.Bluemix_notm}}에 푸시하는 경우
+
+다음 옵션 중 하나를 사용하여 문제를 해결하십시오.
+{: tsResolve}
+
+  * 권장 사례는 IBM Node.js 빌드팩을 사용하여 앱을 시작하는 것입니다. 자세한 정보는 [Node.js 애플리케이션을 {{site.data.keyword.Bluemix_notm}}에 배치](/docs/runtimes/nodejs/index.html#nodejs_runtime) 주제의 시작 명령 절을 참조하십시오.
+  * `manifest.yml`의 명령 속성을 command: null로 수정하거나 `-c null`을 포함하도록 푸시 명령을 편집하여 기존 앱의 명령을 사용 안함으로 설정하십시오. 
+  * **명령** 속성을 `manifest.yml`에서 제거하십시오. 그런 다음 {{site.data.keyword.Bluemix_notm}}에서 현재 앱을 삭제하고 다시 앱을 푸시하십시오. 
+
+<!-- end STAGING ONLY -->  
+
+
 ## Bluemix에서 조직을 찾을 수 없음
 {: #ts_orgs}
 
@@ -475,7 +505,7 @@ Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix
 
   * `manifest.yml` 파일을 사용하여 애플리케이션을 배치하는 경우 host 옵션에 호스트 이름을 지정하십시오.	 
     ```
-    host: host_name
+    host: host_name	
 	```
   * 명령 프롬프트에서 애플리케이션을 배치하는 경우, `cf push` 명령을 **-n** 옵션과 함께 사용하십시오.
     ```
@@ -582,7 +612,7 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
   ...
         ```
 
-  * Node.js 빌드팩에서 앱을 인식할 수 있게 하려면 Node.js 앱에 `package.json` 파일이 있어야 합니다. 또한 이 파일이 앱의 루트 디렉토리에 있어야 합니다.
+  * Node.js 빌드팩에서 앱을 인식할 수 있게 하려면 Node.js 앱에 `package.json` 파일이 있어야 합니다. 또한 이 파일이 앱의 루트 디렉토리에 있어야 합니다.	
     다음 예에서는 단순한 `package.json` 파일을 보여줍니다.  
 	```
 	{
@@ -637,7 +667,7 @@ Liberty 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시되면 Liberty 빌드
 ## IBM Bluemix Continuous Delivery에서 Delivery Pipeline로부터 앱을 배치할 수 없음
  {: #ts_devops_to_bm}
 
- `manifest.yml` 파일이 앱에 없는 경우에는 {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 수 없을 수 있습니다.
+ `manifest.yml` 파일이 앱에 없는 경우에는 {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 수 없을 수 있습니다. 
 
  {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 때 `Unable to detect a supported application type`이라는 오류 메시지가 표시될 수 있습니다. {: tsSymptoms}
 
@@ -660,11 +690,11 @@ Meteor 앱을 {{site.data.keyword.Bluemix_notm}}에 배치할 때 `The applicati
 Meteor 앱에 대해 사용자 정의 빌드팩을 사용하려면 다음 방법 중 하나를 사용하십시오.
 {: tsResolve}
 
-  * `manifest.yml` 파일을 사용하여 앱을 배치하는 경우 buildpack 옵션을 사용하여 사용자 정의 빌드팩의 URL 또는 이름을 지정하십시오. 예를 들어, 다음과 같습니다.
+  * `manifest.yml` 파일을 사용하여 앱을 배치하는 경우 buildpack 옵션을 사용하여 사용자 정의 빌드팩의 URL 또는 이름을 지정하십시오. 예를 들어, 다음과 같습니다. 
   ```
-buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
+buildpack: https://github.com/Sing-Li/bluemix-bp-meteor 
   ```
-  * 명령 프롬프트에서 애플리케이션을 배치하는 경우 `cf push` 명령을 사용하되 **-b** 옵션을 사용하여 사용자 정의 빌드팩을 지정하십시오. 예를 들어, 다음과 같습니다.
+  * 명령 프롬프트에서 애플리케이션을 배치하는 경우 `cf push` 명령을 사용하되 **-b** 옵션을 사용하여 사용자 정의 빌드팩을 지정하십시오. 예를 들어, 다음과 같습니다. 
     ```
 	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```

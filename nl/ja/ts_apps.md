@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-11-09"
+lastupdated: "2017-04-10"
 
 ---
 
@@ -420,6 +420,31 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} からアプリを {{si
 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} からアプリを {{site.data.keyword.Bluemix_notm}} にプッシュするときは、「アプリケーション」ウィザードの「アプリケーションの詳細 (Application details)」ページで**「マニフェスト・ファイルに保存 (Save to the manifest file)」**チェック・ボックスを選択してください。これにより、ウィザードで指定した変数が、アプリケーション用のマニフェスト・ファイルに保存されます。次にそのウィザードを開いたときに、それらの変数は自動的に表示されます。
 {: tsResolve}
 
+<!-- begin STAGING ONLY -->
+
+## Bluemix Live Sync Debug がコマンド・ラインから開始しない
+{: #ts_no_debug}
+
+コマンド・ラインを使用して IBM Bluemix Live Sync Debug フィーチャーをアプリに対して使用可能にしたが、デバッグ・インターフェースにアクセスできません。  
+
+**BLUEMIX_APP_MGMT_ENABLE** 環境変数を設定し、アプリにデバッグ・フィーチャーを使用可能にしました。しかし、`app_url/bluemix-debug/manage` でデバッグ・ユーザー・インターフェースにアクセスできません。
+{: tsSymptoms}
+
+以下の状況では、デバッグ・フィーチャーを使用可能にすることができません。
+{: tsCauses}
+
+  * `manifest.yml` に command 属性が含まれる場合
+  * **-c** オプションを使用してアプリを {{site.data.keyword.Bluemix_notm}} にプッシュする場合
+
+以下のいずれかのオプションを使用して問題を解決します。
+{: tsResolve}
+
+  * 推奨されるのは、IBM Node.js ビルドパックを使用してアプリを開始する方法です。詳しくは、『[{{site.data.keyword.Bluemix_notm}} への Node.js アプリケーションのデプロイ](/docs/runtimes/nodejs/index.html#nodejs_runtime)』トピックの「開始コマンド (Startup command)」セクションを参照してください。
+  * `manifest.yml` の command 属性を command: null に修正するか、push コマンドを編集して `-c null` を組み込むことで、既存アプリにコマンドを使用不可にします。
+  * `manifest.yml` から **command** 属性を削除します。その後、{{site.data.keyword.Bluemix_notm}} から現行アプリを削除し、アプリを再びプッシュします。
+
+<!-- end STAGING ONLY -->  
+
 
 ## Bluemix 上で組織が見つからない
 {: #ts_orgs}
@@ -467,9 +492,9 @@ Eclipse ツールを使用してアプリケーションを {{site.data.keyword.
 {: tsResolve}
 
   * `manifest.yml` ファイルを使用してアプリケーションをデプロイする場合は、host オプションでホスト名を指定します。
-
+	 
     ```
-    host: host_name
+    host: host_name	
 	```
   * コマンド・プロンプトからアプリケーションをデプロイする場合は、**-n** オプションを指定して `cf push` コマンドを使用します。
     ```
@@ -657,7 +682,7 @@ Meteor アプリにカスタム・ビルドパックを使用するには、以�
 
   * `manifest.yml` ファイルを使用してアプリをデプロイする場合は、buildpack オプションを使用して、カスタム・ビルドパックの URL または名前を指定します。例えば次のようにします。
   ```
-buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
+buildpack: https://github.com/Sing-Li/bluemix-bp-meteor 
   ```
   * コマンド・プロンプトからアプリケーションをデプロイする場合は、`cf push` コマンドを使用し、**-b** オプションによってカスタム・ビルドパックを指定します。例えば次のようにします。
     ```
