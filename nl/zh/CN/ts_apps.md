@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,12 +15,8 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # 有关管理应用程序的故障诊断
 {: #managingapps}
-
 
 有关管理应用程序的一般性问题可能包括：无法更新应用程序或未显示双字节字符。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
 {:shortdesc}
@@ -272,10 +268,10 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 通过项目构面将�
 
 如果磁盘空间不足，可以手动修改磁盘配额来获取更多的磁盘空间。
 
-磁盘空间不足时，可能会看到一条消息，指示超过磁盘配额。为了解决该问题，您可能尝试了通过扩展应用程序实例来获取更多的磁盘空间。例如，您可能更改了应用程序详细信息页面上的内存配额，将大小从 256 MB 扩展到 1256 MB。但是，由于磁盘配额依然未变，所以您并没有获得更多的磁盘空间。 
+磁盘空间不足时，可能会看到一条消息，指示超过磁盘配额。为了解决该问题，您可能尝试了通过扩展应用程序实例来获取更多的磁盘空间。例如，您可能更改了应用程序详细信息页面上的内存配额，将大小从 256 MB 扩展到 1256 MB。但是，由于磁盘配额依然未变，所以您并没有获得更多的磁盘空间。
 {: tsSymptoms}
 
-为应用程序分配的缺省磁盘配额为 1 GB。如果您需要更多的磁盘空间，必须手动指定磁盘配额。 
+为应用程序分配的缺省磁盘配额为 1 GB。如果您需要更多的磁盘空间，必须手动指定磁盘配额。
 {: tsCauses}
 
 使用以下某种方法可指定磁盘配额。可指定的最大磁盘配额为 2 GB。如果 2 GB 仍不够，请尝试外部服务，例如[对象存储](/docs/services/ObjectStorage/index.html)。
@@ -427,31 +423,6 @@ cf push appname -p app_path
 从 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，请在“应用程序”向导的“应用程序详细信息”页面上选中**保存到清单文件**复选框。这样，您在向导中指定的变量就会保存到应用程序的清单文件中。 下次打开向导时，这些变量会自动显示出来。
 {: tsResolve}
 
-<!-- begin STAGING ONLY -->
-
-## Bluemix Live Sync“调试”功能无法通过命令行启动
-{: #ts_no_debug}
-
-您使用命令行为应用程序启用了 IBM Bluemix Live Sync“调试”功能，但是您无法访问“调试”界面。  
-
-您通过设置 **BLUEMIX_APP_MGMT_ENABLE** 环境变量启用了应用程序的“调试”功能。但是，您无法在 `app_url/bluemix-debug/manage` 处访问“调试”用户界面。
-{: tsSymptoms}
-
-在以下几种情况下，无法启用“调试”功能：
-{: tsCauses}
-
-  * `manifest.yml` 包含命令属性时
-  * 使用 **-c** 选项将应用程序推送至 {{site.data.keyword.Bluemix_notm}} 时
-
-使用以下其中一个选项可解决该问题：
-{: tsResolve}
-
-  * 建议的作法是使用 IBM Node.js buildpack 启动应用程序。有关更多信息，请参阅[将 Node.js 应用程序部署至 {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime) 主题的“启动命令”一节。
-  * 通过将 `manifest.yml` 中的命令属性修改为命令 null 或通过编辑推送命令以包括 `-c null`，禁用现有应用程序的命令。
-  * 从 `manifest.yml` 中除去**命令**属性。然后，从 {{site.data.keyword.Bluemix_notm}} 中删除当前应用程序，并重新推送应用程序。
-
-<!-- end STAGING ONLY -->  
-
 
 ## 在 Bluemix 上找不到组织
 {: #ts_orgs}
@@ -500,7 +471,7 @@ cf api https://api.eu-gb.bluemix.net
 
   * 如果通过使用 `manifest.yml` 文件来部署应用程序，请在 host 选项中指定主机名。	 
     ```
-    host: host_name	
+    host: host_name
 	```
   * 如果从命令提示符部署应用程序，请使用带有 **-n** 选项的 `cf push` 命令。
     ```
@@ -604,7 +575,7 @@ cf push MyUniqueAppName02 -p "./app.war"
   ...
         ```
 
-  * 确保 Node.js 应用程序中存在 `package.json` 文件，这样 Node.js buildpack 才能识别该应用程序。确保此文件位于应用程序的根目录中。	
+  * 确保 Node.js 应用程序中存在 `package.json` 文件，这样 Node.js buildpack 才能识别该应用程序。确保此文件位于应用程序的根目录中。
     以下示例显示简单的 `package.json` 文件：   
 	```
 	{
@@ -686,9 +657,9 @@ cf push MyUniqueAppName02 -p "./app.war"
 
   * 如果使用 `manifest.yml` 文件来部署应用程序，请使用 buildpack 选项来指定定制 buildpack 的 URL 或名称。例如：
   ```
-buildpack: https://github.com/Sing-Li/bluemix-bp-meteor 
+buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```
   * 如果从命令提示符部署应用程序，请使用 `cf push` 命令并通过 **-b** 选项来指定定制 buildpack。例如：
     ```
-	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor 
+	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```

@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,12 +15,8 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # Traitement des incidents liés à la gestion des applications
 {: #managingapps}
-
 
 Des problèmes d'ordre général liés à la gestion des applications peuvent survenir, par exemple, les applications ne peuvent pas être mises à jour ou les caractères codés sur deux octets ne sont pas affichés. Dans de nombreux cas, ces problèmes peuvent être résolus en quelques opérations simples.
 {:shortdesc}
@@ -444,31 +440,6 @@ Les variables que vous spécifiez ne sont sauvegardées que si vous les sauvegar
 
 Lorsque vous envoyez une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, sélectionnez la case à cocher **Save to the manifest file** dans la page des détails de l'application de l'assistant Application. Ainsi, les variables que vous spécifiez dans l'assistant sont sauvegardées dans le fichier manifeste de votre application. A la prochaine ouverture de l'assistant, elles seront affichées automatiquement.
 {: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## Bluemix Live Sync Debug ne démarre pas à partir de la ligne de commande
-{: #ts_no_debug}
-
-Vous avez activé la fonction IBM Bluemix Live Sync Debug pour votre application à l'aide de la ligne de commande, mais vous ne pouvez pas accéder à l'interface de débogage.  
-
-Vous avez activé la fonction de débogage pour votre application en définissant la variable d'environnement **BLUEMIX_APP_MGMT_ENABLE**. Toutefois, vous ne pouvez pas accéder à l'interface utilisateur de débogage sur `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-La fonction de débogage ne peut pas être activée dans les cas suivants :
-{: tsCauses}
-
-  * Lorsque le fichier `manifest.yml` contient l'attribut command
-  * Lorsque vous utilisez l'option **-c** pour envoyer une application à {{site.data.keyword.Bluemix_notm}}
-
-Utilisez l'une des options suivantes pour résoudre le problème :
-{: tsResolve}
-
-  * La pratique recommandée consiste à utiliser le pack de construction IBM Node.js pour démarrer l'application. Pour plus d'informations, voir la section sur la commande de démarrage dans la rubrique [Déploiement d'une application Node.js sur {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime).
-  * Désactivez la commande pour votre application existante en modifiant l'attribut command dans le fichier `manifest.yml` par command: null ou en éditant votre commande push en y ajoutant `-c null`.
-  * Retirez l'attribut **command** du fichier `manifest.yml`. Supprimez ensuite l'application en cours de {{site.data.keyword.Bluemix_notm}} et insérez de nouveau l'application.
-
-<!-- end STAGING ONLY -->  
 
 
 ## Des organisations sont introuvables dans Bluemix
