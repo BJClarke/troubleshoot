@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,12 +15,8 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # Resolución de problemas de gestión de apps
 {: #managingapps}
-
 
 Entre los problemas generales relacionados con la gestión de apps se pueden incluir las apps que no se pueden actualizar y los caracteres de doble byte que no se visualizan. En muchos de los casos, puede solucionar estos problemas siguiendo unos sencillos pasos.
 {:shortdesc}
@@ -434,33 +430,7 @@ Las variables especificadas solo se guardan si las guarda en el archivo de manif
 {: tsCauses}
 
 Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, seleccione el recuadro de verificación **Guardar en el archivo de manifiesto** en la página Detalles de aplicación del asistente Aplicación. Posteriormente, las variables especificadas en el asistente se guardan en el archivo de manifiesto de su app. La próxima vez que abra el asistente, las variables se visualizarán automáticamente.
-{: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## Bluemix Live Sync Debug no se inicia desde la línea de mandatos
-{: #ts_no_debug}
-
-Ha habilitado la característica IBM Bluemix Live Sync Debug para su app utilizando la línea de mandatos, pero no puede acceder a la interfaz de Debug.  
-
-Debería habilitar la característica de depuración de su app configurando la variable de entono **BLUEMIX_APP_MGMT_ENABLE**. No obstante, no puede acceder a la interfaz de usuario de Debug en `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-La característica Debug no se puede habilitar en estas situaciones:
-{: tsCauses}
-
-  * Cuando `manifest.yml` contiene el atributo command.
-  * Cuando utiliza la opción **-c** para enviar por push la app a {{site.data.keyword.Bluemix_notm}}
-
-Utilice una de las siguientes opciones para resolver este problema:
-{: tsResolve}
-
-  * La práctica recomendada es utilizar el paquete de compilación IBM Node.js para iniciar la app. Para obtener más información, consulte la sección del mandato Startup del tema [Desplegar una aplicación Node.js en {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime).
-  * Inhabilite el mandato para su app existente revisando el atributo command en su archivo `manifest.yml` para command: nulo o editándolo para que el mandato push incluya `-c null`.
-  * Elimine el atributo **command** de `manifest.yml`. A continuación suprima la app actual de {{site.data.keyword.Bluemix_notm}} y envíe por push la app de nuevo.
-
-<!-- end STAGING ONLY -->  
-
+{: tsResolve}  
 
 ## No se pueden encontrar organizaciones en Bluemix
 {: #ts_orgs}

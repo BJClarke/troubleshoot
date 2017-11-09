@@ -3,7 +3,7 @@
 copyright:
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,12 +15,8 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # Resolução de problemas para gerenciar aplicativos
 {: #managingapps}
-
 
 Problemas gerais com o gerenciamento de apps podem incluir apps que não podem ser atualizados ou caracteres de byte duplo que não são exibidos. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples.
 {:shortdesc}
@@ -452,37 +448,6 @@ As variáveis que você especificou são salvas somente se salvá-las para o arq
 Ao enviar por push um app para o {{site.data.keyword.Bluemix_notm}} a partir do IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, selecione a caixa de seleção **Salvar no arquivo manifest** na página de detalhes do Aplicativo do assistente do Aplicativo. Em seguida,
 as variáveis que você especificou no assistente são salvas para o arquivo manifest de seu aplicativo. Na próxima vez em que abrir o assistente, as variáveis serão exibidas automaticamente.
 {: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## O Bluemix Live Sync Debug não é iniciado na linha de comandos
-{: #ts_no_debug}
-
-Você ativou o recurso IBM Bluemix Live Sync Debug para seu app usando a linha de comandos, mas não é possível acessar a interface de Depuração.  
-
-Você ativou o recurso de depuração para seu aplicativo configurando a variável de
-ambiente **BLUEMIX_APP_MGMT_ENABLE**. No entanto, não é possível acessar a interface com o usuário de Depuração em `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-O recurso de Depuração não pode ser ativado nestas situações:
-{: tsCauses}
-
-  * Quando o `manifest` contém o atributo de comando
-  * Quando você usa a opção **-c** para enviar por push um app
-para o {{site.data.keyword.Bluemix_notm}}
-
-Use uma das opções a seguir para resolver o problema:
-{: tsResolve}
-
-  * A prática recomendada é usar o buildpack IBM Node.js para iniciar o app. Para obter mais informações, consulte a seção Comando de inicialização do tópico [Implementando um aplicativo Node.js no {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime).
-  * Desative o comando para seu app existente revisando o atributo de
-comando no `manifest.yml` para o comando: null ou editando seu
-comando push para incluir `-c Null`.
-  * Remova o atributo de **comando** do `manifest.yml`. Em
-seguida, exclua o app atual do {{site.data.keyword.Bluemix_notm}} e envie por
-push o app novamente.
-
-<!-- end STAGING ONLY -->  
 
 
 ## As organizações não podem ser localizadas no Bluemix

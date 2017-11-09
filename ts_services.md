@@ -2,16 +2,15 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+
+lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
@@ -19,8 +18,7 @@ lastupdated: "2016-08-12"
 # Troubleshooting for services
 {: #services}
 
-
-{{site.data.keyword.Bluemix}} services problems might include a gateway timeout error that occurs when you delete a service instance. You can recover from these problems by following a few easy steps.
+{{site.data.keyword.Bluemix}} service problems might include a gateway timeout error that occurs when you delete a service instance. You can recover from these problems by following a few easy steps.
 {:shortdesc}
 
 ## Service broker error occurs when you delete a service instance
