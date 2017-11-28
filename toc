@@ -16,7 +16,7 @@ Troubleshooting
 	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
 	{: .navgroup-end}
 
-	{: .navgroup id="how-to"}
+	{: .navgroup id="howto"}
 	../debug/
 	ts_accessing.md
 	ts_apps.md
