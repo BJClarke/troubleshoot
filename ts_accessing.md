@@ -165,7 +165,7 @@ After you register for an {{site.data.keyword.Bluemix_notm}} trial account, you 
 After you register for an {{site.data.keyword.Bluemix_notm}} trial account, you receive a confirmation email. You must click the link that is in the confirmation email to complete the registration process.
 {: tsCauses}
 
-The confirmation email is sent to the email address that you provided. Check your inbox and your spam folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}.  
+The confirmation email is sent to the email address that you provided. Check your inbox and your spam folder. If you haven't received the confirmation email, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} page can't be loaded
