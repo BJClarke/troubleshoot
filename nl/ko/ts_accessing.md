@@ -86,13 +86,13 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
  자세한 정보는 [IBM ID로 전환](/docs/admin/softlayerlink.html#ibmid_switch)을 참조하십시오.
 
 
-## {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없음: IBM ID가 IBM Cloud 계정과 연관되어 있지 않음
+## {{site.data.keyword.Bluemix_notm}}에 로그인할 수 없음: IBM ID가 IBM 클라우드 계정과 연관되어 있지 않음
 {: #ts_login_noswitch}
 
 IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {: tsSymptoms}
 
-`인증에 성공하여 이 페이지로 이동되었습니다. 하지만 이 IBM ID는 IBM Cloud 계정과 연관되어 있지 않습니다. 오류로 간주되면 계정 소유자 또는 마스터 사용자에게 문의하십시오.`
+`인증에 성공하여 이 페이지로 이동되었습니다. 하지만 이 IBM ID는 IBM 클라우드 계정과 연관되어 있지 않습니다. 오류로 간주되면 계정 소유자 또는 마스터 사용자에게 문의하십시오.`
 
 [고객 포털](https://control.softlayer.com)에서 올바른 IBM ID를 사용하여 로그인했지만 SoftLayer의 IBM ID 인증으로 전환되지 않았습니다.
 {: tsCauses} 
