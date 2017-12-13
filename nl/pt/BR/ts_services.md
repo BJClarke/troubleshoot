@@ -2,16 +2,15 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+
+última atualização: "07-11-2017"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
@@ -19,8 +18,7 @@ lastupdated: "2016-08-12"
 # Resolução de problemas para serviços
 {: #services}
 
-
-Os problemas de serviços do {{site.data.keyword.Bluemix}} podem incluir um erro de tempo limite de gateway que ocorre quando você exclui uma instância de serviço. É possível recuperar desses problemas seguindo algumas etapas fáceis.
+Os problemas do serviço {{site.data.keyword.Bluemix}} podem incluir um erro de tempo limite de gateway que ocorre quando você exclui uma instância de serviço. É possível recuperar desses problemas seguindo algumas etapas fáceis.
 {:shortdesc}
 
 ## Ocorre um erro de broker de serviço ao excluir uma instância de serviço

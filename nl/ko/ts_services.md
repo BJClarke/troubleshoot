@@ -2,16 +2,14 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
@@ -19,8 +17,7 @@ lastupdated: "2016-08-12"
 # 서비스 문제점 해결
 {: #services}
 
-
-{{site.data.keyword.Bluemix}} 서비스 문제점에는 서비스 인스턴스를 삭제할 때 발생하는 게이트웨이 제한시간 오류가 있습니다. 몇 가지 간단한 단계를 수행하여 이러한 문제점에서 복구할 수 있습니다.
+{{site.data.keyword.Bluemix}} 서비스 문제점에는 서비스 인스턴스를 삭제할 때 발생하는 게이트웨이 제한시간 오류가 포함될 수 있습니다. 몇 가지 간단한 단계를 수행하여 이러한 문제점에서 복구할 수 있습니다.
 {:shortdesc}
 
 ## 서비스 인스턴스를 삭제할 때 서비스 브로커 오류 발생

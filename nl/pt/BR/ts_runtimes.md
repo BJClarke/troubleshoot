@@ -2,17 +2,17 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2017-01-10"
+
+última atualização: "08-11-2017"
 
 ---
 
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock} 
+{:codeblock: .codeblock}
 
 
 # Resolução de problemas para tempos de execução
@@ -28,19 +28,19 @@ Você pode ter problemas ao usar tempos de execução do {{site.data.keyword.Blu
 É possível que você não consiga usar os componentes de buildpack mais recentes
 ao enviar um app por push. É possível usar buildpacks que possuem mecanismos integrados
 para evitar o carregamento de componentes obsoletos ou é possível excluir os conteúdos
-no diretório de cache do app antes de enviar por push ou remontar o app. 
+no diretório de cache do app antes de enviar por push ou remontar o app.
 
-Ao enviar por push ou remontar um app após a atualização do buildpack, os componentes de buildpack mais recentes não são carregados automaticamente. Como resultado, o seu aplicativo usa os componentes de buildpack obsoletos a partir do cache. As atualizações que foram aplicadas ao buildpack desde a última vez que o app foi enviado por push não são implementadas. 
+Ao enviar por push ou remontar um app após a atualização do buildpack, os componentes de buildpack mais recentes não são carregados automaticamente. Como resultado, o seu aplicativo usa os componentes de buildpack obsoletos a partir do cache. As atualizações que foram aplicadas ao buildpack desde a última vez que o app foi enviado por push não são implementadas.
 {: tsSymptoms}
 
 Alguns buildpacks não são configurados para fazer download automaticamente de todos os componentes atualizados da Internet para assegurar que você sempre use a versão mais recente.
-{: tsCauses} 
+{: tsCauses}
 
-É possível usar buildpacks que tenham mecanismos integrados para evitar o carregamento de componentes obsoletos, por exemplo, os buildpacks a seguir: 
+É possível usar buildpacks que tenham mecanismos integrados para evitar o carregamento de componentes obsoletos, por exemplo, os buildpacks a seguir:
 {: tsResolve}
 
   * [Buildpack Java do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack){: new_window}. Esse buildpack tem um mecanismo integrado
-para assegurar que a versão mais recente do buildpack seja usada. Para obter mais informações sobre como esse mecanismo funciona, veja [extending-caches.md ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}. 
+para assegurar que a versão mais recente do buildpack seja usada. Para obter mais informações sobre como esse mecanismo funciona, veja [extending-caches.md ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}.
   * [Buildpack Node.js do Cloud Foundry ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}. Esse buildpack fornece funcionalidade semelhante ao usar variáveis de ambiente. Para que o buildpack Node.js sempre possa
 fazer download de módulos do nó a partir da Internet, digite o comando
 a seguir na interface de linha de comandos cf: 	
@@ -63,16 +63,16 @@ etapa, todos os conteúdos no diretório de cache de seu app serão excluídos.
   cf push appname -p app_path -b <modified_null_buildpack>
   ```
  4. Envie seu app por push com o buildpack mais recente que você deseja usar
-usando o comando a seguir: 
+usando o comando a seguir:
   ```
   cf push appname -p app_path -b <latest_buildpack>
   ```
- 
+
 ## Mensagens de AVISO do buildpack PHP
 {: #ts_phplog}
 
 Talvez você veja mensagens que contenham AVISO nos logs. É possível parar a criação de log dessas mensagens alterando o
-nível de criação de log.	
+nível de criação de log.
 
 Ao enviar um app por push para o {{site.data.keyword.Bluemix_notm}} usando um buildpack PHP, será possível ver mensagens contendo `NOTICE`:
 {: tsSymptoms}
@@ -85,14 +85,14 @@ Ao enviar um app por push para o {{site.data.keyword.Bluemix_notm}} usando um bu
 ```
 No buildpack PHP, o parâmetro error_log define o nível de criação de log. Por padrão, o valor do parâmetro `error_log`
 é **stderr notice**. O exemplo a seguir mostra a configuração do nível de criação de log padrão no arquivo `nginx-defaults.conf` do buildpack PHP que é fornecido pelo Cloud Foundry. Para obter mais informações, veja [cloudfoundry/php-buildpack ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}.
-{: tsCauses} 
+{: tsCauses}
 
 ```
 daemon off;
 error_log stderr notice;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-	
+
 As mensagens `NOTICE` são para informações e podem não indicar um problema. É possível parar a criação de log dessas mensagens mudando o nível de criação de log de `stderr notice` para `stderr error` no arquivo nginx-defaults.conf de seu buildpack. Por
 exemplo: 	
 {: tsResolve}
@@ -103,7 +103,7 @@ error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
 Para obter mais informações sobre como mudar a configuração de criação de log padrão, veja [error_log ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
-	
+
 
 ## Não é possível importar uma biblioteca Python de terceiros para o {{site.data.keyword.Bluemix_notm}}
 {: #ts_importpylib}
@@ -124,29 +124,29 @@ esteja importando a biblioteca `web.py`:
 {: tsResolve}
 
  1. Inclua um arquivo `requirements.txt` no diretório-raiz de seu app Python.
- 
+
  O arquivo `requirements.txt` especifica os pacotes de biblioteca necessários para o app Python e a versão dos pacotes. O exemplo a seguir mostra o conteúdo do arquivo `requirements.txt`, em que `web.py==0.37` indica que a versão da biblioteca `web.py` que será transferida por download é 0,37 e `wsgiref==0.1.2` indica que a versão da interface do gateway do servidor da web que é requerida pela biblioteca web.py é 0.1.2.
 	 ```
 	 web.py==0.37
      wsgiref==0.1.2
 	 ```
 	 Para obter mais informações sobre como configurar
-o arquivo `requirements.txt`, consulte [Arquivos de requisitos](https://pip.readthedocs.org/en/1.1/requirements.html). 
-	 
+o arquivo `requirements.txt`, consulte [Arquivos de requisitos](https://pip.readthedocs.org/en/1.1/requirements.html).
+
  2. Inclua um arquivo `Procfile` no diretório-raiz de seu app Python.
- O arquivo `Procfile` deve conter o comando inicial para seu app Python. No comando a seguir, *yourappname* é o nome de seu app Python e *PORT* é o número da porta que seu app Python deve usar para receber solicitações de usuários do app. *$PORT* é opcional. Se você não especificar PORT no comando inicial, o número da porta sob a variável de ambiente `VCAP_APP_PORT` que está dentro do app será usado. 
+ O arquivo `Procfile` deve conter o comando inicial para seu app Python. No comando a seguir, *yourappname* é o nome de seu app Python e *PORT* é o número da porta que seu app Python deve usar para receber solicitações de usuários do app. *$PORT* é opcional. Se você não especificar PORT no comando inicial, o número da porta sob a variável de ambiente `VCAP_APP_PORT` que está dentro do app será usado.
 	```
 	web: python <yourappname>.py $PORT
 	```
 
-Agora é possível importar a biblioteca Python de terceiros para o {{site.data.keyword.Bluemix_notm}}.	
+Agora é possível importar a biblioteca Python de terceiros para o {{site.data.keyword.Bluemix_notm}}.
 
 
 ## O botão Ações na página Detalhes da instância está desativado
 {: #ts_actionsbutton}
 
 O botão Ações na página Detalhes da instância está desativado.
-{: tsSymptoms} 
+{: tsSymptoms}
 
 Esse problema ocorre por causa dos motivos a seguir:
 {: tsCauses}
@@ -157,13 +157,13 @@ Esse problema ocorre por causa dos motivos a seguir:
 
 Se o problema for causado por uma versão anterior do buildpack Liberty, reimplemente o app no {{site.data.keyword.Bluemix_notm}}. Caso contrário, é possível fornecer os
 arquivos de log do aplicativo do cliente para a equipe de suporte:
-{: tsResolve} 
+{: tsResolve}
 
   * logs/messages.log
   * logs/stdout.log
   * logs/stderr.log
- 
-  
+
+
 ## São necessárias credenciais para abrir uma janela de rastreio ou de dump
 {: #ts_username}
 
@@ -181,7 +181,7 @@ Insira o nome do usuário e a senha novamente.
 {: #ts_target}
 
 Uma mensagem de erro é exibida quando as operações de rastreio ou dump
-estão em execução. A mensagem indica que uma instância de destino para um app não está no estado em execução:	
+estão em execução. A mensagem indica que uma instância de destino para um app não está no estado em execução:
 {: tsSymptoms}
 
 ```
@@ -193,13 +193,13 @@ Instância 4: A especificação de rastreio foi configurada com êxito
 ```
 
 Esse problema ocorre por causa dos motivos a seguir:
-{: tsCauses} 
+{: tsCauses}
 
   * Os recursos de gerenciamento de rastreio ou de dump são apenas para instâncias de app que estão em execução. As operações de rastreio ou de dump não podem ser usadas em instâncias do app que estejam paradas, sendo iniciadas ou que tenham sido interrompidas.
-  * O status da instância do app está mudando quando o diálogo de rastreio ou de dump é aberto. 
+  * O status da instância do app está mudando quando o diálogo de rastreio ou de dump é aberto.
 
 Feche a janela e, em seguida, abra-a novamente.
-{: tsResolve} 
+{: tsResolve}
 
 
 ## As instâncias possuem configurações traceSpecification diferentes
@@ -212,12 +212,12 @@ Esse comportamento ocorre por causa dos motivos a seguir:
 {: tsCauses}
 
   * Você mudou a configuração de uma ou mais instâncias anteriormente. Se você mudar a configuração de traceSpecification de uma instância, a mudança não se aplicará a outras instâncias do mesmo app. Por exemplo, seu app usa log4j e você tem 2 instâncias para esse app. É possível mudar o nível de log da instância 0 de informações para depuração, mas o nível de log da instância 1 permanecerá como informações.
-  
+
   * O app é ampliado e possui novas instâncias. O RMU não se aplica à configuração traceSpecification da instância existente para a nova instância ampliada. A nova instância usa a configuração padrão. Por exemplo, seu app usa log4j e tem uma instância. É possível mudar o nível de log dessa instância de informações para depuração. Depois de fazer essa mudança, se você ampliar seu app para duas instâncias, o nível de log da nova instância será informações, em vez de depuração.
 
 Nenhuma
 ação foi necessária. Este comportamento é esperado.
-{: tsResolve} 
+{: tsResolve}
 
 
 ## Cota do disco excedida
@@ -228,8 +228,8 @@ Você pode ver, em seu log de app, que sua cota do disco foi excedida.
 Você vê a mensagem de erro `Cota do disco excedida` no log de seu app.
 {: tsSymptoms}
 
-Esse problema ocorre por causa de um dos motivos a seguir: 
-{: tsCauses} 
+Esse problema ocorre por causa de um dos motivos a seguir:
+{: tsCauses}
 
   * Os arquivos de dump são gerados com as instâncias do app em execução e os arquivos usam até a cota de disco alocada. Por padrão, a cota de disco para uma instância de app é 1 GB. É possível verificar o uso de
 seu disco clicando em **Painel>Aplicativo>Tempo de Execução do Aplicativo**. O exemplo a seguir mostra as informações de tempo de execução, incluindo uso do disco, de duas instâncias de um app:
@@ -242,11 +242,10 @@ seu disco clicando em **Painel>Aplicativo>Tempo de Execução do Aplicativo**. O
   * A cota do disco é limitada pela cota da organização atual.
 
 Utilize um dos seguintes métodos:
-{: tsResolve} 
+{: tsResolve}
 
   * Excluir arquivos de dump depois de eles serem transferidos por download.
   * Reimplementar o app com uma cota de disco maior, incluindo a entrada a seguir no manifest de implementação:
     ```
 	disk_quota: 2048
 	```
-	

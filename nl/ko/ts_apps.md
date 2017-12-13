@@ -1,9 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,14 +16,10 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # 앱 관리 문제점 해결
 {: #managingapps}
 
-
-앱 관리와 관련된 일반적인 문제점으로는 앱을 업데이트할 수 없거나 2바이트 문자가 표시되지 않는 경우가 있습니다. 대부분 몇 가지 간단한 단계를 수행하여 이러한 문제점에서 복구할 수 있습니다.
+앱 관리의 일반적인 문제점에는 앱을 업데이트할 수 없거나 2바이트 문자가 표시되지 않는 문제가 포함될 수 있습니다. 대부분 몇 가지 간단한 단계를 수행하여 이러한 문제점에서 복구할 수 있습니다.
 {:shortdesc}
 
 
@@ -42,12 +39,12 @@ lastupdated: "2017-04-10"
 메시지 창을 닫고 런타임 분할창에서 **재설정** 단추를 클릭하십시오.
 {: tsResolve}
 
-## Bluemix 지역 간 자동 장애 복구를 사용할 수 없습니다.
+## {{site.data.keyword.Bluemix_notm}} 지역 간 자동 장애 복구를 사용할 수 없음
 {: #ts_failover}
 
 {{site.data.keyword.Bluemix_notm}} 지역 간에 자동 장애 복구를 사용할 수 없습니다. 하지만 여러 IP 주소 간의 장애 복구를 지원하는 DNS 제공자를 임시 해결책으로 사용할 수 있습니다.
 
-{{site.data.keyword.Bluemix_notm}} 지역을 사용할 수 없게 되면 동일한 앱이 다른 {{site.data.keyword.Bluemix_notm}} 지역에서 실행 중이더라도 해당 지역에서 실행 중인 앱도 사용할 수 없습니다.
+{{site.data.keyword.Bluemix_notm}} 지역을 사용할 수 없는 경우에는 동일한 앱이 다른 {{site.data.keyword.Bluemix_notm}} 지역에서 실행 중이어도 해당 지역에서 실행 중인 앱 역시 사용할 수 없습니다.
 {: tsSymptoms}
 
 {{site.data.keyword.Bluemix_notm}}는 하나의 지역에서 다른 지역으로의 자동 장애 복구를 아직 제공하지 않습니다.
@@ -118,7 +115,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 {{site.data.keyword.eclipsetoolsfull}}가 실행되는 Java의 버전을 확인하려면 다음 단계를 완료하십시오.
 {: tsResolve}
 
-  1. IBM Eclipse Tools for Bluemix에서 **도움말** > **Eclipse 정보** > **설치 세부사항** > **구성**을 선택하십시오.
+  1. IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}에서 **도움말** > **Eclipse 정보** > **설치 세부사항** > **구성**을 선택하십시오. 
   2. 목록에서 `eclipse.vm` 특성을 찾으십시오. 다음 행은 `eclipse.vm` 특성의 예입니다.
 
 	```
@@ -172,7 +169,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 
 현재 조직에 연관되어 있는 영역이 없는 경우 앱 또는 서비스를 작성할 수 없습니다.
 
-Bluemix에서 앱을 작성하려고 할 때 다음과 같은 오류 메시지가 표시됩니다.
+{{site.data.keyword.Bluemix_notm}}에서 앱을 작성하려고 할 때 다음과 같은 오류 메시지가 표시됩니다.
 {: tsSymptoms}
 
 `BXNUI0515E: 조직의 영역이 검색되지 않았습니다. 네트워크 연결 문제점이 발생했거나 현재 조직에 이와 연관된 영역이 없습니다.`
@@ -186,7 +183,7 @@ Bluemix에서 앱을 작성하려고 할 때 다음과 같은 오류 메시지�
   * 메뉴 표시줄에서 **관리 > 계정 > 조직**을 클릭하십시오. 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
   * cf 명령행 인터페이스에서 `cf create-space <space_name> -o <organization_name>`을 입력하십시오.
 
-다시 시도하십시오. 이 메시지가 다시 표시되면 [Bluemix 상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지로 이동하여 서비스 또는 컴포넌트에 문제가 있는지 확인하십시오.
+다시 시도하십시오. 이 메시지가 다시 나타나면 [{{site.data.keyword.Bluemix_notm}}상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지로 이동하여 서비스 또는 컴포넌트에 문제가 있는지 확인하십시오.
 
 
 ## 요청된 조치를 수행할 수 없음
@@ -209,12 +206,12 @@ Bluemix에서 앱을 작성하려고 할 때 다음과 같은 오류 메시지�
  * 개발자 역할이 있는 다른 조직과 영역을 선택하십시오.
  * 조직 관리자에게 문의하여 사용자의 역할을 개발자로 변경하거나 영역을 작성한 다음에 개발자 역할을 지정하십시오. 세부사항은 [조직 및 영역 관리](/docs/admin/orgs_spaces.html)를 참조하십시오.
 
-## 권한 오류로 인해 Bluemix 서비스에 액세스할 수 없음
+## 권한 오류로 인해 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스할 수 없음
 {: #ts_vcap}
 
-사용자의 앱에서 서비스 신임 정보가 하드 코딩된 경우, 사용자의 앱이 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스할 때 권한 오류가 발생할 수 있습니다.
+서비스 신임 정보가 앱에 하드 코딩된 경우, 앱이 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스할 때 권한 오류가 발생할 수 있습니다.
 
-{{site.data.keyword.Bluemix_notm}} 서비스와 통신하도록 사용자 앱을 구성한 다음 {{site.data.keyword.Bluemix_notm}}에 앱을 배치하십시오. 그러나 앱을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스할 수는 없으며 권한 오류가 수신됩니다.
+{{site.data.keyword.Bluemix_notm}} 서비스와 통신하도록 사용자 앱을 구성한 후에는 앱을 {{site.data.keyword.Bluemix_notm}}에 배치하십시오. 그러나 앱을 사용하여 {{site.data.keyword.Bluemix_notm}} 서비스에 액세스할 수는 없으며 권한 오류가 수신됩니다.
 {: tsSymptoms}
 
 앱에 하드 코딩된 신임 정보가 올바르지 않습니다. 서비스가 다시 작성될 때마다 이에 액세스하기 위한 신임 정보가 변경됩니다.
@@ -229,10 +226,10 @@ process.env.VCAP_SERVICES
 다른 프로그램 언어에서 사용할 수 있는 명령에 대한 자세한 정보는 [Java ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} 및 [Ruby ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}를 참조하십시오.
 
 
-## Bluemix용 IBM Eclipse 도구를 사용하여 앱을 배치할 수 없음
+## {{site.data.keyword.Bluemix_notm}}를 사용하여 앱을 배치할 수 없음
 {: #ts_bm_tools_facet}
 
-지원되지 않는 패싯이 Eclipse 프로젝트에 적용되는 경우, {{site.data.keyword.Bluemix_notm}}용 IBM Eclipse 도구를 사용하여 사용자의 앱을 {{site.data.keyword.Bluemix_notm}}에 배치할 수 없습니다.
+지원되지 않는 패싯이 Eclipse 프로젝트에 적용된 경우에는 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}를 사용하여 앱을 {{site.data.keyword.Bluemix_notm}}에 배치하지 못할 수 있습니다.
 
 Cloud Foundry CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}에 앱을 배치할 수 있습니다. 그러나 {{site.data.keyword.Bluemix_notm}}용 IBM Eclipse 도구를 사용하여 앱을 {{site.data.keyword.Bluemix_notm}}에 배치할 수 없으며 다음과 같은 오류 메시지가 표시됩니다. `<facet_name> 프로젝트 패싯은 지원되지 않습니다.` 예:
 {: tsSymptoms}
@@ -260,7 +257,7 @@ Cloud Foundry CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}에 앱을 �
 
 잘못된 게이트웨이 오류의 덜 일반적인 기타 원인은 ISP(Internet Service Provider) 드롭아웃, 잘못된 방화벽 구성 및 브라우저 캐시 오류입니다.
 
-{{site.data.keyword.Bluemix_notm}} 서비스가 작동 중지되었다고 의심하는 경우에는 먼저 [{{site.data.keyword.Bluemix_notm}} 상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지를 확인하십시오. 임시 해결책으로 다른 {{site.data.keyword.Bluemix_notm}} 지역의 서비스를 사용할 수 있습니다. 자세한 정보는 [다른 지역에서 서비스 사용 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/services/reqnsi.html#cross_region_service){: new_window}에서 사용 가능합니다. 서비스 상태가 정상이면 다음의 단계를 수행하여 문제를 해결하십시오.
+{{site.data.keyword.Bluemix_notm}} 서비스의 작동이 중지되었다고 의심되면 우선 [{{site.data.keyword.Bluemix_notm}} 상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지를 확인하십시오. 임시 해결책으로 다른 {{site.data.keyword.Bluemix_notm}} 지역의 서비스를 사용할 수 있습니다. 자세한 정보는 [다른 지역에서 서비스 사용 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](/docs/services/reqnsi.html#cross_region_service){: new_window}에서 사용 가능합니다. 서비스 상태가 정상이면 다음 단계를 수행하여 문제를 해결하십시오.
 {: tsResolve}
 
   * 조치 재시도:
@@ -297,7 +294,7 @@ Cloud Foundry CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}에 앱을 �
 ## Android 앱이 {{site.data.keyword.mobilepushshort}}를 받을 수 없음
 {: #ts_push}
 
-Google이 액세스할 수 없는 특정 지역의 Android 앱은 IBM {{site.data.keyword.mobilepushshort}} 서비스를 통해 전송하는 알림을 받을 수 없습니다. 이 경우 임시 해결책으로 써드파티 서비스를 사용합니다.Bluemix 앱에 사용할 {{site.data.keyword.mobilepushshort}} 서비스를 바인딩하고 등록된 디바이스에 메시지를 전송합니다. 하지만 Android 플랫폼에서 개발된 앱이 특정 지역에서 알림을 수신할 수 없습니다.
+Google이 액세스할 수 없는 특정 지역의 Android 앱은 IBM {{site.data.keyword.mobilepushshort}} 서비스를 통해 전송하는 알림을 받을 수 없습니다. 이 경우 임시 해결책으로 써드파티 서비스를 사용합니다. {{site.data.keyword.Bluemix_notm}} 앱에 대해 {{site.data.keyword.mobilepushshort}} 서비스를 바인드하고 등록된 디바이스에 메시지를 전송합니다. 하지만 Android 플랫폼에서 개발된 앱이 특정 지역에서 알림을 수신할 수 없습니다.
 {: tsSymptoms}
 
 IBM {{site.data.keyword.mobilepushshort}} 서비스에서는 GCM(Google Cloud Messaging) 서비스를 사용하여 Android 플랫폼에서 개발되는 모바일 앱에 알림을 디스패치합니다. Android 앱이 알림을 수신하도록 설정하려면 모바일 앱이 GCM(Google Cloud Messaging) 서비스에 액세스할 수 있어야 합니댜. Android 앱이 GCM 서비스에 도달할 수 없는 지역에서는 Android 앱이 {{site.data.keyword.mobilepushshort}}를 받을 수 없습니다.
@@ -334,10 +331,10 @@ IBM {{site.data.keyword.mobilepushshort}} 서비스에서는 GCM(Google Cloud Me
 
   * 보유할 수 있는 서비스 인스턴스 수에 대한 한계를 제거하려면 평가판 계정을 유료 계정으로 변환하십시오. 평가판 계정을 유료 계정으로 변환하는 방법에 대한 정보는 [플랜 변경 방법](/docs/pricing/index.html#changing)을 참조하십시오.
 
-## Bluemix에서 실행 파일을 실행할 수 없음
+## 실행 파일을 {{site.data.keyword.Bluemix_notm}}에서 실행할 수 없음
 {: #ts_executable}
 
-실행 파일이 다른 환경에서 개발되고 빌드된 경우 해당 실행 파일을 {{site.data.keyword.Bluemix_notm}}에서 실행할 수 없습니다.
+실행 파일이 다른 환경에서 개발되고 빌드된 경우에는 해당 실행 파일을 {{site.data.keyword.Bluemix_notm}}에서 실행할 수 없습니다.
 
 다른 환경에서 실행 파일을 개발하고 빌드한 경우 {{site.data.keyword.Bluemix_notm}}에서 이 실행 파일을 실행할 수 없습니다.
 {: tsSymptoms}
@@ -430,35 +427,10 @@ cf push appname -p app_path
 {: tsCauses}
 
 앱을 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}에서 {{site.data.keyword.Bluemix_notm}}로 푸시하는 경우 애플리케이션 마법사의 애플리케이션 세부사항 페이지에서 **Manifest 파일에 저장** 선택란을 선택하십시오. 그러면 마법사에서 지정한 변수가 애플리케이션의 Manifest 파일에 저장됩니다. 다음에 마법사를 열면 변수가 자동으로 표시됩니다.
-{: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## Bluemix Live Sync 디버그가 명령행에서 시작되지 않음
-{: #ts_no_debug}
-
-명령행을 사용하여 앱의 IBM Bluemix Live Sync 디버그 기능을 사용할 수 있지만 디버그 인터페이스에 액세스할 수 없습니다.  
-
-**BLUEMIX_APP_MGMT_ENABLE** 환경 변수를 설정하여 앱의 디버그 기능을 사용으로 설정했습니다. 하지만 `app_url/bluemix-debug/manage`에서 디버그 사용자 인터페이스에 액세스할 수 없습니다.
-{: tsSymptoms}
-
-다음과 같은 상황에서는 디버그 기능을 사용할 수 없습니다.
-{: tsCauses}
-
-  * `manifest.yml`에 명령 속성이 포함된 경우
-  * **-c** 옵션을 사용하여 앱을 {{site.data.keyword.Bluemix_notm}}에 푸시하는 경우
-
-다음 옵션 중 하나를 사용하여 문제를 해결하십시오.
-{: tsResolve}
-
-  * 권장 사례는 IBM Node.js 빌드팩을 사용하여 앱을 시작하는 것입니다. 자세한 정보는 [Node.js 애플리케이션을 {{site.data.keyword.Bluemix_notm}}에 배치](/docs/runtimes/nodejs/index.html#nodejs_runtime) 주제의 시작 명령 절을 참조하십시오.
-  * `manifest.yml`의 명령 속성을 command: null로 수정하거나 `-c null`을 포함하도록 푸시 명령을 편집하여 기존 앱의 명령을 사용 안함으로 설정하십시오. 
-  * **명령** 속성을 `manifest.yml`에서 제거하십시오. 그런 다음 {{site.data.keyword.Bluemix_notm}}에서 현재 앱을 삭제하고 다시 앱을 푸시하십시오. 
-
-<!-- end STAGING ONLY -->  
+{: tsResolve}  
 
 
-## Bluemix에서 조직을 찾을 수 없음
+## {{site.data.keyword.Bluemix_notm}}에서 조직을 찾을 수 없음
 {: #ts_orgs}
 
 {{site.data.keyword.Bluemix_notm}} 지역에서 작업할 때 {{site.data.keyword.Bluemix_notm}}에서 조직을 찾을 수 없습니다.
@@ -485,7 +457,7 @@ cf 명령행 인터페이스를 사용하여 애플리케이션을 {{site.data.k
 ```
 cf api https://api.eu-gb.bluemix.net
 ```
-Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix_notm}}로 푸시한 경우 먼저 {{site.data.keyword.Bluemix_notm}} 서버를 작성한 다음 조직이 작성된 {{site.data.keyword.Bluemix_notm}} 지역의 API 엔드포인트를 지정하십시오. Eclipse 도구에 대한 자세한 정보는 [IBM Eclipse Tools for Bluemix로 앱 배치](/docs/manageapps/eclipsetools/eclipsetools.html)를 참조하십시오.  
+Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix_notm}} 에 푸시 중인 경우에는 우선 {{site.data.keyword.Bluemix_notm}} 서버를 작성한 후에 조직이 작성된 {{site.data.keyword.Bluemix_notm}} 지역의 API 엔드포인트를 지정하십시오. Eclipse 도구의 사용에 대한 자세한 정보는 [IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}로 앱 배치](/docs/manageapps/eclipsetools/eclipsetools.html)를 참조하십시오.   
 
 ## 앱 라우트를 작성할 수 없음
 {: #ts_hostistaken}
@@ -541,12 +513,12 @@ cf push MyUniqueAppName02 -p "./app.war"
 
 
 
-## Liberty 애플리케이션이 Bluemix에 푸시될 때 2바이트 문자가 올바르게 표시되지 않음
+## 애플리케이션이 {{site.data.keyword.Bluemix_notm}}로 푸시될 때 2바이트 문자가 올바르게 표시되지 않음
 {: #ts_doublebytes}
 
 서블릿 또는 JSP 파일에 대해 유니코드 지원이 제대로 구성되지 않은 경우 2바이트 문자가 올바르게 표시되지 않을 수 있습니다.
 
-Liberty 애플리케이션을 {{site.data.keyword.Bluemix_notm}}로 푸시할 때 앱 내에 지정된 2바이트 문자가 올바르게 표시되지 않습니다.
+애플리케이션이 {{site.data.keyword.Bluemix_notm}}로 푸시될 때 앱 내에 지정된 2바이트 문자가 올바르게 표시되지 않습니다.
 {: tsSymptoms}
 
 이 문제점은 서블릿 또는 JSP 파일에 대해 유니코드 지원이 제대로 구성되지 않은 경우에 발생할 수 있습니다.
@@ -635,12 +607,12 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
 Node.js 앱에 대한 추가 팁은 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "외부 링크 아이콘"){: new_window}를 참조하십시오.
 
 
-## Bluemix Liberty 앱을 Eclipse로 가져온 후 `server.xml` 파일에 구성 오류가 나타남
+## {{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타남 
 {: #ts_eclipse}
 
-{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후 `server.xml` 파일에 구성 오류가 표시될 경우, 프로젝트에서 `server.xml` 파일을 제거해야 할 수 있습니다.
+{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타나면 프로젝트에서 `server.xml` 파일을 제거해야 합니다. 
 
-{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후 Eclipse 문제점 보기의 `server.xml` 파일에 구성 오류가 표시됩니다.
+{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 Eclipse 문제점 보기에서 `server.xml` 파일 내의 구성 오류가 나타납니다.
 {: tsSymptoms}
 
 Liberty 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시되면 Liberty 빌드팩은 `server.xml` 파일을 사용하여 앱을 구성하고 `runtime-vars.xml` 파일을 생성합니다. 앱을 Eclipse로 가져오면 `runtime-vars.xml` 파일이 로컬 환경에 없습니다.
@@ -664,7 +636,7 @@ Liberty 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시되면 Liberty 빌드
 [git update ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://git-scm.com/docs/git-update-index){: new_window} 명령을 사용하여 각 스크립트의 권한을 실행 가능으로 변경할 수 있습니다. 예를 들어, `git update --chmod=+x script.sh`를 입력합니다.
 {: tsResolve}
 
-## IBM Bluemix Continuous Delivery에서 Delivery Pipeline로부터 앱을 배치할 수 없음
+## {{site.data.keyword.Bluemix_notm}} Continuous Delivery에서 Delivery Pipeline의 앱을 배치할 수 없음
  {: #ts_devops_to_bm}
 
  `manifest.yml` 파일이 앱에 없는 경우에는 {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 수 없을 수 있습니다. 

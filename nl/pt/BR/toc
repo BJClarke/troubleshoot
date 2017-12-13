@@ -13,6 +13,7 @@ Resolução de problemas
 	ts_accounts.md
 	ts_runtimes.md
 	ts_services.md
+	ts_manageticket.md
 	bxnui.md
 	
 	{: .topicgroup}
@@ -21,4 +22,4 @@ Resolução de problemas
 	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
 	    [Instalando a ferramenta de comando cf](/docs/starters/install_cli.html)
 	    [Estouro de pilha](http://stackoverflow.com/questions/tagged/ibm-bluemix)
-{: .navgroup-end}
+ 	{: .navgroup-end}

@@ -13,6 +13,7 @@ Traitement des incidents
 	ts_accounts.md
 	ts_runtimes.md
 	ts_services.md
+	ts_manageticket.md
 	bxnui.md
 	
 	{: .topicgroup}
@@ -21,4 +22,4 @@ Traitement des incidents
 	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
 	    [Installation de l'outil de commande cf](/docs/starters/install_cli.html)
 	    [stackoverflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
-{: .navgroup-end}
+ 	{: .navgroup-end}
