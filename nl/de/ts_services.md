@@ -2,23 +2,21 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+
+lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
 
 # Fehlerbehebung für Services
 {: #services}
-
 
 Ein {{site.data.keyword.Bluemix}}-Serviceproblem liegt zum Beispiel vor, wenn für ein Gateway ein Zeitlimitfehler auftritt, sobald Sie eine Serviceinstanz löschen. Sie können solche Probleme durch Ausführen weniger einfacher Schritte beheben.
 {:shortdesc}
