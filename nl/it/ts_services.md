@@ -2,23 +2,21 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+
+lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
 
 # Risoluzione dei problemi relativi ai servizi
 {: #services}
-
 
 I problemi relativi ai servizi {{site.data.keyword.Bluemix}} potrebbero includere un errore di timeout del gateway che si verifica quando elimini un'istanza del servizio. Puoi risolvere questi problemi seguendo pochi semplici passi.
 {:shortdesc}

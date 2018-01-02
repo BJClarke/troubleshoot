@@ -2,15 +2,14 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2017-04-17"
+lastupdated: "2017-11-09"
 
 ---
 
-
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
 {:new_window: target="_blank"}
-
-
 
 # 概述
 {: #troubleshoot_overview}
@@ -19,11 +18,6 @@ lastupdated: "2017-04-17"
 
 
 登录到 {{site.data.keyword.Bluemix_notm}} 控制台：
-* 要查看运行中服务和运行时的状态，请单击菜单栏中的**支持 > 状态**。
-* 要查看通知，请单击菜单栏中的**管理 > 帐户 > 通知**。 
-* 要搜索文档和 Stack Overflow 或 developerWorks (dW) Answers 论坛以寻找答案，或要联系支持人员，请单击菜单栏中的**支持 > 查找答案**。
-
-如果在 {{site.data.keyword.Bluemix_notm}} 和 {{site.data.keyword.BluSoftlayer}} 之间链接了帐户，请登录到 Bluemix 控制台：
-* 要查看运行中服务和运行时的状态，请单击 **{{site.data.keyword.Bluemix_notm}} 应用程序**链接。
-* 要搜索答案，请单击菜单栏中的**支持 > 查找答案**。您还可以直接转至 *Stack Overflow* 或 *developerWorks (dW) Answers 论坛*来搜索答案或发布问题。
-
+* 要查看运行中服务和运行时的状态，请单击菜单栏中的**支持** > **状态**。
+* 要查看通知，请单击菜单栏中的**管理** > **帐户** > **平台通知**。
+* 要搜索文档和 Stack Overflow 或 developerWorks (dW) Answers 论坛以寻找答案、管理凭单或要联系支持中心的支持人员，请单击菜单栏中的**支持** > **支持中心**。

@@ -2,17 +2,17 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2017-01-10"
+
+lastupdated: "2017-11-08"
 
 ---
 
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
-{:codeblock: .codeblock} 
+{:codeblock: .codeblock}
 
 
 # Traitement des incidents liés aux contextes d'exécution
@@ -25,18 +25,18 @@ Vous pouvez rencontrer des problèmes lorsque vous utilisez des contextes d'exé
 ## Pack de construction obsolète utilisé lorsqu'une application est envoyée par commande push
 {: #ts_loading_bp}
 
-Il est possible que vous ne puissiez pas utiliser les derniers composants du pack de construction lorsque vous envoyez une application par commande push. Vous pouvez utiliser des packs de construction disposant de mécanismes intégrés pour empêcher le chargement de composants obsolètes ou supprimer le contenu du répertoire cache de votre application avant de l'envoyer par commande push ou de la reconstituer. 
+Il est possible que vous ne puissiez pas utiliser les derniers composants du pack de construction lorsque vous envoyez une application par commande push. Vous pouvez utiliser des packs de construction disposant de mécanismes intégrés pour empêcher le chargement de composants obsolètes ou supprimer le contenu du répertoire cache de votre application avant de l'envoyer par commande push ou de la reconstituer.
 
-Lorsque vous envoyez une application par commande push ou que vous la reconstituez une fois le pack de construction mis à jour, les composants les plus récents du pack de construction ne sont pas automatiquement chargés. Par conséquent, votre application utilise les composants obsolètes du pack de construction à partir du cache. Les mises à jour qui ont été appliquées au pack de construction depuis le dernier envoi de l'application par commande push ne sont pas implémentées. 
+Lorsque vous envoyez une application par commande push ou que vous la reconstituez une fois le pack de construction mis à jour, les composants les plus récents du pack de construction ne sont pas automatiquement chargés. Par conséquent, votre application utilise les composants obsolètes du pack de construction à partir du cache. Les mises à jour qui ont été appliquées au pack de construction depuis le dernier envoi de l'application par commande push ne sont pas implémentées.
 {: tsSymptoms}
 
 Certains packs de construction ne sont pas configurés pour télécharger automatiquement depuis Internet tous les composants mis à jour pour faire en sorte que vous utilisiez toujours la version la plus récente.
-{: tsCauses} 
+{: tsCauses}
 
-Vous pouvez utiliser des packs de construction disposant de mécanismes intégrés pour éviter de charger des composants obsolètes, par exemple : 
+Vous pouvez utiliser des packs de construction disposant de mécanismes intégrés pour éviter de charger des composants obsolètes, par exemple :
 {: tsResolve}
 
-  * [Cloud Foundry Java buildpack ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/java-buildpack){: new_window}. Ce pack de construction comporte un mécanisme intégré qui permet de s'assurer d'utiliser la version la plus récente. Pour plus d'informations sur le fonctionnement de ce mécanisme, voir [extending-caches.md ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}. 
+  * [Cloud Foundry Java buildpack ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/java-buildpack){: new_window}. Ce pack de construction comporte un mécanisme intégré qui permet de s'assurer d'utiliser la version la plus récente. Pour plus d'informations sur le fonctionnement de ce mécanisme, voir [extending-caches.md ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/java-buildpack/blob/master/docs/extending-caches.md){: new_window}.
   * [Cloud Foundry Node.js buildpack ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/nodejs-buildpack){: new_window}. Ce pack de construction a une fonctionnalité similaire qui utilise des variables d'environnement. Pour permettre au pack de construction Node.js de télécharger systématiquement des modules de noeud depuis Internet, entrez la commande suivante dans l'interface de ligne de commande cf : 	
   ```
   set NODE_MODULES_CACHE=false
@@ -54,16 +54,16 @@ le cache à l'aide de la commande suivante. Une fois cette étape réalisée, l'
   ```
   cf push nom_app -p chemin_app -b <pack_construction_null_modifié>
   ```
- 4. Envoyez votre application par commande push avec le pack de construction le plus récent que vous souhaitez utiliser à l'aide de la commande suivante : 
+ 4. Envoyez votre application par commande push avec le pack de construction le plus récent que vous souhaitez utiliser à l'aide de la commande suivante :
   ```
   cf push nom_app -p chemin_app -b <pack_construction_le_plus_récent>
   ```
- 
+
 ## Messages NOTICE du pack de construction PHP
 {: #ts_phplog}
 
 Des messages contenant le terme NOTICE peuvent apparaître dans les journaux. Vous pouvez arrêter la journalisation de ces
-messages en changeant le niveau de journalisation.	
+messages en changeant le niveau de journalisation.
 
 Lorsque vous envoyez par commande push une application dans {{site.data.keyword.Bluemix_notm}} à l'aide d'un pack de construction PHP, des messages contenant le terme `NOTICE` peuvent s'afficher :
 {: tsSymptoms}
@@ -75,14 +75,14 @@ Lorsque vous envoyez par commande push une application dans {{site.data.keyword.
 • 2015-01-26T15:01:00.63+0100 [App/0] ERR [26-Jan-2015 14:00:59] NOTICE: ready to handle connections
 ```
 Dans le pack de construction PHP, le paramètre error_log définit le niveau de journalisation. Par défaut, la valeur du paramètre `error_log` est **stderr notice**. L'exemple ci-dessous illustre la configuration du niveau de journalisation par défaut dans le fichier `nginx-defaults.conf` du pack de construction PHP fourni par Cloud Foundry. Pour plus d'informations, voir [cloudfoundry/php-buildpack ![External link icon](../icons/launch-glyph.svg "External link icon")](https://github.com/cloudfoundry/php-buildpack/blob/ff71ea41d00c1226d339e83cf2c7d6dda6c590ef/defaults/config/nginx/1.5.x/nginx-defaults.conf){: new_window}.
-{: tsCauses} 
+{: tsCauses}
 
 ```
 daemon off;
 error_log stderr notice;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-	
+
 Les messages `NOTICE` sont des messages d'information et n'indiquent pas nécessairement un problème. Vous pouvez arrêter la journalisation de ces messages en remplaçant le niveau de journalisation `stderr notice` par `stderr error` dans le fichier nginx-defaults.conf de votre pack de construction. Exemple : 	
 {: tsResolve}
 
@@ -92,7 +92,7 @@ error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
 Pour plus d'informations sur la modification de la configuration de journalisation par défaut, voir [error_log ![External link icon](../icons/launch-glyph.svg "External link icon")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}.
-	
+
 
 ## Impossible d'importer une bibliothèque Python tierce dans {{site.data.keyword.Bluemix_notm}}
 {: #ts_importpylib}
@@ -109,28 +109,28 @@ Ajoutez un fichier `requirements.txt` et un fichier `Procfile` au répertoire ra
 {: tsResolve}
 
  1. Ajoutez un fichier `requirements.txt` au répertoire racine de votre application Python.
- 
+
  Le fichier `requirements.txt` spécifie les packages de bibliothèque requis pour votre application Python ainsi que la version des packages. L'exemple ci-après illustre le contenu du fichier `requirements.txt`, où `web.py==0.37` indique que la version de la bibliothèque `web.py` qui sera téléchargée est la version 0.37 et `wsgiref==0.1.2` indique que la version de l'interface Web de Secure Gateway requise par la bibliothèque web.py est la version 0.1.2.
 	 ```
 	 web.py==0.37
      wsgiref==0.1.2
 	 ```
-	 Pour plus d'informations sur la configuration du fichier `requirements.txt`, voir [Requirements files](https://pip.readthedocs.org/en/1.1/requirements.html). 
-	 
+	 Pour plus d'informations sur la configuration du fichier `requirements.txt`, voir [Requirements files](https://pip.readthedocs.org/en/1.1/requirements.html).
+
  2. Ajoutez un fichier `Procfile` au répertoire racine de votre application Python.
- Le fichier `Procfile` doit contenir la commande de démarrage de votre application Python. Dans la commande suivante, *nom_de_votre_app* est le nom de votre application Python et *PORT* est le numéro de port que votre application Python doit utiliser pour recevoir les demandes des utilisateurs de l'application. *$PORT* est facultatif. Si vous ne spécifiez pas PORT dans la commande de démarrage, le numéro de port qui figure dans la variable d'environnement `VCAP_APP_PORT` dans l'application est utilisé. 
+ Le fichier `Procfile` doit contenir la commande de démarrage de votre application Python. Dans la commande suivante, *nom_de_votre_app* est le nom de votre application Python et *PORT* est le numéro de port que votre application Python doit utiliser pour recevoir les demandes des utilisateurs de l'application. *$PORT* est facultatif. Si vous ne spécifiez pas PORT dans la commande de démarrage, le numéro de port qui figure dans la variable d'environnement `VCAP_APP_PORT` dans l'application est utilisé.
 	```
 	web: python <nom_de_votre_app>.py $PORT
 	```
 
-A présent, vous pouvez importer la bibliothèque Python tierce dans {{site.data.keyword.Bluemix_notm}}.	
+A présent, vous pouvez importer la bibliothèque Python tierce dans {{site.data.keyword.Bluemix_notm}}.
 
 
 ## Le bouton Actions de la page Détails de l'instance est désactivé
 {: #ts_actionsbutton}
 
 Le bouton Actions de la page Détails de l'instance est désactivé.
-{: tsSymptoms} 
+{: tsSymptoms}
 
 Ce problème se produit pour les raisons suivantes :
 {: tsCauses}
@@ -140,13 +140,13 @@ Ce problème se produit pour les raisons suivantes :
  * L'application a été déployée avec une ancienne version du pack de construction Liberty.
 
 Si l'application a été déployée avec une ancienne version du pack de construction Liberty, redéployez l'application dans {{site.data.keyword.Bluemix_notm}}. Sinon, vous pouvez transmettre les fichiers journaux d'application client suivants à l'équipe de support :
-{: tsResolve} 
+{: tsResolve}
 
   * logs/messages.log
   * logs/stdout.log
   * logs/stderr.log
- 
-  
+
+
 ## Les données d'identification sont requises pour ouvrir une fenêtre de trace ou de vidage
 {: #ts_username}
 
@@ -163,7 +163,7 @@ Entrez de nouveau le nom d'utilisateur et le mot de passe.
 ## Des erreurs surviennent lors de l'exécution d'opérations de trace ou de vidage
 {: #ts_target}
 
-Un message d'erreur s'affiche lorsque des opérations de trace ou de vidage sont en cours. Ce message indique qu'une instance cible d'une application n'est pas à l'état en cours :	
+Un message d'erreur s'affiche lorsque des opérations de trace ou de vidage sont en cours. Ce message indique qu'une instance cible d'une application n'est pas à l'état en cours :
 {: tsSymptoms}
 
 ```
@@ -175,13 +175,13 @@ Instance 4 : La définition de la spécification de trace a abouti
 ```
 
 Ce problème se produit pour les raisons suivantes :
-{: tsCauses} 
+{: tsCauses}
 
   * Les fonctionnalités de trace ou de vidage s'appliquent uniquement aux instances d'application en cours d'exécution. Les opérations de trace ou de vidage ne peuvent pas être utilisées sur des instances d'application arrêtées, en cours de démarrage ou en panne.
-  * Le statut de l'instance d'application change lorsque la boîte de dialogue de trace ou de vidage est ouverte. 
+  * Le statut de l'instance d'application change lorsque la boîte de dialogue de trace ou de vidage est ouverte.
 
 Fermez la fenêtre, puis rouvrez-la.
-{: tsResolve} 
+{: tsResolve}
 
 
 ## Les instances possèdent des configurations traceSpecification différentes
@@ -194,11 +194,11 @@ Ce comportement se produit pour les raisons suivantes :
 {: tsCauses}
 
   * Vous avez changé la configuration pour une ou plusieurs instances précédemment. Si vous modifiez la configuration traceSpecification pour une instance, cette modification ne s'applique pas aux autres instances de la même application. Par exemple, votre application utilise log4j et il existe deux instances pour cette application. Vous pouvez remplacer le niveau de journalisation info de l'instance 0 par debug ; toutefois, le niveau de journalisation de l'instance 1 reste info.
-  
+
   * L'application s'étend et possède de nouvelles instances. L'utilitaire de gestion des ressources n'applique pas la configuration traceSpecification de l'instance existante à la nouvelle instance ajoutée. La nouvelle instance utilise la configuration par défaut. Par exemple, votre application utilise log4j et possède une instance. Vous pouvez remplacer le niveau de journalisation info de cette instance par debug. Après cette modification, si vous étendez votre application à deux instances, le niveau de journalisation de la nouvelle instance est info, et non debug.
 
 Aucune action requise. Ce comportement est normal.
-{: tsResolve} 
+{: tsResolve}
 
 
 ## Quota de disque dépassé
@@ -209,8 +209,8 @@ Vous pouvez constater, dans votre journal d'application, que le quota de disque 
 Le message d'erreur `Disk quota exceeded` figure dans le journal de votre application.
 {: tsSymptoms}
 
-Ce problème se produit pour l'une des raisons suivantes : 
-{: tsCauses} 
+Ce problème se produit pour l'une des raisons suivantes :
+{: tsCauses}
 
   * Les fichiers de vidage sont générés avec les instances d'application en cours d'exécution ; le quota de disque alloué est dépassé. Par défaut, le quota de disque pour une instance d'application est de 1 Go. Vous pouvez vérifier l'utilisation de votre disque en cliquant sur **Tableau de bord > Application > Contexte d'exécution de l'application**. L'exemple suivant montre les informations de contexte d'exécution, notamment l'utilisation du disque, pour deux instances d'une application :
     ```
@@ -222,11 +222,10 @@ Ce problème se produit pour l'une des raisons suivantes :
   * Le quota de disque est limité par le quota de l'organisation.
 
 Utilisez l'une des méthodes suivantes :
-{: tsResolve} 
+{: tsResolve}
 
   * Supprimez les fichiers de vidage après les avoir téléchargés.
   * Redéployez l'application avec un quota de disque plus important en insérant l'entrée suivante dans le manifeste de déploiement :
     ```
 	disk_quota: 2048
 	```
-	

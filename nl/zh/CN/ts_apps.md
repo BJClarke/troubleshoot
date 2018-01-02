@@ -1,9 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+lastupdated: "2017-11-09"
 
 ---
 
@@ -15,14 +16,10 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # 有关管理应用程序的故障诊断
 {: #managingapps}
 
-
-有关管理应用程序的一般性问题可能包括：无法更新应用程序或未显示双字节字符。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
+有关管理应用程序的一般问题可能包括：无法更新应用程序或未显示双字节字符。在许多情况下，只需执行几个简单的步骤即可解决这些问题。
 {:shortdesc}
 
 
@@ -42,12 +39,12 @@ lastupdated: "2017-04-10"
 关闭消息窗口，然后单击运行时窗格中的**重置**按钮。
 {: tsResolve}
 
-## Bluemix 区域之间的自动故障转移不可用
+## {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移不可用
 {: #ts_failover}
 
 无法使用 {{site.data.keyword.Bluemix_notm}} 区域之间的自动故障转移。但可以使用支持多个 IP 地址间故障转移的 DNS 提供程序来作为变通方法。
 
-当某个 {{site.data.keyword.Bluemix_notm}} 区域变为不可用时，在该区域运行的应用程序也不可用，即使在另一个 {{site.data.keyword.Bluemix_notm}} 区域中有相同的应用程序正在运行，也是如此。
+当某个 {{site.data.keyword.Bluemix_notm}} 区域变为不可用时，在该区域中运行的应用程序也不可用，即使在另一个 {{site.data.keyword.Bluemix_notm}} 区域中有相同的应用程序正在运行，也是如此。
 {: tsSymptoms}
 
 {{site.data.keyword.Bluemix_notm}} 尚不提供从一个区域到另一个区域的自动故障转移。
@@ -118,7 +115,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 要检查 {{site.data.keyword.eclipsetoolsfull}} 运行的 Java 版本，请完成以下步骤：
 {: tsResolve}
 
-  1. 在 IBM Eclipse Tools for Bluemix 中，选择**帮助** > **关于 Eclipse** > **安装详细信息** > **配置**。
+  1. 在 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 中，选择**帮助** > **关于 Eclipse** > **安装详细信息** > **配置**。
   2. 从列表中找到 `eclipse.vm` 属性。以下行是 `eclipse.vm` 属性的示例：
 
 	```
@@ -172,7 +169,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 
 如果当前组织没有与其相关联的空间，那么您无法创建应用程序或服务。
 
-尝试在 Bluemix 中创建应用程序时，您会看到以下错误消息：
+尝试在 {{site.data.keyword.Bluemix_notm}} 中创建应用程序时，您会看到以下错误消息：
 {: tsSymptoms}
 
 `BXNUI0515E: 未检索到组织中的空间。发生了网络连接问题，或者当前组织没有与其相关联的空间。`
@@ -185,7 +182,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 
 
 * 在菜单栏中，单击**管理 > 帐户 > 组织**。选择要在其中创建空间的组织，然后单击**创建空间**。
-  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`。请重试。如果再次看到此消息，请转至 [Bluemix 状态 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixstatus){: new_window} 页面，检查服务或组件是否存在问题。
+  * 在 cf 命令行界面中，输入 `cf create-space <space_name> -o <organization_name>`。请重试。如果再次看到此消息，请转至 [{{site.data.keyword.Bluemix_notm}} 状态 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixstatus){: new_window} 页面，检查服务或组件是否存在问题。
 
 
 ## 无法执行请求的操作
@@ -208,7 +205,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 
  * 请求组织管理员将您的角色更改为开发者，或者创建空间，然后为您分配开发者角色。有关详细信息，请参阅[管理组织和空间](/docs/admin/orgs_spaces.html)。
 
-## 由于授权错误而无法访问 Bluemix 服务
+## 由于授权错误而无法访问 {{site.data.keyword.Bluemix_notm}} 服务
 {: #ts_vcap}
 
 应用程序访问 {{site.data.keyword.Bluemix_notm}} 服务时，如果服务凭证是硬编码到应用程序中的，那么可能会发生授权错误。
@@ -227,7 +224,7 @@ process.env.VCAP_SERVICES
 ```
 有关其他程序语言中可以使用的命令的更多信息，请参阅 [Java ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} 和 [Ruby ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}。
 
-## 无法使用 IBM Eclipse Tools for Bluemix 部署应用程序
+## 无法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 部署应用程序
 {: #ts_bm_tools_facet}
 
 将不受支持的构面应用于 Eclipse 项目时，可能无法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序部署到 {{site.data.keyword.Bluemix_notm}}。
@@ -294,7 +291,7 @@ IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 通过项目构面将�
 ## Android 应用程序收不到 {{site.data.keyword.mobilepushshort}}
 {: #ts_push}
 
-在无法访问 Google 的某些地区，Android 应用程序收不到您通过 IBM {{site.data.keyword.mobilepushshort}} 服务发送出来的通知。在这种情况下，变通方法是使用第三方服务。为 Bluemix 应用程序绑定 {{site.data.keyword.mobilepushshort}} 服务，并将消息发送给已注册的设备。但在某些地区，在 Android 平台上开发的应用程序收不到您的通知。
+在无法访问 Google 的某些地区，Android 应用程序收不到您通过 IBM {{site.data.keyword.mobilepushshort}} 服务发送出来的通知。在这种情况下，变通方法是使用第三方服务。为 {{site.data.keyword.Bluemix_notm}} 应用程序绑定 {{site.data.keyword.mobilepushshort}} 服务，并将消息发送给已注册的设备。但在某些地区，在 Android 平台上开发的应用程序收不到您的通知。
 {: tsSymptoms}
 
 IBM {{site.data.keyword.mobilepushshort}} 服务使用 Google 云消息传递 (GCM) 服务将通知分派到在 Android 平台上开发的移动应用程序。要使 Android 应用程序能够接收通知，移动应用程序必须可以访问 Google 云消息传递 (GCM) 服务。在 Android 应用程序无法访问 GCM 服务的区域中，Android 应用程序收不到 {{site.data.keyword.mobilepushshort}}。
@@ -331,7 +328,7 @@ IBM {{site.data.keyword.mobilepushshort}} 服务使用 Google 云消息传递 (G
 
   * 要除去您可拥有的服务实例数的限制，请将试用帐户转换为付费帐户。有关如何将试用帐户转换为付费帐户的信息，请参阅[如何更改套餐](/docs/pricing/index.html#changing)。
 
-## 无法在 Bluemix 上运行可执行文件
+## 无法在 {{site.data.keyword.Bluemix_notm}} 上运行可执行文件
 {: #ts_executable}
 
 如果可执行文件是在不同环境中开发和构建的，那么可能无法在 {{site.data.keyword.Bluemix_notm}} 上运行这些可执行文件。
@@ -425,35 +422,10 @@ cf push appname -p app_path
 {: tsCauses}
 
 从 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，请在“应用程序”向导的“应用程序详细信息”页面上选中**保存到清单文件**复选框。这样，您在向导中指定的变量就会保存到应用程序的清单文件中。 下次打开向导时，这些变量会自动显示出来。
-{: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## Bluemix Live Sync“调试”功能无法通过命令行启动
-{: #ts_no_debug}
-
-您使用命令行为应用程序启用了 IBM Bluemix Live Sync“调试”功能，但是您无法访问“调试”界面。  
-
-您通过设置 **BLUEMIX_APP_MGMT_ENABLE** 环境变量启用了应用程序的“调试”功能。但是，您无法在 `app_url/bluemix-debug/manage` 处访问“调试”用户界面。
-{: tsSymptoms}
-
-在以下几种情况下，无法启用“调试”功能：
-{: tsCauses}
-
-  * `manifest.yml` 包含命令属性时
-  * 使用 **-c** 选项将应用程序推送至 {{site.data.keyword.Bluemix_notm}} 时
-
-使用以下其中一个选项可解决该问题：
-{: tsResolve}
-
-  * 建议的作法是使用 IBM Node.js buildpack 启动应用程序。有关更多信息，请参阅[将 Node.js 应用程序部署至 {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime) 主题的“启动命令”一节。
-  * 通过将 `manifest.yml` 中的命令属性修改为命令 null 或通过编辑推送命令以包括 `-c null`，禁用现有应用程序的命令。
-  * 从 `manifest.yml` 中除去**命令**属性。然后，从 {{site.data.keyword.Bluemix_notm}} 中删除当前应用程序，并重新推送应用程序。
-
-<!-- end STAGING ONLY -->  
+{: tsResolve}  
 
 
-## 在 Bluemix 上找不到组织
+## 在 {{site.data.keyword.Bluemix_notm}} 上找不到组织
 {: #ts_orgs}
 
 在 {{site.data.keyword.Bluemix_notm}} 区域上工作时，可能在 {{site.data.keyword.Bluemix_notm}} 上找不到组织。
@@ -480,7 +452,7 @@ cf push appname -p app_path
 ```
 cf api https://api.eu-gb.bluemix.net
 ```
-如果要使用 Eclipse 工具将应用程序推送到 {{site.data.keyword.Bluemix_notm}}，必须先创建 {{site.data.keyword.Bluemix_notm}} 服务器，然后指定所创建组织所在的 {{site.data.keyword.Bluemix_notm}} 区域的 API 端点。有关使用 Eclipse 工具的更多信息，请参阅[使用 IBM Eclipse Tools for Bluemix 部署应用程序](/docs/manageapps/eclipsetools/eclipsetools.html)。  
+如果要使用 Eclipse 工具将应用程序推送到 {{site.data.keyword.Bluemix_notm}}，必须先创建 {{site.data.keyword.Bluemix_notm}} 服务器，然后指定所创建组织所在的 {{site.data.keyword.Bluemix_notm}} 区域的 API 端点。有关使用 Eclipse 工具的更多信息，请参阅[使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 部署应用程序](/docs/manageapps/eclipsetools/eclipsetools.html)。  
 
 ## 无法创建应用程序路径
 {: #ts_hostistaken}
@@ -534,12 +506,12 @@ cf push MyUniqueAppName02 -p "./app.war"
 
 
 
-## 将 Liberty 应用程序推送到 Bluemix 时未正确显示双字节字符
+## 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时未正确显示双字节字符
 {: #ts_doublebytes}
 
 如果没有为 servlet 或 JSP 文件正确配置 Unicode 支持，那么可能未正确显示双字节字符。
 
-将 Liberty 应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，未正确显示在应用程序内指定的双字节字符。
+将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时，未正确显示在应用程序内指定的双字节字符。
 {: tsSymptoms}
 
 如果没有为 servlet 或 JSP 文件正确配置 Unicode 支持，那么可能发生该问题。
@@ -627,7 +599,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 有关 Node.js 应用程序的更多提示，请参阅 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "外部链接图标"){: new_window}。
 
 
-## 将 Bluemix Liberty 应用程序导入到 Eclipse 之后，`server.xml` 文件中出现配置错误
+## 将 {{site.data.keyword.Bluemix_notm}} Liberty 应用程序导入到 Eclipse 之后，`server.xml` 文件中出现配置错误
 {: #ts_eclipse}
 
 在将 {{site.data.keyword.Bluemix_notm}} Liberty 应用程序导入到 Eclipse 之后，如果在 `server.xml` 文件中看到配置错误，那么可能需要从项目中除去 `server.xml` 文件。
@@ -656,7 +628,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 您可以使用 [git update ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://git-scm.com/docs/git-update-index){: new_window} 命令将每个脚本的许可权更改为可执行。例如，可以输入 `git update --chmod=+x script.sh`。
 {: tsResolve}
 
-## 无法通过 IBM Bluemix Continuous Delivery 中的 Delivery Pipeline 部署应用程序
+## 无法通过 {{site.data.keyword.Bluemix_notm}} Continuous Delivery 中的 Delivery Pipeline 部署应用程序
  {: #ts_devops_to_bm}
 
  如果应用程序中不存在 `manifest.yml` 文件，那么可能无法使用 {{site.data.keyword.contdelivery_short}} 中的 {{site.data.keyword.deliverypipeline}} 来部署应用程序。

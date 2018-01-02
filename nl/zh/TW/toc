@@ -13,6 +13,7 @@
 	ts_accounts.md
 	ts_runtimes.md
 	ts_services.md
+	ts_manageticket.md
 	bxnui.md
 	
 	{: .topicgroup}
@@ -21,4 +22,4 @@
 	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
 	    [安裝 cf 指令工具](/docs/starters/install_cli.html)
 	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
-{: .navgroup-end}
+ 	{: .navgroup-end}

@@ -1,23 +1,20 @@
 ---
 
 copyright:
-  years: 2015, 2017  
-lastupdated: "2016-08-12"
+  years: 2015, 2017lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
 
 # 服務疑難排解
 {: #services}
-
 
 {{site.data.keyword.Bluemix}} 服務問題可能包括刪除服務實例時發生的閘道逾時錯誤。您可以遵循一些簡單的步驟，從這些問題中回復。
 {:shortdesc}

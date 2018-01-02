@@ -1,9 +1,10 @@
 ---
 
 copyright:
+
   years: 2015, 2017
 
-lastupdated: "2017-04-10"
+última atualização: "09-11-2017"
 
 ---
 
@@ -15,12 +16,8 @@ lastupdated: "2017-04-10"
 {:codeblock: .codeblock}
 
 
-
-
-
 # Resolução de problemas para gerenciar aplicativos
 {: #managingapps}
-
 
 Problemas gerais com o gerenciamento de apps podem incluir apps que não podem ser atualizados ou caracteres de byte duplo que não são exibidos. Em muitos casos, é possível recuperar-se desses problemas seguindo algumas etapas simples.
 {:shortdesc}
@@ -42,13 +39,13 @@ Ao rolar o seu mouse sobre o campo **INSTÂNCIAS** ou **COTA DE MEMÓRIA** na á
 Feche a janela da mensagem e, em seguida, clique no botão **RECONFIGURAR** na área de janela de tempo de execução.
 {: tsResolve}
 
-## O failover automático entre regiões do Bluemix não está disponível
+## O failover automático entre regiões do {{site.data.keyword.Bluemix_notm}} não está disponível
 {: #ts_failover}
 
 Não é possível usar failover automático entre regiões do {{site.data.keyword.Bluemix_notm}}. No entanto, é possível usar um provedor de DNS que suporte failover entre vários
 endereços IP como solução alternativa.
 
-Quando um região do {{site.data.keyword.Bluemix_notm}} se torna indisponível, os apps em execução nessa região também ficam indisponíveis, ainda que os mesmos apps estejam em execução em outra região do {{site.data.keyword.Bluemix_notm}}.
+Quando uma região do {{site.data.keyword.Bluemix_notm}} se torna indisponível, os apps que estão em execução nessa região também ficam indisponíveis, ainda que os mesmos apps estejam em execução em outra região do {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
 O {{site.data.keyword.Bluemix_notm}} ainda não fornece failover automático de uma região para outra.
@@ -57,9 +54,7 @@ O {{site.data.keyword.Bluemix_notm}} ainda não fornece failover automático de 
 É possível usar um provedor de DNS que suporte failover inteligente entre vários endereços de IDs e configurar manualmente as definições de DNS para ativar o failover automático entre regiões do {{site.data.keyword.Bluemix_notm}}. Os provedores de DNS com essa capacidade incluem NSONE, Akamai, Dyn.
 {: tsResolve}
 
-Ao configurar suas definições de DNS, deve-se especificar os endereços IP públicos das regiões do {{site.data.keyword.Bluemix_notm}} em que seu apps estão em execução. Para obter o endereço IP público
-de uma região do {{site.data.keyword.Bluemix_notm}},
-use o comando `nslookup`. Por exemplo, é possível
+Ao configurar suas definições de DNS, deve-se especificar os endereços IP públicos das regiões do {{site.data.keyword.Bluemix_notm}} em que seu apps estão em execução. Para obter o endereço IP público de uma região do {{site.data.keyword.Bluemix_notm}}, use o comando `nslookup`. Por exemplo, é possível
 digitar o comando a seguir em uma janela de linha de comandos:
 ```
 nslookup stage1.mybluemix.net
@@ -122,7 +117,7 @@ Se a sua JVM do ambiente de trabalho for uma dessas versões, você poderá ter 
 Para verificar a versão de Java que o {{site.data.keyword.eclipsetoolsfull}} executa, conclua as etapas a seguir:
 {: tsResolve}
 
-  1. No IBM Eclipse Tools for Bluemix, selecione **Ajuda** > **Sobre o Eclipse** > **Detalhes da instalação** > **Configuração**.
+  1. No IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, selecione **Ajuda** > **Sobre o Eclipse** > **Detalhes da instalação** > **Configuração**.
   2. Localize a propriedade `eclipse.vm` na lista. A linha a seguir é um exemplo de uma propriedade `eclipse.vm`:
 
 	```
@@ -177,7 +172,7 @@ exemplo:
 
 Não será possível criar um app ou um serviço se a sua organização atual não tiver um espaço associado a ela.
 
-Ao tentar criar um app no Bluemix, você vê a mensagem de erro a seguir:
+Ao tentar criar um app no {{site.data.keyword.Bluemix_notm}}, você vê a mensagem de erro a seguir:
 {: tsSymptoms}
 
 `BXNUI0515E: os espaços na organização não foram recuperados. Ocorreu um problema de conexão de rede ou a sua organização atual não tem um espaço associado a ela.`
@@ -191,7 +186,7 @@ Assegure-se de que tenha criado um espaço em sua organização atual. Para cria
   * Na barra de menus, clique em **Gerenciar > Conta > Organizações**. Selecione a organização na qual você deseja criar o espaço e clique em **Criar um espaço**.
   * Na interface da linha de comandos cf, digite `cf create-space <space_name> -o <organization_name>`.
 
-Tente novamente. Se essa mensagem ocorrer novamente, acesse a página [Status do Bluemix ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window} para verificar se um serviço ou um componente tem um problema.
+Tente novamente. Se essa mensagem ocorrer novamente, acesse a página de status do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window} para verificar se um serviço ou componente tem um problema.
 
 
 ## Não é possível executar as ações solicitadas
@@ -214,12 +209,12 @@ Para obter o nível de autoridade apropriado, use um dos métodos a seguir:
  * Selecione outra organização e espaço para os quais você tenha a função de desenvolvedor.
  * Peça ao gerenciador de organização para mudar sua função para desenvolvedor ou para criar um espaço e, em seguida, designar a você uma função de desenvolvedor. Veja [Gerenciando organizações e espaços](/docs/admin/orgs_spaces.html) para obter detalhes.
 
-## Não é possível acessar serviços do Bluemix por causa de erros de autorização
+## Não é possível acessar serviços do {{site.data.keyword.Bluemix_notm}} devido a erros de autorização
 {: #ts_vcap}
 
-Os erros de autorização poderão ocorrer quando seu app acessar um serviço do {{site.data.keyword.Bluemix_notm}}, se as credenciais de serviço estiverem codificadas permanentemente em seu app.
+O erros de autorização poderão ocorrer quando seu app acessar um serviço {{site.data.keyword.Bluemix_notm}}, se as credenciais de serviço estiverem codificadas permanentemente em seu app.
 
-Depois de configurar seu app para se comunicar com um serviço {{site.data.keyword.Bluemix_notm}}, você implementará o app no {{site.data.keyword.Bluemix_notm}}. No entanto, não é possível usar o app para acessar o serviço {{site.data.keyword.Bluemix_notm}} e receber um erro de autorização.
+Depois de configurar seu app para se comunicar com um serviço {{site.data.keyword.Bluemix_notm}}, você implementa o app no {{site.data.keyword.Bluemix_notm}}. No entanto, não é possível usar o app para acessar o serviço {{site.data.keyword.Bluemix_notm}} e receber um erro de autorização.
 {: tsSymptoms}
 
 As credenciais codificadas permanentemente no app podem não estar corretas. Toda vez que o serviço for recriado, as credenciais para acessá-lo mudarão.
@@ -234,10 +229,10 @@ process.env.VCAP_SERVICES
 Para obter mais informações sobre os comandos que podem ser usados em outras linguagens de programa, veja [Java ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} e [Ruby ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
 
 
-## Não é possível implementar apps usando o IBM Eclipse Tools for Bluemix
+## Não é possível implementar apps usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}
 {: #ts_bm_tools_facet}
 
-Quando uma máscara não suportada é aplicada ao projeto Eclipse, é possível que você não consiga implementar os apps no {{site.data.keyword.Bluemix_notm}} usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+Quando uma máscara não suportada é aplicada a seu projeto Eclipse, você pode não ser capaz de implementar seus apps no {{site.data.keyword.Bluemix_notm}} usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 
 É possível implementar com sucesso seu app no {{site.data.keyword.Bluemix_notm}} usando a CLI do Cloud Foundry. No entanto, não é possível implementar o app no {{site.data.keyword.Bluemix_notm}} usando o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} e você vê a mensagem de erro: `A máscara de projeto <facet_name> não é suportada.` Por exemplo:
 {: tsSymptoms}
@@ -267,7 +262,7 @@ Um erro Gateway inválido acontece geralmente quando você visita um website que
 
 Outras causas menos comuns de um erro Gateway inválido são Internet service provider (ISP) descartável, configurações inválidas de firewall e erros de cache do navegador.
 
-Se você suspeitar que um serviço {{site.data.keyword.Bluemix_notm}} esteja inativo, primeiro verifique o status da página [{{site.data.keyword.Bluemix_notm}}! [Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
+Se você suspeitar que um serviço do {{site.data.keyword.Bluemix_notm}} está inativo, primeiro verifique a página de status do [{{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixstatus){: new_window}. Uma solução alternativa pode ser usar o serviço em outra região do {{site.data.keyword.Bluemix_notm}}. Informações detalhadas estão disponíveis em [Usando serviços em outra região ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Se o status de serviço for normal, tente as etapas a seguir para resolver o problema:
 {: tsResolve}
 
   * Tente a ação novamente:
@@ -309,7 +304,7 @@ Use um dos métodos a seguir para especificar sua cota de disco. A cota máxima 
 
 Os apps Android em determinadas regiões em que o Google não é acessível não podem receber notificações enviadas por meio do serviço IBM {{site.data.keyword.mobilepushshort}}. Nesse caso, uma solução alternativa é usar serviços de terceiros.
 
-Você liga um serviço {{site.data.keyword.mobilepushshort}} para seu app Bluemix e envia uma mensagem para os dispositivos registrados. No entanto, os apps que são desenvolvidos na plataforma Android não podem receber suas notificações em certas regiões.
+Você liga um serviço {{site.data.keyword.mobilepushshort}} para seu app do {{site.data.keyword.Bluemix_notm}} e envia uma mensagem para os dispositivos registrados. No entanto, os apps que são desenvolvidos na plataforma Android não podem receber suas notificações em certas regiões.
 {: tsSymptoms}
 
 O serviço IBM {{site.data.keyword.mobilepushshort}} usa o serviço Google Cloud Messaging (GCM) para despachar notificações para apps móveis que são desenvolvidos na plataforma do Android. Para ativar o recebimento de notificações em apps Android, o serviço
@@ -351,10 +346,10 @@ Exclua quaisquer instâncias de serviços que não forem necessárias ou remova 
 
   * Para remover o limite no número de instâncias de serviço que você pode ter, converta sua conta para teste em uma conta a pagar. Para obter informações sobre como converter sua conta para teste em uma conta a pagar, veja [Como mudar seu plano](/docs/pricing/index.html#changing).
 
-## Os executáveis não podem ser executados no Bluemix
+## Os executáveis não podem ser executados no {{site.data.keyword.Bluemix_notm}}
 {: #ts_executable}
 
-Talvez não seja possível executar executáveis no {{site.data.keyword.Bluemix_notm}} quando eles tiverem sido desenvolvidos e construídos em um ambiente diferente.
+Você pode não ser capaz de executar os executáveis no {{site.data.keyword.Bluemix_notm}} quando esses executáveis foram implementados e construídos em um ambiente diferente.
 
 Não será possível executar executáveis no {{site.data.keyword.Bluemix_notm}} quando eles tiverem sido desenvolvidos e construídos em um ambiente diferente.
 {: tsSymptoms}
@@ -451,41 +446,10 @@ As variáveis que você especificou são salvas somente se salvá-las para o arq
 
 Ao enviar por push um app para o {{site.data.keyword.Bluemix_notm}} a partir do IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, selecione a caixa de seleção **Salvar no arquivo manifest** na página de detalhes do Aplicativo do assistente do Aplicativo. Em seguida,
 as variáveis que você especificou no assistente são salvas para o arquivo manifest de seu aplicativo. Na próxima vez em que abrir o assistente, as variáveis serão exibidas automaticamente.
-{: tsResolve}
-
-<!-- begin STAGING ONLY -->
-
-## O Bluemix Live Sync Debug não é iniciado na linha de comandos
-{: #ts_no_debug}
-
-Você ativou o recurso IBM Bluemix Live Sync Debug para seu app usando a linha de comandos, mas não é possível acessar a interface de Depuração.  
-
-Você ativou o recurso de depuração para seu aplicativo configurando a variável de
-ambiente **BLUEMIX_APP_MGMT_ENABLE**. No entanto, não é possível acessar a interface com o usuário de Depuração em `app_url/bluemix-debug/manage`.
-{: tsSymptoms}
-
-O recurso de Depuração não pode ser ativado nestas situações:
-{: tsCauses}
-
-  * Quando o `manifest` contém o atributo de comando
-  * Quando você usa a opção **-c** para enviar por push um app
-para o {{site.data.keyword.Bluemix_notm}}
-
-Use uma das opções a seguir para resolver o problema:
-{: tsResolve}
-
-  * A prática recomendada é usar o buildpack IBM Node.js para iniciar o app. Para obter mais informações, consulte a seção Comando de inicialização do tópico [Implementando um aplicativo Node.js no {{site.data.keyword.Bluemix_notm}}](/docs/runtimes/nodejs/index.html#nodejs_runtime).
-  * Desative o comando para seu app existente revisando o atributo de
-comando no `manifest.yml` para o comando: null ou editando seu
-comando push para incluir `-c Null`.
-  * Remova o atributo de **comando** do `manifest.yml`. Em
-seguida, exclua o app atual do {{site.data.keyword.Bluemix_notm}} e envie por
-push o app novamente.
-
-<!-- end STAGING ONLY -->  
+{: tsResolve}  
 
 
-## As organizações não podem ser localizadas no Bluemix
+## As organizações não podem ser localizadas no {{site.data.keyword.Bluemix_notm}}
 {: #ts_orgs}
 
 Talvez você não consiga localizar sua organização no {{site.data.keyword.Bluemix_notm}} ao trabalhar em uma região {{site.data.keyword.Bluemix_notm}}.
@@ -518,11 +482,7 @@ Se você estiver enviando por push seu aplicativo para o {{site.data.keyword.Blu
 ```
 cf api https://api.eu-gb.bluemix.net
 ```
-Se
-você estiver enviando por push seu aplicativo para {{site.data.keyword.Bluemix_notm}}, usando as ferramentas
-Eclipse, primeiro deve criar um servidor {{site.data.keyword.Bluemix_notm}} e especificar o terminal da
-API da região {{site.data.keyword.Bluemix_notm}} em que foi criada a sua organização. Para obter informações adicionais
-sobre como usar as ferramentas do Eclipse, consulte [Implementando apps com o IBM Eclipse Tools for Bluemix](/docs/manageapps/eclipsetools/eclipsetools.html).  
+Se você está enviando por push seu aplicativo para o {{site.data.keyword.Bluemix_notm}} usando as ferramentas do Eclipse, deve-se primeiro criar um servidor {{site.data.keyword.Bluemix_notm}} e especificar o terminal da API da região do {{site.data.keyword.Bluemix_notm}} em que sua organização foi criada. Para obter mais informações sobre como usar as ferramentas do Eclipse, veja [Implementando apps com o IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}](/docs/manageapps/eclipsetools/eclipsetools.html).  
 
 ## As rotas do app não podem ser criadas
 {: #ts_hostistaken}
@@ -581,12 +541,12 @@ sobre o comando `cf push`, insira `cf push
      -h`. 	
 
 
-## Caracteres de byte duplo não são exibidos corretamente quando os aplicativos Liberty são enviados por push ao Bluemix
+## Os caracteres de byte duplo não são exibidos de forma adequada quando os aplicativos são enviados por push para o {{site.data.keyword.Bluemix_notm}}
 {: #ts_doublebytes}
 
 Os caracteres de byte duplo poderão não ser exibidos corretamente se o suporte Unicode não estiver configurado corretamente para os arquivos servlet ou JSP.
 
-Quando um aplicativo Liberty é enviado por push para o {{site.data.keyword.Bluemix_notm}}, os caracteres de byte duplo especificados no app não são exibidos corretamente.
+Quando um aplicativo é enviado por push para o {{site.data.keyword.Bluemix_notm}}, os caracteres de byte duplo especificados no app não são exibidos corretamente.
 {: tsSymptoms}
 
 O problema poderá ocorrer se o suporte Unicode não estiver configurado corretamente para os arquivos servlet ou JSP.
@@ -633,8 +593,7 @@ Use um dos métodos a seguir, dependendo da causa do problema:
         ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * Use o arquivo [package.json ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.npmjs.com/json){: new_window}. Por
-exemplo:
+    * Use o arquivo [package.json ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.npmjs.com/json){: new_window}. Por exemplo:
 	    ```
 		{
       ...
@@ -643,8 +602,7 @@ exemplo:
  	   }
 	}
 	    ```
-    * Use o arquivo `manifest.yml`. Por
-exemplo:
+    * Use o arquivo `manifest.yml`. Por exemplo:
 	    ```
 		applications:
   name: MyUniqueNodejs01
@@ -676,15 +634,12 @@ exemplo:
 Para obter mais dicas sobre apps Node.js, veja [Dicas para aplicativos Node.js](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "Ícone de link externo"){: new_window}.
 
 
-## Erros de configuração aparecem no arquivo `server.xml` depois de importar um app do Liberty do Bluemix para o Eclipse
+## Erros de configuração aparecem no arquivo `server.xml` depois de importar um app {{site.data.keyword.Bluemix_notm}} Liberty para o Eclipse
 {: #ts_eclipse}
 
-Se ocorrerem erros de configuração no arquivo `server.xml` depois de importar um app
-{{site.data.keyword.Bluemix_notm}} Liberty no Eclipse, poderá ser necessário remover o arquivo
-`server.xml` do projeto.
+Se você vir erros de configuração no arquivo `server.xml` depois de importar um app {{site.data.keyword.Bluemix_notm}} Liberty para o Eclipse, poderá ser necessário remover o arquivo `server.xml` do projeto.
 
-Depois de importar um app {{site.data.keyword.Bluemix_notm}} Liberty no Eclipse, ocorrerão erros
-de configuração no arquivo `server.xml` na visualização Problemas do Eclipse.
+Depois de importar um app {{site.data.keyword.Bluemix_notm}} Liberty para o Eclipse, você verá erros de configuração no arquivo `server.xml` na visualização Problemas do Eclipse.
 {: tsSymptoms}
 
 O buildpack do Liberty usa o arquivo `server.xml` para configurar o app e gera um arquivo `runtime-vars.xml` quando o app Liberty é enviado por push ao {{site.data.keyword.Bluemix_notm}}. Quando você importa o app para o Eclipse, o arquivo `runtime-vars.xml` não existe em seu ambiente local.
@@ -708,7 +663,7 @@ Esse problema poderá ocorrer se scripts, como o script de detecção, o script 
 É possível usar o comando [git update ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://git-scm.com/docs/git-update-index){: new_window} para mudar a permissão de cada script para executável. Por exemplo, é possível digitar `git update --chmod=+x script.sh`.
 {: tsResolve}
 
-## Não é possível implementar um app do Delivery Pipeline no IBM Bluemix Continuous Delivery
+## Não é possível implementar um app do Delivery Pipeline no {{site.data.keyword.Bluemix_notm}} Continuous Delivery
  {: #ts_devops_to_bm}
 
  Talvez não seja possível implementar seu app usando o {{site.data.keyword.deliverypipeline}} no {{site.data.keyword.contdelivery_short}} se o arquivo `manifest.yml` não estiver presente em seu app.

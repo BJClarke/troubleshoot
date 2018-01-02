@@ -2,16 +2,15 @@
 
 copyright:
   years: 2015, 2017
-  
-lastupdated: "2016-08-12"
+
+lastupdated: "2017-11-07"
 
 ---
 
 
-
-{:tsSymptoms: .tsSymptoms} 
-{:tsCauses: .tsCauses} 
-{:tsResolve: .tsResolve} 
+{:tsSymptoms: .tsSymptoms}
+{:tsCauses: .tsCauses}
+{:tsResolve: .tsResolve}
 {:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 
@@ -19,8 +18,7 @@ lastupdated: "2016-08-12"
 # Traitement des incidents liés aux services
 {: #services}
 
-
-Des problèmes liés aux services {{site.data.keyword.Bluemix}} peuvent survenir, par exemple, une erreur de dépassement de délai d'attente de la passerelle peut se produire lorsque vous supprimez une instance de service. Ces problèmes peuvent être résolus en quelques opérations simples.
+Des problèmes liés au service {{site.data.keyword.Bluemix}} peuvent survenir, par exemple, une erreur de dépassement de délai d'attente de la passerelle peut se produire lorsque vous supprimez une instance de service. Ces problèmes peuvent être résolus en quelques opérations simples.
 {:shortdesc}
 
 ## Une erreur du courtier de services se produit lorsque vous supprimez une instance de service
