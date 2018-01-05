@@ -4,7 +4,7 @@ copyright:
 
   years: 1994, 2018
 
-lastupdated: "2018-01-02"
+lastupdated: "2018-01-05"
 
 ---
 
@@ -217,6 +217,7 @@ Some products or services, such as Cloud Foundry on {{site.data.keyword.Bluemix_
 * Weather Company Energy Trader
 
 ### Other products or services
+{: #prodservices}
 
 * Teacher Advisor with Watson
 
@@ -237,6 +238,7 @@ Some products and services are making alternate endpoints available that will co
 When support for TLS 1.0 and 1.1 is removed from `api.softlayer.com` and `api.service.softlayer.com` alternate endpoints that support TLS 1.0 and 1.1 will be announced and made available for 30 days.
 
 ### Watson products and services
+{: #watsonprodservices}
 
 If you need to continue to use TLS 1.0 or 1.1 when connecting to Watson products and services after support is withdrawn you can replace `gateway.watsonplatform.net` with `gateway-tls10.wastonplatform.net` or `stream.watsonplatform.net` with `stream-tls10.watsonplatform.net`. `gateway-tls10.watsonplatform.net` and `stream-tls10.watsonplatform.net` support TLS 1.0, 1.1, and 1.2 and will continue be available for your use after TLS 1.0 and 1.1 are removed from `gateway.watsonplatform.net` and `stream.watsonplatform.net`.
 
