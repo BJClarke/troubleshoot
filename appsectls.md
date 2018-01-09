@@ -139,6 +139,7 @@ Some products or services, such as Cloud Foundry on {{site.data.keyword.Bluemix_
 * Auto-Scaling
 * Alert Notification
 * Availability Monitoring
+* Continuous Delivery
 * Continuous Release
 * DevOps Insights
 * Event Management
@@ -225,8 +226,6 @@ Some products or services, such as Cloud Foundry on {{site.data.keyword.Bluemix_
 {: #tlsprodnotlisted}
 
 Your product or service might already only support TLS 1.2 or might not be removing TLS 1.0 and 1.1 at this time. There are various client and online tools available that you can use to check whether TLS 1.0 and 1.1 are supported by a product or service's endpoints.
-
-Additional products or services might be added to this announcement on or before 05 January 2018.
 
 ## Is there a way I can keep using TLS 1.0 or 1.1 after support is withdrawn?
 {: #tlskeepusing}
