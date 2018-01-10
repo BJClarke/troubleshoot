@@ -93,7 +93,7 @@ Lorsque vous vous connectez à l'aide de votre IBMid, le message suivant s'affic
 `Vous accédez à cette page car votre authentification a abouti. Toutefois, cet IBMid n'est associé à aucun compte Bluemix. Si vous pensez
 que ce message ne s'affiche pas à bon escient, prenez contact avec votre propriétaire de compte ou votre utilisateur principal.`
 
-Vous vous êtes connecté à partir du portail {{site.data.keyword.slportal}} [](https://control.softlayer.com) à l'aide d'un IBMid valide, mais vous n'êtes pas passé à l'authentification via IBMid dans le portail {{site.data.keyword.slportal}}.
+Vous vous êtes connecté à partir du portail [{{site.data.keyword.slportal}}](https://control.softlayer.com) à l'aide d'un IBMid valide, mais vous n'êtes pas passé à l'authentification via IBMid dans le portail {{site.data.keyword.slportal}}.
 {: tsCauses}
 
 Effectuez les vérifications suivantes :
@@ -167,7 +167,7 @@ Après avoir procédé à votre inscription pour un compte d'essai {{site.data.k
 sur le lien que contient ce courrier électronique pour compléter le processus d'enregistrement.
 {: tsCauses}
 
-La confirmation par courrier électronique est envoyée à l'adresse de courrier électronique que vous avez indiquée. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous ne recevez pas de confirmation par courrier électronique, contactez le [support {{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}.  
+La confirmation par courrier électronique est envoyée à l'adresse de courrier électronique que vous avez indiquée. Vérifiez votre boîte de réception et votre dossier de courrier indésirable. Si vous ne recevez pas de confirmation par courrier électronique, contactez le [support {{site.data.keyword.Bluemix_notm}}  ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## La page {{site.data.keyword.Bluemix_notm}} ne peut pas être chargée

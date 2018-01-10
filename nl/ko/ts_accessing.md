@@ -163,7 +163,7 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
 {{site.data.keyword.Bluemix_notm}} 평가판 계정에 등록하면 확인 이메일을 받게 됩니다. 확인 이메일에 있는 링크를 클릭하여 등록 프로세스를 완료해야 합니다.
 {: tsCauses}
 
-확인 이메일이 사용자가 제공한 이메일 주소로 전송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 수신하지 못한 경우 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}에 문의하십시오.  
+확인 이메일이 사용자가 제공한 이메일 주소로 전송됩니다. 받은 편지함과 스팸 폴더를 확인하십시오. 확인 이메일을 수신하지 못한 경우 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.  
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} 페이지를 로드할 수 없음

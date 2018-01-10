@@ -49,7 +49,7 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0009E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、アプリケーション・スターターは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、アプリケーション・スターターは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -74,7 +74,7 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0015E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・オファリングは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・オファリングは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -84,7 +84,7 @@ lastupdated: "2017-11-09"
 この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accessing.html#ts_err){: new_window}を参照してください。
 
 ## BXNUI0017E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・インスタンスは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・インスタンスは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -94,7 +94,7 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0019E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、ご使用のアプリのインスタンスは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、ご使用のアプリのインスタンスは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -104,7 +104,8 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0021E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' アプリの環境変数は更新されませんでした。後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' アプリの環境変数は更新されませんでした。
+後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0022E
 **メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' アプリの経路は更新されませんでした。
@@ -112,7 +113,8 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0023E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' サービス・インスタンスの設定は更新されませんでした。後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' サービス・インスタンスの設定は更新されませんでした。
+後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0024E
 **メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、'{0}' アプリのクイック・スタートは取得されませんでした。
@@ -195,7 +197,7 @@ lastupdated: "2017-11-09"
 アプリの「概要」ページで、**「経路およびドメイン (Routes and domains)」**ドロップダウンをクリックし、**「経路の編集 (Edit routes)」**を選択します。
 
 ## BXNUI0040E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・バインディングは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・バインディングは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -204,7 +206,7 @@ lastupdated: "2017-11-09"
 <!-- BXNUI0043E to be deleted -->
 
 ## BXNUI0044E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サーバーから情報が取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サーバーから情報が取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -214,7 +216,7 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0046E
-**メッセージ**: Cloud Foundry へのコンタクト時に問題が発生したため、組織は取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクト時に問題が発生したため、組織は取得されませんでした。
 
 {{site.data.keyword.Bluemix_notm}} からログアウトされます。
 
@@ -271,7 +273,7 @@ lastupdated: "2017-11-09"
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0059E
-**メッセージ**: IBM DataPower Gateway へのコンタクトで問題が発生したため、ドメインは削除されませんでした。 
+**メッセージ**: IBM DataPower Gateway へのコンタクトで問題が発生したため、ドメインは削除されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -296,7 +298,7 @@ lastupdated: "2017-11-09"
 ## BXNUI0064E
 **メッセージ**: ご使用のブラウザーは、IBM {{site.data.keyword.Bluemix_notm}} ではサポートされていません。
 
-以下のブラウザーがサポートされます。オペレーティング・システムの最新バージョンを使用するようにしてください。
+以下のブラウザーがサポートされます。 オペレーティング・システムの最新バージョンを使用するようにしてください。
 * Google Chrome
 * Mozilla Firefox
 * Internet Explorer
@@ -316,7 +318,7 @@ lastupdated: "2017-11-09"
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0067E
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、プランのデータは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、プランのデータは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -341,7 +343,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0073E
-**メッセージ**: アップロードされた証明書に関する情報を取得できませんでした。 
+**メッセージ**: アップロードされた証明書に関する情報を取得できませんでした。
 
 後で再試行してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -361,7 +363,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 別のサービスを選択してください。
 
 ## BXNUI0079E
-**メッセージ**: '{1}' アプリは、'{2}' サービスを既に使用しています。'{0}' サービスと '{2}' サービスを一緒に使用することはできません。
+**メッセージ**: '{1}' アプリは、'{2}' サービスを既に使用しています。 '{0}' サービスと '{2}' サービスを一緒に使用することはできません。
 
 別のサービスを選択してください。
 
@@ -373,7 +375,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 ## BXNUI0081E
 **メッセージ**: {0} 個の証明書をアップロードしました。これは組織が使用できる最大数です。
 
-証明書を削除するか、アカウントをアップグレードしてください。 
+証明書を削除するか、アカウントをアップグレードしてください。
 
 ## BXNUI0082E
 **メッセージ**: 現在、{{site.data.keyword.Bluemix_notm}} は通知設定をロードできません。
@@ -381,12 +383,12 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0083E
-**メッセージ**: 通知設定を保存できませんでした。 
+**メッセージ**: 通知設定を保存できませんでした。
 
 後で再試行してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0085E
-**メッセージ**: コンテナーの使用データを取得できませんでした。 
+**メッセージ**: コンテナーの使用データを取得できませんでした。
 
 コンテナーは一時的に使用不能になっている可能性があります。
 
@@ -442,17 +444,17 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 ## BXNUI0093E
 **メッセージ**: '{0}' コンテナー・グループは削除されませんでした。
 
-コンテナー・グループは一時的に使用不能になっている可能性があります。 
+コンテナー・グループは一時的に使用不能になっている可能性があります。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0094E
-**メッセージ**: レジストリー名を設定できませんでした。 
+**メッセージ**: レジストリー名を設定できませんでした。
 
 後で再試行してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0095E
-**メッセージ**: その専用レジストリー名は既に使用されています。 
+**メッセージ**: その専用レジストリー名は既に使用されています。
 
 別の名前を使用して、やり直してください。
 
@@ -469,7 +471,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 ダッシュボードで、**「スペースの作成」**をクリックします。 スペースが作成されたら、やり直してください。 この問題を修正する詳細手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_accounts.html#ts_no_space){: new_window}を参照してください。
 
 ## BXNUI0098E
-**メッセージ**: 現在、資格情報のリストを取得できません。 
+**メッセージ**: 現在、資格情報のリストを取得できません。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -483,13 +485,13 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **メッセージ**: '{0}' 資格情報は削除されませんでした。
 
-この資格情報は既に削除された可能性があります。 
+この資格情報は既に削除された可能性があります。
 
 ダッシュボードに戻り、再試行してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0101E
 
-**メッセージ**: 現在のブラウザー設定はポップアップ・ウィンドウを抑制するものです。 
+**メッセージ**: 現在のブラウザー設定はポップアップ・ウィンドウを抑制するものです。
 
 ポップアップ・ウィンドウを許可するようにブラウザー設定を変更してください。
 
@@ -523,7 +525,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **メッセージ**: {0} による {1} へのアクセスを取り消せませんでした。
 
-アクセスの取り消しを再試行してください。問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+アクセスの取り消しを再試行してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0119E
 
@@ -565,7 +567,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **メッセージ**: アクティブ・アカウントのメンバーでないためログアウトされます。
 
-ご使用の {{site.data.keyword.Bluemix_notm}} アカウントは、有効期限が切れたか、取り消されたか、または組織から削除された可能性があります。組織の管理者に連絡してください。あるいは、ヘルプおよびサポート・オプションが必要なら、{{site.data.keyword.Bluemix_notm}} 資料の「トラブルシューティング」セクションを参照してください。
+ご使用の {{site.data.keyword.Bluemix_notm}} アカウントは、有効期限が切れたか、取り消されたか、または組織から削除された可能性があります。組織の管理者に連絡してください。 あるいは、ヘルプおよびサポート・オプションが必要なら、{{site.data.keyword.Bluemix_notm}} 資料の「トラブルシューティング」セクションを参照してください。
 
 ## BXNUI0126E
 
@@ -581,24 +583,24 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 ## BXNUI0128E
 
-**メッセージ**: Cloud Foundry へのコンタクト時に問題が発生したため、組織は取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクト時に問題が発生したため、組織は取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0129E
-**メッセージ**: ビジネス・サポート・システムへのコンタクト時に問題が発生したため、アカウント情報が取得されませんでした。 
+**メッセージ**: ビジネス・サポート・システムへのコンタクト時に問題が発生したため、アカウント情報が取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0130E
-**メッセージ**: ビジネス・サポート・システムへのコンタクト時に問題が発生したため、アカウント情報が取得されませんでした。 
+**メッセージ**: ビジネス・サポート・システムへのコンタクト時に問題が発生したため、アカウント情報が取得されませんでした。
 
 {{site.data.keyword.Bluemix_notm}} からログアウトされます。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0131E
-**メッセージ**: E メール・アドレスは、登録処理中にエラーが発生したため登録されませんでした。 
+**メッセージ**: E メール・アドレスは、登録処理中にエラーが発生したため登録されませんでした。
 
 この問題を解決するには、[ {{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -609,7 +611,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 ## BXNUI0133E
 
-**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・バインディングは取得されませんでした。 
+**メッセージ**: Cloud Foundry へのコンタクトで問題が発生したため、サービス・バインディングは取得されませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -634,22 +636,22 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 後で再試行してください。 問題が続く場合は、<a href='http://ibm.biz/bluemixsupport' target='_blank'>{{site.data.keyword.Bluemix_notm}} サポート</a>にアクセスしてください。
 
 ## BXNUI0300E
-**メッセージ**: 使用量情報を取得できませんでした。 
+**メッセージ**: 使用量情報を取得できませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0301E
-**メッセージ**: 使用量情報の検索中に組織を検索できませんでした。 
+**メッセージ**: 使用量情報の検索中に組織を検索できませんでした。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0305E
-**メッセージ**: 使用量情報を表示できませんでした。 
+**メッセージ**: 使用量情報を表示できませんでした。
 
 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0306E
-**メッセージ**: サード・パーティー・サービス情報を取得できませんでした。 
+**メッセージ**: サード・パーティー・サービス情報を取得できませんでした。
 
 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -664,7 +666,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0402E
-**メッセージ**: 現時点ではご使用のアカウントは取り消せません。 
+**メッセージ**: 現時点ではご使用のアカウントは取り消せません。
 
 後で再試行するか、または [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -751,9 +753,9 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 ## BXNUI0515E
 
-**メッセージ**: 組織のスペースは取得されませんでした。ネットワーク接続問題が発生したか、現在の組織に関連付けられているスペースがないかのいずれかです。
+**メッセージ**: 組織のスペースは取得されませんでした。 ネットワーク接続問題が発生したか、現在の組織に関連付けられているスペースがないかのいずれかです。
 
-後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 または、この問題を修正する手順について、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}を参照してください。 
+後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 または、この問題を修正する手順について、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_retrieve_space){: new_window}を参照してください。
 
 ## BXNUI0516E
 
@@ -813,7 +815,9 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 
 ## BXNUI0525E
 
-**メッセージ**: 組織 __orgName__ のレジストリー名前空間に対する権限がないため、レジストリーの作成に失敗しました。 レジストリーの作成には開発者ユーザー・ロールが必要です。 組織の管理者に別のロールを要求してください。
+**メッセージ**: 組織 __orgName__ のレジストリー名前空間に対する権限がないため、レジストリーの作成に失敗しました。 レジストリーの作成には開発者ユーザー・ロールが必要です。
+
+組織の管理者に別のロールを要求してください。
 
 ## BXNUI0526E
 
@@ -841,13 +845,13 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 
 ## BXNUI0701E
 
-**メッセージ**: ユーザーの招待に失敗しました。エラー・コード: __errorCode__.
+**メッセージ**: ユーザーの招待に失敗しました。 エラー・コード: __errorCode__.
 
 後で再試行してください。 このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI0702E
 
-**メッセージ**: __emailAddress__ の招待に失敗しました。エラー・コード: __errorCode__.
+**メッセージ**: __emailAddress__ の招待に失敗しました。 エラー・コード: __errorCode__.
 
 後で再試行してください。 このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -864,7 +868,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 後で再試行してください。
 
 ## BXNUI2000E
-**メッセージ**: エラーのため要求は処理されませんでした。次の例外が発行されました: {0}
+**メッセージ**: エラーのため要求は処理されませんでした。 次の例外が発行されました: {0}
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -881,10 +885,9 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 <!-- BXNUI2003E removed -->
 
 ## BXNUI2004E
-**メッセージ**: クラウド・サーバーからのエラーのため、アプリは作成されませんでした。 
+**メッセージ**: クラウド・サーバーからのエラーのため、アプリは作成されませんでした。
 
-やり直してください。
-問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+やり直してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 <!-- BXNUI2005E removed -->
 
@@ -895,8 +898,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ## BXNUI2008E
 **メッセージ**: {1} スターターを使用する {0} アプリの .zip ファイルを作成できなかったため、アプリは作成されませんでした。
 
-やり直してください。
-問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+やり直してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2009E
 **メッセージ**: エラーのため構成はロードされませんでした。
@@ -904,17 +906,17 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2010E
-**メッセージ**: 構成をロードできませんでした。 
+**メッセージ**: 構成をロードできませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2011E
-**メッセージ**: 構成は複数のソースが元になっているため保存できません。 
+**メッセージ**: 構成は複数のソースが元になっているため保存できません。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2012E
-**メッセージ**: 構成は読み取り専用であるため保存できません。  
+**メッセージ**: 構成は読み取り専用であるため保存できません。
 
 ## BXNUI2013E
 **メッセージ**: エラーのため、"{0}" 構成からクラスは作成されませんでした。
@@ -927,17 +929,17 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2015E
-**メッセージ**: クラウド・コントローラー URL のフォーマットが正しくないため、ログインの試行は失敗しました。 
+**メッセージ**: クラウド・コントローラー URL のフォーマットが正しくないため、ログインの試行は失敗しました。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2016E
-**メッセージ**: リソース・メタデータをロードできませんでした。 
+**メッセージ**: リソース・メタデータをロードできませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2017E
-**メッセージ**: リソース・メタデータを保存できませんでした。 
+**メッセージ**: リソース・メタデータを保存できませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -962,7 +964,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2022E
-**メッセージ**: スターターをコピーできませんでした。 
+**メッセージ**: スターターをコピーできませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -977,17 +979,17 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 アカウント所有者にお問い合わせください。
 
 ## BXNUI2025E
-**メッセージ**: Web キャッシングのエンティティー・タグを作成しようとしているときにエラーが発生しました。{{site.data.keyword.Bluemix_notm}} は、アイコンがキャッシュに入れられたかどうか判別できませんでした。
+**メッセージ**: Web キャッシングのエンティティー・タグを作成しようとしているときにエラーが発生しました。 {{site.data.keyword.Bluemix_notm}} は、アイコンがキャッシュに入れられたかどうか判別できませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2026E
-**メッセージ**: 別のユーザーが既にその名前を使用しています。 
+**メッセージ**: 別のユーザーが既にその名前を使用しています。
 
 異なるユーザー名を使用して再試行してください。
 
 ## BXNUI2027E
-**メッセージ**: ログインしているユーザーはいません。 
+**メッセージ**: ログインしているユーザーはいません。
 
 ログインして、やり直してください。
 
@@ -997,7 +999,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2029E
-**メッセージ**: クラウド情報を取得できませんでした。 
+**メッセージ**: クラウド情報を取得できませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1011,31 +1013,30 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 
 システム管理者に連絡して、データ・ストア・コンポーネントの修正を依頼してください。
 
-
 ## BXNUI2032E
 **メッセージ**: {1} リソースは作成されませんでした。
 
-リソースを作成するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。"
+リソースを作成するために Cloud Foundry に接続している時にエラーが発生しました。 Cloud Foundry メッセージ: "{0}。"
 
 この問題を修正する手順については、この[トラブルシューティングのトピック](https://www.{DomainName}/docs/troubleshoot/ts_apps.html#ts_servicelimit){: new_window}を参照してください。
 
 ## BXNUI2033E
- **メッセージ**: {1} リソースは変更されませんでした。リソースを変更するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。"
+ **メッセージ**: {1} リソースは変更されませんでした。 リソースを変更するために Cloud Foundry に接続している時にエラーが発生しました。 Cloud Foundry メッセージ: "{0}。"
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2034E
- **メッセージ**: {1} リソースは取得されませんでした。リソースを取得するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。"
+ **メッセージ**: {1} リソースは取得されませんでした。 リソースを取得するために Cloud Foundry に接続している時にエラーが発生しました。 Cloud Foundry メッセージ: "{0}。"
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2035E
- **メッセージ**: {1} リソースは削除されませんでした。リソースを削除するために Cloud Foundry に接続している時にエラーが発生しました。Cloud Foundry メッセージ: "{0}。"
+ **メッセージ**: {1} リソースは削除されませんでした。 リソースを削除するために Cloud Foundry に接続している時にエラーが発生しました。 Cloud Foundry メッセージ: "{0}。"
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2036E
-**メッセージ**: スターターを変更するには、追加の権限が必要です。 
+**メッセージ**: スターターを変更するには、追加の権限が必要です。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1060,7 +1061,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2041E
-**メッセージ**: スターター登録メタデータを読み取ることができませんでした。 
+**メッセージ**: スターター登録メタデータを読み取ることができませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1070,14 +1071,14 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2043E
-**メッセージ**: テンプレート・メタデータ URL {0} が無効です。エラー: "{1}"。
+**メッセージ**: テンプレート・メタデータ URL {0} が無効です。 エラー: "{1}"。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2044E
 **メッセージ**: ホスト名が無効なため、スターター・メタデータ URL {0} は無効です。
 
-ホスト名には、英数字文字とダッシュ文字のみを使用できます。 
+ホスト名には、英数字文字とダッシュ文字のみを使用できます。
 
 やり直してください。
 
@@ -1087,7 +1088,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2046E
-**メッセージ**: サービス・カテゴリーを読み取ることができませんでした。 
+**メッセージ**: サービス・カテゴリーを読み取ることができませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1097,7 +1098,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2048E
-**メッセージ**: サービスのラベルとプロバイダーを更新できないため、アクションは失敗しました。 
+**メッセージ**: サービスのラベルとプロバイダーを更新できないため、アクションは失敗しました。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1109,10 +1110,10 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ## BXNUI2050E
 **メッセージ**: "{0}" 組織は存在しません。
 
-組織が正しく指定されていることを確認してください。このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+組織が正しく指定されていることを確認してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2051E
-**メッセージ**: サービスの作成中にアイコンを作成できませんでした。 
+**メッセージ**: サービスの作成中にアイコンを作成できませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1122,7 +1123,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2053E
-**メッセージ**: アクセス・トークン要求をエンコードできなかったため、ログインの試行は失敗しました。 
+**メッセージ**: アクセス・トークン要求をエンコードできなかったため、ログインの試行は失敗しました。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1152,7 +1153,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2059E
-**メッセージ**: "ibm_created" タグまたは "3rd_party" タグを使用してサービスを公開することができません。これらのタグを設定できるのは管理者のみです。 
+**メッセージ**: "ibm_created" タグまたは "3rd_party" タグを使用してサービスを公開することができません。 これらのタグを設定できるのは管理者のみです。
 
 ## BXNUI2060E
 **メッセージ**: 使用量情報を処理できませんでした。
@@ -1229,19 +1230,19 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2074E
-**メッセージ**: 秘密鍵はサポートされていません。非暗号化 RSA 鍵が予期されています。
+**メッセージ**: 秘密鍵はサポートされていません。 非暗号化 RSA 鍵が予期されています。
 
 ## BXNUI2075E
-**メッセージ**: 公開鍵はサポートされていません。サポートされるアルゴリズム: RSA。
+**メッセージ**: 公開鍵はサポートされていません。 サポートされるアルゴリズム: RSA。
 
 ## BXNUI2076E
-**メッセージ**: 証明書はまだ有効ではありません。{0} に有効になります。
+**メッセージ**: 証明書はまだ有効ではありません。 {0} に有効になります。
 
 ## BXNUI2077E
 **メッセージ**: 証明書は、{0} に有効期限が切れました。
 
 ## BXNUI2078E
-**メッセージ**: 中間証明書はまだ有効ではありません。{0} に有効になります。
+**メッセージ**: 中間証明書はまだ有効ではありません。 {0} に有効になります。
 
 ## BXNUI2079E
 **メッセージ**: 中間証明書は、{0} に有効期限が切れました。
@@ -1284,7 +1285,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2087E
-**メッセージ**: アプリ名が長すぎます。このアプリ名は {0} 文字に制限されています。
+**メッセージ**: アプリ名が長すぎます。 このアプリ名は {0} 文字に制限されています。
 
 短い名前でやり直してください。
 
@@ -1294,12 +1295,12 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ログアウトしてから再ログインして、やり直してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2089E
-**メッセージ**: URL "{0}" でテンプレートを登録しようとしているときにエラーが発生しました。エラー: "{1}"。
+**メッセージ**: URL "{0}" でテンプレートを登録しようとしているときにエラーが発生しました。 エラー: "{1}"。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2090E
-**メッセージ**: 次の URL でテンプレートを登録しようとして失敗しました: "{0}"。テンプレートの内容が誤った形式です。エラー: "{1}"
+**メッセージ**: 次の URL でテンプレートを登録しようとして失敗しました: "{0}"。 テンプレートの内容が誤った形式です。 エラー: "{1}"
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1314,12 +1315,12 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2093E
-**メッセージ**: 中間証明書の数が許容される数を超えています。 
+**メッセージ**: 中間証明書の数が許容される数を超えています。
 
 許容される証明書の数と、証明書の削除または置換の方法について詳しくは、[トピック](https://www.{DomainName}/docs/manageapps/securingapps.html#ssl_certificate){: new_window}を参照してください。
 
 ## BXNUI2094E
-**メッセージ**: 試行された操作は接続エラーのため失敗しました。 
+**メッセージ**: 試行された操作は接続エラーのため失敗しました。
 
 後で再試行してください。 このメッセージが再び表示された場合は、[{{site.data.keyword.Bluemix_notm}} ステータス・ページ](https://developer.ibm.com/bluemix/support/#status){: new_window}にアクセスして、サービスまたはコンポーネントに問題があるかを確認してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1359,7 +1360,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI2105E
-**メッセージ**: Cloud Foundry への接続の試行は失敗しました。 
+**メッセージ**: Cloud Foundry への接続の試行は失敗しました。
 
 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1381,7 +1382,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 
 ## BXNUI2111E
 
-**メッセージ**: クライアント証明書はまだ有効ではありません。{0} に有効になります。
+**メッセージ**: クライアント証明書はまだ有効ではありません。 {0} に有効になります。
 
 ## BXNUI2112E
 
@@ -1391,7 +1392,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 
 ## BXNUI2113E
 
-**メッセージ**: ユーザーのプラットフォーム設定を処理できませんでした。 
+**メッセージ**: ユーザーのプラットフォーム設定を処理できませんでした。
 
 [{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1473,10 +1474,10 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ## BXNUI3015E
 **メッセージ**: 認証の問題が発生しました。
 
-ログアウトしてから再ログインして、やり直してください。 問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
+ログアウトしてから再ログインして、やり直してください。  問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
 ## BXNUI3016E
-**メッセージ**: コンテナーが存在しません。削除された可能性があります。 
+**メッセージ**: コンテナーが存在しません。 削除された可能性があります。
 
 確認し、再試行してください。  問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1558,7 +1559,7 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ## BXNUI3063E
 **メッセージ**: 仮想サーバーが存在しません。
 
-削除された可能性があります。 
+削除された可能性があります。
 
 確認し、再試行してください。  問題が続く場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}にアクセスしてください。
 
@@ -1575,11 +1576,9 @@ __serviceName__ サービスは、キーの作成をサポートしていない�
 ## BXNUI3066E
 **メッセージ**: アプリをマイグレーションしようとして失敗しました。Cloud Foundry に接続してアプリを Diego に切り替えることができなかったためです。
 
-やり直してください。
-このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+やり直してください。 このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
 
 ## BXNUI3067E
 **Message**: アプリを DEA にロールバックしようとして失敗しました。Cloud Foundry に接続できなかったためです。
 
-やり直してください。
-このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。
+やり直してください。 このメッセージが再び表示される場合は、[{{site.data.keyword.Bluemix_notm}} サポート](http://ibm.biz/bluemixsupport){: new_window}に連絡してください。

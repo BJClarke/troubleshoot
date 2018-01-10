@@ -4,9 +4,20 @@
 {: .toc subcollection="troubleshoot" audience="platform" href="/docs/troubleshoot/troubleshoot.html"}
 문제점 해결
 
-	{: .navgroup id="help"}
+	{: .navgroup id="learn"}
 	troubleshoot.md
 	../support/
+	
+
+	{: .topicgroup}
+	관련 링크
+            [지원 포털](https://support.ibmcloud.com)
+	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
+	    [cf 명령 도구 설치](/docs/starters/install_cli.html)
+	    [스택 오버플로우](http://stackoverflow.com/questions/tagged/ibm-bluemix)
+ {: .navgroup-end}
+
+	{: .navgroup id="howto"}
 	../debug/
 	ts_accessing.md
 	ts_apps.md
@@ -14,12 +25,12 @@
 	ts_runtimes.md
 	ts_services.md
 	ts_manageticket.md
+	{: .navgroup-end}
+
+	{: .navgroup id="reference"}
 	bxnui.md
-	
+
 	{: .topicgroup}
-	관련 링크
-            [지원 포털](https://support.ibmcloud.com)
-	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
-	    [cf 명령 도구 설치](/docs/starters/install_cli.html)
-	    [스택 오버플로우](http://stackoverflow.com/questions/tagged/ibm-bluemix)
-  {: .navgroup-end}
+	알려진 문제
+	    appsectls.md
+	{: .navgroup-end}
