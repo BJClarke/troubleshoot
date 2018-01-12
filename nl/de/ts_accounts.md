@@ -163,7 +163,7 @@ Apps in {{site.data.keyword.Bluemix_notm}} müssen in Ihrer Organisation innerha
 Verwenden Sie eine der folgenden Methoden, um einen Bereich zu erstellen:
 {: tsResolve}
 
-  * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Organisationen**.Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
+  * Klicken Sie in der Menüleiste der Konsole auf **Verwalten > Konto > Organisationen**. Wählen Sie anschließend die Organisation aus, in der Sie den Bereich erstellen möchten und klicken Sie auf **Bereich erstellen**.
   * Geben Sie in der Befehlszeilenschnittstelle 'cf' Folgendes ein: `cf create-space <space_name> -o <organization_name>`.
 
 

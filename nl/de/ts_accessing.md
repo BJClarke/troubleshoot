@@ -80,7 +80,8 @@ Sie müssen über eine gültige IBMid und ein Kennwort verfügen, um sich bei {{
 
  * Stellen Sie sicher, dass Sie eine vollständig qualifizierte E-Mail-Adresse für die IBMid eingeben.
  {: tsResolve}
- * Falls Sie einen {{site.data.keyword.BluSoftlayer_full}}-Benutzer mit einer {{site.data.keyword.BluSoftlayer_full}}-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im {{site.data.keyword.slportal}} zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können. Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/ibmidswitch.html).
+ * Falls Sie einen {{site.data.keyword.BluSoftlayer_full}}-Benutzer mit einer {{site.data.keyword.BluSoftlayer_full}}-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im {{site.data.keyword.slportal}} zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können.
+ Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/ibmidswitch.html).
 
 
 ## IBMid ist keinem IBM Cloud-Konto zugeordnet
@@ -164,7 +165,7 @@ Wenn Sie sich für ein {{site.data.keyword.Bluemix_notm}}-Testkonto registriert 
 Wenn Sie sich für ein {{site.data.keyword.Bluemix_notm}}-Testkonto registriert haben, erhalten Sie eine Bestätigungs-E-Mail. Sie müssen auf den Link in dieser Bestätigungs-E-Mail klicken, um den Registrierungsprozess abzuschließen.
 {: tsCauses}
 
-Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Sie angegeben haben. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Falls Sie die Bestätigungs-E-Mail nicht erhalten haben, setzen Sie sich mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window} in Verbindung.  
+Die Bestätigungs-E-Mail wird an die E-Mail-Adresse gesendet, die Sie angegeben haben. Überprüfen Sie Ihren Posteingang und Ihren Spamordner. Falls Sie die Bestätigungs-E-Mail nicht erhalten haben, setzen Sie sich mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com){: new_window} in Verbindung.  
 {: tsResolve}
 
 ## Laden einer {{site.data.keyword.Bluemix_notm}}-Seite nicht möglich

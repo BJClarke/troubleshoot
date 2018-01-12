@@ -19,7 +19,8 @@ lastupdated: "2017-11-09"
 # Fehlerbehebung für die Verwaltung von Support-Tickets
 {: #SupportTickets}
 
-{{site.data.keyword.Bluemix}}-Ticket-Probleme können z. B. darin bestehen, dass {{site.data.keyword.Bluemix_notm}}-Support-Tickets nicht verwaltet werden können.{:shortdesc}
+{{site.data.keyword.Bluemix}}-Ticket-Probleme können z. B. darin bestehen, dass {{site.data.keyword.Bluemix_notm}}-Support-Tickets nicht verwaltet werden können.
+{:shortdesc}
 
 ## Verknüpfte Konten können Support-Tickets nicht hinzufügen oder bearbeiten
 {: #ts_service_broker}

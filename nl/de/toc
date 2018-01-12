@@ -4,9 +4,19 @@
 {: .toc subcollection="troubleshoot" audience="platform" href="/docs/troubleshoot/troubleshoot.html"}
 Fehlerbehebung
 
-	{: .navgroup id="help"}
+	{: .navgroup id="learn"}
 	troubleshoot.md
 	../support/
+
+	{: .topicgroup}
+	Zugehörige Links
+            [Support-Portal](https://support.ibmcloud.com)
+	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
+	    [cf-Befehlstool installieren](/docs/starters/install_cli.html)
+	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
+	{: .navgroup-end}
+
+	{: .navgroup id="howto"}
 	../debug/
 	ts_accessing.md
 	ts_apps.md
@@ -14,12 +24,12 @@ Fehlerbehebung
 	ts_runtimes.md
 	ts_services.md
 	ts_manageticket.md
+	{: .navgroup-end}
+
+	{: .navgroup id="reference"}
 	bxnui.md
-	
+
 	{: .topicgroup}
-	Zugehörige Links
-            [Support-Portal](https://support.ibmcloud.com)
-	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
-	    [cf-Befehlstool installieren](/docs/starters/install_cli.html)
-	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
- 	{: .navgroup-end}
+	Bekannte Probleme
+	    appsectls.md
+	{: .navgroup-end}
