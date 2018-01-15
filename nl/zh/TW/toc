@@ -4,18 +4,11 @@
 {: .toc subcollection="troubleshoot" audience="platform" href="/docs/troubleshoot/troubleshoot.html"}
 疑難排解
 
-	{: .navgroup id="help"}
+	{: .navgroup id="learn"}
 	troubleshoot.md
 	../support/
-	../debug/
-	ts_accessing.md
-	ts_apps.md
-	ts_accounts.md
-	ts_runtimes.md
-	ts_services.md
-	ts_manageticket.md
-	bxnui.md
 	
+
 	{: .topicgroup}
 	相關鏈結
             [支援入口網站](https://support.ibmcloud.com)
@@ -23,3 +16,21 @@
 	    [安裝 cf 指令工具](/docs/starters/install_cli.html)
 	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
  	{: .navgroup-end}
+
+	{: .navgroup id="howto"}
+	../debug/
+	ts_accessing.md
+	ts_apps.md
+	ts_accounts.md
+	ts_runtimes.md
+	ts_services.md
+	ts_manageticket.md
+	{: .navgroup-end}
+
+	{: .navgroup id="reference"}
+	bxnui.md
+
+	{: .topicgroup}
+	已知問題
+	    appsectls.md
+	{: .navgroup-end}

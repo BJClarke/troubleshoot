@@ -163,7 +163,7 @@ IBM 标识认证服务可能发生问题。
 在注册 {{site.data.keyword.Bluemix_notm}} 试用帐户后，您将收到确认电子邮件。必须单击确认电子邮件中的链接以完成注册过程。
 {: tsCauses}
 
-确认电子邮件将发送到提供的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果尚未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}。  
+确认电子邮件将发送到提供的电子邮件地址。检查收件箱和垃圾邮件文件夹。如果尚未收到确认电子邮件，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。  
 {: tsResolve}
 
 ## 无法装入 {{site.data.keyword.Bluemix_notm}} 页面

@@ -162,7 +162,7 @@ IBM ID 鑑別服務可能有問題。
 在登錄取得 {{site.data.keyword.Bluemix_notm}} 試用帳戶之後，您會收到一封確認電子郵件。您必須按一下此封確認電子郵件中的鏈結，才能完成登錄程序。
 {: tsCauses}
 
-確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window} 聯絡。  
+確認電子郵件會寄送到您提供的電子郵件位址。檢查您的收件匣和垃圾郵件資料夾。如果您尚未收到確認電子郵件，請與 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window} 聯絡。  
 {: tsResolve}
 
 ## 無法載入 {{site.data.keyword.Bluemix_notm}} 頁面

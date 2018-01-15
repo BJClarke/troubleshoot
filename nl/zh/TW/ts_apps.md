@@ -573,8 +573,8 @@ cf push MyUniqueAppName02 -p "./app.war"
 
   * 以下列其中一種方法指定啟動指令：
      * 使用 cf 指令行介面。例如：
-		```
-		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
+	```
+	cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
     * 使用 [package.json ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.npmjs.com/json){: new_window} 檔案。例如：
 	    ```
@@ -592,7 +592,7 @@ cf push MyUniqueAppName02 -p "./app.war"
   ...
   command: node app.js
   ...
-            ```
+	    ```
 
   * 確定 `package.json` 檔案存在於您的 Node.js 應用程式中，Node.js 建置套件才能辨識應用程式。請確定此檔案位在應用程式的根目錄中。下列範例顯示簡單的 `package.json` 檔案：  
 	```
