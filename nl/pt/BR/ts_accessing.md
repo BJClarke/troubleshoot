@@ -167,7 +167,7 @@ Depois de registrar-se em uma conta para teste do {{site.data.keyword.Bluemix_no
 que está no email de confirmação para concluir o processo de registro.
 {: tsCauses}
 
-O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/{{site.data.keyword.Bluemix_notm}}support.com){: new_window}.  
+O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## A página do {{site.data.keyword.Bluemix_notm}} não pode ser carregada
