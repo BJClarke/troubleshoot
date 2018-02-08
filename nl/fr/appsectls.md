@@ -2,17 +2,17 @@
 
 copyright:
 
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-28"
+lastupdated: "2018-01-09"
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:new_window: target="_blank"}
 
 # Retrait de la prise en charge de TLS 1.0 et 1.1
 {: #tlssupportwithdraw}
@@ -25,7 +25,7 @@ IBM prévoit de retirer le 1er mars 2018 la prise en charge de TLS 1.0 et 1.1 su
 
 IBM s'est toujours engagé à offrir un cloud totalement sécurisé et conforme aux dernières recommandations de sécurité et de confidentialité.
 
-## Qu'est-ce que TLS ? 
+## Qu'est-ce que TLS ?
 {: #what}
 
 Le [protocole TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) est utilisé pour chiffrer les communications effectuées sur un réseau afin de garantir le caractère privé des données. Il existe trois versions différentes de TLS : 1.0, 1.1 et 1.2. Toutes les connexions HTTPS se servent de TLS. HTTPS est la méthode principale utilisée pour s'assurer que vos connexions vers les produits et services {{site.data.keyword.Bluemix_notm}} sont fiables et sécurisées. Certains produits et services {{site.data.keyword.Bluemix_notm}} autorisent les connexions sécurisées qui se servent du protocole WSS (WebSocket Secure) utilisant aussi TLS. Le retrait de la prise en charge pour TLS 1.0 et 1.1 concerne aussi bien les connexions HTTPS que WSS.
@@ -33,7 +33,7 @@ Le [protocole TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) est u
 ## Quelles actions dois-je entreprendre pour m'assurer que je ne serai pas impacté ?
 {: #impact}
 
-Une grande partie des connexions effectuées vers les produits ou services {{site.data.keyword.Bluemix_notm}} utilisent déjà TLS 1.2. Si vos connexions ne requièrent pas TLS 1.0 ou 1.1,  vous ne serez pas impacté. 
+Une grande partie des connexions effectuées vers les produits ou services {{site.data.keyword.Bluemix_notm}} utilisent déjà TLS 1.2. Si vos connexions ne requièrent pas TLS 1.0 ou 1.1,  vous ne serez pas impacté.
 
 Si vous utilisez l'un des produits ou services qui retirent la prise en charge pour TLS 1.0 ou 1.1, vous devez confirmer que vos connexions n'exigent pas TLS 1.0 ou 1.1.
 
@@ -46,11 +46,11 @@ Toutes les connexions à Cloud Foundry qui utilisent TLS sont potentiellement im
 
 #### Connexion à votre application Cloud Foundry
 
-Tous les noeuds finaux d'application Cloud Foundry sur le domaine `*.mybluemix.net` peuvent être accédés via un noeud final alternatif qui ne prend en charge que TLS 1.2. 
+Tous les noeuds finaux d'application Cloud Foundry sur le domaine `*.mybluemix.net` peuvent être accédés via un noeud final alternatif qui ne prend en charge que TLS 1.2.
 
 Pour utiliser le noeud final alternatif, ajoutez `alt.` après le sous-domaine de votre application : ainsi, si votre application est hébergée sur `https://myapplication.mybluemix.net`, utilisez `https://myapplication.alt.mybluemix.net`, ou pour `https://myaplication.eu-gb.mybluemix.net`, utilisez `https://myapplication.alt.eu-gb.mybluemix.net`.
 
-Si vous parvenez à vous connecter au noeud final alternatif, vous ne serez pas impacté. 
+Si vous parvenez à vous connecter au noeud final alternatif, vous ne serez pas impacté.
 
 Un échec de connexion indique que vous serez touché et qu'il vous faut donc modifier votre client, les bibliothèques client ou la configuration client pour activer TLS 1.2.
 
@@ -87,7 +87,7 @@ Pour les produits ou services qui ne disposent pas de noeuds finaux alternatifs 
 ## Quels sont les produits et services qui retirent leur prise en charge pour TLS 1.0 et 1.1 ?
 {: #prodsandservs}
 
-Les produits et services ci-après retirent leur prise en charge pour TLS 1.0 et 1.1. 
+Les produits et services ci-après retirent leur prise en charge pour TLS 1.0 et 1.1.
 
 Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemix_notm}} et les services du catalogue {{site.data.keyword.Bluemix_notm}} peuvent être proposés dans plusieurs régions différentes. TLS 1.0 et 1.1 seront retirés dans toutes les régions dans lesquelles ils sont actuellement pris en charge.
 
@@ -139,6 +139,7 @@ Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemi
 * Auto-Scaling
 * Alert Notification
 * Availability Monitoring
+* Continuous Delivery
 * Continuous Release
 * DevOps Insights
 * Event Management
@@ -159,7 +160,7 @@ Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemi
 
 #### Fonctions
 
-* Functions
+* Fonctions
 
 #### Intégration
 
@@ -183,7 +184,7 @@ Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemi
 #### Sécurité
 
 * App ID†
-* SSL Certificates† 
+* SSL Certificates†
 
 #### Watson
 
@@ -204,7 +205,7 @@ Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemi
 
 \* Disponible dans la catégorie services expérimentaux du catalogue {{site.data.keyword.Bluemix_notm}}.  
 † TLS 1.0 a déjà été retiré, seul TLS 1.1 est concerné par le retrait actuel.  
-‡ Déprécié, disponible uniquement pour les clients existants. 
+‡ Déprécié, disponible uniquement pour les clients existants.
 
 ### Produits ou services disponibles depuis IBM Marketplace
 
@@ -217,15 +218,14 @@ Certains produits ou services, comme Cloud Foundry on {{site.data.keyword.Bluemi
 * Weather Company Energy Trader
 
 ### Autres produits ou services
+{: #prodservices}
 
 * Teacher Advisor with Watson
 
 ## Que faire si mon produit ou service n'est pas répertorié ?
 {: #tlsprodnotlisted}
 
-Il est possible que votre produit ou service prenne déjà en charge TLS 1.2 ou ne procède pas au retrait de TLS 1.0 et 1.1 pour le moment. Différents outils client et en ligne sont disponibles que vous pouvez utiliser pour vérifier si TLS 1.0 et 1.1 sont pris en charge ou non par un produit ou des noeuds finaux de service.
-
-Des produits ou services supplémentaires peuvent être ajoutés à cette annonce le 5 janvier 2018 ou avant.
+Il est possible que votre produit ou service prenne déjà en charge TLS 1.2 ou ne procède pas au retrait de TLS 1.0 et 1.1 pour le moment. Différents outils client et en ligne sont disponibles que vous pouvez utiliser pour vérifier si TLS 1.0 et 1.1 sont pris en charge par un produit ou des noeuds finaux de service.
 
 ## Il y a-t-il une façon de continuer à utiliser TLS 1.0 ou 1.1 une fois la prise en charge retirée ?
 {: #tlskeepusing}
@@ -234,9 +234,10 @@ Certains produits et services mettent à disposition des noeuds finaux alternati
 
 ### Infrastructure {{site.data.keyword.Bluemix_notm}}
 
-Quand la prise en charge pour TLS 1.0 et 1.1 sera retirée de `api.softlayer.com` et `api.service.softlayer.com`, des noeuds finaux alternatifs prenant en charge TLS 1.0 et 1.1 seront annoncés et mis à disposition pendant 30 jours. 
+Quand la prise en charge pour TLS 1.0 et 1.1 sera retirée de `api.softlayer.com` et `api.service.softlayer.com`, des noeuds finaux alternatifs prenant en charge TLS 1.0 et 1.1 seront annoncés et mis à disposition pendant 30 jours.
 
 ### Produits et services Watson
+{: #watsonprodservices}
 
 Si vous devez continuer à utiliser TLS 1.0 ou 1.1 lors d'une connexion aux produits et services Watson une fois le support retiré, vous pouvez remplacer `gateway.watsonplatform.net` par `gateway-tls10.wastonplatform.net` ou `stream.watsonplatform.net` par `stream-tls10.watsonplatform.net`. `gateway-tls10.watsonplatform.net` et `stream-tls10.watsonplatform.net`, qui prennent en charge TLS 1.0, 1.1 et 1.2, continueront à être disponibles pour utilisation une fois TLS 1.0 et 1.1 retirés de `gateway.watsonplatform.net` et `stream.watsonplatform.net`.
 

@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -10,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Traitement des incidents liés à l'accès à {{site.data.keyword.Bluemix_notm}}
@@ -100,7 +103,7 @@ Effectuez les vérifications suivantes :
 {: tsResolve}
  * Prenez contact avec votre utilisateur principal ou votre administrateur de compte pour vérifier que vous pouvez passer à l'authentification via IBMid.
  * Prenez soin d'exécuter l'étape de passage à l'IBMid. Voir [Passage à l'IBMid](/docs/admin/ibmidswitch.html).
- * Prenez soin d'exécuter les actions décrites dans le courrier électronique **Associate your user ID with an IBMid**. Recherchez le courrier électronique dans votre boîte de réception et dans votre dossier de courrier indésirable. Pour que le courrier électronique vous soit de nouveau envoyé, par exemple, s'il a expiré, accédez à la page d'édition du profil utilisateur dans le portail {{site.data.keyword.slportal}} et cliquez sur **Resend Email**. Vous pouvez également contacter le Support [{{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.
+ * Prenez soin d'exécuter les actions décrites dans le courrier électronique **Associate your user ID with an IBMid**. Recherchez le courrier électronique dans votre boîte de réception et dans votre dossier de courrier indésirable. Pour que le courrier électronique vous soit de nouveau envoyé, par exemple, s'il a expiré, accédez à la page d'édition du profil utilisateur dans le portail {{site.data.keyword.slportal}} et cliquez sur **Resend Email**. Vous pouvez également contacter le Support [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
 **Remarque :** Si vous avez créé votre IBMid directement avec IBMid, deux courriers électroniques vous sont envoyés, l'un par le service d'enregistrement IBMid et l'autre par {site.data.keyword.Blu_full}}. Prenez soin d'exécuter les actions décrites dans ces deux courriers électroniques.
 
@@ -149,7 +152,7 @@ Lorsque vous vous connectez à {{site.data.keyword.Bluemix_notm}}, l'authentific
 Il s'agit peut-être d'un problème lié au service d'authentification via IBMid.
 {: tsCauses}
 
-Vérifiez le statut du service sur le site [IBM IBMid ![External link icon](../icons/launch-glyph.svg "External link icon")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window}, puis essayez à nouveau l'opération.
+Vérifiez le statut du service sur le site [IBM IBMid ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window}, puis essayez à nouveau l'opération.
 {: tsResolve}
 
 

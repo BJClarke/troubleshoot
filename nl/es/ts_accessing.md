@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -10,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Resolución de problemas de acceso a {{site.data.keyword.Bluemix_notm}}
@@ -101,7 +104,7 @@ Siga los pasos siguientes según proceda:
  * Asegúrese de haber llevado a cabo el paso de cambio a ID de IBM. Consulte [Cambio a un ID de IBM](/docs/admin/ibmidswitch.html).
  * Asegúrese de seguir las acciones del correo electrónico **Asociar su ID de usuario con un ID de IBM**. Consulte la bandeja de entrada y la carpeta de correo basura para buscar el correo electrónico. Para recuperar el correo electrónico, por ejemplo si ha caducado, vaya a la página Editar perfil de usuario del {{site.data.keyword.slportal}} y pulse **Reenviar correo electrónico**. Como alternativa, póngase en contacto con el [equipo de soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-**Nota:** si ha creado su ID de IBM directamente con ID de IBM, habrá recibido dos correos electrónicos; uno del registro de ID de IBM y otro de {{site.data.keyword.Blu_full}}. Asegúrese de seguir las indicaciones de ambos correos electrónicos.
+**Nota:** si ha creado su ID de IBM directamente con ID de IBM, habrá recibido dos correos electrónicos; uno del registro de ID de IBM y otro de {{site.data.keyword.Bluemix_notm}}. Asegúrese de seguir las indicaciones de ambos correos electrónicos.
 
 En función de cómo se haya configurado su cuenta, se podrán aplicar algunas de estas opciones de inicio de sesión:
  * Los usuarios de {{site.data.keyword.BluSoftlayer_notm}} con ID de {{site.data.keyword.BluSoftlayer_full}} deben iniciar sesión a través del [{{site.data.keyword.slportal}}](https://control.softlayer.com).

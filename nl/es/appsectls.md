@@ -2,22 +2,22 @@
 
 copyright:
 
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-28"
+lastupdated: "2018-01-09"
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:new_window: target="_blank"}
 
 # Retirada de soporte para TLS 1.0 y 1.1
 {: #tlssupportwithdraw}
 
-IBM retirará el soporte para TLS 1.0 y TLS 1.1 en muchos de nuestros productos y servicios en la nube el 1 de marzo de 2018. TLS 1.2 seguirá teniendo soporte para cualquier producto o servicio de {{site.data.keyword.Bluemix_notm}} en el que se retire el soporte para TLS 1.0 y 1.1.
+IBM retirará el soporte para TLS 1.0 y TLS 1.1 en muchos productos y servicios de nube el 1 de marzo de 2018. TLS 1.2 seguirá teniendo soporte para cualquier producto o servicio de {{site.data.keyword.Bluemix_notm}} en el que se retire el soporte para TLS 1.0 y 1.1.
 {:shortdesc}
 
 ## ¿Por qué hacemos este cambio?
@@ -33,7 +33,7 @@ El [protocolo TLS](https://en.wikipedia.org/wiki/Transport_Layer_Security) se ut
 ## ¿Qué medidas debo tomar para no verme afectado?
 {: #impact}
 
-La gran mayoría de las conexiones realizadas a productos y servicios de {{site.data.keyword.Bluemix_notm}} ya utiliza TLS 1.2. Si sus conexiones no requieren TLS 1.0 o 1.1, no se verá afectado. 
+La gran mayoría de las conexiones realizadas a productos y servicios de {{site.data.keyword.Bluemix_notm}} ya utiliza TLS 1.2. Si sus conexiones no requieren TLS 1.0 o 1.1, no se verá afectado.
 
 Si utiliza cualquiera de los productos o servicios en los que se va a retirar el soporte para TLS 1.0 o 1.1, debe confirmar que sus conexiones no requieren TLS 1.0 o 1.1.
 
@@ -46,11 +46,11 @@ Todas las conexiones a Cloud Foundry que utilicen TLS se pueden ver afectadas, i
 
 #### Conexión a la aplicación de Cloud Foundry
 
-Se puede acceder a todos los puntos finales de aplicación de Cloud Foundry del dominio `*.mybluemix.net` mediante un punto final alternativo que solo admite TLS 1.2. 
+Se puede acceder a todos los puntos finales de aplicación de Cloud Foundry del dominio `*.mybluemix.net` mediante un punto final alternativo que solo admite TLS 1.2.
 
 Para utilizar el punto final alternativo, añada `alt.` después del subdominio de la aplicación, por ejemplo, si la aplicación está alojada en `https://myapplication.mybluemix.net`, utilice `https://myapplication.alt.mybluemix.net`. O, para `https://myaplication.eu-gb.mybluemix.net`, utilice `https://myapplication.alt.eu-gb.mybluemix.net`.
 
-Si se puede conectar correctamente con el punto final alternativo, no se verá afectado. 
+Si se puede conectar correctamente con el punto final alternativo, no se verá afectado.
 
 Si no se puede conectar correctamente, se verá afectado y debe cambiar el cliente, las bibliotecas de cliente o la configuración de cliente para habilitar TLS 1.2.
 
@@ -139,6 +139,7 @@ Algunos productos o servicios, como por ejemplo Cloud Foundry en {{site.data.key
 * Auto-Scaling
 * Alert Notification
 * Availability Monitoring
+* Continuous Delivery
 * Continuous Release
 * DevOps Insights
 * Event Management
@@ -159,7 +160,7 @@ Algunos productos o servicios, como por ejemplo Cloud Foundry en {{site.data.key
 
 #### Funciones
 
-* Functions
+* Funciones
 
 #### Integrar
 
@@ -183,7 +184,7 @@ Algunos productos o servicios, como por ejemplo Cloud Foundry en {{site.data.key
 #### Seguridad
 
 * App ID†
-* SSL Certificates† 
+* SSL Certificates†
 
 #### Watson
 
@@ -204,7 +205,7 @@ Algunos productos o servicios, como por ejemplo Cloud Foundry en {{site.data.key
 
 \*Disponible en servicios experimentales en el catálogo de {{site.data.keyword.Bluemix_notm}}.  
 † TLS 1.0 ya se ha eliminado, solo se va a eliminar TLS 1.1.  
-‡ En desuso, solo disponible para clientes actuales. 
+‡ En desuso, solo disponible para clientes actuales.
 
 ### Productos o servicios disponibles a través de IBM Marketplace
 
@@ -217,15 +218,14 @@ Algunos productos o servicios, como por ejemplo Cloud Foundry en {{site.data.key
 * Weather Company Energy Trader
 
 ### Otros productos o servicios
+{: #prodservices}
 
 * Teacher Advisor with Watson
 
 ## ¿Qué pasa si mi producto o servicio no está en la lista?
 {: #tlsprodnotlisted}
 
-Puede que su producto o servicio ya admita sólo TLS 1.2 o no vaya a eliminar TLS 1.0 y 1.1 en este momento. Hay varias herramientas de cliente y en línea disponibles que puede utilizar para comprobar si los puntos finales de un producto o servicio admiten TLS 1.0 y 1.1.
-
-Puede que se añadan otros productos o servicios a este anuncio antes del 5 de enero de 2018.
+Puede que su producto o servicio ya admita sólo TLS 1.2 o no vaya a eliminar TLS 1.0 y 1.1 en este momento. Hay varias herramientas de cliente y en línea disponibles que puede utilizar para comprobar si TLS 1.0 y 1.1 están soportados por los puntos finales de un producto o servicio.
 
 ## ¿Hay alguna forma de poder seguir utilizando TLS 1.0 o 1.1 una vez retirado el soporte?
 {: #tlskeepusing}
@@ -234,9 +234,10 @@ Algunos productos y servicios están proporcionando puntos finales alternativos 
 
 ### Infraestructura de {{site.data.keyword.Bluemix_notm}}
 
-Cuando se elimine el soporte para TLS 1.0 y 1.1 de `api.softlayer.com` y `api.service.softlayer.com`, se anunciarán puntos finales alternativos que admitan TLS 1.0 y 1.1 y estarán disponibles durante 30 días. 
+Cuando se elimine el soporte para TLS 1.0 y 1.1 de `api.softlayer.com` y `api.service.softlayer.com`, se anunciarán puntos finales alternativos que admitan TLS 1.0 y 1.1 y estarán disponibles durante 30 días.
 
 ### Productos y servicios de Watson
+{: #watsonprodservices}
 
 Si necesita seguir utilizando TLS 1.0 o 1.1 para conectarse a productos y servicios de Watson una vez que se haya retirado el soporte, puede sustituir `gateway.watsonplatform.net` por `gateway-tls10.wastonplatform.net` o `stream.watsonplatform.net` por `stream-tls10.watsonplatform.net`. `gateway-tls10.watsonplatform.net` y `stream-tls10.watsonplatform.net` admiten TLS 1.0, 1.1 y 1.2 y seguirán estando disponibles una vez que TLS 1.0 y 1.1 se hayan eliminado de `gateway.watsonplatform.net` y `stream.watsonplatform.net`.
 

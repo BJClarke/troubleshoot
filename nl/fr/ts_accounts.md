@@ -1,18 +1,21 @@
 ---
 
 copyright:
-  years: 2015, 2017
 
-lastupdated: "2017-11-07"
+  years: 2015, 2018
+
+lastupdated: "2017-11-09"
 
 ---
 
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Traitement des incidents liés à la gestion des comptes
@@ -45,10 +48,10 @@ Il est probable que vous utilisez un compte Lite, lequel ne permet un développe
 Si vous utilisez un compte Lite, vous pouvez effectuer une mise à niveau vers un compte facturable pour pouvoir accéder à d'autres organisations. Accédez à **Gérer > Facturation et utilisation > Facturation** dans la console, puis cliquez sur **Ajouter une carte de crédit**. Sur la page **Facturation**, vous pouvez également vérifier si votre compte est un compte Lite.
 {: tsResolve}
 
-## Impossible de créer une nouvelle instance du plan Lite
+## Impossible de créer une instance de plan Lite
 {: #nosecondlite}
 
-Vous recevez le message d'erreur suivant lorsque vous tentez de créer une nouvelle instance de plan Lite :
+Vous recevez le message d'erreur suivant lorsque vous tentez de créer une instance de plan Lite :
 {: tsSymptoms}
 
 `Impossible de mettre à disposition une nouvelle instance Lite`
@@ -88,7 +91,7 @@ Lorsque vous tentez de créer une application dans {{site.data.keyword.Bluemix_n
 Le statut de votre compte {{site.data.keyword.Bluemix_notm}} devient inactif lorsque le compte est annulé ou suspendu.
 {: tsCauses}
 
-Pour réactiver votre compte, contactez le Support [{{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}. Indiquez les informations suivantes dans votre courrier électronique :
+Pour réactiver votre compte, contactez le Support [{{site.data.keyword.Bluemix_notm}} ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixsupport.com){: new_window}. Indiquez les informations suivantes dans votre courrier électronique :
 {: tsResolve}
 
   * L'IBMid que vous utilisez pour vous connecter à {{site.data.keyword.Bluemix_notm}}.
@@ -97,7 +100,7 @@ Pour réactiver votre compte, contactez le Support [{{site.data.keyword.Bluemix_
 ## Impossible d'ajouter des utilisateurs à une organisation
 {: #ts_adduser}
 
-Vous pouvez inviter plusieurs utilisateurs dans la même organisation. Vous pouvez inviter des utilisateurs dans votre organisation uniquement si vous êtes propriétaire de compte ou si vous êtes à la fois responsable et membre de l'organisation.
+Vous pouvez inviter plusieurs utilisateurs dans la même organisation. Vous pouvez inviter des utilisateurs dans votre organisation uniquement si vous êtes propriétaire de compte ou un responsable l'organisation.
 
 Le lien **Inviter un nouvel utilisateur** n'apparaît pas dans votre section **Gérer les organisations**.
 {: tsSymptoms}
@@ -105,34 +108,15 @@ Le lien **Inviter un nouvel utilisateur** n'apparaît pas dans votre section **G
 Seuls les utilisateurs {{site.data.keyword.Bluemix_notm}} suivants peuvent inviter des utilisateurs dans une organisation :
 {: tsCauses}
   * Le propriétaire de compte de l'organisation
-  * Les responsables de l'organisation qui sont également membres, et non collaborateurs, de l'organisation
+  * Les responsables de l'organisation
 
-Dans {{site.data.keyword.Bluemix_notm}}, vous pouvez être membre ou collaborateur d'une organisation.
+**Remarque :** Tous les responsables de l'organisation peuvent ajouter, modifier ou retirer des utilisateurs qui se trouvent déjà dans l'organisation.
 
-<dl><dt>Collaborateur</dt>
-<dd>Vous êtes collaborateur d'une organisation si vous possédez déjà un compte {{site.data.keyword.Bluemix_notm}} et que quelqu'un vous invite dans l'organisation.</dd>
-<dt>Membre</dt>
-<dd>Vous êtes membre d'une organisation si vous ne possédez pas de compte {{site.data.keyword.Bluemix_notm}}, mais que quelqu'un vous invite dans l'organisation et que
-vous vous inscrivez à {{site.data.keyword.Bluemix_notm}} depuis l'invitation.</dd>
-</dl>
-
-Vous ne pouvez pas inviter d'utilisateurs dans votre organisation si vous êtes un collaborateur de l'organisation, même si vous avez été désigné comme responsable de l'organisation.
-
-**Remarque :** tous les responsables de l'organisation, y compris ceux qui sont des collaborateurs d'une organisation, peuvent ajouter, modifier et supprimer des utilisateurs qui se trouvent déjà dans l'organisation.
-
-Si vous ne pouvez pas inviter d'utilisateurs dans votre organisation et que vous avez besoin d'un autre rôle pour ce faire, prenez contact avec le responsable de l'organisation afin qu'il change votre rôle. Pour identifier le responsable de votre organisation, procédez comme suit :
+Si vous ne pouvez pas inviter d'utilisateurs dans votre organisation, prenez contact avec le responsable de l'organisation. Pour identifier le responsable de votre organisation, procédez comme suit :
 {: tsResolve}
 
   1. Dans la barre de menus de la console, sélectionnez **Gérer > Compte > Organisations**.
   2. Sélectionnez votre organisation et affichez les informations relatives au responsable dans l'onglet **Utilisateurs**.  
-
-Si vous ne parvenez pas à inviter des utilisateurs car vous êtes collaborateur et non membre, vous devez supprimer votre compte {{site.data.keyword.Bluemix_notm}} précédent, puis être invité à rejoindre le compte en tant que membre de l'organisation. Pour supprimer votre compte précédent et rejoindre le compte en tant que membre, procédez comme suit :
-
-  1. Contactez le Support [{{site.data.keyword.Bluemix_notm}} ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport){: new_window} pour ouvrir un ticket de demande de service et demander la suppression de votre compte. Si vous voulez sauvegarder des données associées à votre ancien compte et les déplacer dans votre nouveau
-compte, incluez ces informations dans votre courrier électronique.
-  2. Une fois votre compte supprimé, demandez à un utilisateur disposant du rôle de responsable de l'organisation de vous inviter dans l'organisation en
-tant que responsable de l'organisation. Ensuite, inscrivez-vous à
-{{site.data.keyword.Bluemix_notm}} à partir de l'invitation.
 
 ## L'enregistrement d'utilisateurs par lots n'est pas pris en charge
 {: #ts_batchregistration}
@@ -181,7 +165,7 @@ Ce problème peut se produire lorsque vous affectez la même route d'adresse URL
 
 Par exemple, vous envoyez par commande push l'application myApp1 dans {{site.data.keyword.Bluemix_notm}} et définissez le nom de domaine "mynewapp.stage1.mybluemix.net". Puis, vous envoyez par commande push une autre application myApp2 dans le même espace et affectez "mynewapp.mybluemix.net" à l'une de ses routes d'URL. La route est désormais mappée aux deux applications.
 
-Il s'agit du comportement de {{site.data.keyword.Bluemix_notm}} pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Using Blue-Green Deployment to Reduce Downtime and Risk ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
+Il s'agit du comportement de {{site.data.keyword.Bluemix_notm}} pris en charge ; il permet d'obtenir un temps d'indisponibilité nul pour la mise à niveau de votre application. Pour plus d'informations, voir [Using Blue-Green Deployment to Reduce Downtime and Risk ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html){: new_window}.
 {: tsResolve}
 
 

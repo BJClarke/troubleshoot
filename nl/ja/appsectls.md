@@ -2,22 +2,22 @@
 
 copyright:
 
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-28"
+lastupdated: "2018-01-09"
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:new_window: target="_blank"}
 
 # TLS 1.0 および 1.1 のサポート終了
 {: #tlssupportwithdraw}
 
-IBM は、2018 年 3 月 1 日付けで弊社のクラウド製品ならびにサービスの多くで TLS 1.0 および TLS 1.1 のサポートを終了します。TLS 1.0 および 1.1 のサポートを終了するいずれの {{site.data.keyword.Bluemix_notm}} 製品およびサービスでも、TLS 1.2 は引き続きサポートされます。
+IBM は、2018 年 3 月 1 日付けでクラウド製品ならびにサービスの多くで TLS 1.0 および TLS 1.1 のサポートを終了します。TLS 1.0 および 1.1 のサポートを終了するいずれの {{site.data.keyword.Bluemix_notm}} 製品およびサービスでも、TLS 1.2 は引き続きサポートされます。
 {:shortdesc}
 
 ## この変更を行う理由
@@ -28,12 +28,12 @@ IBM は、2018 年 3 月 1 日付けで弊社のクラウド製品ならびに�
 ## TLS とは?
 {: #what}
 
-[TLS プロトコル](https://en.wikipedia.org/wiki/Transport_Layer_Security)は、送信データの秘密が守られるようにネットワーク間の通信を暗号化するために使用されます。リリースされている TLS のバージョンには、1.0、1.1、および 1.2 の 3 つがあります。HTTPS 接続はすべて TLS を使用します。HTTPS は、{{site.data.keyword.Bluemix_notm}} 製品およびサービスへの接続がセキュアで信頼できることを保証するための主要な方式です。一部の {{site.data.keyword.Bluemix_notm}} 製品およびサービスは、WebSocket Secure (WSS) プロトコルを使用したセキュア接続を許可していますが、このプロトコルも TLS を使用します。TLS 1.0 および 1.1 のサポート終了は、HTTPS 接続と WSS 接続の両方に該当します。
+[TLS プロトコル](https://en.wikipedia.org/wiki/Transport_Layer_Security)は、送信データの秘密が守られるようにネットワーク間の通信を暗号化するために使用されます。 リリースされている TLS のバージョンには、1.0、1.1、および 1.2 の 3 つがあります。 HTTPS 接続はすべて TLS を使用します。 HTTPS は、{{site.data.keyword.Bluemix_notm}} 製品およびサービスへの接続がセキュアで信頼できることを保証するための主要な方式です。 一部の {{site.data.keyword.Bluemix_notm}} 製品およびサービスは、WebSocket Secure (WSS) プロトコルを使用したセキュア接続を許可していますが、このプロトコルも TLS を使用します。 TLS 1.0 および 1.1 のサポート終了は、HTTPS 接続と WSS 接続の両方に該当します。
 
 ## 影響を受けないようにするには、どのような処置が必要ですか?
 {: #impact}
 
-{{site.data.keyword.Bluemix_notm}} 製品またはサービスに対して行われる接続の大部分は既に TLS 1.2 を使用しています。ご使用の接続が TLS 1.0 または 1.1 を必要としない場合、影響は受けません。 
+{{site.data.keyword.Bluemix_notm}} 製品またはサービスに対して行われる接続の大部分は既に TLS 1.2 を使用しています。 ご使用の接続が TLS 1.0 または 1.1 を必要としない場合、影響は受けません。
 
 TLS 1.0 または 1.1 のサポートが終了されるいずれかの製品またはサービスを使用している場合、接続が TLS 1.0 または 1.1 を必要としないことを確認する必要があります。
 
@@ -41,16 +41,16 @@ TLS 1.0 または 1.1 のサポートが終了されるいずれかの製品ま�
 
 Cloud Foundry アプリケーションに関しては、{{site.data.keyword.Bluemix_notm}} 外部からアプリケーションに接続するとき、またはアプリケーションから IBM Cloud 上の別の Cloud Foundry アプリケーションに接続するときに影響を受けないことを確認しておく必要があります。
 
-Web ブラウザーから行われる接続を含め、Cloud Foundry への TLS を使用するすべての接続は影響を受ける可能性があります。[{{site.data.keyword.Bluemix_notm}}](https://console.bluemix.net/docs/overview/prereqs.html#browsers) の前提条件となっているブラウザーを含め、最新のブラウザーはすべて TLS 1.2 をサポートしています。
+Web ブラウザーから行われる接続を含め、Cloud Foundry への TLS を使用するすべての接続は影響を受ける可能性があります。 [{{site.data.keyword.Bluemix_notm}}](https://console.bluemix.net/docs/overview/prereqs.html#browsers) の前提条件となっているブラウザーを含め、最新のブラウザーはすべて TLS 1.2 をサポートしています。
 {: tip}
 
 #### Cloud Foundry アプリケーションへの接続
 
-`*.mybluemix.net` ドメインのすべての Cloud Foundry アプリケーション・エンドポイントに、TLS 1.2 のみをサポートする代替エンドポイントからアクセスできます。 
+`*.mybluemix.net` ドメインのすべての Cloud Foundry アプリケーション・エンドポイントに、TLS 1.2 のみをサポートする代替エンドポイントからアクセスできます。
 
-代替エンドポイントを使用するには、アプリケーションのサブドメインの後に `alt.` を追加します。例えば、アプリケーションが `https://myapplication.mybluemix.net` でホストされている場合、`https://myapplication.alt.mybluemix.net` を使用します。また、`https://myaplication.eu-gb.mybluemix.net` であれば、`https://myapplication.alt.eu-gb.mybluemix.net` を使用します。
+代替エンドポイントを使用するには、アプリケーションのサブドメインの後に `alt.` を追加します。例えば、アプリケーションが `https://myapplication.mybluemix.net` でホストされている場合、`https://myapplication.alt.mybluemix.net` を使用します。 また、`https://myaplication.eu-gb.mybluemix.net` であれば、`https://myapplication.alt.eu-gb.mybluemix.net` を使用します。
 
-代替エンドポイントに正常に接続できる場合、影響を受けることはありません。 
+代替エンドポイントに正常に接続できる場合、影響を受けることはありません。
 
 正常に接続できない場合は、影響を受けることになるので、クライアント、クライアント・ライブラリー、またはクライアント構成を変更して、TLS 1.2 に対応できるようにする必要があります。
 
@@ -68,12 +68,12 @@ cf restage <application_name>
 
 これらの変更を加えると、アプリケーションからのアウトバウンド要求は代替の TLS 1.2 専用エンドポイントにリダイレクトされます。
 
-代替エンドポイントを使用するには、クライアントがサーバー名表示 (SNI) TLS 拡張機能をサポートしていなければなりません。サポートしていない場合、返される証明書がクライアントによって無効と見なされる可能性があります。これが発生すると、TLS 1.0 および 1.1 の廃止による影響であると誤った推測がされるおそれがあります。
+代替エンドポイントを使用するには、クライアントがサーバー名表示 (SNI) TLS 拡張機能をサポートしていなければなりません。 サポートしていない場合、返される証明書がクライアントによって無効と見なされる可能性があります。 これが発生すると、TLS 1.0 および 1.1 の廃止による影響であると誤った推測がされるおそれがあります。
 {: tip}
 
 ### Watson 製品およびサービス
 
-`gateway.watsonplatform.net` または `stream.wastonplatform.net` を使用して接続している先の Watson 製品やサービスについては、それらを `gateway-tls12.watsonplatform.net` または `stream-tls12.watsonplatform.net` に置き換えてください。これらの代替エンドポイントは、TLS 1.2 のみをサポートします。そこに正常に接続できる場合、影響を受けることはありません。正常に接続できない場合は、影響を受けることになるので、クライアント、クライアント・ライブラリー、またはクライアント構成を変更して、TLS 1.2 に対応できるようにする必要があります。
+`gateway.watsonplatform.net` または `stream.wastonplatform.net` を使用して接続している先の Watson 製品やサービスについては、それらを `gateway-tls12.watsonplatform.net` または `stream-tls12.watsonplatform.net` に置き換えてください。 これらの代替エンドポイントは、TLS 1.2 のみをサポートします。 そこに正常に接続できる場合、影響を受けることはありません。 正常に接続できない場合は、影響を受けることになるので、クライアント、クライアント・ライブラリー、またはクライアント構成を変更して、TLS 1.2 に対応できるようにする必要があります。
 
 米国南部以外の地域にある Watson 製品およびサービスの代替エンドポイントは提供されません。それらのエンドポイントでは既に TLS 1.2 しかサポートしていません。
 
@@ -89,9 +89,9 @@ cf restage <application_name>
 
 以下の製品またはサービスで、TLS 1.0 および 1.1 のサポートが終了します。
 
-{{site.data.keyword.Bluemix_notm}} 上の Cloud Foundry や {{site.data.keyword.Bluemix_notm}} カタログ内のサービスなど、一部の製品またはサービスは、複数の地域で提供されていることがあります。TLS 1.0 および 1.1 は、現在それらがサポートされているすべての地域で廃止されます。
+{{site.data.keyword.Bluemix_notm}} 上の Cloud Foundry や {{site.data.keyword.Bluemix_notm}} カタログ内のサービスなど、一部の製品またはサービスは、複数の地域で提供されていることがあります。 TLS 1.0 および 1.1 は、現在それらがサポートされているすべての地域で廃止されます。
 
-**重要な注:** {{site.data.keyword.Bluemix_notm}} Private または {{site.data.keyword.Bluemix_notm}} Local System デプロイメント、またはそのようなデプロイメントでホストされる {{site.data.keyword.Bluemix_notm}} サービスは含まれません。ご使用のデプロイメントがまだ TLS 1.0 または 1.1 をサポートしている場合は、顧客またはサポート担当者と相談して廃止する適当な時機を決定してください。
+**重要な注:** {{site.data.keyword.Bluemix_notm}} Private または {{site.data.keyword.Bluemix_notm}} Local System デプロイメント、またはそのようなデプロイメントでホストされる {{site.data.keyword.Bluemix_notm}} サービスは含まれません。 ご使用のデプロイメントがまだ TLS 1.0 または 1.1 をサポートしている場合は、顧客またはサポート担当者と相談して廃止する適当な時機を決定してください。
 
 ### IBM Cloud カタログから使用可能な製品またはサービス
 
@@ -139,6 +139,7 @@ cf restage <application_name>
 * Auto-Scaling
 * Alert Notification
 * Availability Monitoring
+* Continuous Delivery
 * Continuous Release
 * DevOps Insights
 * Event Management
@@ -157,7 +158,7 @@ cf restage <application_name>
 * Simulated Historical Instrument Analytics\*
 * Simulated Instrument Analytics\*
 
-#### 機能
+#### Functions
 
 * Functions
 
@@ -183,7 +184,7 @@ cf restage <application_name>
 #### セキュリティー
 
 * App ID†
-* SSL Certificates† 
+* SSL Certificates†
 
 #### Watson
 
@@ -204,7 +205,7 @@ cf restage <application_name>
 
 \* {{site.data.keyword.Bluemix_notm}} カタログ内の試験サービスとして使用可能です。  
 † TLS 1.0 は既に廃止されており、TLS 1.1 のみが廃止されます。  
-‡ 非推奨。既存のお客様のみが使用できます。 
+‡ 非推奨。既存のお客様のみが使用できます。
 
 ### IBM Marketplace から使用可能な製品またはサービス
 
@@ -217,15 +218,14 @@ cf restage <application_name>
 * Weather Company Energy Trader
 
 ### その他の製品またはサービス
+{: #prodservices}
 
 * Teacher Advisor with Watson
 
 ## 使用している製品またはサービスがリストにない場合、どうしたらいいですか?
 {: #tlsprodnotlisted}
 
-ご使用の製品またはサービスは、既に TLS 1.2 しかサポートしていないか、今回は TLS 1.0 および 1.1 を廃止しない可能性があります。製品またはサービスのエンドポイントで TLS 1.0 および 1.1 がサポートされているかどうかを確認するために使用できる各種クライアント・ツールやオンライン・ツールが提供されています。
-
-2018 年 1 月 5 日またはそれまでに、この告知に製品またはサービスが追加される可能性があります。
+ご使用の製品またはサービスは、既に TLS 1.2 しかサポートしていないか、今回は TLS 1.0 および 1.1 を廃止しない可能性があります。 製品またはサービスのエンドポイントで TLS 1.0 および 1.1 がサポートされているかどうかを確認するために使用できる各種クライアント・ツールやオンライン・ツールが提供されています。
 
 ## サポート終了後も TLS 1.0 または 1.1 を使用し続けることはできますか?
 {: #tlskeepusing}
@@ -234,11 +234,12 @@ cf restage <application_name>
 
 ### {{site.data.keyword.Bluemix_notm}} インフラストラクチャー
 
-TLS 1.0 および 1.1 のサポートが `api.softlayer.com` および `api.service.softlayer.com` から外されるときに、TLS 1.0 および 1.1 をサポートする代替エンドポイントが告知され、30 日間使用可能になります。 
+TLS 1.0 および 1.1 のサポートが `api.softlayer.com` および `api.service.softlayer.com` から外されるときに、TLS 1.0 および 1.1 をサポートする代替エンドポイントが告知され、30 日間使用可能になります。
 
 ### Watson 製品およびサービス
+{: #watsonprodservices}
 
-サポート終了後も Watson 製品およびサービスに接続するときに引き続き TLS 1.0 または 1.1 を使用する必要がある場合は、`gateway.watsonplatform.net` を `gateway-tls10.wastonplatform.net` に置き換えるか、`stream.watsonplatform.net` を `stream-tls10.watsonplatform.net` に置き換えてください。`gateway-tls10.watsonplatform.net` と `stream-tls10.watsonplatform.net` は、TLS 1.0、1.1、および 1.2 をサポートし、TLS 1.0 および 1.1 が `gateway.watsonplatform.net` および `stream.watsonplatform.net` で廃止された後も継続して使用できます。
+サポート終了後も Watson 製品およびサービスに接続するときに引き続き TLS 1.0 または 1.1 を使用する必要がある場合は、`gateway.watsonplatform.net` を `gateway-tls10.wastonplatform.net` に置き換えるか、`stream.watsonplatform.net` を `stream-tls10.watsonplatform.net` に置き換えてください。 `gateway-tls10.watsonplatform.net` と `stream-tls10.watsonplatform.net` は、TLS 1.0、1.1、および 1.2 をサポートし、TLS 1.0 および 1.1 が `gateway.watsonplatform.net` および `stream.watsonplatform.net` で廃止された後も継続して使用できます。
 
 ## 連絡
 {: #tlssupport}

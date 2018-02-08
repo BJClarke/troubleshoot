@@ -2,18 +2,20 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
-última atualização: "09-11-2017"
+lastupdated: "2017-11-09"
 
 ---
 
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Resolução de problemas para gerenciar aplicativos
@@ -593,7 +595,8 @@ Use um dos métodos a seguir, dependendo da causa do problema:
         ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * Use o arquivo [package.json ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](https://docs.npmjs.com/json){: new_window}. Por exemplo:
+    * Use the [package.json ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.npmjs.com/json){: new_window} file. Por
+exemplo:
 	    ```
 		{
       ...
@@ -602,7 +605,8 @@ Use um dos métodos a seguir, dependendo da causa do problema:
  	   }
 	}
 	    ```
-    * Use o arquivo `manifest.yml`. Por exemplo:
+    * Use o arquivo `manifest.yml`. Por
+exemplo:
 	    ```
 		applications:
   name: MyUniqueNodejs01

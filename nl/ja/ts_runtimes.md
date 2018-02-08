@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
 
 lastupdated: "2017-11-08"
 
@@ -10,9 +11,11 @@ lastupdated: "2017-11-08"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # ランタイムに関するトラブルシューティング
@@ -89,7 +92,8 @@ daemon off;
 error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
-デフォルトのロギング構成を変更する方法について詳しくは、『[error_log ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}』を参照してください。
+デフォルトのロギング構成を変更する方法について詳しくは、[error_log ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window} を参照してください。
+
 
 
 ## サード・パーティーの Python ライブラリーを {{site.data.keyword.Bluemix_notm}} にインポートできない

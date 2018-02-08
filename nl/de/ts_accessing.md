@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -10,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Fehlerbehebung für den Zugriff auf {{site.data.keyword.Bluemix_notm}}
@@ -80,7 +83,7 @@ Sie müssen über eine gültige IBMid und ein Kennwort verfügen, um sich bei {{
 
  * Stellen Sie sicher, dass Sie eine vollständig qualifizierte E-Mail-Adresse für die IBMid eingeben.
  {: tsResolve}
- * Falls Sie einen {{site.data.keyword.BluSoftlayer_full}}-Benutzer mit einer {{site.data.keyword.BluSoftlayer_full}}-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im {{site.data.keyword.slportal}} zur Authentifizierung mit IBMid wechseln, bevor Sie sich mit der Authentifizierung über IBMid anmelden können.
+ * Falls Sie einen {{site.data.keyword.BluSoftlayer_full}}-Benutzer mit einer {{site.data.keyword.BluSoftlayer_full}}-ID verwenden, müssen Sie für jedes Konto, auf das Sie zugreifen können, im {{site.data.keyword.slportal}} zur IBMid-Authentifizierung wechseln, bevor Sie sich mit der IBMid-Authentifizierung anmelden können.
  Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/ibmidswitch.html).
 
 
@@ -92,12 +95,12 @@ Wenn Sie sich mit Ihrer IBMid anmelden, wird die folgende Nachricht angezeigt:
 
 `Sie sind auf diese Seite gelangt, weil Ihre Authentifizierung erfolgreich war; allerdings ist diese IBMid keinem IBM Cloud-Konto zugeordnet. Wenn Sie dies für einen Fehler halten, wenden Sie sich an Ihren Kontoeigner oder Masterbenutzer.`
 
-Sie haben sich über das [{{site.data.keyword.slportal}}](https://control.softlayer.com) mit einer gültigen IBMid angemeldet, aber sie konnten nicht vom {{site.data.keyword.slportal}} zur Authentifizierung mit IBMid wechseln.
+Sie haben sich über das [{{site.data.keyword.slportal}}](https://control.softlayer.com) mit einer gültigen IBMid angemeldet, aber sie konnten nicht vom {{site.data.keyword.slportal}} zur IBMid-Authentifizierung wechseln.
 {: tsCauses}
 
 Führen Sie die folgenden Prüfungen durch:
 {: tsResolve}
- * Lassen Sie von Ihrem Masterbenutzer oder Kontoadministrator überprüfen, ob Sie zur Authentifizierung mit IBMid wechseln können.
+ * Lassen Sie von Ihrem Masterbenutzer oder Kontoadministrator überprüfen, ob Sie zur IBMid-Authentifizierung wechseln können.
  * Stellen Sie sicher, dass Sie den Schritt für den Wechsel zur IBMid ausgeführt haben. Weitere Informationen finden Sie unter [Zur IBMid wechseln](/docs/admin/ibmidswitch.html).
  * Stellen Sie sicher, dass Sie die Aktionen ausgeführt haben, die in der E-Mail für die **Zuordnung der Benutzer-ID zu einer IBMid** beschrieben sind. Überprüfen Sie Ihren Posteingang und Ihren Ordner für Junk-Mail. Um die E-Mail erneut abzurufen, weil sie beispielsweise abgelaufen ist, wechseln Sie im {{site.data.keyword.slportal}} auf die Seite für die Bearbeitung des Benutzerprofils und klicken Sie auf **E-Mail erneut senden**. Setzen Sie sich alternativ mit dem [{{site.data.keyword.Bluemix_notm}}-Support ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/bluemixsupport.com){: new_window} in Verbindung.
 
@@ -136,7 +139,7 @@ Wenn Sie sich mit Ihrer IBMid anmelden, wird eine Nachricht über die erfolgreic
 Verwenden Sie eine der folgenden Lösungen:
 {: tsResolve}
  * Schließen Sie Ihren Browser, löschen Sie Cookies sowie den Inhalt des Cache und versuchen Sie erneut, sich anzumelden.
- * Stellen Sie sicher, dass Sie zur Anmeldung die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://console.{DomainName}) oder das [{{site.data.keyword.slportal}}](https://control.softlayer.com) und nicht direkt den Service für die Authentifizierung mit IBMid verwenden.
+ * Stellen Sie sicher, dass Sie zur Anmeldung die [{{site.data.keyword.Bluemix_notm}}-Konsole](https://console.{DomainName}) oder das [{{site.data.keyword.slportal}}](https://control.softlayer.com) und nicht direkt den Service für die IBMid-Authentifizierung verwenden.
 
 
 ## Anmeldung mit IBMid wird nicht vollständig ausgeführt
@@ -145,7 +148,7 @@ Verwenden Sie eine der folgenden Lösungen:
 Wenn Sie sich bei {{site.data.keyword.Bluemix_notm}} anmelden, wird die Authentifizierung mit der IBMid nicht vollständig abgeschlossen.
 {: tsSymptoms}
 
-Möglicherweise besteht ein Problem beim Service für die Authentifizierung mit IBMid.
+Möglicherweise besteht ein Problem beim Service für die IBMid-Authentifizierung.
 {: tsCauses}
 
 Überprüfen Sie den Status des Service auf der Seite [IBM IBMid ![Symbol für externen Link](../icons/launch-glyph.svg "Symbol für externen Link")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} und wiederholen Sie anschließend den Versuch.

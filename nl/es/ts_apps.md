@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -11,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Resolución de problemas de gestión de apps
@@ -235,7 +237,8 @@ Puede desplegar correctamente la app en {{site.data.keyword.Bluemix_notm}} con l
 {: tsSymptoms}
 `No se da soporte a la faceta de proyecto de la aplicación autónoma de Cloud Foundry versión 1.0.`
 
-IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} asignan proyectos a los tiempos de ejecución de {{site.data.keyword.Bluemix_notm}} mediante facetas de proyectos. Las facetas definen los requisitos de los proyectos de Java EE en Eclipse y se utilizan como parte de la configuración de tiempo de ejecución de modo que los diferentes tiempos de ejecución estén asociados a diferentes proyectos. Si IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} no da soporte a la faceta que se aplica al proyecto, no se podrá desplegar la app utilizando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} asignan proyectos a los tiempos de ejecución de {{site.data.keyword.Bluemix_notm}} mediante facetas de proyectos. Las facetas definen los requisitos de los proyectos de
+Java EE en Eclipse y se utilizan como parte de la configuración de tiempo de ejecución de modo que los diferentes tiempos de ejecución estén asociados a diferentes proyectos. Si IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} no da soporte a la faceta que se aplica al proyecto, no se podrá desplegar la app utilizando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Debe eliminar la faceta del proyecto de Eclipse para poder desplegar la app utilizando IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
@@ -422,33 +425,43 @@ Además, puede codificar la app para identificar y recuperarse de problemas como
 ## Se pierden las variables definidas por el usuario al enviar por push una app
 {: #ts_varsnotretained}
 
-Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, se restablecen las variables especificadas, a menos que las guarde en el archivo de manifiesto.
+Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, se restablecen las variables especificadas, a menos que las guarde
+en el archivo de manifiesto.
 
 Las variables especificadas se pierden tras enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Las variables especificadas solo se guardan si las guarda en el archivo de manifiesto.
+Las variables especificadas solo se guardan si las guarda
+en el archivo de manifiesto.
 {: tsCauses}
 
-Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, seleccione el recuadro de verificación **Guardar en el archivo de manifiesto** en la página Detalles de aplicación del asistente Aplicación. Posteriormente, las variables especificadas en el asistente se guardan en el archivo de manifiesto de su app. La próxima vez que abra el asistente, las variables se visualizarán automáticamente.
+Al enviar por push una app a {{site.data.keyword.Bluemix_notm}} desde IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, seleccione el recuadro de verificación **Guardar en el archivo de manifiesto** en la página Detalles de aplicación del asistente Aplicación. Posteriormente,
+las variables especificadas
+en el asistente
+se guardan en el archivo de manifiesto de su app. La próxima vez que abra el asistente, las variables se visualizarán automáticamente.
 {: tsResolve}  
 
 
 ## No se pueden encontrar organizaciones en {{site.data.keyword.Bluemix_notm}}
 {: #ts_orgs}
 
-Es posible que no encuentre su organización en {{site.data.keyword.Bluemix_notm}} al trabajar en una región de {{site.data.keyword.Bluemix_notm}}.
+Es posible que no encuentre su organización en {{site.data.keyword.Bluemix_notm}} al
+trabajar en una región de {{site.data.keyword.Bluemix_notm}}.
 
 Puede iniciar sesión correctamente en la consola de {{site.data.keyword.Bluemix_notm}}, pero no puede enviar por push apps utilizando la interfaz de línea de mandatos cf o el plug-in de Eclipse.
 {: tsSymptoms}
 
-Al intentar enviar por push una app a {{site.data.keyword.Bluemix_notm}} utilizando la interfaz de línea de mandatos cf, ve uno de los siguientes mensajes de error con el nombre de la organización especificado en el mensaje:
+Al intentar enviar por push una app
+a {{site.data.keyword.Bluemix_notm}} utilizando
+la interfaz de línea de mandatos cf, ve uno de los siguientes mensajes de error con el nombre de la organización especificado en el mensaje:
 
 `Error al buscar la organización`
 
 `No se ha encontrado la organización`
 
-Al intentar enviar por push una app a {{site.data.keyword.Bluemix_notm}} utilizando el plug-in de Eclipse de Cloud Foundry, ve el siguiente mensaje de error:
+Al intentar enviar por push una app
+a {{site.data.keyword.Bluemix_notm}} utilizando
+el plug-in de Eclipse de Cloud Foundry, ve el siguiente mensaje de error:
 
 `No se ha encontrado cloudspace.`
 
@@ -473,10 +486,12 @@ Al desplegar una app en {{site.data.keyword.Bluemix_notm}}, verá el siguiente m
 
 `Creating route hostname.domainname ... FAILED Server error, status code: 400, error code: 210003, message: The host is taken: hostname`
 
-Este problema se produce si el nombre de host especificado ya está en uso.
+Este problema se produce si el nombre de host especificado
+ya está en uso.
 {: tsCauses}
 
-El nombre de host especificado debe ser exclusivo en el dominio que está utilizando. Para especificar otro nombre de host debe utilizar uno de los siguientes métodos:
+El nombre de host especificado debe ser exclusivo en el dominio
+que está utilizando. Para especificar otro nombre de host debe utilizar uno de los siguientes métodos:
 {: tsResolve}
 
   * Si despliega su app utilizando el archivo `manifest.yml`, especifique el nombre de host en la opción host.	 
@@ -501,7 +516,8 @@ Si carga una app WAR en {{site.data.keyword.Bluemix_notm}} mediante el mandato `
 Este problema puede suceder si no se especifica el archivo WAR o si no se especifica la vía de acceso al archivo WAR.
 {: tsCauses}
 
-Utilice la opción **-p** para especificar un archivo WAR o añada la vía de acceso al archivo WAR. Por ejemplo:
+Utilice la opción **-p** para especificar un archivo
+WAR o añada la vía de acceso al archivo WAR. Por ejemplo:
 {: tsResolve}
 
 ```
@@ -511,7 +527,8 @@ cf push MyUniqueAppName01 -p app.war
 ```
 cf push MyUniqueAppName02 -p "./app.war"
 ```
-Para obtener más información sobre el mandato `cf push`, escriba `cf push -h`. 	
+Para obtener más información sobre el mandato `cf push`, escriba `cf
+push -h`. 	
 
 
 ## Los caracteres de doble byte no se visualizan correctamente cuando se envían apps a {{site.data.keyword.Bluemix_notm}} aplicaciones
@@ -584,7 +601,7 @@ Utilice uno de los métodos siguientes en función de la causa del problema:
   ...
         ```
 
-  * Asegúrese de que el archivo `package.json` exista en la app Node.js para que el paquete de compilación de Node.js pueda reconocer la app. Asegúrese de que dicho archivo esté en el directorio raíz de la app.
+  * Asegúrese de que exista un archivo `package.json` en la app Node.js para que el paquete de compilación Node.js pueda reconocer la app. Asegúrese de que este archivo esté en el directorio raíz de la app.
     El ejemplo siguiente muestra un archivo `package.json` sencillo:  
 	```
 	{
@@ -668,7 +685,9 @@ Para utilizar un paquete de compilación personalizado para las apps de Meteor, 
   ```
   buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```
-  * Si despliega su app desde un indicador de mandatos, utilice el mandato `cf push` y especifique el paquete de compilación personalizado mediante la opción **-b**. Por ejemplo:
+  * Si despliega su app desde un indicador de mandatos, utilice el mandato `cf
+push` y especifique el paquete de compilación personalizado mediante la opción
+**-b**. Por ejemplo:
     ```
 	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```

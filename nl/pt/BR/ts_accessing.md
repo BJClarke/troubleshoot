@@ -1,18 +1,21 @@
 ---
 
 copyright:
-  years: 2015, 2017
 
-última atualização: "09-11-2017"
+  years: 2015, 2018
+
+lastupdated: "2017-11-09"
 
 ---
 
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Resolução de problemas para acessar o {{site.data.keyword.Bluemix_notm}}
@@ -161,13 +164,12 @@ Se a sua conta estiver pendente, não será possível efetuar login no {{site.da
 Depois de registrar-se em uma conta para teste do {{site.data.keyword.Bluemix_notm}}, você pode não ser capaz de efetuar login no {{site.data.keyword.Bluemix_notm}}. É exibida a seguinte mensagem:
 {: tsSymptoms}
 
-<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por email e verifique também sua pasta de spam. Se você ainda não recebeu sua confirmação por e-mail, entre em contato com o <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Suporte do {{site.data.keyword.Bluemix_notm}}</a>.</code>
+<code>Sua conta está pendente. Aguarde até 24 horas pela confirmação por e-mail e verifique também sua pasta de spam. Se você ainda não recebeu sua confirmação por e-mail, entre em contato com o <a href="http://ibm.biz/bluemixsupport.com" target="_blank">Suporte do {{site.data.keyword.Bluemix_notm}}</a>.</code>
 
-Depois de registrar-se em uma conta para teste do {{site.data.keyword.Bluemix_notm}}, você recebe um e-mail de confirmação. Deve-se clicar no link
-que está no email de confirmação para concluir o processo de registro.
+Depois de registrar-se em uma conta para teste do {{site.data.keyword.Bluemix_notm}}, você recebe um e-mail de confirmação. Deve-se clicar no link que está no e-mail de confirmação para concluir o processo de registro.
 {: tsCauses}
 
-O email de confirmação é enviado ao endereço de email fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
+O e-mail de confirmação é enviado ao endereço de e-mail fornecido. Verifique sua caixa de entrada e sua pasta de spam. Se você não tiver recebido o e-mail de confirmação, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.  
 {: tsResolve}
 
 ## A página do {{site.data.keyword.Bluemix_notm}} não pode ser carregada
@@ -186,8 +188,7 @@ Conclua uma ou mais das ações a seguir, conforme necessário:
 {: tsResolve}
 
   * Atualizar ou reiniciar seu navegador.
-  * Efetuar logout do {{site.data.keyword.Bluemix_notm}} e
-efetuar login novamente.
+  * Efetuar logout do {{site.data.keyword.Bluemix_notm}} e efetuar login novamente.
   * Usar o modo de navegação privada do seu navegador.
   * Limpar os cookies e o cache do navegador.
   * Usar um navegador diferente. Para obter informações sobre as versões dos navegadores que são suportados pelo {{site.data.keyword.Bluemix_notm}}, veja [Pré-requisitos do {{site.data.keyword.Bluemix_notm}}](/docs/overview/whatisbluemix.html#prereqs).

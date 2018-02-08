@@ -1,24 +1,26 @@
 ---
 
 copyright:
-  years: 2015, 2017
-  
+
+  years: 2015, 2018
+
 lastupdated: "2016-08-12"
 
 
 ---
 
-
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Problemas de servicios generales
 {: #general}
-
 
 Entre los problemas de los servicios de {{site.data.keyword.Bluemix}}
 se pueden incluir los errores de tiempo de espera agotado de pasarela que se producen al suprimir

@@ -1,24 +1,26 @@
 ---
 
 copyright:
-  years: 2015, 2017
-  
+
+  years: 2015, 2018
+
 lastupdated: "2016-08-12"
 
 
 ---
 
-
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 一般的なサービスの問題
 {: #general}
-
 
 {{site.data.keyword.Bluemix}} サービスの問題には、ユーザーがサービス・インスタンスを削除した場合に発生するゲートウェイ・タイムアウト・エラーなどが含まれます。 しかし多くの場合、いくつかの簡単なステップを実行することで、これらの問題から復旧することが可能です。
 {:shortdesc}

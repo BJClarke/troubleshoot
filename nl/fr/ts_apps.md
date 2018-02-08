@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -11,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Traitement des incidents liés à la gestion des applications
@@ -31,7 +33,7 @@ Lorsque vous naviguez dans la page des détails de l'application, vous ne pourre
 Lorsque vous essayez de vérifier votre appli ou vos services sur la page des détails de l'application, vous obtenez toujours le message d'erreur suivant :
 {: tsSymptoms}
 
-`Des modifications n'ont pas été sauvegardées dans la page nom_app. Sauvegardez ou annulez les modifications.`
+`Des modifications n'ont pas été sauvegardées dans la page nom_appli. Sauvegardez ou annulez les modifications.`
 
 Lorsque vous survolez avec la souris les zones **INSTANCES** ou **QUOTA DE MEMOIRE** dans le panneau du contexte d'exécution, les valeurs changent. Ce comportement est normal. Toutefois, le message d'erreur vous invite à sauvegarder les paramètres de mémoire ou d'instance avant de quitter la page.
 {: tsCauses}
@@ -42,7 +44,8 @@ Fermez la fenêtre de message, puis cliquez sur le bouton **REINITIALISER** de v
 ## Le basculement automatique entre les régions {{site.data.keyword.Bluemix_notm}} n'est pas disponible
 {: #ts_failover}
 
-Vous ne pouvez pas utiliser le basculement automatique entre les régions {{site.data.keyword.Bluemix_notm}}. Toutefois, vous pouvez utiliser un fournisseur DNS qui prend en charge le basculement entre plusieurs adresses IP comme solution de contournement.
+Vous ne pouvez pas utiliser le basculement automatique entre les régions {{site.data.keyword.Bluemix_notm}}. Toutefois, vous pouvez utiliser un fournisseur DNS qui prend en charge
+le basculement entre plusieurs adresses IP comme solution de contournement.
 
 Lorsqu'une région {{site.data.keyword.Bluemix_notm}} n'est plus disponible, les applications qui sont exécutées dans cette région ne sont plus
 disponibles non plus, même si les mêmes applications s'exécutent dans une autre région {{site.data.keyword.Bluemix_notm}}.
@@ -51,10 +54,12 @@ disponibles non plus, même si les mêmes applications s'exécutent dans une aut
 {{site.data.keyword.Bluemix_notm}} ne fournit pas encore le basculement automatique d'une région vers une autre.
 {: tsCauses}
 
-Vous pouvez utiliser un fournisseur DNS qui prend en charge le basculement intelligent entre plusieurs adresses IP et configurer manuellement vos paramètres DNS pour activer le basculement automatique entre des régions {{site.data.keyword.Bluemix_notm}}. NSONE, Akamai et Dyn sont des fournisseurs DNS qui proposent cette capacité.
+Vous pouvez utiliser un fournisseur DNS qui prend en charge le basculement intelligent entre plusieurs adresses IP et configurer manuellement vos
+paramètres DNS pour activer le basculement automatique entre des régions {{site.data.keyword.Bluemix_notm}}. NSONE, Akamai et Dyn sont des fournisseurs DNS qui proposent cette capacité.
 {: tsResolve}
 
-Lorsque vous configurez vos paramètres DNS, vous devez spécifier les adresses IP publiques des régions {{site.data.keyword.Bluemix_notm}} dans lesquelles vos applications s'exécutent. Pour obtenir l'adresse IP publique d'une région {{site.data.keyword.Bluemix_notm}}, utilisez la commande `nslookup`. Par exemple, vous pouvez entrer la commande suivante dans une fenêtre de ligne de commande :
+Lorsque vous configurez vos paramètres DNS, vous devez spécifier les adresses IP publiques des régions {{site.data.keyword.Bluemix_notm}}
+dans lesquelles vos applications s'exécutent. Pour obtenir l'adresse IP publique d'une région {{site.data.keyword.Bluemix_notm}}, utilisez la commande `nslookup`. Par exemple, vous pouvez entrer la commande suivante dans une fenêtre de ligne de commande :
 ```
 nslookup stage1.mybluemix.net
 ```
@@ -62,9 +67,11 @@ nslookup stage1.mybluemix.net
 ## Impossible de faire passer les applications en mode débogage
 {: #ts_debug}
 
-Il se peut que vous ne puissiez pas activer le mode débogage si votre version de machine virtuelle Java (JVM) est la version 8 ou antérieure.
+Il se peut que vous ne puissiez pas activer le mode débogage si votre version de machine virtuelle Java
+(JVM) est la version 8 ou antérieure.
 
-Après que vous avez sélectionné **Activer le débogage d'application**, les outils tentent de faire passer l'application en mode débogage. Le plan de travail Eclipse entame alors une session de débogage. Lorsque les outils parviennent à activer le mode débogage, le statut de l'application Web affiche `Mise à jour du mode`, `Développement`, et `Débogage`.
+Après que vous avez sélectionné **Activer le débogage d'application**, les outils tentent de faire passer l'application en mode débogage. Le plan
+de travail Eclipse entame alors une session de débogage. Lorsque les outils parviennent à activer le mode débogage, le statut de l'application Web affiche `Mise à jour du mode`, `Développement`, et `Débogage`.
 {: tsSymptoms}
 
 Par contre, si les outils ne parviennent pas à activer le mode débogage, le statut de l'application Web indique uniquement `Mise à jour du mode` et `Développement`, sans afficher `Débogage`. Les outils peuvent également afficher le message d'erreur suivant dans la vue Console :
@@ -117,19 +124,22 @@ Pour vérifier la version Java utilisée par {{site.data.keyword.eclipsetoolsful
 {: tsResolve}
 
   1. Dans IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, sélectionnez **Aide** > **A propos d'Eclipse** > **Détails de l'installation** > **Configuration**.
-  2. Localisez la propriété `eclipse.vm` dans la liste. La ligne suivante est un exemple de propriété `eclipse.vm` :
+  2. Localisez la propriété `eclipse.vm` dans la liste. La ligne suivante est un exemple de propriété
+`eclipse.vm` :
 
 	```
 	eclipse.vm=C:\Program Files\IBM\ibm-java-sdk-80-win-x86_64\bin\..\jre\bin\j9vm\jvm.dll
 	```
 
-  3. Sur la ligne de commande, entrez `java -version` depuis le répertoire `bin` de votre installation Java. Les informations de version de votre JVM IBM s'affichent.
+  3. Sur la ligne de commande, entrez `java -version` depuis le répertoire `bin` de votre installation Java. Les
+informations de version de votre JVM IBM s'affichent.
 
-Si la machine virtuelle Java de votre plan de travail utilise IBM JVM 7 ou IBM JVM 8, ou une version précédente d'Oracle JVM 8, procédez comme suit pour passer à Oracle JVM 8 :
+Si la machine virtuelle Java de votre plan de travail utilise la JVM 7 ou 8 d'IBM, ou une version antérieure à la JVM 8 d'Oracle 8, procédez comme suit pour
+passer à la JVM 8 d'Oracle :
 
-  1. Téléchargez et installez Oracle JVM 8. Pour plus d'informations, voir [Java SE Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
+  1. Téléchargez et installez Oracle JVM 8. Pour plus d'informations, voir [Java SE Downloads ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window}.
   2. Redémarrez Eclipse.
-  3. Vérifiez que la propriété `eclipse.vm` pointe sur votre nouvelle installation d'Oracle JVM 8.
+  3. Vérifiez que la propriété `eclipse.vm` pointe sur votre nouvelle installation de la JVM 8 d'Oracle.
 
 
 ## Impossible de réutiliser le nom des applications supprimées
@@ -184,7 +194,7 @@ Vérifiez que vous avez créé un espace dans votre organisation actuelle. Pour 
   * Dans la barre de menus, cliquez sur **Gérer > Compte > Organisations**. Sélectionnez l'organisation dans laquelle vous désirez créer le compte et cliquez sur **Créer un espace**.
   * Dans l'interface de ligne de commande cf, entrez `cf create-space <nom_espace> -o <nom_organisation>`.
 
-Essayez à nouveau. Si ce message se reproduit, accédez à la page [{{site.data.keyword.Bluemix_notm}} Statut ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window} pour vérifier si un service ou un composant présente un problème.
+Essayez à nouveau. Si ce message se reproduit, accédez à la page [{{site.data.keyword.Bluemix_notm}} Statut ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixstatus){: new_window} pour vérifier si un service ou un composant présente un problème.
 
 
 ## Impossible d'effectuer les actions demandées
@@ -216,16 +226,18 @@ Une fois que vous avez configuré votre application pour qu'elle communique avec
 {{site.data.keyword.Bluemix_notm}} et recevez une erreur d'autorisation.
 {: tsSymptoms}
 
-Il se peut que les données d'identification codées en dur dans l'application soient incorrectes. A chaque fois que le service est recréé, les données d'identification permettant d'y accéder changent.
+Il se peut que les données d'identification codées en dur dans l'application soient incorrectes. A chaque fois que le service est recréé, les
+données d'identification permettant d'y accéder changent.
 {: tsCauses}
 
-Au lieu de coder en dur les données d'identification dans votre application, utilisez les paramètres de connexion de la variable d'environnement VCAP_SERVICES. Les méthodes d'utilisation des paramètres de connexion de la variable d'environnement VCAP_SERVICES varient selon les langages de programmation. Par exemple, pour les applications Node.js, vous pouvez utiliser la commande suivante :
+Au lieu de coder en dur les données d'identification dans votre application, utilisez les paramètres de connexion de la variable d'environnement VCAP_SERVICES. Les méthodes d'utilisation des paramètres de connexion de la variable d'environnement VCAP_SERVICES varient selon les
+langages de programmation. Par exemple, pour les applications Node.js, vous pouvez utiliser la commande suivante :
 {: tsResolve}
 
 ```
 process.env.VCAP_SERVICES
 ```
-Pour plus d'informations sur les commandes que vous pouvez utiliser dans d'autres langages de programmation, voir [Java ![External link icon](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} et [Ruby ![External link icon](../icons/launch-glyph.svg "External link icon")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
+Pour plus d'informations sur les commandes que vous pouvez utiliser dans d'autres langages de programmation, voir [Java ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} et [Ruby ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}.
 
 
 ## Impossible de déployer des applications à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}
@@ -240,7 +252,9 @@ Votre application peut être déployée avec succès dans
 
 Les outils IBM Eclipse pour
 {{site.data.keyword.Bluemix_notm}} mappent des projets vers les contextes d'exécution
-{{site.data.keyword.Bluemix_notm}} par facettes de projet. Les facettes définissent les exigences des projets Java EE dans Eclipse et sont utilisées dans le cadre de la configuration du contexte d'exécution pour que différents contextes d'exécution soient associés à différents projets. Si la facette qui est appliquée au projet n'est pas prise en charge par IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, vous ne pourrez peut-être pas déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+{{site.data.keyword.Bluemix_notm}} par facettes de projet. Les facettes définissent les exigences des projets
+Java EE dans Eclipse et sont utilisées dans le cadre de la configuration du contexte d'exécution pour que différents contextes d'exécution soient associés à
+différents projets. Si la facette qui est appliquée au projet n'est pas prise en charge par IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, vous ne pourrez peut-être pas déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsCauses}
 
 Vous devez supprimer la facette du projet Eclipse pour pouvoir déployer votre application à l'aide d'IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
@@ -262,7 +276,7 @@ Une erreur Passerelle incorrecte se produit généralement lorsque vous accédez
 
 Motifs moins fréquents d'une erreur Passerelle incorrecte : décrochages du fournisseur d'accès Internet, configurations incorrectes du pare-feu et erreurs de cache du navigateur.
 
-Si vous suspectez l'arrêt d'un service {{site.data.keyword.Bluemix_notm}}, consultez d'abord la page [{{site.data.keyword.Bluemix_notm}} Statut ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixstatus){: new_window}. Une solution de contournement peut consister à utiliser le service dans une autre région {{site.data.keyword.Bluemix_notm}}. Des informations détaillées sont disponibles dans la section [Utilisation des services dans une autre région ![External link icon](../icons/launch-glyph.svg "External link icon")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si le statut du service est normal, essayez la procédure suivante pour résoudre le problème :
+Si vous suspectez l'arrêt d'un service {{site.data.keyword.Bluemix_notm}}, consultez d'abord la page [{{site.data.keyword.Bluemix_notm}} Statut ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/bluemixstatus){: new_window}. Une solution de contournement peut consister à utiliser le service dans une autre région {{site.data.keyword.Bluemix_notm}}. Des informations détaillées sont disponibles dans la section [Utilisation des services dans une autre région ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](/docs/services/reqnsi.html#cross_region_service){: new_window}. Si le statut du service est normal, essayez la procédure suivante pour résoudre le problème :
 {: tsResolve}
 
   * Réessayez l'action :
@@ -272,14 +286,17 @@ Si vous suspectez l'arrêt d'un service {{site.data.keyword.Bluemix_notm}}, cons
 unités peut éliminer diverses erreurs à l'origine de l'erreur 502.
   * Patientez et essayez à nouveau ultérieurement. Dans certaines instances, des problèmes temporaires peuvent se produire
 avec votre fournisseur d'accès Internet ou les services {{site.data.keyword.Bluemix_notm}}. Vous pouvez attendre jusqu'à ce que les problèmes temporaires soient résolus.
-  * Si le problème persiste, contactez le support {{site.data.keyword.Bluemix_notm}}. Voir [Contact du support {{site.data.keyword.Bluemix_notm}} ![ External link icon](../icons/launch-glyph.svg "External link icon")](/docs/support/index.html#contacting-bluemix-support){: new_window} pour plus d'informations.
+  * Si le problème persiste, contactez le support {{site.data.keyword.Bluemix_notm}}. Voir [Contact du support {{site.data.keyword.Bluemix_notm}} ![ Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](/docs/support/index.html#contacting-bluemix-support){: new_window} pour plus d'informations.
 
 ## Dépassement du quota de disque
 {: #ts_disk_quota}
 
 Si votre espace disque est épuisé, vous pouvez modifier manuellement le quota de disque pour disposer de plus d'espace.
 
-Lorsque votre espace disque devient insuffisant, un message indiquant que le quota de disque est dépassé peut s'afficher. Pour résoudre le problème, vous pouvez tenter d'augmenter votre instance d'application pour obtenir davantage d'espace disque. Par exemple, vous pouvez passer de 256 Mo à 1256 Mo en modifiant le quota de mémoire sur la page de détails de l'application. Cependant, comme le quota de disque est resté le même, vous n'avez pas obtenu plus d'espace disque.
+Lorsque votre espace disque devient insuffisant, un message indiquant que le quota de disque est dépassé peut s'afficher. Pour résoudre le problème,
+vous pouvez tenter d'augmenter votre instance d'application pour obtenir davantage
+d'espace disque. Par exemple, vous pouvez passer de 256 Mo à 1256 Mo en modifiant le quota de
+mémoire sur la page de détails de l'application. Cependant, comme le quota de disque est resté le même, vous n'avez pas obtenu plus d'espace disque.
 {: tsSymptoms}
 
 Le quota de disque par défaut alloué à une application est de 1 Go. Si vous avez besoin de davantage d'espace disque, vous devez spécifier manuellement le quota de disque.
@@ -309,7 +326,7 @@ Vous liez un service {{site.data.keyword.mobilepushshort}} pour votre applicatio
 Le service IBM {{site.data.keyword.mobilepushshort}} utilise le service GCM (Google Cloud Messaging) pour diffuser les notifications aux applications mobiles développées sur la plateforme Android. Les applications mobiles doivent pouvoir accéder au service GCM pour que les applications Android puissent recevoir les notifications. Dans les régions où le service GCM n'est pas accessible aux applications Android, ces dernières ne peuvent pas recevoir de notifications {{site.data.keyword.mobilepushshort}}.
 {: tsCauses}
 
-Pour contourner ce problème, utilisez des services tiers qui ne reposent pas sur le service GCM, par exemple [Pushy ![External link icon](../icons/launch-glyph.svg "External link icon")](https://pushy.me){: new_window}, [igetui ![External link icon](../icons/launch-glyph.svg "External link icon")](http://www.getui.com/){: new_window} et [jpush ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.jpush.cn/){: new_window}.
+Comme solution palliative, utilisez des services de tiers qui ne sont pas basés sur les services GCM, par exemple [Pushy ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://pushy.me){: new_window}, [igetui ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://www.getui.com/){: new_window}, and [jpush ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://www.jpush.cn/){: new_window}.
 {: tsResolve}
 
 
@@ -323,7 +340,8 @@ Lorsque vous tentez de créer une application dans {{site.data.keyword.Bluemix_n
 
 `BXNUI2032E: La ressource <instances_service> n'a pas été créée. Une erreur est survenue lors du contact de Cloud Foundry pour la création d'une ressource. Message Cloud Foundry : "You have exceeded your organization's services limit."`
 
-Cette erreur survient lorsque vous avez atteint le nombre maximal d'instances de service dont vous pouvez disposer pour votre compte. Le nombre maximal d'instances de service pour un compte d'essai est 10.
+Cette erreur survient lorsque vous avez atteint le nombre maximal d'instances
+de service dont vous pouvez disposer pour votre compte. Le nombre maximal d'instances de service pour un compte d'essai est 10.
 {: tsCauses}
 
 Supprimez les instances de service dont vous n'avez pas besoin ou supprimez la limite portant sur le nombre de services que vous pouvez utiliser.
@@ -357,11 +375,11 @@ Lorsque vous envoyez par commande push le fichier exécutable dans {{site.data.k
 {: tsResolve}
 
 ```
-cf push nom_app -p chemin_app -c <commande_démarrage> -b <null-buildpack>
+cf push appname -p app_path -c <commande_démarrage> -b <null-buildpack>
 ```
 Exemple :
 ```
-cf push nom_app -p chemin_app -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
+cf push appname -p chemin_app -c ./RunMeNow -b https://github.com/ryandotsmith/null-buildpack
 ```
 
 ## La limite mémoire de l'organisation est dépassée
@@ -374,7 +392,8 @@ Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, 
 
 `FAILED Erreur de serveur, code statut : 400, code d'erreur : 100005, message : vous avez dépassé la limite mémoire de votre organisation.`
 
-Cette erreur survient lorsque la quantité de mémoire restante pour votre organisation est inférieure à la quantité de mémoire requise par l'application à déployer. Le quota de mémoire maximal pour un compte d'essai est 2 Go.
+Cette erreur survient lorsque la quantité de mémoire restante pour votre organisation est inférieure à la quantité de mémoire requise par
+l'application à déployer. Le quota de mémoire maximal pour un compte d'essai est 2 Go.
 {: tsCauses}
 
 Vous pouvez augmenter le quota de mémoire de votre compte ou diminuer la mémoire que vos applications utilisent.
@@ -399,10 +418,12 @@ Vous pouvez augmenter le quota de mémoire de votre compte ou diminuer la mémoi
 	  La commande cf apps répertorie toutes les applications que vous avez déployées dans votre espace en cours. Le statut de chaque application est
 également affiché.
 
-    2. Pour réduire la quantité de mémoire qui est utilisée par votre application, réduisez le nombre d'instances d'application ou la limite de mémoire maximale, ou les deux :
+    2. Pour réduire la quantité de mémoire qui est utilisée par votre application, réduisez le nombre d'instances d'application ou la limite de
+mémoire
+maximale, ou les deux :
 
 	  ```
-	  cf push nom_app -p chemin_app -i nombre_instances -m limite_mémoire
+	  cf push appname -p chemin_app -i nombre_instances -m limite_mémoire
       ```
 
     3. Redémarrez votre application pour que les modifications soient appliquées.
@@ -413,7 +434,8 @@ Vous pouvez augmenter le quota de mémoire de votre compte ou diminuer la mémoi
 
 Une application n'est pas redémarrée automatiquement lorsqu'un service que vous liez à cette application cesse de fonctionner.	  
 
-Lorsqu'un service que vous liez à une application tombe en panne, des problèmes tels que des indisponibilités, des exceptions et des échecs de connexion peuvent survenir sur l'application. {{site.data.keyword.Bluemix_notm}} ne redémarre pas automatiquement l'application pour assurer la reprise suite à ces problèmes.
+Lorsqu'un service que vous liez à une application tombe en panne, des problèmes tels que des indisponibilités, des exceptions et des échecs de
+connexion peuvent survenir sur l'application. {{site.data.keyword.Bluemix_notm}} ne redémarre pas automatiquement l'application pour assurer la reprise suite à ces problèmes.
 {: tsSymptoms}
 
 Ce comportement est normal dans Cloud Foundry.
@@ -425,45 +447,61 @@ Vous pouvez redémarrer manuellement l'application en entrant la commande suivan
 ```
 cf push nom_app -p chemin_app
 ```
-De plus, vous pouvez coder l'application afin d'identifier les problèmes et d'assurer la reprise après une indisponibilité, une exception ou un échec de connexion.
+De plus, vous pouvez coder l'application afin d'identifier les problèmes et d'assurer la reprise après une indisponibilité, une exception ou un échec de
+connexion.
 
 ## Les variables définies par l'utilisateur sont perdues lorsqu'une application est envoyée par commande push
 {: #ts_varsnotretained}
 
-Lorsque vous envoyez une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, les variables que vous spécifiez sont réinitialisées sauf si vous les sauvegardez dans le fichier manifeste.
+Lorsque vous envoyez une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for
+{{site.data.keyword.Bluemix_notm}}, les variables que vous spécifiez sont réinitialisées sauf si vous les sauvegardez dans le fichier manifeste.
 
-Les variables que vous spécifiez sont perdues une fois que vous avez envoyé une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
+Les variables que vous spécifiez sont perdues une fois que vous avez envoyé une application par commande push à
+{{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}.
 {: tsSymptoms}
 
-Les variables que vous spécifiez ne sont sauvegardées que si vous les sauvegardez dans le fichier manifeste.
+Les variables que vous spécifiez ne sont sauvegardées que si vous les
+sauvegardez dans le fichier manifeste.
 {: tsCauses}
 
-Lorsque vous envoyez une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}, sélectionnez la case à cocher **Save to the manifest file** dans la page des détails de l'application de l'assistant Application. Ainsi, les variables que vous spécifiez dans l'assistant sont sauvegardées dans le fichier manifeste de votre application. A la prochaine ouverture de l'assistant, elles seront affichées automatiquement.
+Lorsque vous envoyez une application par commande push à {{site.data.keyword.Bluemix_notm}} depuis IBM Eclipse Tools for
+{{site.data.keyword.Bluemix_notm}}, sélectionnez la case à cocher **Save to the manifest file** dans la page des détails
+de l'application de l'assistant Application. Ainsi, les variables que vous
+spécifiez dans l'assistant sont sauvegardées dans le fichier manifeste de votre application. A la prochaine ouverture de l'assistant, elles seront
+affichées automatiquement.
 {: tsResolve}  
 
 
 ## Des organisations sont introuvables dans {{site.data.keyword.Bluemix_notm}}
 {: #ts_orgs}
 
-Il se peut que vous ne parveniez pas à localiser votre organisation dans {{site.data.keyword.Bluemix_notm}} lorsque vous travaillez sur une région {{site.data.keyword.Bluemix_notm}}.
+Il se peut que vous ne parveniez pas à localiser votre organisation dans
+{{site.data.keyword.Bluemix_notm}} lorsque vous travaillez sur une région
+{{site.data.keyword.Bluemix_notm}}.
 
 Vous pouvez vous connecter à la console {{site.data.keyword.Bluemix_notm}}, mais vous ne parvenez pas à envoyer vos applications par commande push à l'aide de l'interface de ligne de commande cf ou du plug-in Eclipse.
 {: tsSymptoms}
 
-Lorsque vous essayez d'envoyer une application par commande push à {{site.data.keyword.Bluemix_notm}} en utilisant l'interface de ligne de commande cf, l'un des messages d'erreur suivants, qui spécifie le nom de l'organisation, s'affiche :
+Lorsque vous essayez d'envoyer une application par commande push
+à {{site.data.keyword.Bluemix_notm}} en utilisant l'interface de ligne de commande cf, l'un des messages
+d'erreur
+suivants, qui spécifie le nom de l'organisation, s'affiche :
 
 `Erreur lors de la recherche de l'organisation`
 
 `Organization not found`
 
-Lorsque vous essayez d'envoyer une application par commande push à {{site.data.keyword.Bluemix_notm}} en utilisant le plug-in Eclipse Cloud Foundry, le message d'erreur suivant s'affiche :
+Lorsque vous essayez d'envoyer une application par commande push à
+{{site.data.keyword.Bluemix_notm}} en utilisant le plug-in Eclipse Cloud Foundry, le message d'erreur suivant
+s'affiche :
 
 `cloudspace not found.`
 
 Ce problème survient car le noeud final d'API de la région avec laquelle vous travaillez n'est pas spécifié et l'organisation que vous recherchez peut se trouver dans une autre région.
 {: tsCauses}
 
-Si vous envoyez votre application par commande push à {{site.data.keyword.Bluemix_notm}} en utilisant l'interface de ligne de commande cf, entrez la commande cf api et spécifiez le noeud final d'API de la région. Par exemple, entrez la commande suivante pour vous connecter à la région {{site.data.keyword.Bluemix_notm}} Europe et Royaume-Uni :
+Si vous envoyez votre application par commande push à {{site.data.keyword.Bluemix_notm}} en utilisant l'interface de ligne de commande cf, entrez la commande cf api et spécifiez le noeud final d'API de la région. Par exemple, entrez la commande suivante pour vous connecter à la
+région {{site.data.keyword.Bluemix_notm}} Europe et Royaume-Uni :
 {: tsResolve}
 
 ```
@@ -474,7 +512,9 @@ Si vous envoyez votre application par commande push à {{site.data.keyword.Bluem
 ## Impossible de créer les routes d'application
 {: #ts_hostistaken}
 
-Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, la route d'application ne peut pas être créée si le nom d'hôte que vous avez spécifié est déjà utilisé.
+Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, la route d'application ne peut pas être créée si le nom d'hôte
+que
+vous avez spécifié est déjà utilisé.
 
 Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}}, le message d'erreur suivant s'affiche :
 {: tsSymptoms}
@@ -485,7 +525,8 @@ nom_hôte`
 Ce problème survient si le nom d'hôte que vous avez spécifié est déjà utilisé.
 {: tsCauses}
 
-Le nom d'hôte que vous spécifiez doit être unique dans le domaine que vous utilisez. Pour spécifier un autre nom d'hôte, utilisez l'une des méthodes suivantes :
+Le nom d'hôte que vous spécifiez doit être unique dans le domaine que vous
+utilisez. Pour spécifier un autre nom d'hôte, utilisez l'une des méthodes suivantes :
 {: tsResolve}
 
   * Si vous déployez votre application avec le fichier `manifest.yml`, spécifiez le nom d'hôte dans l'option host.	 
@@ -494,7 +535,7 @@ Le nom d'hôte que vous spécifiez doit être unique dans le domaine que vous ut
 	```
   * Si vous déployez votre application depuis l'invite de commande, utilisez la commande `cf push` avec l'option **-n**.
     ```
-    cf push nom_app -p chemin_app -n nom_hôte
+    cf push appname -p chemin_app -n nom_hôte
     ```
 
 
@@ -575,7 +616,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème :
         ```
 		cf push MonNoeudJsUnique01 -p chemin_app -c "node app.js"
 		```
-    * Utilisation du fichier [package.json ![External link icon](../icons/launch-glyph.svg "External link icon")](https://docs.npmjs.com/json){: new_window}. Exemple :
+    * Utilisation du fichier [package.json ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](https://docs.npmjs.com/json){: new_window}. Exemple :
 	    ```
 		{
       ...
@@ -587,7 +628,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème :
     * Utilisation du fichier `manifest.yml`. Exemple :
 	    ```
 		applications:
-  name: MonNoeudJsUnique01
+  name: MyUniqueNodejs01
   ...
   command: node app.js
   ...
@@ -599,7 +640,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème :
 	{
         "name": "MyUniqueNodejs01",
         "version": "0.0.1",
-        "description": "Exemple de fichier package.json",
+        "description": "A sample package.json file",
         "dependencies": {
                 "express": "3.4.x",
                 "jade": "1.1.x"
@@ -613,7 +654,7 @@ Utilisez l'une des méthodes suivantes, selon la cause du problème :
  }
     ```
 
-Pour d'autres conseils relatifs aux applications Node.js, voir [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "External link icon"){: new_window}.
+Pour d'autres conseils relatifs aux applications Node.js, voir [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "Icône de lien externe"){: new_window}.
 
 
 ## Des erreurs de configuration figurent dans le fichier `server.xml` après avoir importé une application {{site.data.keyword.Bluemix_notm}} Liberty dans Eclipse
@@ -627,9 +668,7 @@ Après avoir importé une application {{site.data.keyword.Bluemix_notm}} Liberty
 Le pack de construction Liberty utilise le fichier `server.xml` pour configurer l'application et génère un fichier `runtime-vars.xml` lorsque l'application Liberty est envoyée par commande push dans {{site.data.keyword.Bluemix_notm}}. Lorsque vous importez l'application dans Eclipse, le fichier `runtime-vars.xml` n'existe pas dans votre environnement local.
 {: tsCauses}
 
-Pou résoudre ce problème, supprimez le fichier server.xml du projet. Le pack de construction crée le fichier `server.xml` de manière
-dynamique lorsque vous envoyez par commande push l'application sous forme d'application WAR. Pour
-plus d'informations, voir [Liberty for Java](/docs/runtimes/liberty/index.html).
+Pour résoudre ce problème, supprimez le fichier server.xml du projet. Le pack de construction crée le fichier `server.xml` de manière dynamique lorsque vous envoyez par commande push l'application sous forme d'application WAR. Pour plus d'informations, voir [Liberty for Java](/docs/runtimes/liberty/index.html).
 {: tsResolve}
 
 
@@ -644,7 +683,7 @@ Lorsque vous déployez une application dans {{site.data.keyword.Bluemix_notm}} �
 Ce problème peut se produire si des scripts (tels que le script de détection, le script de compilation ou le script de publication) ne sont pas exécutables.
 {: tsCauses}
 
-Vous pouvez utiliser la commande [git update ![External link icon](../icons/launch-glyph.svg "External link icon")](http://git-scm.com/docs/git-update-index){: new_window} pour redéfinir chaque script comme exécutable. Par exemple, vous pouvez entrer `git update --chmod=+x script.sh`.
+Vous pouvez utiliser la commande [git update ![Icône de lien externe](../icons/launch-glyph.svg "Icône de lien externe")](http://git-scm.com/docs/git-update-index){: new_window} pour redéfinir chaque script comme exécutable. Par exemple, vous pouvez entrer `git update --chmod=+x script.sh`.
 {: tsResolve}
 
 ## Impossible de déployer une application depuis Delivery Pipeline dans {{site.data.keyword.Bluemix_notm}} Continuous Delivery
@@ -666,7 +705,7 @@ Vous pouvez utiliser la commande [git update ![External link icon](../icons/laun
 
 Il se peut que vous ne puissiez pas envoyer une application Meteor par commande push dans {{site.data.keyword.Bluemix_notm}} si le pack de construction n'est pas spécifié correctement.
 
-Lorsque vous déployez une application Meteor dans {{site.data.keyword.Bluemix_notm}}, il se peut que le message d'erreur `La constitution de l'application a échoué ; par conséquent, il n'y a pas d'instance à afficher` s'affiche.
+Lorsque vous déployez une appli Meteor dans {{site.data.keyword.Bluemix_notm}}, il se peut que le message d'erreur `La constitution de l'application a échoué ; par conséquent, il n'y a pas d'instance à afficher` s'affiche.
 {: tsSymptoms}
 
 Ce problème survient car aucun pack de construction n'est fourni pour les applications Meteor. Vous devez utiliser un pack de construction personnalisé.
@@ -675,8 +714,7 @@ Ce problème survient car aucun pack de construction n'est fourni pour les appli
 Afin d'utiliser un pack de construction personnalisé pour les applications Meteor, appliquez l'une des méthodes suivantes :
 {: tsResolve}
 
-  * Si vous déployez votre application avec le fichier `manifest.yml`, spécifiez l'adresse URL ou le nom de votre pack de construction personnalisé
-avec l'option buildpack. Exemple :
+  * Si vous déployez votre application avec le fichier `manifest.yml`, spécifiez l'adresse URL ou le nom de votre pack de construction personnalisé avec l'option buildpack. Exemple :
   ```
   buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```

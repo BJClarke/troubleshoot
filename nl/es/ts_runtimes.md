@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
 
 lastupdated: "2017-11-08"
 
@@ -10,9 +11,11 @@ lastupdated: "2017-11-08"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # Resolución de problemas de tiempos de ejecución
@@ -104,7 +107,7 @@ Cuando intenta importar una biblioteca Python de terceros, como por ejemplo la b
 Falta información de configuración para la app Python.
 {: tsCauses}
 
-Añada un archivo `requirements.txt` y un archivo `Procfile` al directorio raíz de la app Python. En la información siguiente se da por supuesto que está importando la biblioteca `web.py`:
+Añada un archivo `requirements.txt` y un archivo `Procfile` al directorio raíz de la app Python. La información siguiente da por supuesto que está importando una biblioteca `web.py`:
 {: tsResolve}
 
  1. Añada un archivo `requirements.txt` al directorio raíz de la app Python.
@@ -134,8 +137,7 @@ El botón Acciones de la página Detalles de la instancia está inhabilitado.
 Este problema se produce por las siguientes razones:
 {: tsCauses}
 
- * La app no es una app web Java&trade;. Runtime Management Utilities (RMU) solo da soporte a las apps web que se despliegan con paquetes de
-compilación Liberty.
+ * La app no es una app web Java&trade;. Runtime Management Utilities (RMU) solo da soporte a las apps web que se despliegan con paquetes de compilación Liberty.
  * La app no se ha desplegado con el paquete de compilación Liberty integrado.
  * La app se ha desplegado con una versión anterior del paquete de compilación de Liberty.
 
@@ -193,7 +195,7 @@ Para distintas instancias de una app, es posible que vea distintas configuracion
 Este comportamiento se produce por las siguientes razones:
 {: tsCauses}
 
-  * Ha cambiado anteriormente la configuración de una o varias de las instancias. Si cambia la configuración de traceSpecification para una instancia, el cambio no se aplica a otras instancias de la misma app. Por ejemplo, supongamos que su app utiliza log4j y tiene 2 instancias de esta app. Puede cambiar el nivel de registro de la instancia 0 info por depurar, pero el nivel de registro de la instancia 1 permanece como info.
+  * Ha cambiado anteriormente la configuración de una o varias de las instancias. Si cambia la configuración de traceSpecification para una instancia, el cambio no se aplicará a otras instancias de la misma app. Por ejemplo, la app utiliza log4j y tiene 2 instancias para esta app. Puede cambiar el nivel de registro de la instancia 0 desde info para depurar, pero el nivel de registro de la instancia 1 permanece como info.
 
   * La app escala y tiene nuevas instancias. RMU no aplica la configuración de traceSpecification de la instancia existente a la instancia nueva y escalada. La nueva instancia utiliza la configuración predeterminada. Por ejemplo, la app utiliza log4j y tiene una instancia. Puede cambiar el nivel de registro de esta instancia de info a debug. Una vez que realice este cambio, si escala la app a dos instancias, el nivel de registro de la nueva instancia es info, en lugar de debug (depurar).
 

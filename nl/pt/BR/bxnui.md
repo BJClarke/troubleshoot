@@ -2,15 +2,16 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
-última atualização: "09-11-2017"
+lastupdated: "2017-11-09"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # Mensagens de erro do {{site.data.keyword.Bluemix_notm}}
