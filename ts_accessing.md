@@ -104,7 +104,7 @@ Complete the following checks, as appropriate:
  * Ensure that you complete the Switch to IBMid step. See [Switching to IBMid](/docs/admin/ibmidswitch.html).
  * Ensure that you follow the actions in the **Associate your user ID with an IBMid** email. Check your inbox and your junk mail folder for the email. To get the email again, for example, if it has expired, go to the Edit User Profile page in the {{site.data.keyword.slportal}} and click **Resend Email**. Alternatively, contact [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-**Note:** If you created your IBMid directly with IBMid, you receive two emails to process; one from IBMid registration, and one from {site.data.keyword.Blu_full}}. Ensure that you follow the actions in both emails.
+**Note:** If you created your IBMid directly with IBMid, you receive two emails to process; one from IBMid registration, and one from {{site.data.keyword.Blu_full}}. Ensure that you follow the actions in both emails.
 
 Depending on how your account is set up, some of these log in options might apply to you:
  * {{site.data.keyword.BluSoftlayer_notm}} users with {{site.data.keyword.BluSoftlayer_full}} IDs must log in through the [{{site.data.keyword.slportal}}](https://control.softlayer.com).
