@@ -1,7 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
+
 lastupdated: "2017-11-08"
 
 ---
@@ -9,9 +11,11 @@ lastupdated: "2017-11-08"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 有关运行时的故障诊断
@@ -91,6 +95,9 @@ pid @{HOME}/nginx/logs/nginx.pid;
 有关如何更改缺省日志记录配置的更多信息，请参阅 [error_log ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}。
 	
 
+
+
+
 ## 无法将第三方 Python 库导入 {{site.data.keyword.Bluemix_notm}}
 {: #ts_importpylib}
 
@@ -113,6 +120,8 @@ Python 应用程序缺少配置信息。
      wsgiref==0.1.2
 	 ```
 	 有关如何配置 `requirements.txt` 文件的更多信息，请参阅 [Requirements files](https://pip.readthedocs.org/en/1.1/requirements.html)。
+
+
 
  2. 将 `Procfile` 文件添加到 Python 应用程序的根目录中。`Procfile` 文件中必须包含 Python 应用程序的启动命令。在以下命令中，*yourappname* 是 Python 应用程序的名称，*PORT* 是 Python 应用程序在接收应用程序用户请求时必须使用的端口号。*$PORT* 为可选项。如果不在启动命令中指定 PORT，那么会使用应用程序内 `VCAP_APP_PORT` 环境变量下的端口号。
 	```

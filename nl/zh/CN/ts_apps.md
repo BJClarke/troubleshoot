@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -11,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 有关管理应用程序的故障诊断
@@ -141,7 +143,7 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 
 `名称已经由其他应用程序使用。`
 
-删除应用程序时，不会自动删除其作为应用程序 URL 的路径。因此无法对其进行复用。您必须转至创建应用程序的空间，来删除路径，以便可以对其进行复用。
+删除应用程序时，不会自动删除其作为应用程序 URL 的路径。因此无法对其进行复用。您必须转至创建应用程序的空间，删除路径，以便可以对其进行复用。
 {: tsCauses}
 
 完成以下步骤以删除未用的路径：
@@ -382,6 +384,8 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 	  ```
 
 	  cf apps 命令会列出当前空间中部署的所有应用程序。还会显示每个应用程序的状态。
+
+
     2. 要减少应用程序使用的内存量，请减少应用程序实例数和/或最大内存限制：
 
 	  ```
@@ -409,6 +413,8 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 cf push appname -p app_path
   ```
 此外，还可以对应用程序进行编码，以识别如中断、异常和连接失败等问题，并从这些问题中进行恢复。
+
+
 
 ## 推送应用程序时用户定义的变量丢失
 {: #ts_varsnotretained}
@@ -504,6 +510,9 @@ cf push MyUniqueAppName02 -p "./app.war"
 ```
 有关 `cf push` 命令的更多信息，请输入 `cf push -h`。
 
+
+
+ 	
 
 
 ## 将应用程序推送到 {{site.data.keyword.Bluemix_notm}} 时未正确显示双字节字符

@@ -1,16 +1,21 @@
 ---
 
 copyright:
-  years: 2015, 2017lastupdated: "2017-11-08"
+
+  years: 2015, 2018
+
+lastupdated: "2017-11-08"
 
 ---
 
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 運行環境疑難排解
@@ -90,6 +95,9 @@ pid @{HOME}/nginx/logs/nginx.pid;
 如需如何變更預設記載配置的相關資訊，請參閱 [error_log ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}。
 	
 
+
+
+
 ## 無法將協力廠商的 Python 檔案庫匯入 {{site.data.keyword.Bluemix_notm}}
 {: #ts_importpylib}
 
@@ -112,6 +120,8 @@ Python 應用程式的配置資訊遺失。
      wsgiref==0.1.2
 ```
 	 如需如何配置 `requirements.txt` 檔案的相關資訊，請參閱[需求檔案](https://pip.readthedocs.org/en/1.1/requirements.html)。
+
+
  2. 在 Python 應用程式的根目錄中，新增 `Procfile` 檔案。`Procfile` 檔案必須包含 Python 應用程式的啟動指令。在下列指令中，*yourappname* 是 Python 應用程式的名稱，而 *PORT* 是 Python 應用程式必須用來接收應用程式使用者要求的埠號。*$PORT* 是選用項目。如果您未在啟動指令中指定 PORT，則會使用應用程式內 `VCAP_APP_PORT` 環境變數下的埠號。
 	```
 	web: python <yourappname>.py $PORT

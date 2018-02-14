@@ -1,24 +1,26 @@
 ---
 
 copyright:
-  years: 2015, 2017
-  
+
+  years: 2015, 2018
+
 lastupdated: "2016-08-12"
 
 
 ---
 
-
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 一般服务问题
 {: #general}
-
 
 {{site.data.keyword.Bluemix}} 服务问题可能包括：删除服务实例时发生网关超时错误。然而，在许多情况下，只需执行几个简单的步骤即可解决这些问题。
 {:shortdesc}

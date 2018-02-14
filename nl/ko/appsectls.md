@@ -2,17 +2,17 @@
 
 copyright:
 
-  years: 1994, 2017
+  years: 1994, 2018
 
-lastupdated: "2017-11-28"
+lastupdated: "2018-01-09"
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:new_window: target="_blank"}
 
 # TLS 1.0 및 1.1에 대한 지원 중단
 {: #tlssupportwithdraw}
@@ -33,7 +33,7 @@ IBM은 2018년 3월 1일부로 여러 클라우드 제품 및 서비스에서 TL
 ## 영향을 받지 않는지 확인하려면 어떤 조치를 수행해야 합니까?
 {: #impact}
 
-{{site.data.keyword.Bluemix_notm}} 제품 또는 서비스에 대한 대부분의 연결은 이미 TLS 1.2를 사용하고 있습니다. 연결에 TLS 1.0 또는 1.1이 필요하지 않은 경우 사용자는 영향을 받지 않습니다. 
+{{site.data.keyword.Bluemix_notm}} 제품 또는 서비스에 대한 대부분의 연결은 이미 TLS 1.2를 사용하고 있습니다. 연결에 TLS 1.0 또는 1.1이 필요하지 않은 경우 사용자는 영향을 받지 않습니다.
 
 TLS 1.0 또는 1.1에 대한 지원을 중단한 서비스의 제품을 사용하는 경우 연결에 TLS 1.0 또는 1.1이 필요하지 않은지 확인해야 합니다.
 
@@ -46,11 +46,11 @@ TLS를 사용하는 Cloud Foundry에 대한 모든 연결(웹 브라우저의 �
 
 #### Cloud Foundry 애플리케이션에 연결
 
-TLS 1.2만 지원하는 대체 엔드포인트를 통해 `*.mybluemix.net` 도메인의 모든 Cloud Foundry 애플리케이션 엔드포인트에 액세스할 수 있습니다. 
+TLS 1.2만 지원하는 대체 엔드포인트를 통해 `*.mybluemix.net` 도메인의 모든 Cloud Foundry 애플리케이션 엔드포인트에 액세스할 수 있습니다.
 
 대체 엔드포인트를 사용하려면 애플리케이션의 하위 도메인 다음에 `alt.`를 추가하십시오. 예를 들어, 애플리케이션이 `https://myapplication.mybluemix.net`에서 호스팅되는 경우 `https://myapplication.alt.mybluemix.net`을 사용하십시오. 또는 `https://myaplication.eu-gb.mybluemix.net`의 경우 `https://myapplication.alt.eu-gb.mybluemix.net`을 사용하십시오.
 
-대체 엔드포인트에 연결할 수 있는 경우 영향을 받지 않습니다. 
+대체 엔드포인트에 연결할 수 있는 경우 영향을 받지 않습니다.
 
 연결할 수 없는 경우에는 영향을 받으며, TLS 1.2를 사용하도록 클라이언트, 클라이언트 라이브러리 또는 클라이언트 구성을 변경해야 합니다.
 
@@ -139,6 +139,7 @@ cf restage <application_name>
 * Auto-Scaling
 * Alert Notification
 * Availability Monitoring
+* Continuous Delivery
 * Continuous Release
 * DevOps Insights
 * Event Management
@@ -183,7 +184,7 @@ cf restage <application_name>
 #### 보안
 
 * App ID†
-* SSL Certificates† 
+* SSL Certificates†
 
 #### Watson
 
@@ -204,7 +205,7 @@ cf restage <application_name>
 
 \* {{site.data.keyword.Bluemix_notm}} 카탈로그의 시범 서비스에서 사용 가능합니다.  
 † TLS 1.0은 이미 제거되었으며 TLS 1.1만 제거됩니다.  
-‡ 더 이상 사용되지 않으며, 기존 고객만 사용할 수 있습니다. 
+‡ 더 이상 사용되지 않으며, 기존 고객만 사용할 수 있습니다.
 
 ### IBM Marketplace를 통해 사용 가능한 제품 또는 서비스
 
@@ -217,6 +218,7 @@ cf restage <application_name>
 * Weather Company Energy Trader
 
 ### 기타 제품 또는 서비스
+{: #prodservices}
 
 * Teacher Advisor with Watson
 
@@ -225,8 +227,6 @@ cf restage <application_name>
 
 제품 또는 서비스가 이미 TLS 1.2만 지원하거나 지금 TLS 1.0 및 1.1을 제거하지 않을 수도 있습니다. 다양한 클라이언트와 온라인 도구를 사용하여 제품 또는 서비스의 엔드포인트에서 TLS 1.0 및 1.1이 지원되는지 여부를 확인할 수 있습니다.
 
-추가 제품 또는 서비스가 2018년 1월 5일 이전에 이 공지사항에 추가될 수 있습니다.
-
 ## 지원이 중지된 후에도 TLS 1.0 또는 1.1을 계속 사용할 수 있는 방법이 있습니까?
 {: #tlskeepusing}
 
@@ -234,9 +234,10 @@ cf restage <application_name>
 
 ### {{site.data.keyword.Bluemix_notm}} 인프라
 
-TLS 1.0 및 1.1에 대한 지원이 `api.softlayer.com` 및 `api.service.softlayer.com`에서 제거되면 TLS 1.0 및 1.1을 지원하는 대체 엔드포인트가 발표되며 30일 동안 사용 가능합니다. 
+TLS 1.0 및 1.1에 대한 지원이 `api.softlayer.com` 및 `api.service.softlayer.com`에서 제거되면 TLS 1.0 및 1.1을 지원하는 대체 엔드포인트가 발표되며 30일 동안 사용 가능합니다.
 
 ### Watson 제품 및 서비스
+{: #watsonprodservices}
 
 지원이 중단된 후 Watson 제품과 서비스에 연결할 때 TLS 1.0 또는 1.1을 계속 사용해야 하는 경우 `gateway.watsonplatform.net`을 `gateway-tls10.wastonplatform.net`으로 바꾸거나 `stream.watsonplatform.net`을 `stream-tls10.watsonplatform.net`으로 바꿀 수 있습니다. `gateway-tls10.watsonplatform.net` 및 `stream-tls10.watsonplatform.net`은 TLS 1.0, 1.1 및 1.2를 지원하며 TLS 1.0 및 1.1이 `gateway.watsonplatform.net` 및 `stream.watsonplatform.net`에서 제거된 후에도 계속 사용 가능합니다.
 

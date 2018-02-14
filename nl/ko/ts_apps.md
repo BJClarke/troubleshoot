@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -11,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 앱 관리 문제점 해결
@@ -53,7 +55,7 @@ lastupdated: "2017-11-09"
 여러 IP 주소 간의 지능형 장애 복구를 지원하는 DNS 제공자를 사용하여 {{site.data.keyword.Bluemix_notm}} 지역 간의 자동 장애 복구를 지원하도록 DNS 설정을 수동으로 구성할 수 있습니다. 이 기능이 있는 DNS 제공자에는 NSONE, Akamai, Dyn이 포함됩니다.
 {: tsResolve}
 
-DNS 설정을 구성할 때 앱이 실행 중인 {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 지정해야 합니다. {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 가져오려면 `nslookup` 명령을 사용하십시오. 예를 들어, 명령행 창에 다음 명령을 입력할 수 있습니다. 
+DNS 설정을 구성할 때 앱이 실행 중인 {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 지정해야 합니다. {{site.data.keyword.Bluemix_notm}} 지역의 공인 IP 주소를 가져오려면 `nslookup` 명령을 사용하십시오. 예를 들어, 명령행 창에 다음 명령을 입력할 수 있습니다.
 ```
 nslookup stage1.mybluemix.net
 ```
@@ -61,7 +63,7 @@ nslookup stage1.mybluemix.net
 ## 앱을 디버그 모드로 전환할 수 없음
 {: #ts_debug}
 
-JVM(Java Virtual Machine)이 버전 8 이하인 경우에는 디버그 모드를 사용하지 못할 수 있습니다. 
+JVM(Java Virtual Machine)이 버전 8 이하인 경우에는 디버그 모드를 사용하지 못할 수 있습니다.
 
 **애플리케이션 디버그 사용**을 선택한 이후, 도구는 해당 앱을 디버그 모드로 전환하려고 시도합니다. 그리고 Eclipse 워크벤치는 디버그 세션을 시작합니다. 도구에서 디버그 모드를 정상적으로 사용하는 경우, 웹 애플리케이션 상태는 `Updating mode`, `Developing` 및 `Debugging`을 표시합니다.
 {: tsSymptoms}
@@ -115,7 +117,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 {{site.data.keyword.eclipsetoolsfull}}가 실행되는 Java의 버전을 확인하려면 다음 단계를 완료하십시오.
 {: tsResolve}
 
-  1. IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}에서 **도움말** > **Eclipse 정보** > **설치 세부사항** > **구성**을 선택하십시오. 
+  1. IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}에서 **도움말** > **Eclipse 정보** > **설치 세부사항** > **구성**을 선택하십시오.
   2. 목록에서 `eclipse.vm` 특성을 찾으십시오. 다음 행은 `eclipse.vm` 특성의 예입니다.
 
 	```
@@ -134,7 +136,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 ## 삭제된 앱의 이름을 재사용할 수 없음
 {: #ts_reuse_appname}
 
-앱을 삭제한 후에는 앱 라우트를 삭제한 후에만 앱 이름을 재사용할 수 있습니다. 
+앱을 삭제한 후에는 앱 라우트를 삭제한 후에만 앱 이름을 재사용할 수 있습니다.
 
 앱 이름을 재사용하려고 하면 다음 메시지가 수신됩니다.
 {: tsSymptoms}
@@ -147,7 +149,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
 다음 단계를 수행하여 사용하지 않는 라우트를 삭제하십시오.
 {: tsResolve}
 
-  1. 다음 명령을 입력하여 라우트가 현재 영역에 속하는지 확인하십시오. 
+  1. 다음 명령을 입력하여 라우트가 현재 영역에 속하는지 확인하십시오.
      ```
 	 cf routes
 	 ```
@@ -294,7 +296,9 @@ Cloud Foundry CLI를 사용하여 {{site.data.keyword.Bluemix_notm}}에 앱을 �
 ## Android 앱이 {{site.data.keyword.mobilepushshort}}를 받을 수 없음
 {: #ts_push}
 
-Google이 액세스할 수 없는 특정 지역의 Android 앱은 IBM {{site.data.keyword.mobilepushshort}} 서비스를 통해 전송하는 알림을 받을 수 없습니다. 이 경우 임시 해결책으로 써드파티 서비스를 사용합니다. {{site.data.keyword.Bluemix_notm}} 앱에 대해 {{site.data.keyword.mobilepushshort}} 서비스를 바인드하고 등록된 디바이스에 메시지를 전송합니다. 하지만 Android 플랫폼에서 개발된 앱이 특정 지역에서 알림을 수신할 수 없습니다.
+Google이 액세스할 수 없는 특정 지역의 Android 앱은 IBM {{site.data.keyword.mobilepushshort}} 서비스를 통해 전송하는 알림을 받을 수 없습니다. 이 경우 임시 해결책으로 써드파티 서비스를 사용합니다.
+
+ {{site.data.keyword.Bluemix_notm}} 앱에 대해 {{site.data.keyword.mobilepushshort}} 서비스를 바인드하고 등록된 디바이스에 메시지를 전송합니다. 하지만 Android 플랫폼에서 개발된 앱이 특정 지역에서 알림을 수신할 수 없습니다.
 {: tsSymptoms}
 
 IBM {{site.data.keyword.mobilepushshort}} 서비스에서는 GCM(Google Cloud Messaging) 서비스를 사용하여 Android 플랫폼에서 개발되는 모바일 앱에 알림을 디스패치합니다. Android 앱이 알림을 수신하도록 설정하려면 모바일 앱이 GCM(Google Cloud Messaging) 서비스에 액세스할 수 있어야 합니댜. Android 앱이 GCM 서비스에 도달할 수 없는 지역에서는 Android 앱이 {{site.data.keyword.mobilepushshort}}를 받을 수 없습니다.
@@ -324,7 +328,9 @@ IBM {{site.data.keyword.mobilepushshort}} 서비스에서는 GCM(Google Cloud Me
 
     {{site.data.keyword.Bluemix_notm}} 콘솔을 사용하여 서비스 인스턴스를 삭제하려면 다음 단계를 완료하십시오.
 	  1. 서비스 대시보드에서 삭제하려는 서비스에 대해 **조치** 메뉴를 클릭하십시오.
-	  2. **서비스 삭제**를 클릭하십시오. 서비스 인스턴스를 바인드한 앱을 다시 스테이징하라는 프롬프트가 표시됩니다.명령행 인터페이스를 사용하여 서비스 인스턴스를 삭제하려면 다음 단계를 완료하십시오.
+	  2. **서비스 삭제**를 클릭하십시오. 서비스 인스턴스를 바인드한 앱을 다시 스테이징하라는 프롬프트가 표시됩니다.
+
+    명령행 인터페이스를 사용하여 서비스 인스턴스를 삭제하려면 다음 단계를 완료하십시오.
 	  1. `cf unbind-service <appname> <service_instance_name>`을 입력하여 앱에서 서비스 인스턴스를 바인드 해제하십시오.
 	  2. `cf delete-service <service_instance_name>`을 입력하여 서비스 인스턴스를 삭제하십시오.
 	  3. 서비스 인스턴스를 삭제한 후에는 `cf restage <appname>`을 입력하여 서비스 인스턴스가 바인드되었던 앱을 다시 스테이징하려고 할 수 있습니다.
@@ -356,7 +362,7 @@ cf push appname -p app_path -c ./RunMeNow -b https://github.com/ryandotsmith/nul
 ## 조직의 메모리 한계를 초과함
 {: #ts_outofmemory}
 
-평가판 계정 사용자인 경우, 조직의 메모리 한계를 초과했으면 {{site.data.keyword.Bluemix_notm}}에 앱을 배치할 수 없습니다. 앱에서 사용하는 메모리를 줄이거나, 계정의 메모리 할당량을 늘릴 수 있습니다. 평가판 계정의 최대 메모리 할당량은 2GB이며 유료 계정으로 이동해야만 늘릴 수 있습니다.
+평가판 계정 사용자인 경우, 조직의 메모리 한계를 초과했으면 {{site.data.keyword.Bluemix_notm}}에 앱을 배치할 수 없습니다. 앱에서 사용하는 메모리를 줄이거나, 계정의 메모리 할당량을 늘릴 수 있습니다.  평가판 계정의 최대 메모리 할당량은 2GB이며 유료 계정으로 이동해야만 늘릴 수 있습니다.
 
 앱을 {{site.data.keyword.Bluemix_notm}}에 배치할 때 다음과 같은 오류 메시지가 표시됩니다.
 {: tsSymptoms}
@@ -457,7 +463,7 @@ cf 명령행 인터페이스를 사용하여 애플리케이션을 {{site.data.k
 ```
 cf api https://api.eu-gb.bluemix.net
 ```
-Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix_notm}} 에 푸시 중인 경우에는 우선 {{site.data.keyword.Bluemix_notm}} 서버를 작성한 후에 조직이 작성된 {{site.data.keyword.Bluemix_notm}} 지역의 API 엔드포인트를 지정하십시오. Eclipse 도구의 사용에 대한 자세한 정보는 [IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}로 앱 배치](/docs/manageapps/eclipsetools/eclipsetools.html)를 참조하십시오.   
+Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix_notm}} 에 푸시 중인 경우에는 우선 {{site.data.keyword.Bluemix_notm}} 서버를 작성한 후에 조직이 작성된 {{site.data.keyword.Bluemix_notm}} 지역의 API 엔드포인트를 지정하십시오. Eclipse 도구의 사용에 대한 자세한 정보는 [IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}}로 앱 배치](/docs/manageapps/eclipsetools/eclipsetools.html)를 참조하십시오.  
 
 ## 앱 라우트를 작성할 수 없음
 {: #ts_hostistaken}
@@ -477,7 +483,7 @@ Eclipse 도구를 사용하여 애플리케이션을 {{site.data.keyword.Bluemix
 
   * `manifest.yml` 파일을 사용하여 애플리케이션을 배치하는 경우 host 옵션에 호스트 이름을 지정하십시오.	 
     ```
-    host: host_name	
+    host: host_name
 	```
   * 명령 프롬프트에서 애플리케이션을 배치하는 경우, `cf push` 명령을 **-n** 옵션과 함께 사용하십시오.
     ```
@@ -507,10 +513,7 @@ cf push MyUniqueAppName01 -p app.war
 ```
 cf push MyUniqueAppName02 -p "./app.war"
 ```
-`cf push` 명령에 대한 자세한 정보를 보려면 `cf push -h`를 입력하십시오.
-
-
-
+`cf push` 명령에 대한 자세한 정보를 보려면 `cf push -h`를 입력하십시오. 	
 
 
 ## 애플리케이션이 {{site.data.keyword.Bluemix_notm}}로 푸시될 때 2바이트 문자가 올바르게 표시되지 않음
@@ -555,7 +558,6 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
 {: tsCauses}
 
   * 시작 명령이 지정되지 않았습니다.
-
   * Node.js 앱을 배치하는 데 필요한 파일이 앱에서 누락되었거나 루트 디렉토리 이외의 다른 폴더에 있습니다.
 
 문제점의 원인에 따라서 다음 방법 중 하나를 사용하십시오.
@@ -563,11 +565,11 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
 
   * 다음 방법 중 하나로 시작 명령을 지정하십시오.
      * cf 명령행 인터페이스를 사용하십시오. 예를 들어, 다음과 같습니다.
-```
+        ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
     * [package.json ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.npmjs.com/json){: new_window} 파일을 사용하십시오. 예를 들어, 다음과 같습니다.
-	 ```
+	    ```
 		{
       ...
   	   "scripts": {
@@ -576,7 +578,7 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
 	}
 	    ```
     * `manifest.yml` 파일을 사용하십시오. 예를 들어, 다음과 같습니다.
-	 ```
+	    ```
 		applications:
   name: MyUniqueNodejs01
   ...
@@ -584,7 +586,7 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
   ...
         ```
 
-  * Node.js 빌드팩에서 앱을 인식할 수 있게 하려면 Node.js 앱에 `package.json` 파일이 있어야 합니다. 또한 이 파일이 앱의 루트 디렉토리에 있어야 합니다.	
+  * Node.js 빌드팩에서 앱을 인식할 수 있게 하려면 Node.js 앱에 `package.json` 파일이 있어야 합니다. 또한 이 파일이 앱의 루트 디렉토리에 있어야 합니다.
     다음 예에서는 단순한 `package.json` 파일을 보여줍니다.  
 	```
 	{
@@ -607,10 +609,10 @@ Node.js 앱을 업데이트하거나 Node.js 앱을 {{site.data.keyword.Bluemix_
 Node.js 앱에 대한 추가 팁은 [Tips for Node.js Applications](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "외부 링크 아이콘"){: new_window}를 참조하십시오.
 
 
-## {{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타남 
+## {{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타남
 {: #ts_eclipse}
 
-{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타나면 프로젝트에서 `server.xml` 파일을 제거해야 합니다. 
+{{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 `server.xml` 파일에서 구성 오류가 나타나면 프로젝트에서 `server.xml` 파일을 제거해야 합니다.
 
 {{site.data.keyword.Bluemix_notm}} Liberty 앱을 Eclipse로 가져온 후에 Eclipse 문제점 보기에서 `server.xml` 파일 내의 구성 오류가 나타납니다.
 {: tsSymptoms}
@@ -639,11 +641,13 @@ Liberty 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시되면 Liberty 빌드
 ## {{site.data.keyword.Bluemix_notm}} Continuous Delivery에서 Delivery Pipeline의 앱을 배치할 수 없음
  {: #ts_devops_to_bm}
 
- `manifest.yml` 파일이 앱에 없는 경우에는 {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 수 없을 수 있습니다. 
+ `manifest.yml` 파일이 앱에 없는 경우에는 {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 수 없을 수 있습니다.
 
- {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 때 `Unable to detect a supported application type`이라는 오류 메시지가 표시될 수 있습니다. {: tsSymptoms}
+ {{site.data.keyword.contdelivery_short}}에서 {{site.data.keyword.deliverypipeline}}을 사용하여 앱을 배치할 때 `Unable to detect a supported application type`이라는 오류 메시지가 표시될 수 있습니다.
+ {: tsSymptoms}
 
- 이 문제점은 앱을 {{site.data.keyword.Bluemix_notm}}에 배치하려면 파이프라인에 `manifest.yml` 파일이 필요하기 때문에 발생할 수 있습니다. {: tsCauses}
+ 이 문제점은 앱을 {{site.data.keyword.Bluemix_notm}}에 배치하려면 파이프라인에 `manifest.yml` 파일이 필요하기 때문에 발생할 수 있습니다.
+ {: tsCauses}
 
  이 문제점을 해결하려면 `manifest.yml` 파일을 작성해야 합니다. `manifest.yml` 파일을 작성하는 방법에 대한 자세한 정보는 [애플리케이션 Manifest](/docs/manageapps/depapps.html#appmanifest)를 참조하십시오.
  {: tsResolve}
@@ -662,11 +666,11 @@ Meteor 앱을 {{site.data.keyword.Bluemix_notm}}에 배치할 때 `The applicati
 Meteor 앱에 대해 사용자 정의 빌드팩을 사용하려면 다음 방법 중 하나를 사용하십시오.
 {: tsResolve}
 
-  * `manifest.yml` 파일을 사용하여 앱을 배치하는 경우 buildpack 옵션을 사용하여 사용자 정의 빌드팩의 URL 또는 이름을 지정하십시오. 예를 들어, 다음과 같습니다. 
+  * `manifest.yml` 파일을 사용하여 앱을 배치하는 경우 buildpack 옵션을 사용하여 사용자 정의 빌드팩의 URL 또는 이름을 지정하십시오. 예를 들어, 다음과 같습니다.
   ```
-buildpack: https://github.com/Sing-Li/bluemix-bp-meteor 
+buildpack: https://github.com/Sing-Li/bluemix-bp-meteor
   ```
-  * 명령 프롬프트에서 애플리케이션을 배치하는 경우 `cf push` 명령을 사용하되 **-b** 옵션을 사용하여 사용자 정의 빌드팩을 지정하십시오. 예를 들어, 다음과 같습니다. 
+  * 명령 프롬프트에서 애플리케이션을 배치하는 경우 `cf push` 명령을 사용하되 **-b** 옵션을 사용하여 사용자 정의 빌드팩을 지정하십시오. 예를 들어, 다음과 같습니다.
     ```
 	cf push appname -p app_path -b https://github.com/Sing-Li/bluemix-bp-meteor
 	```

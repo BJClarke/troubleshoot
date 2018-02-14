@@ -7,15 +7,14 @@
 	{: .navgroup id="learn"}
 	troubleshoot.md
 	../support/
-	
 
 	{: .topicgroup}
 	관련 링크
             [지원 포털](https://support.ibmcloud.com)
 	    [dW Answers](https://developer.ibm.com/answers/smart-spaces/12/bluemix.html)
 	    [cf 명령 도구 설치](/docs/starters/install_cli.html)
-	    [스택 오버플로우](http://stackoverflow.com/questions/tagged/ibm-bluemix)
- {: .navgroup-end}
+	    [Stack Overflow](http://stackoverflow.com/questions/tagged/ibm-bluemix)
+	{: .navgroup-end}
 
 	{: .navgroup id="howto"}
 	../debug/

@@ -1,13 +1,17 @@
 ---
 
 copyright:
-  years: 2015, 2017lastupdated: "2017-11-09"
+
+  years: 2015, 2018
+
+lastupdated: "2017-11-09"
 
 ---
 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
 {:new_window: target="_blank"}
 
 # 概觀

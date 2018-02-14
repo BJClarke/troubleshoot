@@ -1,7 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
+
 lastupdated: "2017-11-08"
 
 ---
@@ -9,9 +11,11 @@ lastupdated: "2017-11-08"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 런타임 문제점 해결
@@ -89,7 +93,7 @@ error_log stderr error;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
 기본 로깅 구성 변경 방법에 대한 자세한 정보는 [error_log ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window}를 참조하십시오.
-	
+
 
 ## 써드파티 Python 라이브러리를 {{site.data.keyword.Bluemix_notm}}로 가져올 수 없음
 {: #ts_importpylib}
@@ -160,7 +164,7 @@ Python 앱의 루트 디렉토리에 `requirements.txt` 파일 및 `Procfile` �
 ## 추적 또는 덤프 오퍼레이션이 실행 중일 때 오류 발생
 {: #ts_target}
 
-추적 또는 덤프 오퍼레이션이 실행 중일 때 오류 메시지가 표시됩니다. 앱의 대상 인스턴스가 실행 중 상태가 아니라는 메시지가 표시됩니다.	
+추적 또는 덤프 오퍼레이션이 실행 중일 때 오류 메시지가 표시됩니다. 앱의 대상 인스턴스가 실행 중 상태가 아니라는 메시지가 표시됩니다.
 {: tsSymptoms}
 
 ```

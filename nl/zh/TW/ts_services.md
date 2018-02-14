@@ -1,7 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2017lastupdated: "2017-11-07"
+
+  years: 2015, 2018
+
+lastupdated: "2017-11-07"
 
 ---
 
@@ -9,8 +12,11 @@ copyright:
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 服務疑難排解

@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2015, 2017
+  years: 2015, 2018
 
 lastupdated: "2017-11-09"
 
@@ -11,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # 管理應用程式疑難排解
@@ -225,6 +227,9 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 process.env.VCAP_SERVICES
 ```
 如需可在其他程式語言中使用之指令的相關資訊，請參閱 [Java ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://docs.run.pivotal.io/buildpacks/java/java-tips.html#env-var){: new_window} 和 [Ruby ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://docs.run.pivotal.io/buildpacks/ruby/ruby-tips.html#env-var){: new_window}。
+
+
+
 
 
 ## 無法使用 IBM Eclipse Tools for {{site.data.keyword.Bluemix_notm}} 來部署應用程式
@@ -524,6 +529,9 @@ cf push MyUniqueAppName02 -p "./app.war"
 
 
 
+ 	
+
+
 ## 將應用程式推送至 {{site.data.keyword.Bluemix_notm}} 後，未能適當地顯示雙位元組字元
 {: #ts_doublebytes}
 
@@ -573,8 +581,8 @@ cf push MyUniqueAppName02 -p "./app.war"
 
   * 以下列其中一種方法指定啟動指令：
      * 使用 cf 指令行介面。例如：
-	```
-	cf push MyUniqueNodejs01 -p app_path -c "node app.js"
+		```
+		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
     * 使用 [package.json ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.npmjs.com/json){: new_window} 檔案。例如：
 	    ```

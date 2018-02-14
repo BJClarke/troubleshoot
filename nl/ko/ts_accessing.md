@@ -1,7 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2017
+
+  years: 2015, 2018
+
 lastupdated: "2017-11-09"
 
 ---
@@ -9,9 +11,11 @@ lastupdated: "2017-11-09"
 {:tsSymptoms: .tsSymptoms}
 {:tsCauses: .tsCauses}
 {:tsResolve: .tsResolve}
-{:new_window: target="_blank"}  
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:new_window: target="_blank"}
 
 
 # {{site.data.keyword.Bluemix_notm}} 액세스 문제점 해결
@@ -38,11 +42,11 @@ lastupdated: "2017-11-09"
 다음 솔루션 중 하나를 사용하십시오.
 {: tsResolve}
  * 올바른 비밀번호를 입력하십시오. IBM ID와 비밀번호가 올바른지 확인하기 위해 내 IBM 프로파일 페이지로 이동하여 **로그인**을 클릭하고 로그인 페이지에 IBM ID와 비밀번호를 입력할 수 있습니다.
- * 비밀번호를 잊어버린 경우에는 **비밀번호를 잊으셨습니까?**를 클릭하여 비밀번호를 재설정하십시오. 그리고 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)로 돌아가서 다시 로그인하십시오. 
+ * 비밀번호를 잊어버린 경우에는 **비밀번호를 잊으셨습니까?**를 클릭하여 비밀번호를 재설정하십시오. 그리고 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)로 돌아가서 다시 로그인하십시오.
  * IBM ID를 잊어버렸거나 비밀번호와 관련된 문제점이 지속되는 경우 전세계 IBM Registration 헬프 데스크에 지원을 요청하십시오.
  * 올바른 IBM ID 및 비밀번호를 얻으려면 내 IBM 프로파일 페이지로 이동한 다음 **등록**을 클릭하십시오.
 
-**참고:** IBM 페이지에 로그인되어 있으며 특정 이유(예: 비밀번호 재설정)로 인해 로그인 프로세스가 중단된 경우에는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)로 돌아가서 로그인 프로세스를 다시 시작하십시오. 
+**참고:** IBM 페이지에 로그인되어 있으며 특정 이유(예: 비밀번호 재설정)로 인해 로그인 프로세스가 중단된 경우에는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)로 돌아가서 로그인 프로세스를 다시 시작하십시오.
 
 
 ## 올바르지 않은 로그인 신임 정보
@@ -56,12 +60,12 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 * IBM ID로 전환되었지만 이전 사용자 이름과 비밀번호를 사용하여 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인을 시도했습니다.
 {: tsCauses}
 
-* [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인을 시도했지만 사용자 이름과 비밀번호 필드에 IBM ID 및 비밀번호를 입력했습니다. 
+* [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인을 시도했지만 사용자 이름과 비밀번호 필드에 IBM ID 및 비밀번호를 입력했습니다.
 
 메시지에서 **여기에 로그인**을 클릭하거나 IBM ID 계정 로그인 섹션으로 이동하고 **IBM ID로 로그인**을 클릭하십시오.
 {: tsResolve}
 
-이전 ID와 사용한 **사용자 이름** 및 **비밀번호** 필드는 사용하지 마십시오. 
+이전 ID와 사용한 **사용자 이름** 및 **비밀번호** 필드는 사용하지 마십시오.
 
 
 ## 인식할 수 없는 IBM ID 또는 이메일
@@ -75,11 +79,12 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {{site.data.keyword.Bluemix_notm}} 콘솔에 로그인하려고 했지만 올바른 IBM ID를 사용하지 않았습니다. 예를 들어, IBM ID의 완전한 이메일 주소를 입력하지 않았거나 이전의 사용자 이름 및 비밀번호를 사용하려고 시도했습니다.
 {: tsCauses}
 
-{{site.data.keyword.Bluemix_notm}}에 로그인하려면 올바른 IBM ID와 비밀번호가 있어야 합니다. 
+{{site.data.keyword.Bluemix_notm}}에 로그인하려면 올바른 IBM ID와 비밀번호가 있어야 합니다.
 
  * IBM ID의 완전한 이메일 주소를 입력했는지 확인하십시오.
  {: tsResolve}
- * {{site.data.keyword.BluSoftlayer_full}} ID를 보유한 {{site.data.keyword.BluSoftlayer_full}} 사용자인 경우에는 IBM ID 인증을 사용하여 로그인하기 전에 액세스를 보유한 각 계정마다 {{site.data.keyword.slportal}}에서 IBM ID 인증으로 전환해야 합니다. 자세한 정보는 [IBM ID로 전환](/docs/admin/ibmidswitch.html)을 참조하십시오.
+ * {{site.data.keyword.BluSoftlayer_full}} ID를 보유한 {{site.data.keyword.BluSoftlayer_full}} 사용자인 경우에는 IBM ID 인증을 사용하여 로그인하기 전에 액세스를 보유한 각 계정마다 {{site.data.keyword.slportal}}에서 IBM ID 인증으로 전환해야 합니다.
+ 자세한 정보는 [IBM ID로 전환](/docs/admin/ibmidswitch.html)을 참조하십시오.
 
 
 ## IBM ID가 IBM Cloud 계정과 연관되어 있지 않음
@@ -102,8 +107,8 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 **참고:** IBM ID로 직접 자신의 IBM ID를 작성한 경우에는 처리할 두 개의 이메일을 수신합니다(IBM ID 등록 및 {site.data.keyword.Blu_full}}에서 각각 1개). 두 개의 이메일에 있는 조치를 따라야 합니다.
 
 계정 설정의 방법에 따라 로그인 옵션 중 일부가 적용될 수 있습니다.
- * {{site.data.keyword.BluSoftlayer_full}} ID를 보유한 {{site.data.keyword.BluSoftlayer_notm}} 사용자는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인해야 합니다. 
- * IBM ID를 보유한 {{site.data.keyword.BluSoftlayer_notm}} 사용자는 연결된 {{site.data.keyword.Bluemix_notm}} 계정을 보유하고 있는지와 상관없이 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인하여 {{site.data.keyword.slportal}}을 열거나 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName})을 통해 로그인하여 인프라 대시보드를 열 수 있습니다. 
+ * {{site.data.keyword.BluSoftlayer_full}} ID를 보유한 {{site.data.keyword.BluSoftlayer_notm}} 사용자는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인해야 합니다.
+ * IBM ID를 보유한 {{site.data.keyword.BluSoftlayer_notm}} 사용자는 연결된 {{site.data.keyword.Bluemix_notm}} 계정을 보유하고 있는지와 상관없이 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인하여 {{site.data.keyword.slportal}}을 열거나 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName})을 통해 로그인하여 인프라 대시보드를 열 수 있습니다.
 
 
 ## IBM ID가 {{site.data.keyword.Bluemix_notm}} 계정과 연관되어 있지 않음
@@ -112,7 +117,7 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {{site.data.keyword.Bluemix_notm}}에 로그인할 때 다음 메시지가 표시됩니다.
 {: tsSymptoms}
 
-`인증에 성공하여 이 페이지로 이동되었습니다. 하지만 이 IBM ID는 {{site.data.keyword.Bluemix_notm}} 계정과 연관되어 있지 않습니다.` 
+`인증에 성공하여 이 페이지로 이동되었습니다. 하지만 이 IBM ID는 {{site.data.keyword.Bluemix_notm}} 계정과 연관되어 있지 않습니다.`
 
 올바른 IBM ID로 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName})에서 로그인했지만 {{site.data.keyword.Bluemix_notm}} 계정이 아직 작성되지 않았습니다.
 {: tsCauses}
@@ -121,8 +126,8 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
 {: tsResolve}
 
 계정 설정의 방법에 따라 로그인 옵션 중 일부가 적용될 수 있습니다.
- * 연결된 계정이 없는 {{site.data.keyword.Bluemix_notm}} 사용자는 {{site.data.keyword.Bluemix_notm}} 콘솔을 통해 로그인해야 합니다. 
- * 연결된 계정이 있는 {{site.data.keyword.Bluemix_notm}} 사용자는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인할 수 있습니다. 
+ * 연결된 계정이 없는 {{site.data.keyword.Bluemix_notm}} 사용자는 {{site.data.keyword.Bluemix_notm}} 콘솔을 통해 로그인해야 합니다.
+ * 연결된 계정이 있는 {{site.data.keyword.Bluemix_notm}} 사용자는 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인할 수 있습니다.
 
 
 ## 콘솔이 열리지 않음
@@ -134,7 +139,7 @@ IBM ID를 사용하여 로그인하면 로그인 성공 메시지가 표시되�
 다음 솔루션 중 하나를 사용하십시오.
 {: tsResolve}
  * 브라우저를 닫고 캐시 및 쿠키를 지운 다음 다시 로그인을 시도하십시오.
- * IBM 인증 서비스에서 직접 로그인하는 대신 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)에서 로그인했는지 확인하십시오. 
+ * IBM 인증 서비스에서 직접 로그인하는 대신 [{{site.data.keyword.Bluemix_notm}} 콘솔](https://console.{DomainName}) 또는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)에서 로그인했는지 확인하십시오.
 
 
 ## IBM ID 로그인이 완료되지 않음
@@ -185,5 +190,5 @@ IBM 인증 서비스에 문제점이 있을 수 있습니다.
   * {{site.data.keyword.Bluemix_notm}}에서 로그아웃한 후 다시 로그인하십시오.
   * 브라우저의 개인용 브라우징 모드를 사용하십시오.
   * 브라우저의 쿠키와 캐시를 지우십시오.
-  * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview/whatisbluemix.html#prereqs)를 참조하십시오. 
+  * 다른 브라우저를 사용하십시오. {{site.data.keyword.Bluemix_notm}}에서 지원하는 브라우저 버전에 대한 정보는 [{{site.data.keyword.Bluemix_notm}} 필수 소프트웨어](/docs/overview/whatisbluemix.html#prereqs)를 참조하십시오.
   * cf 명령행 인터페이스를 설치한 경우 `cf apps` 명령을 입력하여 앱이 실행 중인지 확인하십시오.
