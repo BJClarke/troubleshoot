@@ -95,7 +95,6 @@ pid @{HOME}/nginx/logs/nginx.pid;
 デフォルトのロギング構成を変更する方法について詳しくは、[error_log ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://nginx.org/en/docs/ngx_core_module.html#error_log){: new_window} を参照してください。
 
 
-
 ## サード・パーティーの Python ライブラリーを {{site.data.keyword.Bluemix_notm}} にインポートできない
 {: #ts_importpylib}
 

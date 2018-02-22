@@ -104,7 +104,7 @@ IBM ID を使用してログインすると、以下のメッセージが表示�
  * 「IBM ID への切り替え」ステップが完了していることを確認します。 [IBM ID への切り替え](/docs/admin/ibmidswitch.html)を参照してください。
  * **「ユーザー ID と IBM ID の関連付け」** E メールのアクションに従っていることを確認します。 受信ボックスとジャンク・メール・フォルダーを調べて E メールを見つけてください。 この E メールを再度取得するには (例えば、有効期限が切れた場合)、{{site.data.keyword.slportal}}の「ユーザー・プロファイルの編集」ページに移動し、**「E メールの再送」**をクリックします。 あるいは、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。
 
-**注:** IBM ID を使用して直接 IBM ID を作成した場合、処理する必要がある 2 つの E メールを受け取ります。1 つは IBM ID 登録からのもので、もう 1 つは {site.data.keyword.Blu_full}} からのものです。 両方の E メールのアクションに従っていることを確認してください。
+**注:** IBM ID を使用して直接 IBM ID を作成した場合、処理する必要がある 2 つの E メールを受け取ります。1 つは IBM ID 登録からのもので、もう 1 つは {{site.data.keyword.Blu_full}} からのものです。 両方の E メールのアクションに従っていることを確認してください。
 
 アカウントのセットアップに応じて、以下の一部のログイン・オプションが適用されることがあります。
  * {{site.data.keyword.BluSoftlayer_full}} ID を使用する {{site.data.keyword.BluSoftlayer_notm}} ユーザーは、[{{site.data.keyword.slportal}}](https://control.softlayer.com)を介してログインする必要があります。
