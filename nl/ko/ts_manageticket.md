@@ -19,7 +19,7 @@ lastupdated: "2017-11-09"
 {:new_window: target="_blank"}
 
 
-# 지원 티켓 관리에 대한 문제점 해결
+# 지원 티켓 관리 문제점 해결
 {: #SupportTickets}
 
 {{site.data.keyword.Bluemix}} 티켓 문제점에 {{site.data.keyword.Bluemix_notm}} 지원 티켓을 관리할 수 없는 문제가 포함될 수 있습니다.

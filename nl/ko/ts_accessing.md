@@ -104,7 +104,7 @@ IBM ID를 사용하여 로그인할 때 다음 메시지가 표시됩니다.
  * IBM ID로 전환 단계를 완료했는지 확인하십시오. [IBM ID로 전환](/docs/admin/ibmidswitch.html)을 참조하십시오.
  * **사용자 ID를 IBM ID와 연관** 이메일에 있는 조치대로 수행하고 있는지 확인하십시오. 받은 편지함 및 정크 메일 폴더에서 이메일을 확인하십시오. 이메일을 다시 받으려면(예: 만료된 경우) {{site.data.keyword.slportal}}에서 사용자 프로파일 편집 페이지로 이동하여 **이메일 재발송**을 클릭하십시오. 또는 [{{site.data.keyword.Bluemix_notm}} 지원 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixsupport.com){: new_window}에 문의하십시오.
 
-**참고:** IBM ID로 직접 자신의 IBM ID를 작성한 경우에는 처리할 두 개의 이메일을 수신합니다(IBM ID 등록 및 {site.data.keyword.Blu_full}}에서 각각 1개). 두 개의 이메일에 있는 조치를 따라야 합니다.
+**참고:** IBM ID로 직접 자신의 IBM ID를 작성한 경우에는 처리할 두 개의 이메일을 받습니다(IBM ID 등록 및 {{site.data.keyword.Blu_full}}에서 각각 하나씩). 두 개의 이메일에 있는 조치를 따라야 합니다.
 
 계정 설정의 방법에 따라 로그인 옵션 중 일부가 적용될 수 있습니다.
  * {{site.data.keyword.BluSoftlayer_full}} ID를 보유한 {{site.data.keyword.BluSoftlayer_notm}} 사용자는 [{{site.data.keyword.slportal}}](https://control.softlayer.com)을 통해 로그인해야 합니다.
