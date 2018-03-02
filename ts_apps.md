@@ -18,7 +18,7 @@ lastupdated: "2017-11-09"
 {:new_window: target="_blank"}
 
 
-# Troubleshooting for managing apps
+# Troubleshooting for creating apps
 {: #managingapps}
 
 General problems with managing apps might include apps that can't be updated, or double-byte characters that aren't displayed. In many cases, you can recover from these problems by following a few easy steps.
