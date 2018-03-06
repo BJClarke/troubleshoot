@@ -161,8 +161,8 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
      ```
 	 cf delete-route domain_name -n host_name
 	 ```
-	 例如： 	
-```
+	 例如：
+	 ```
 	 cf delete-route mybluemix.net -n app001
 	 ```
 
@@ -564,11 +564,11 @@ cf push MyUniqueAppName02 -p "./app.war"
 
   * 通过以下某种方法来指定启动命令：
      * 使用 cf 命令行界面。例如：
-```
+        ```
 		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
 		```
-    * 使用 [package.json ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://docs.npmjs.com/json){: new_window} 文件。例如： 	
-```
+    * 使用 [package.json ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](https://docs.npmjs.com/json){: new_window} 文件。例如：
+	    ```
 		{
       ...
   	   "scripts": {
@@ -576,8 +576,8 @@ cf push MyUniqueAppName02 -p "./app.war"
  	   }
 	}
 	    ```
-    * 使用 `manifest.yml` 文件。例如： 	
-```
+    * 使用 `manifest.yml` 文件。例如：
+	    ```
 		applications:
   name: MyUniqueNodejs01
   ...

@@ -103,7 +103,7 @@ lastupdated: "2017-11-09"
  * 确保完成“切换到 IBM 标识”步骤。请参阅[切换到 IBM 标识](/docs/admin/ibmidswitch.html)。
  * 确保执行**将用户标识与 IBM 标识相关联**电子邮件中的操作。检查收件箱和垃圾邮件文件夹中是否有该电子邮件。要再次获取此电子邮件（例如，如果电子邮件已到期），请转至 {{site.data.keyword.slportal}}中的“编辑用户个人档案”页面，然后单击**重新发送电子邮件**。或者，请联系 [{{site.data.keyword.Bluemix_notm}} 支持 ![外部链接图标](../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/bluemixsupport.com){: new_window}。
 
-**注：**如果您是直接使用 IBM 标识创建的 IBM 标识，那么会收到两封需要处理的电子邮件；一封来自 IBM 标识注册，一封来自 {site.data.keyword.Blu_full}}。确保执行这两封电子邮件中的操作。
+**注：**如果您是直接使用 IBM 标识创建的 IBM 标识，那么会收到两封需要处理的电子邮件；一封来自 IBM 标识注册，一封来自 {{site.data.keyword.Blu_full}}。确保执行这两封电子邮件中的操作。
 
 根据帐户的设置方式，下面的一些登录选项可能适用：
  * 使用 {{site.data.keyword.BluSoftlayer_full}} 标识的 {{site.data.keyword.BluSoftlayer_notm}} 用户必须通过 [{{site.data.keyword.slportal}}](https://control.softlayer.com)登录。

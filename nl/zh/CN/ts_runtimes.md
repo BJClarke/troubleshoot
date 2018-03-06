@@ -84,7 +84,7 @@ error_log stderr notice;
 pid @{HOME}/nginx/logs/nginx.pid;
 ```
 
-`注意`消息仅供参考，可能并不表示有问题。您可以通过在 buildpack 的 nginx-defaults.conf 文件中将日志记录级别从 `stderr notice` 更改为 `stderr error` 来停止记录这些消息。例如： 	
+`注意`消息仅供参考，可能并不表示有问题。您可以通过在 buildpack 的 nginx-defaults.conf 文件中将日志记录级别从 `stderr notice` 更改为 `stderr error` 来停止记录这些消息。例如：	
 {: tsResolve}
 
 ```

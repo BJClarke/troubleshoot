@@ -105,7 +105,7 @@ Conclua as verificações a seguir, conforme apropriado:
  * Assegure-se de que você conclua a etapa Alternar para o IBMid. Veja [Alternando para o IBMid](/docs/admin/ibmidswitch.html).
  * Assegure-se de que você siga as ações no e-mail **Associar seu ID do usuário a um IBMid**. Verifique sua caixa de entrada e sua pasta de lixo eletrônico para o e-mail. Para obter o e-mail novamente, por exemplo, se ele tiver expirado, acesse a página Editar perfil do usuário no {{site.data.keyword.slportal}} e clique em **Reenviar e-mail**. Como alternativa, entre em contato com o [Suporte do {{site.data.keyword.Bluemix_notm}} ![Ícone de link externo](../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/bluemixsupport.com){: new_window}.
 
-**Nota:** se você criou seu IBMid diretamente com o IBMid, você receberá dois e-mails para processar; um do registro do IBMid e um do {site.data.keyword.Blu_full}}. Assegure-se de seguir as ações dos dois e-mails.
+**Nota:** se você criou seu IBMid diretamente com o IBMid, receberá dois e-mails para processar; um do registro do IBMid e um do {{site.data.keyword.Blu_full}}. Assegure-se de seguir as ações dos dois e-mails.
 
 Dependendo de como sua conta foi configurada, algumas dessas opções de login podem se aplicar a você:
  * Os usuários do {{site.data.keyword.BluSoftlayer_notm}} com IDs do {{site.data.keyword.BluSoftlayer_full}} devem efetuar login por meio do [{{site.data.keyword.slportal}}](https://control.softlayer.com).

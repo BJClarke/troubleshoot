@@ -103,7 +103,7 @@ lastupdated: "2017-11-09"
  * 確定您完成「切換至 IBM ID」步驟。請參閱[切換至 IBM ID](/docs/admin/ibmidswitch.html)。
  * 確定您遵循**建立使用者 ID 與 IBM ID 的關聯**電子郵件中的動作。檢查您的收件匣及垃圾郵件資料夾，以尋找此電子郵件。若要重新取得電子郵件（例如，如果它已到期），請移至 {{site.data.keyword.slportal}} 中的「編輯使用者設定檔」頁面，然後按一下**重新傳送電子郵件**。或者，請聯絡 [{{site.data.keyword.Bluemix_notm}} 支援中心 ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/bluemixsupport.com){: new_window}。
 
-**附註：**如果您是直接以 IBM ID 來建立您的 IBM ID，則會收到兩封要處理的電子郵件；一封來自 IBM ID 登錄，另一封來自 {site.data.keyword.Blu_full}}。請務必遵循這兩封電子郵件中的動作。
+**附註：**如果您是直接以 IBM ID 來建立您的 IBM ID，則會收到兩封要處理的電子郵件；一封來自 IBM ID 登錄，另一封來自 {{site.data.keyword.Blu_full}}。請務必遵循這兩封電子郵件中的動作。
 
 視帳戶的設定方式而定，您可能可以使用其中一些登入選項：
  * 具有 {{site.data.keyword.BluSoftlayer_full}} ID 的 {{site.data.keyword.BluSoftlayer_notm}} 使用者必須透過 [{{site.data.keyword.slportal}}](https://control.softlayer.com) 登入。
