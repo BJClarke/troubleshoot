@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -18,7 +18,7 @@ lastupdated: "2017-11-09"
 {:new_window: target="_blank"}
 
 
-# Troubleshooting for creating apps
+# Troubleshooting for managing apps
 {: #managingapps}
 
 General problems with managing apps might include apps that can't be updated, or double-byte characters that aren't displayed. In many cases, you can recover from these problems by following a few easy steps.
@@ -516,7 +516,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 For more information about the `cf push` command, enter `cf push -h`. 	
 
 
-## Double-byte characters aren't displayed properly when applications are pushed to {{site.data.keyword.Bluemix_notm}}
+## Double-byte characters aren't displayed properly when apps are pushed to {{site.data.keyword.Bluemix_notm}}
 {: #ts_doublebytes}
 
 Double-byte characters might not be displayed properly if Unicode support isn't configured properly for the servlet or JSP files.
