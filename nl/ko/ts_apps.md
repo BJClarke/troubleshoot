@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -185,7 +185,7 @@ IBM JVM 7, IBM JVM 8 및 Oracle JVM 8의 이전 버전 등의 JVM(Java Virtual M
   * 메뉴 표시줄에서 **관리 > 계정 > 조직**을 클릭하십시오. 영역을 작성하려는 조직을 선택하고 **영역 작성**을 클릭하십시오.
   * cf 명령행 인터페이스에서 `cf create-space <space_name> -o <organization_name>`을 입력하십시오.
 
-다시 시도하십시오. 이 메시지가 다시 나타나면 [{{site.data.keyword.Bluemix_notm}}상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지로 이동하여 서비스 또는 컴포넌트에 문제가 있는지 확인하십시오.
+다시 시도하십시오. 이 메시지가 다시 나타나면 [{{site.data.keyword.Bluemix_notm}} 상태 ![외부 링크 아이콘](../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/bluemixstatus){: new_window} 페이지로 이동하여 서비스 또는 컴포넌트에 문제가 있는지 확인하십시오.
 
 
 ## 요청된 조치를 수행할 수 없음
@@ -516,7 +516,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 `cf push` 명령에 대한 자세한 정보를 보려면 `cf push -h`를 입력하십시오. 	
 
 
-## 애플리케이션이 {{site.data.keyword.Bluemix_notm}}로 푸시될 때 2바이트 문자가 올바르게 표시되지 않음
+## 앱이 {{site.data.keyword.Bluemix_notm}}로 푸시될 때 2바이트 문자가 올바르게 표시되지 않음
 {: #ts_doublebytes}
 
 서블릿 또는 JSP 파일에 대해 유니코드 지원이 제대로 구성되지 않은 경우 2바이트 문자가 올바르게 표시되지 않을 수 있습니다.
