@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -543,7 +543,7 @@ sobre o comando `cf push`, insira `cf push
      -h`. 	
 
 
-## Os caracteres de byte duplo não são exibidos de forma adequada quando os aplicativos são enviados por push para o {{site.data.keyword.Bluemix_notm}}
+## Caracteres de byte duplo não são exibidos de forma adequada quando os apps são enviados por push para o {{site.data.keyword.Bluemix_notm}}
 {: #ts_doublebytes}
 
 Os caracteres de byte duplo poderão não ser exibidos corretamente se o suporte Unicode não estiver configurado corretamente para os arquivos servlet ou JSP.
