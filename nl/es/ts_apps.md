@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -531,7 +531,7 @@ Para obtener más información sobre el mandato `cf push`, escriba `cf
 push -h`. 	
 
 
-## Los caracteres de doble byte no se visualizan correctamente cuando se envían apps a {{site.data.keyword.Bluemix_notm}} aplicaciones
+## Los caracteres de doble byte no se visualizan correctamente cuando se envían por push apps a {{site.data.keyword.Bluemix_notm}}
 {: #ts_doublebytes}
 
 Es posible que los caracteres de doble byte no se visualicen correctamente si el soporte de Unicode no está configurado correctamente para el servlet o los archivos JSP.
