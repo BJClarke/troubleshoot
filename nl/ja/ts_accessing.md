@@ -151,7 +151,7 @@ IBM ID を使用してログインすると、ログインに成功したとい�
 IBM ID 認証サービスに問題がある可能性があります。
 {: tsCauses}
 
-[IBM IBMid ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} で、サービスの状況を確認し、再試行してください。
+[IBM IBMid ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](https://new.wind.ibmcloud.com/webapp/#/status/a1a0c5d743d94a6a9597087541564d8e){: new_window} で、サービスの状況を確認し、再試行してください。
 {: tsResolve}
 
 
@@ -168,7 +168,7 @@ IBM ID 認証サービスに問題がある可能性があります。
 {{site.data.keyword.Bluemix_notm}} トライアル・アカウントに登録した後、確認の E メールが届きます。 その確認 E メールに記載されたリンクをクリックして、登録プロセスを完了する必要があります。
 {: tsCauses}
 
-確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}にお問い合わせください。  
+確認の E メールは、ユーザーが入力した E メール・アドレス宛に送信されます。 受信ボックスとスパム・フォルダーを確認してください。 確認の E メールが届かない場合は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/bluemixsupport.com){: new_window}にお問い合わせください。  
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} ページをロードできない

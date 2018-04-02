@@ -91,7 +91,7 @@ lastupdated: "2017-11-09"
 {{site.data.keyword.Bluemix_notm}} アカウントの状況は、アカウントが取り消されるか、または中断されると非アクティブになります。
 {: tsCauses}
 
-アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![「外部リンク」アイコン](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。 E メールに、以下の情報を含めてください。
+アカウントを再アクティブ化する場合は、[{{site.data.keyword.Bluemix_notm}} サポート![外部リンク・アイコン](../icons/launch-glyph.svg "External link icon")](http://ibm.biz/bluemixsupport.com){: new_window}に連絡してください。 E メールに、以下の情報を含めてください。
 {: tsResolve}
 
   * {{site.data.keyword.Bluemix_notm}} へのログインに使用している IBM ID。

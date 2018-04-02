@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -128,7 +128,7 @@ Java 仮想マシン (JVM) のバージョンが IBM JVM 7、IBM JVM 8、また�
 
 ワークベンチの JVM が、IBM JVM 7 または 8、あるいは Oracle JVM 8 より前のバージョンである場合は、以下の手順を実行して、Oracle JVM 8 に切り替えます。
 
-  1. Oracle JVM 8 をダウンロードし、インストールします。詳しくは、[Java SE Downloads ![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} を参照してください。
+  1. Oracle JVM 8 をダウンロードし、インストールします。詳しくは、[Java SE Downloads ![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.oracle.com/technetwork/java/javase/downloads/index.html){: new_window} を参照してください。
   2. Eclipse を再始動します。
   3. `eclipse.vm` プロパティーが、Oracle JVM 8 の新しいインストール先を指しているかどうかを確認します。
 
@@ -517,7 +517,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 `cf push` コマンドの詳細な情報を確認するには、`cf push -h` を入力してください。 	
 
 
-## アプリケーションが {{site.data.keyword.Bluemix_notm}} にプッシュされる際、2 バイト文字が適切に表示されない
+## アプリが {{site.data.keyword.Bluemix_notm}} にプッシュされる際、2 バイト文字が適切に表示されない
 {: #ts_doublebytes}
 
 サーブレットまたは JSP ファイルに対して Unicode サポートが適切に構成されていない場合、2 バイト文字が適切に表示されない可能性があります。
@@ -607,7 +607,7 @@ Node.js アプリを更新する時、または Node.js アプリを {{site.data
  }
     ```
 
-Node.js アプリについてさらにヒントを見るには、[Node.js アプリケーションに関するヒント (Tips for Node.js Applications) ](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "「外部リンク」アイコン"){: new_window}を参照してください。
+Node.js アプリについてさらにヒントを見るには、[Node.js アプリケーションに関するヒント (Tips for Node.js Applications) ](http://docs.cloudfoundry.org/buildpacks/node/node-tips.html ![External link icon](../icons/launch-glyph.svg "外部リンク・アイコン"){: new_window}を参照してください。
 
 
 ## Eclipse に {{site.data.keyword.Bluemix_notm}} Liberty アプリをインポートした後、`server.xml` ファイル内に構成エラーが現れる
@@ -637,7 +637,7 @@ Java』](/docs/runtimes/liberty/index.html)を参照してください。
 この問題は、検出スクリプト、コンパイル・スクリプト、リリース・スクリプトなどのスクリプトが実行可能でない場合は発生する可能性があります。
 {: tsCauses}
 
-[git update![「外部リンク」アイコン](../icons/launch-glyph.svg "「外部リンク」アイコン")](http://git-scm.com/docs/git-update-index){: new_window} コマンドを使用して、各スクリプトのアクセス権を実行可能に変更できます。 例えば、`git update --chmod=+x script.sh` と入力できます。
+[git update![外部リンク・アイコン](../icons/launch-glyph.svg "外部リンク・アイコン")](http://git-scm.com/docs/git-update-index){: new_window} コマンドを使用して、各スクリプトのアクセス権を実行可能に変更できます。 例えば、`git update --chmod=+x script.sh` と入力できます。
 {: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} Continuous Delivery の Delivery Pipeline からアプリをデプロイできない
