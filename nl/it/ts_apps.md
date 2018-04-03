@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -554,7 +554,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 Per ulteriori informazioni sul comando `cf push` , immettere `cf push -h`. 	
 
 
-## I caratteri double-byte non vengono visualizzati correttamente quando si distribuiscono le applicazioni a {{site.data.keyword.Bluemix_notm}}
+## I caratteri double-byte non vengono visualizzati correttamente quando si distribuiscono le applicazioni a {{site.data.keyword.Bluemix_notm}} 
 {: #ts_doublebytes}
 
 I caratteri double-byte potrebbero non essere visualizzati correttamente se il supporto Unicode non è adeguatamente configurato per i file servlet o JSP.
@@ -615,8 +615,7 @@ Utilizza uno dei seguenti metodi in base alla causa del problema:
  	   }
 	}
 	    ```
-    * Utilizza il file `manifest.yml`. Ad
-esempio:
+    * Utilizza il file `manifest.yml`. Ad esempio:
 	    ```
 		applications:
   name: MyUniqueNodejs01
