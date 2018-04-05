@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -457,7 +457,7 @@ Wenn Sie versuchen, mithilfe des Eclipse-Plug-ins von Cloud Foundry eine Anwendu
 Dieses Problem tritt auf, weil der API-Endpunkt der Region, mit der Sie arbeiten möchten, nicht angegeben ist und sich die gesuchte Organisation eventuell in einer anderen Region befindet.
 {: tsCauses}
 
-Wenn Sie eine Anwendung mithilfe der cf-Befehlszeilenschnittstelle per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, geben Sie den Befehl 'cf api' ein und geben Sie den API-Endpunkt der Region an. Geben Sie beispielsweise den folgenden Befehl ein, um eine Verbindung zu der {{site.data.keyword.Bluemix_notm}}-Region 'Europe United Kingdom' herzustellen:
+Wenn Sie eine Anwendung mithilfe der cf-Befehlszeilenschnittstelle per Push-Operation an {{site.data.keyword.Bluemix_notm}} übertragen, geben Sie den Befehl 'cf api' ein und geben Sie den API-Endpunkt der Region an. Geben Sie beispielsweise den folgenden Befehl ein, um eine Verbindung zu der {{site.data.keyword.Bluemix_notm}}-Region 'Europa - Vereinigtes Königreich' herzustellen:
 {: tsResolve}
 
 ```
@@ -516,7 +516,7 @@ cf push MyUniqueAppName02 -p "./app.war"
 Weitere Informationen zum Befehl `cf push` erhalten Sie, wenn Sie `cf push -h` eingeben. 	
 
 
-## Anzeigen von Doppelbytezeichen nach Push-Operation für Anwendungen in {{site.data.keyword.Bluemix_notm}} nicht ordnungsgemäß
+## Anzeigen von Doppelbytezeichen nach Push-Operation für Apps in {{site.data.keyword.Bluemix_notm}} nicht ordnungsgemäß
 {: #ts_doublebytes}
 
 Es kann vorkommen, dass Doppelbytezeichen nicht ordnungsgemäß angezeigt werden, wenn die Unicode-Unterstützung für das Servlet oder die JSP-Dateien nicht ordnungsgemäß konfiguriert wurde.
