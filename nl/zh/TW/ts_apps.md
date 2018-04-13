@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2018
 
-lastupdated: "2017-11-09"
+lastupdated: "2018-03-16"
 
 ---
 
@@ -151,20 +151,20 @@ at org.apache.tomcat.websocket.WsWebSocketContainer.connectToServer(WsWebSocketC
 {: tsResolve}
 
   1. 輸入下列指令，檢查路徑是否屬於現行空間：
-	```
-	cf routes
+	 ```
+	 cf routes
 	 ```
   2. 如果路徑不屬於現行空間，請輸入下列指令來切換至其所屬空間或組織：
-	```
-	cf target -o org_name -s space_name
+	 ```
+	 cf target -o org_name -s space_name
 	 ```
   3. 輸入下列指令，來刪除應用程式路徑：
-	```
-	cf delete-route domain_name -n host_name
 	 ```
-	例如：
-	```
-	cf delete-route mybluemix.net -n app001
+	 cf delete-route domain_name -n host_name
+	 ```
+	 例如：
+```
+	 cf delete-route mybluemix.net -n app001
 	 ```
 
 ## 無法擷取組織中的空間
@@ -581,20 +581,20 @@ cf push MyUniqueAppName02 -p "./app.war"
 
   * 以下列其中一種方法指定啟動指令：
      * 使用 cf 指令行介面。例如：
-        ```
-	cf push MyUniqueNodejs01 -p app_path -c "node app.js"
-	```
+		```
+		cf push MyUniqueNodejs01 -p app_path -c "node app.js"
+		```
     * 使用 [package.json ![外部鏈結圖示](../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.npmjs.com/json){: new_window} 檔案。例如：
-	```
+	    ```
 		{
       ...
   	   "scripts": {
 	 		 "start": "node app.js"
  	   }
 	}
-	```
+	    ```
     * 使用 `manifest.yml` 檔案。例如：
-	```
+	    ```
 		applications:
   name: MyUniqueNodejs01
   ...

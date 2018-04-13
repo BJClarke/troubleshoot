@@ -29,7 +29,7 @@ lastupdated: "2017-11-09"
 
 您必須要有與 IBM ID 相關聯的有效密碼，才能登入 {{site.data.keyword.Bluemix_notm}} 主控台。
 
-您必須要有與 IBM ID 或鏈結帳戶 ID 相關聯的有效密碼，才能透過 [{{site.data.keyword.slportal}}](https://control.softlayer.com) 登入。
+您必須要有與 IBM ID 或已鏈結帳戶 ID 相關聯的有效密碼，才能透過 [{{site.data.keyword.slportal}}](https://control.softlayer.com) 登入。
 
 當您嘗試登入 {{site.data.keyword.Bluemix_notm}} 時，顯示下列錯誤訊息：
 {: tsSymptoms}
