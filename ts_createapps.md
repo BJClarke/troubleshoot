@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-04-26"
 
 ---
 
@@ -16,7 +16,7 @@ lastupdated: "2018-03-16"
 {:pre: .pre}
 {:note:.deprecated}
 
-# Troubleshooting for creating apps
+# Troubleshooting for {{site.data.keyword.Bluemix_notm}} Developer Tools
 {: #troubleshoot}
 
 General problems with using the {{site.data.keyword.dev_cli_short}} to create apps might include deployment failures or code that can't be retrieved when creating a project. In many cases, you can recover from these problems by following a few easy steps.
@@ -32,7 +32,7 @@ The hostname <myHostname> is taken.
 ```
 {: codeblock}
 {: tsSymptoms}
-   
+
 This error is caused by an expired login token.
 {: tsCauses}
 
@@ -54,7 +54,7 @@ Failed to <command> project.
 ```
 {: codeblock}
 {: tsSymptoms}
-   
+
 This error is caused by an expired login token.
 {: tsCauses}
 
@@ -85,7 +85,7 @@ Error: No such image: bx-dev-testProject
 ```
 {: tsSymptoms}
 
-You must build a project before you run it. 
+You must build a project before you run it.
 {: tsCauses}
 
 Run the following command in your current project directory to build your application:
@@ -252,3 +252,41 @@ Be sure that the namespace in the deploy image target matches one of the namespa
 bx cr namespaces
 ```
 {: tsResolve}
+
+## APPENDIX
+{: #appendix}
+
+All prerequisites install for most users using the platform installers. If you need to manually install any components, here are the instructions:
+
+To install the dev plugin, you must first install the [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started).
+
+To use the dev plugin itself, you must install it by running the following command: `bx plugin install dev -r Bluemix`
+
+For running and debugging applications locally, you must also install [Docker](https://www.docker.com/get-docker).
+
+For deploying an application as a container, you must also install Kubernetes, Helm, and the following IBM Cloud CLI plugins:
+
+To install Kubernetes:
+* Mac users:
+`curl --progress-bar -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/darwin/amd64/kubectl`
+
+* Linux users:
+`curl --progress-bar -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl`
+
+* Windows users:
+`curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.7.0/bin/windows/amd64/kubectl.exe`
+
+To install Helm:
+* Mac and Linux users:
+`export DESIRED_VERSION=v2.6.0`
+`curl -sL https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash`
+
+* Windows users:
+Download and install the binary at https://github.com/kubernetes/helm/releases/tag/v2.6.0
+
+To install the container-registry plugin:
+`bx plugin install container-registry`
+
+To install the container-service plugin:
+`bx plugin install container-service`
+
