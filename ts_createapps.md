@@ -19,13 +19,13 @@ lastupdated: "2018-04-26"
 # Troubleshooting for {{site.data.keyword.Bluemix_notm}} Developer Tools
 {: #troubleshoot}
 
-General problems with using the {{site.data.keyword.dev_cli_short}} to create apps might include deployment failures or code that can't be retrieved when creating a project. In many cases, you can recover from these problems by following a few easy steps.
+General problems with using the {{site.data.keyword.dev_cli_short}} CLI to create apps might include deployment failures or code that can't be retrieved when creating an application. In many cases, you can recover from these problems by following a few easy steps.
 {:shortdesc}
 
-## Hostname error when you create a project with a non-mobile pattern
+## Hostname error when you create an application with a non-mobile pattern
 {: #hostname-error}
 
-You might see the following error if you use the {{site.data.keyword.dev_cli_short}} to create a project from the Web App, BFF, or Microservice patterns:
+You might see the following error if you use the {{site.data.keyword.dev_cli_short}} CLI to deploy an application to Cloud Foundry:
 
 ```
 The hostname <myHostname> is taken.
@@ -44,13 +44,13 @@ bx login
 {: codeblock}
 {: tsResolve}
 
-## General failures with the {{site.data.keyword.dev_cli_short}}
+## General failures with the {{site.data.keyword.dev_cli_short}} CLI
 {: #general}
 
-You might see the following error if you use the {{site.data.keyword.dev_cli_short}} `create`, `delete`, `list`, or `code` commands:
+You might see the following error if you use the {{site.data.keyword.dev_cli_short}} CLI `create`, `delete`, `list`, or `code` commands:
 
 ```
-Failed to <command> project.
+Failed to <command> application.
 ```
 {: codeblock}
 {: tsSymptoms}
@@ -66,13 +66,13 @@ bx login
 {: codeblock}
 {: tsResolve}
 
-## Error: No such image when you run a new project
+## Error: No such image when you run a new application
 {: #nosuchimage}
 
-You might see the following error when you run a project without building it first.
+You might see the following error when you run an application without building it first.
 
 ```
-$ bx dev run testProject
+$ bx dev run
 The run-cmd option was not specified
 Stopping the 'testProject' container...
 The 'testProject' container was not found
@@ -85,17 +85,17 @@ Error: No such image: bx-dev-testProject
 ```
 {: tsSymptoms}
 
-You must build a project before you run it.
+You must build an application before you run it.
 {: tsCauses}
 
-Run the following command in your current project directory to build your application:
+Run the following command in your current application directory to build your application:
 
 ```
 bx dev build
 ```
 {: codeblock}
 
-Run the following command in your current project directory to start your application:
+Run the following command in your current application directory to start your application:
 
 ```
 bx dev run
@@ -105,7 +105,7 @@ bx dev run
 ## Service broker error when you add the {{site.data.keyword.objectstorageshort}} capability
 {: #os}
 
-You might see the following error if you use the {{site.data.keyword.dev_cli_short}} to create two projects with the {{site.data.keyword.objectstorageshort}} capability:
+You might see the following error if you use the {{site.data.keyword.dev_cli_short}} CLI to create two applications with the {{site.data.keyword.objectstorageshort}} capability:
 
 ```
 FAILED
@@ -120,14 +120,14 @@ This error is due to the {{site.data.keyword.objectstorageshort}} service, which
 You are prompted to choose a different plan to avoid this error.
 {: tsResolve}
 
-## Failure getting the code when creating a project
+## Failure getting the code when creating an application
 {: #code}
 
-You might see the following error if you use the {{site.data.keyword.dev_cli_short}} to create a project:
+You might see the following error if you use the {{site.data.keyword.dev_cli_short}} CLI to create an application:
 	
 ```
 FAILED                            
-Project created, but could not get code
+Application created, but could not get code
 https://console.ng.bluemix.net/developer/projects/b22165f3-cbc6-4f73-876f-e33cbec199d4/code
 ```
 {: codeblock}
@@ -141,25 +141,24 @@ You can get the code either of the following ways:
 * Run the following command by using the CLI:
 
    ```
-   bx dev code <your-project-name>
+   bx dev code <your-app-name>
    ```
    {: codeblock}
 
-   Replace `<your-project-name>` with the project name that you specified during project creation.
+   Replace `<your-app-name>` with the application name that you specified during application creation.
 
 * Use the {{site.data.keyword.dev_console}}.
 
-	1. Select your [project ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.{DomainName}/developer/projects) in the {{site.data.keyword.dev_console}} and click **Get the Code**.
+	1. Select your [application ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/developer/appservice/apps) in the {{site.data.keyword.dev_console}}.
 
-	2. Click **Generate Code**.
+	2. Click **Download Code**.
 
-	3. After the code is generated, click **Download Code**.
 {: tsResolve}
 
-## Error running `bx dev run` for Node.js projects
+## Error running `bx dev run` for Node.js applications
 {: #node}
 
-You might see the following error if you are running `bx dev run` with the {{site.data.keyword.dev_cli_short}} for Node.js Web or BFF projects:
+You might see the following error if you are running `bx dev run` with the {{site.data.keyword._short}} CLI for Node.js Web or BFF applications:
 
 ```
 module.js:597
@@ -190,7 +189,7 @@ Delete the `node_modules` folder and run the `bx dev run` command again.
 
 ## Failure to deploy to {{site.data.keyword.Bluemix_notm}}
 
-A failure occurs when you try deploying to {{site.data.keyword.Bluemix_notm}} with the {{site.data.keyword.dev_cli_short}}, but there is no error displayed.
+A failure occurs when you try deploying to {{site.data.keyword.Bluemix_notm}} with the {{site.data.keyword.dev_cli_short}} CLI, but there is no error displayed.
 {: tsSymptoms}
 
 You might not be logged in to your account. 
@@ -240,7 +239,7 @@ Failed to execute the action:  exit status 1:denied: requested access to the res
 
 
 FAILED
-Failed to push the Run image tagged 'registry.ng.bluemix.net/<namespace>/<project-name>:0.0.1' to the Docker registry due to: exit status 1
+Failed to push the Run image tagged 'registry.ng.bluemix.net/<namespace>/<app-name>:0.0.1' to the Docker registry due to: exit status 1
 ```
 {: tsSymptoms}
 
