@@ -19,7 +19,7 @@ lastupdated: "2018-03-16"
 # アプリの作成に関するトラブルシューティング
 {: #troubleshoot}
 
-{{site.data.keyword.dev_cli_short}} を使用してアプリを作成する際の一般的な問題には、デプロイメントの失敗や、プロジェクトを作成する際にコードを取得できないなどが含まれます。多くの場合、いくつかの簡単なステップを実行することで、これらの問題から復旧することが可能です。
+{{site.data.keyword.dev_cli_short}} を使用してアプリを作成する際の一般的な問題には、デプロイメントの失敗や、プロジェクトを作成する際にコードを取得できないなどが含まれます。 多くの場合、いくつかの簡単なステップを実行することで、これらの問題から復旧することが可能です。
 {:shortdesc}
 
 ## 非モバイル・パターンのプロジェクトを作成するとホスト名エラーになる
@@ -33,7 +33,8 @@ The hostname <myHostname> is taken.
 {: codeblock}
 {: tsSymptoms}
    
-このエラーの原因は、ログイン・トークンが有効期限切れになったことです。{: tsCauses}
+このエラーの原因は、ログイン・トークンが有効期限切れになったことです。
+{: tsCauses}
 
 再ログインしてください。
 
@@ -54,7 +55,8 @@ Failed to <command> project.
 {: codeblock}
 {: tsSymptoms}
    
-このエラーの原因は、ログイン・トークンが有効期限切れになったことです。{: tsCauses}
+このエラーの原因は、ログイン・トークンが有効期限切れになったことです。
+{: tsCauses}
 
 再ログインしてください。
 
@@ -83,7 +85,8 @@ Error: No such image: bx-dev-testProject
 ```
 {: tsSymptoms}
 
-プロジェクトは、実行する前にビルドする必要があります。{: tsCauses}
+プロジェクトは、実行する前にビルドする必要があります。 
+{: tsCauses}
 
 現行プロジェクト・ディレクトリー内で以下のコマンドを実行して、アプリケーションをビルドします。
 
@@ -114,7 +117,8 @@ Service broker error: {"description"=>"You can not create this Object Storage in
 このエラーの原因は、{{site.data.keyword.objectstorageshort}} サービスが、フリー {{site.data.keyword.objectstorageshort}} プランの 1 つのインスタンスのみ提供していることです。
 {: tsCauses}
 
-このエラーを回避するために、別のプランを選択するようプロンプトが出されます。{: tsResolve}
+このエラーを回避するために、別のプランを選択するようプロンプトが出されます。
+{: tsResolve}
 
 ## プロジェクトの作成時にコードの取得に失敗する
 {: #code}
@@ -149,7 +153,8 @@ https://console.ng.bluemix.net/developer/projects/b22165f3-cbc6-4f73-876f-e33cbe
 
 	2. **「コードの生成 (Generate Code)」**をクリックします。
 
-	3. コードの生成が終了したら、**「コードのダウンロード」**をクリックします。{: tsResolve}
+	3. コードの生成が終了したら、**「コードのダウンロード」**をクリックします。
+{: tsResolve}
 
 ## Node.js プロジェクトで `bx dev run` を実行するとエラーになる
 {: #node}
@@ -177,15 +182,19 @@ Error: /app/node_modules/bluemix-autoscaling-agent/node_modules/appmetrics/appme
 {: codeblock}
 {: tsSymptoms}
    
-このエラーは、`appmetrics` モジュールが別のアーキテクチャーにインストールされている場合に発生します。1 つのアーキテクチャーにインストールされているネイティブ NPM モジュールは、別のアーキテクチャーでは機能しません。付属の Docker イメージは、Linux カーネルに基づいています。{: tsCauses}
+このエラーは、`appmetrics` モジュールが別のアーキテクチャーにインストールされている場合に発生します。 1 つのアーキテクチャーにインストールされているネイティブ NPM モジュールは、別のアーキテクチャーでは機能しません。 付属の Docker イメージは、Linux カーネルに基づいています。
+{: tsCauses}
 
-`node_modules` フォルダーを削除してから、`bx dev run` コマンドを再度実行します。{: tsResolve}
+`node_modules` フォルダーを削除してから、`bx dev run` コマンドを再度実行します。
+{: tsResolve}
 
 ## {{site.data.keyword.Bluemix_notm}} へのデプロイに失敗する
 
-{{site.data.keyword.dev_cli_short}} を使用して {{site.data.keyword.Bluemix_notm}} へデプロイしようとすると、失敗しますが、エラーは表示されません。{: tsSymptoms}
+{{site.data.keyword.dev_cli_short}} を使用して {{site.data.keyword.Bluemix_notm}} へデプロイしようとすると、失敗しますが、エラーは表示されません。
+{: tsSymptoms}
 
-アカウントにログインしていない可能性があります。 {: tsCauses}
+アカウントにログインしていない可能性があります。 
+{: tsCauses}
 
 ログインして、やり直してください。
 
@@ -207,7 +216,7 @@ Failed to configure deployment with cluster '<cluster-name>' due to: exit status
 ```
 {: tsSymptoms}
 
-これは、ほとんどの場合、無効のクラスター名が原因です。同じコマンドに `--trace` を付けて実行することによって、原因を確認することができます。エラー出力には、以下の詳細が含まれる場合があります。
+これは、ほとんどの場合、無効のクラスター名が原因です。 同じコマンドに `--trace` を付けて実行することによって、原因を確認することができます。エラー出力には、以下の詳細が含まれる場合があります。
 
 ```
 Failing with error:  {"incidentID":"<id-number>","code":"E0008","description":"The specified cluster could not be found.","recoveryCLI":"Run 'bx cs clusters' to list all clusters you have access to.","type":"Provisioning"}
@@ -235,7 +244,7 @@ Failed to push the Run image tagged 'registry.ng.bluemix.net/<namespace>/<projec
 ```
 {: tsSymptoms}
 
-これは、ほとんどの場合、無効のデプロイ用イメージ・ターゲットが原因です。具体的には、デプロイ用イメージ・ターゲットの中間値である名前空間が無効である可能性があります。
+これは、ほとんどの場合、無効のデプロイ用イメージ・ターゲットが原因です。 具体的には、デプロイ用イメージ・ターゲットの中間値である名前空間が無効である可能性があります。
 
 デプロイ用イメージ・ターゲット内の名前空間が、以下を実行して表示される名前空間のいずれかと一致していることを確認します。 
 
